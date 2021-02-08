@@ -1,9 +1,12 @@
 ---
 title : "Stacked Attention Network"
+cover : "https://source.unsplash.com/900x600/?amsterdam"
 date : "2021-02-05"
-tags : [ "vqa", "attention" ]
-categories : [ "attention" ]
-image : "https://source.unsplash.com/900x600/?amsterdam"
+tags : 
+  - "vqa"
+  - "attention"
+# categories : [ "attention" ]
+
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình <b>Stacked Attention</b> được dùng trong bài toán <b>Visual Question Answering (VQA)</b><br/>

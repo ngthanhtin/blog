@@ -6,7 +6,7 @@ gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [single-object-tracking, particle-filter]
 comments: true
-
+cover: "https://source.unsplash.com/900x600/?amsterdam"
 ---
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Single Object Tracking</b> sử dụng <b>Particle Filter</b><br/>
 Link paper: [A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU](https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Framework_of_Moving_Object_Tracking.pdf)<br/>

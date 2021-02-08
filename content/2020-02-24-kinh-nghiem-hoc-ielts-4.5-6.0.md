@@ -6,6 +6,7 @@ gh-repo: ngthanhtin/beautiful-jekyll
 gh-badge: [ielts]
 tags: [ielts]
 comments: true
+cover: "https://source.unsplash.com/900x600/?amsterdam"
 ---
 
 Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.

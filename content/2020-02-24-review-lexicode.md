@@ -6,6 +6,7 @@ gh-repo: ngthanhtin/beautiful-jekyll
 gh-badge: [ielts]
 tags: [book, ielts, review]
 comments: true
+cover: "https://source.unsplash.com/900x600/?amsterdam"
 ---
 
 <p align="center">

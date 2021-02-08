@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>donate</title>
+      <link>https://ngthanhtin.github.io/blog/tags/donate/</link>
+      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/donate/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>attention</title>
       <link>https://ngthanhtin.github.io/blog/tags/attention/</link>
@@ -22,15 +31,6 @@
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/tags/vqa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>donate</title>
-      <link>https://ngthanhtin.github.io/blog/tags/donate/</link>
-      <pubDate>Mon, 03 Jun 2019 14:21:26 +0800</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/donate/</guid>
       <description></description>
     </item>
     

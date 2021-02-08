@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "Tin's Blog"
 theme = "hugo-theme-dream"
 publishdir = "docs/"
+
 # copyright = ""
 
 # googleAnalytics = ""

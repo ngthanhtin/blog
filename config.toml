@@ -18,14 +18,14 @@ publishdir = "docs/"
   [ markup . goldmark ]
     [ markup . goldmark . renderer ]
       unsafe = true
-      
+
 [params]
   background = "#f7f7f7"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
   # dark mode
   # defaultDark = true
-  # backgroundDark = "black"
+  backgroundDark = "black"
   # backgroundImageDark = "/me/background-dark.jpg"
   # darkLinkColor = "darkseagreen"
   # darkNav = true

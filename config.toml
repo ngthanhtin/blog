@@ -1,4 +1,4 @@
-baseurl = "https://ngthanhtin.github.io/blog"
+baseurl = "https://ngthanhtin.github.io/blog/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Tin's Blog"
@@ -17,7 +17,7 @@ publishdir = "docs/"
   background = "#f7f7f7"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
-
+  haha = "/img/avatar.jpg"
   # dark mode
   # defaultDark = true
   # backgroundDark = "black"

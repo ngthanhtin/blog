@@ -17,7 +17,6 @@ publishdir = "docs/"
   background = "#f7f7f7"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
-  haha = "/img/avatar.png"
   # dark mode
   # defaultDark = true
   # backgroundDark = "black"
@@ -28,7 +27,7 @@ publishdir = "docs/"
 
   author = "Nguyen Thanh Tin"
   # description = ""
-  avatar = "/img/avatar.jpg"
+  avatar = "/img/avatar.png"
   # headerTitle = ""
   motto = "luffy"
   # categoriesLimitInHeader = 6 # deprecated

@@ -3,7 +3,7 @@ languageCode = "en"
 defaultContentLanguage = "en"
 title = "Hugo Theme Dream"
 theme = "hugo-theme-dream"
-
+publishdir = "docs/"
 # copyright = ""
 
 # googleAnalytics = ""
@@ -25,11 +25,11 @@ theme = "hugo-theme-dream"
   # darkNav = true
   # dark404 = true
 
-  author = "Yue Yang"
+  author = "Nguyen Thanh Tin"
   # description = ""
   avatar = "/img/avatar.jpg"
   # headerTitle = ""
-  motto = "Motto"
+  motto = "luffy"
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
 

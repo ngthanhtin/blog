@@ -9,11 +9,12 @@
     <i class="large link bullseye icon dream-flip-toggle" title="{{ i18n "flip" }}"></i>
   </div>
   <div class="item">
-    <i class="large link home icon" title="{{ i18n "home" }}" onclick="window.location.href = '{{ .Site.BaseURL }}'"></i>
+    <i class="large link home icon" title="Blog" onclick="window.location.href = '{{ .Site.BaseURL }}'"></i>
   </div>
   <div class="item">
-    <a href="https://ngthanhtin.github.io/"><i class="large link home icon" title="{{ i18n "home" }}"></i></a>
+    <a href="https://ngthanhtin.github.io/"><i class="fa fa-flask" title="ngthanhtin.github.io"></i></a>
   </div>
+  
   {{ if or .Site.Params.backgroundDark .Site.Params.backgroundImageDark }}
   <div class="item">
     <i class="large link icon theme-switch" onclick="themeSwitch()"></i>

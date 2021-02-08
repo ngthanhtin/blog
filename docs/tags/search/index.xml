@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>search on Hugo Theme Dream</title>
+    <link>https://ngthanhtin.github.io/tags/search/</link>
+    <description>Recent content in search on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://ngthanhtin.github.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Monte Carlo Tree Search</title>
+      <link>https://ngthanhtin.github.io/2020-07-06-mcts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/2020-07-06-mcts/</guid>
+      <description>Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.
+Monte Carlo Tree Search (MCTS) dùng để dự đoán được lượt di chuyển tốt nhất dựa trên simulation test results.
+Ý tưởng chỉnh của MCTS là tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning.
+Node being not-fully expanded means at least one of its children is unvisited, not explored.</description>
+    </item>
+    
+  </channel>
+</rss>

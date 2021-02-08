@@ -17,7 +17,7 @@ publishdir = "docs/"
   background = "#f7f7f7"
   # backgroundImage = "/me/background.jpg"
   linkColor = "seagreen"
-  haha = "/img/avatar.jpg"
+  haha = "/img/avatar.png"
   # dark mode
   # defaultDark = true
   # backgroundDark = "black"

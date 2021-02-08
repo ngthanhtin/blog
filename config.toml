@@ -26,11 +26,11 @@ publishDir = "docs"
   # darkNav = true
   # dark404 = true
 
-  author = "Yue Yang"
+  author = "Nguyen Thanh Tin"
   # description = ""
   avatar = "/img/avatar.jpg"
   # headerTitle = ""
-  motto = "Motto"
+  motto = "luffy"
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
 
@@ -44,7 +44,7 @@ publishDir = "docs"
   # LEANCLOUD_APP_ID = ""
   # LEANCLOUD_APP_KEY = ""
 
-  email = "g1enyy0ung@gmail.com"
+  email = "ngthanhtinqn@gmail.com"
   # twitter = ""
   # facebook = ""
   # instagram = ""

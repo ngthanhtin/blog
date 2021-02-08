@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ielts on Hugo Theme Dream</title>
+    <link>https://example.com/tags/ielts/</link>
+    <description>Recent content in ielts on Hugo Theme Dream</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://example.com/tags/ielts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kinh nghiệm ôn thi IELTS từ 4.5 lên 6.0</title>
+      <link>https://example.com/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</guid>
+      <description>Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.
+Đây là số điểm của mình:
+Listening Về phần này, mình chỉ luyện tập bằng bộ Cambridge test 7-14 thần thánh.
+Đối với listening, mình học hết cách làm các dạng bài bằng quyển Official Guide to IELTS. Sau đó, mình bắt đầu luyện đề.</description>
+    </item>
+    
+    <item>
+      <title>Review sách Lexicode</title>
+      <link>https://example.com/2020-02-24-review-lexicode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-review-lexicode/</guid>
+      <description>Trong một post gần đây của Tổng thống Trump, ông có viết “to contain the Coronavirus”. Cứ theo nghĩa thông thường thì Google dịch là “chứa đựng”. Còn theo sách “Lexicode” thì lại là “kiềm chế, kiểm soát”.
+Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nhưng rất hay được sử dụng bởi người bản xứ. Sách giải thích rất chi tiết, cặn kẽ, nhiều ví dụ minh hoạ.</description>
+    </item>
+    
+  </channel>
+</rss>

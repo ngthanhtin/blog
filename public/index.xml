@@ -5,7 +5,18 @@
     <link>https://example.com/</link>
     <description>Recent content on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Stacked Attention Network</title>
+      <link>https://example.com/2021-02-01-stacked-attention-network/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-02-01-stacked-attention-network/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attentionđược dùng trong bài toán Visual Question Answering (VQA)Link paper: Stacked Attention Networks for Image Question Answering (2016)Link code: Code
+Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Visual Question Answering2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảoTuy nhiên, mô hình SAN sẽ lặp lại các bước trên để đưa ra một query đúng hơn.</description>
+    </item>
+    
     <item>
       <title>Amsterdam</title>
       <link>https://example.com/amsterdam/</link>
@@ -13,6 +24,128 @@
       
       <guid>https://example.com/amsterdam/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Install Cuda on Ubuntu 18.04</title>
+      <link>https://example.com/2020-10-14-install-cuda-on-ubuntu-18-04/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
+      <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit sudo apt remove &amp;ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-driverssudo apt-key adv &amp;ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pubsudo bash -c &amp;lsquo;echo &amp;ldquo;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /&amp;rdquo; &amp;gt; /etc/apt/sources.</description>
+    </item>
+    
+    <item>
+      <title>Install Torch with Cuda 10.0</title>
+      <link>https://example.com/2020-10-14-install-torch-with-cuda-10-0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-10-14-install-torch-with-cuda-10-0/</guid>
+      <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10.</description>
+    </item>
+    
+    <item>
+      <title>Instruction Navigation</title>
+      <link>https://example.com/2021-02-02-instruction-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-02-02-instruction-navigation/</guid>
+      <description>Resource </description>
+    </item>
+    
+    <item>
+      <title>Kinh nghiệm ôn thi IELTS từ 4.5 lên 6.0</title>
+      <link>https://example.com/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</guid>
+      <description>Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.
+Đây là số điểm của mình:
+Listening Về phần này, mình chỉ luyện tập bằng bộ Cambridge test 7-14 thần thánh.
+Đối với listening, mình học hết cách làm các dạng bài bằng quyển Official Guide to IELTS. Sau đó, mình bắt đầu luyện đề.</description>
+    </item>
+    
+    <item>
+      <title>Monte Carlo Tree Search</title>
+      <link>https://example.com/2020-07-06-mcts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-07-06-mcts/</guid>
+      <description>Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.
+Monte Carlo Tree Search (MCTS) dùng để dự đoán được lượt di chuyển tốt nhất dựa trên simulation test results.
+Ý tưởng chỉnh của MCTS là tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning.
+Node being not-fully expanded means at least one of its children is unvisited, not explored.</description>
+    </item>
+    
+    <item>
+      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
+      <link>https://example.com/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.</description>
+    </item>
+    
+    <item>
+      <title>Mùa đông đầu tiên tại Hàn Quốc 2020</title>
+      <link>https://example.com/2021-02-02-bi-tri-attention/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-02-02-bi-tri-attention/</guid>
+      <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA)đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked AttentionLink paper: Bilinear AttentionLink code: Code</description>
+    </item>
+    
+    <item>
+      <title>Review sách Lexicode</title>
+      <link>https://example.com/2020-02-24-review-lexicode/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-review-lexicode/</guid>
+      <description>Trong một post gần đây của Tổng thống Trump, ông có viết “to contain the Coronavirus”. Cứ theo nghĩa thông thường thì Google dịch là “chứa đựng”. Còn theo sách “Lexicode” thì lại là “kiềm chế, kiểm soát”.
+Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nhưng rất hay được sử dụng bởi người bản xứ. Sách giải thích rất chi tiết, cặn kẽ, nhiều ví dụ minh hoạ.</description>
+    </item>
+    
+    <item>
+      <title>Single Object Tracking with Particle Filter</title>
+      <link>https://example.com/2021-02-04-single-object-tracking-with-pf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-02-04-single-object-tracking-with-pf/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.</description>
+    </item>
+    
+    <item>
+      <title>SLAM</title>
+      <link>https://example.com/2020-02-24-slam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-slam/</guid>
+      <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
+Một số loại SLAM Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM. Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.
+a. EKF SLAM b. Fast SLAM Link tham khảo https://github.</description>
+    </item>
+    
+    <item>
+      <title>SLAM Roadmap</title>
+      <link>https://example.com/2021-01-31-slam-roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2021-01-31-slam-roadmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stereo Parallel and Tracking</title>
+      <link>https://example.com/2020-02-24-ptam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/2020-02-24-ptam/</guid>
+      <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán visual odometry.
+Installation g2o: https://github.com/uoip/g2opy
+Pangolin: https://github.com/uoip/pangolin opencv, numpy Python 3.6+ Ubuntu 16.04
+*Lưu ý khi cài đặt Pangolin: Sau khi clone repo về, ta đổi tên lại thành pangolin. Nếu máy có cài Nvidia, nhớ link libGL.so tới usr/lib/x86_64-linux-gnu. Cụ thể, ta gõ lệnh: sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so
+(Optional) sudo ln -s /usr/lib/nvidia-415/libGL.</description>
     </item>
     
   </channel>

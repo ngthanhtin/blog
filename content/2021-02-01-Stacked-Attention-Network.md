@@ -1,10 +1,10 @@
-+++
-title = "Stacked Attention Network"
-date = "2021-02-05"
-tags = [ "vqa", "attention" ]
-categories = [ "attention" ]
-img = "/img/vqa/attention.png"
-+++
+---
+title : "Stacked Attention Network"
+date : "2021-02-05"
+tags : [ "vqa", "attention" ]
+categories : [ "attention" ]
+image : "https://source.unsplash.com/900x600/?amsterdam"
+---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình <b>Stacked Attention</b> được dùng trong bài toán <b>Visual Question Answering (VQA)</b><br/>
 Link paper: [Stacked Attention Networks for Image Question Answering (2016)](https://arxiv.org/abs/1511.02274)<br/>

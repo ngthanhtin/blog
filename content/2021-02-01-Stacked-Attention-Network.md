@@ -1,6 +1,6 @@
 ---
 title : "Stacked Attention Network"
-cover : "https://source.unsplash.com/900x600/?amsterdam"
+cover : "/blog/img/vqa/cover.png"
 date : "2021-02-05"
 tags : 
   - "vqa"

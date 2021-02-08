@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vqa on Hugo Theme Dream</title>
-    <link>https://ngthanhtin.github.io/tinai/tags/vqa/</link>
+    <link>https://ngthanhtin.github.io/blog/tags/vqa/</link>
     <description>Recent content in vqa on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/tinai/tags/vqa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/vqa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Stacked Attention Network</title>
-      <link>https://ngthanhtin.github.io/tinai/2021-02-01-stacked-attention-network/</link>
+      <link>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/tinai/2021-02-01-stacked-attention-network/</guid>
+      <guid>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attentionđược dùng trong bài toán Visual Question Answering (VQA)Link paper: Stacked Attention Networks for Image Question Answering (2016)Link code: Code
 Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Visual Question Answering2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảoTuy nhiên, mô hình SAN sẽ lặp lại các bước trên để đưa ra một query đúng hơn.</description>
     </item>

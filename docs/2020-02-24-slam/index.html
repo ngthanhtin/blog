@@ -22,8 +22,7 @@
 
 <meta property="og:title" content="SLAM" />
 <meta property="og:description" content="Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
-Một số loại SLAM Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM. Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.
-a. EKF SLAM b. Fast SLAM Link tham khảo https://github." />
+## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2020-02-24-slam/" />
 
@@ -33,8 +32,7 @@ a. EKF SLAM b. Fast SLAM Link tham khảo https://github." />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="SLAM"/>
 <meta name="twitter:description" content="Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
-Một số loại SLAM Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM. Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.
-a. EKF SLAM b. Fast SLAM Link tham khảo https://github."/>
+## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -164,7 +162,15 @@ a. EKF SLAM b. Fast SLAM Link tham khảo https://github."/>
       </header>
 
       <article class="main"><p>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).</p>
-<!-- raw HTML omitted -->
+<p align="center">
+  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/robot.jpg?raw=true">
+</p>
+## Giới thiệu
+Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. 
+Đặc điểm của SLAM là:
+Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.
+Ước lượng rời rạc: ước lượng mối tương quan giữa vật thể vừa phát hiện và vật thể đã phát hiện.
+Phân loại: Full SLAM và Online SLAM.
 <h2 id="một-số-loại-slam">Một số loại SLAM</h2>
 <p>Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM.
 Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.</p>
@@ -173,7 +179,7 @@ Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướn
 <h2 id="link-tham-khảo">Link tham khảo</h2>
 <p><a href="https://github.com/vatsan/slam">https://github.com/vatsan/slam</a>
 <a href="https://github.com/uoip/stereo_ptam">https://github.com/uoip/stereo_ptam</a></p>
-<!-- raw HTML omitted -->
+<div style="text-align: right"> (Tín Nguyễn) </div>
 </article>
     </section>
 
@@ -242,6 +248,10 @@ Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướn
       
       
       <a class="ui label" href="/blog/tags/cuda/" title="Cuda">Cuda</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
     
       
       

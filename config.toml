@@ -13,6 +13,12 @@ publishdir = "docs/"
 
 # enableRobotsTXT = true
 
+# https://gohugo.io/news/0.60.0-relnotes/
+[ markup ]
+  [ markup . goldmark ]
+    [ markup . goldmark . renderer ]
+      unsafe = true
+      
 [params]
   background = "#f7f7f7"
   # backgroundImage = "/me/background.jpg"

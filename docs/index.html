@@ -141,6 +141,10 @@
     
       
       
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+    
+      
+      
       <a class="ui label" href="/blog/tags/hungary-algorithm/" title="Hungary Algorithm">Hungary Algorithm</a>
     
       
@@ -241,13 +245,48 @@
       <p class="date">Friday, Feb 5, 2021</p>
     </div>
     <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attentionđược dùng trong bài toán Visual Question Answering (VQA)Link paper: Stacked Attention Networks for Image Question Answering (2016)Link code: Code
-Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Visual Question Answering2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảoTuy nhiên, mô hình SAN sẽ lặp lại các bước trên để đưa ra một query đúng hơn.
+      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
+2. Nguyên lý
+3. Phương pháp
+4. Giải thuật
+5. Ứng dụng
     </div>
   </div>
 
   <div class="extra content">
     <div class="author">@&nbsp;Nguyen Thanh Tin</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>4 minutes read</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://ngthanhtin.github.io/blog/buy-me-a-coffe/">
+    
+    <img src="/img/Buy-Me-A-Coffee.jpg" alt="Buy Me A Coffee" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/blog/buy-me-a-coffe/">Buy Me A Coffee</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, Jun 3, 2019</p>
+    </div>
+    <div class="description">
+      <p>如果你喜欢我的开源项目或者它们可以给你带来帮助，可以赏一杯咖啡 ☕ 给我。~</p>
+<p>If you like my open source projects or they can help you. You can buy me a coffee ☕.~</p>
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author"><img class="ui avatar image" src="/me/yy.jpg" />g1eny0ung</div>
     <div class="reading-time">
       <i class="clock icon"></i>1 minute read</div>
   </div>
@@ -271,7 +310,10 @@ Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Vi
       <p class="date">Monday, Jan 1, 0001</p>
     </div>
     <div class="description">
-      Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &ndash;autoremove nvidia-cuda-toolkit sudo apt remove &ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-driverssudo apt-key adv &ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pubsudo bash -c &lsquo;echo &ldquo;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /&rdquo; &gt; /etc/apt/sources.
+      Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
+sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &ndash;autoremove nvidia-* 
+2. Setup the correct CUDA PPA on your system 
+sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &ndash;fetch-keys http://developer.
     </div>
   </div>
 
@@ -301,7 +343,8 @@ Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Vi
     </div>
     <div class="description">
       Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10.
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive  cd ~/torch  bash install-deps 
+Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0
     </div>
   </div>
 
@@ -423,7 +466,8 @@ Node being not-fully expanded means at least one of its children is unvisited, n
       <p class="date">Monday, Jan 1, 0001</p>
     </div>
     <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.
+      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking và Particle Filter  2. Nguyên lý  3.
     </div>
   </div>
 
@@ -452,7 +496,7 @@ Node being not-fully expanded means at least one of its children is unvisited, n
       <p class="date">Monday, Jan 1, 0001</p>
     </div>
     <div class="description">
-      Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA)đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked AttentionLink paper: Bilinear AttentionLink code: Code
+      Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
     </div>
   </div>
 
@@ -483,35 +527,6 @@ Node being not-fully expanded means at least one of its children is unvisited, n
     <div class="description">
       Trong một post gần đây của Tổng thống Trump, ông có viết “to contain the Coronavirus”. Cứ theo nghĩa thông thường thì Google dịch là “chứa đựng”. Còn theo sách “Lexicode” thì lại là “kiềm chế, kiểm soát”.
 Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nhưng rất hay được sử dụng bởi người bản xứ. Sách giải thích rất chi tiết, cặn kẽ, nhiều ví dụ minh hoạ.
-    </div>
-  </div>
-
-  <div class="extra content">
-    <div class="author">@&nbsp;Nguyen Thanh Tin</div>
-    <div class="reading-time">
-      <i class="clock icon"></i>1 minute read</div>
-  </div>
-</article>
-
-  </div>
-  
-  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-    <article class="ui attached segment card dream-card">
-  <a class="image" href="https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/">
-    
-    <img src="https://source.unsplash.com/900x600/?amsterdam" alt="Single Object Tracking with Particle Filter" />
-    
-  </a>
-
-  <div class="content">
-    <h2 class="ui medium header">
-      <a href="/blog/2021-02-04-single-object-tracking-with-pf/">Single Object Tracking with Particle Filter</a>
-    </h2>
-    <div class="meta">
-      <p class="date">Monday, Jan 1, 0001</p>
-    </div>
-    <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.
     </div>
   </div>
 
@@ -600,6 +615,10 @@ Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nh�
       
       
       <a class="ui label" href="/blog/tags/cuda/" title="Cuda">Cuda</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
     
       
       

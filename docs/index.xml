@@ -13,8 +13,23 @@
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attentionđược dùng trong bài toán Visual Question Answering (VQA)Link paper: Stacked Attention Networks for Image Question Answering (2016)Link code: Code
-Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Visual Question Answering2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảoTuy nhiên, mô hình SAN sẽ lặp lại các bước trên để đưa ra một query đúng hơn.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
+2. Nguyên lý
+3. Phương pháp
+4. Giải thuật
+5. Ứng dụng</description>
+    </item>
+    
+    <item>
+      <title>Buy Me A Coffee</title>
+      <link>https://ngthanhtin.github.io/blog/buy-me-a-coffe/</link>
+      <pubDate>Mon, 03 Jun 2019 14:21:26 +0800</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/buy-me-a-coffe/</guid>
+      <description>&lt;p&gt;如果你喜欢我的开源项目或者它们可以给你带来帮助，可以赏一杯咖啡 ☕ 给我。~&lt;/p&gt;
+&lt;p&gt;If you like my open source projects or they can help you. You can buy me a coffee ☕.~&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,7 +38,10 @@ Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Vi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
-      <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit sudo apt remove &amp;ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-driverssudo apt-key adv &amp;ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pubsudo bash -c &amp;lsquo;echo &amp;ldquo;deb http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /&amp;rdquo; &amp;gt; /etc/apt/sources.</description>
+      <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
+sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &amp;ndash;autoremove nvidia-* 
+2. Setup the correct CUDA PPA on your system 
+sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &amp;ndash;fetch-keys http://developer.</description>
     </item>
     
     <item>
@@ -33,7 +51,8 @@ Nội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Vi
       
       <guid>https://ngthanhtin.github.io/blog/2020-10-14-install-torch-with-cuda-10-0/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10.</description>
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive  cd ~/torch  bash install-deps 
+Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0</description>
     </item>
     
     <item>
@@ -75,7 +94,8 @@ Node being not-fully expanded means at least one of its children is unvisited, n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking và Particle Filter  2. Nguyên lý  3.</description>
     </item>
     
     <item>
@@ -84,7 +104,7 @@ Node being not-fully expanded means at least one of its children is unvisited, n
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</guid>
-      <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA)đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked AttentionLink paper: Bilinear AttentionLink code: Code</description>
+      <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code</description>
     </item>
     
     <item>
@@ -103,7 +123,8 @@ Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nh�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking và Particle Filter  2. Nguyên lý  3.</description>
     </item>
     
     <item>
@@ -113,8 +134,7 @@ Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nh�
       
       <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
       <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
-Một số loại SLAM Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM. Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.
-a. EKF SLAM b. Fast SLAM Link tham khảo https://github.</description>
+## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.</description>
     </item>
     
     <item>

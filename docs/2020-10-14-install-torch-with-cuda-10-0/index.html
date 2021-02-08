@@ -22,7 +22,8 @@
 
 <meta property="og:title" content="Install Torch with Cuda 10.0" />
 <meta property="og:description" content="Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10." />
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive  cd ~/torch  bash install-deps 
+Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2020-10-14-install-torch-with-cuda-10-0/" />
 
@@ -32,7 +33,8 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Torch with Cuda 10.0"/>
 <meta name="twitter:description" content="Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10."/>
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &ndash;recursive  cd ~/torch  bash install-deps 
+Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0"/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -149,65 +151,65 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
 
       <article class="main"><p>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để  Torch làm việc với Cuda 10.0</p>
 <h1 id="in-the-terminal-run-the-commands-without-sudo">In the terminal, run the commands WITHOUT sudo</h1>
-<p>git clone <a href="https://github.com/torch/distro.git">https://github.com/torch/distro.git</a> ~/torch &ndash;recursive <!-- raw HTML omitted -->
-cd ~/torch <!-- raw HTML omitted -->
-bash install-deps <!-- raw HTML omitted --></p>
-<p>Ở bước này các bạn có thể  gõ : <!-- raw HTML omitted -->
-./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 <!-- raw HTML omitted --></p>
+<p>git clone <a href="https://github.com/torch/distro.git">https://github.com/torch/distro.git</a> ~/torch &ndash;recursive <br/>
+cd ~/torch <br/>
+bash install-deps <br/></p>
+<p>Ở bước này các bạn có thể  gõ : <br/>
+./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 <br/></p>
 <p>Vì vậy, nếu muốn làm việc với cuda 10.0, bạn sẽ làm thêm những bước sau đây :</p>
 <ol>
 <li>
-<p>Install the latest CMake from github repo (the latest FindCUDA.cmake will be installed) <!-- raw HTML omitted -->
-sudo apt-get purge cmake <!-- raw HTML omitted -->
-git clone <a href="https://github.com/Kitware/CMake.git">https://github.com/Kitware/CMake.git</a> <!-- raw HTML omitted -->
-cd CMake <!-- raw HTML omitted -->
-./bootstrap <!-- raw HTML omitted -->
+<p>Install the latest CMake from github repo (the latest FindCUDA.cmake will be installed) <br/>
+sudo apt-get purge cmake <br/>
+git clone <a href="https://github.com/Kitware/CMake.git">https://github.com/Kitware/CMake.git</a> <br/>
+cd CMake <br/>
+./bootstrap <br/>
 make &amp;&amp; sudo make install</p>
 </li>
 <li>
-<p>Xóa FindCUDA.cmake. <!-- raw HTML omitted -->
-cd ~/torch <!-- raw HTML omitted -->
+<p>Xóa FindCUDA.cmake. <br/>
+cd ~/torch <br/>
 rm -fr cmake/3.6/Modules/FindCUDA*</p>
 </li>
 <li>
-<p>Vá lối (patch) cho cutorch <!-- raw HTML omitted -->
-diff &ndash;git a/lib/THC/THCAtomics.cuh b/lib/THC/THCAtomics.cuh <!-- raw HTML omitted -->
-index 400875c..ccb7a1c 100644 <!-- raw HTML omitted -->
-&mdash; a/lib/THC/THCAtomics.cuh <!-- raw HTML omitted -->
-+++ b/lib/THC/THCAtomics.cuh <!-- raw HTML omitted -->
-@@ -94,6 +94,7 @@ static inline <strong>device</strong> void atomicAdd(long *address, long val) { <!-- raw HTML omitted -->
-} <!-- raw HTML omitted --></p>
+<p>Vá lối (patch) cho cutorch <br/>
+diff &ndash;git a/lib/THC/THCAtomics.cuh b/lib/THC/THCAtomics.cuh <br/>
+index 400875c..ccb7a1c 100644 <br/>
+&mdash; a/lib/THC/THCAtomics.cuh <br/>
++++ b/lib/THC/THCAtomics.cuh <br/>
+@@ -94,6 +94,7 @@ static inline <strong>device</strong> void atomicAdd(long *address, long val) { <br/>
+} <br/></p>
 </li>
 </ol>
-<p>#ifdef CUDA_HALF_TENSOR <!-- raw HTML omitted -->
-+#if !(<strong>CUDA_ARCH</strong> &gt;= 700 || !defined(<strong>CUDA_ARCH</strong>) ) <!-- raw HTML omitted -->
-static inline  <strong>device</strong> void atomicAdd(half *address, half val) { <!-- raw HTML omitted -->
-unsigned int * address_as_ui = <!-- raw HTML omitted -->
-(unsigned int *) ((char *)address - ((size_t)address &amp; 2)); <!-- raw HTML omitted -->
-@@ -117,6 +118,7 @@ static inline  <strong>device</strong> void atomicAdd(half *address, half val) { <!-- raw HTML omitted -->
-} while (assumed != old); <!-- raw HTML omitted -->
-} <!-- raw HTML omitted -->
-#endif <!-- raw HTML omitted -->
-+#endif <!-- raw HTML omitted --></p>
-<p>cd extra/cutorch <!-- raw HTML omitted -->
-cat &gt; atomic.patch <!-- raw HTML omitted -->
-<!-- raw HTML omitted --> <!-- raw HTML omitted -->
-patch -p1 &lt; atomic.patch <!-- raw HTML omitted --></p>
+<p>#ifdef CUDA_HALF_TENSOR <br/>
++#if !(<strong>CUDA_ARCH</strong> &gt;= 700 || !defined(<strong>CUDA_ARCH</strong>) ) <br/>
+static inline  <strong>device</strong> void atomicAdd(half *address, half val) { <br/>
+unsigned int * address_as_ui = <br/>
+(unsigned int *) ((char *)address - ((size_t)address &amp; 2)); <br/>
+@@ -117,6 +118,7 @@ static inline  <strong>device</strong> void atomicAdd(half *address, half val) { <br/>
+} while (assumed != old); <br/>
+} <br/>
+#endif <br/>
++#endif <br/></p>
+<p>cd extra/cutorch <br/>
+cat &gt; atomic.patch <br/>
+<copy and paste the patch> <br/>
+patch -p1 &lt; atomic.patch <br/></p>
 <ol start="4">
 <li>
-<p>Build <!-- raw HTML omitted -->
-./clean.sh <!-- raw HTML omitted -->
-export TORCH_NVCC_FLAGS=&quot;-D__CUDA_NO_HALF_OPERATORS__&quot; <!-- raw HTML omitted -->
+<p>Build <br/>
+./clean.sh <br/>
+export TORCH_NVCC_FLAGS=&quot;-D__CUDA_NO_HALF_OPERATORS__&quot; <br/>
 ./install.sh</p>
 </li>
 <li>
-<p>Install Cudnn <!-- raw HTML omitted -->
-git clone <a href="https://github.com/soumith/cudnn.torch">https://github.com/soumith/cudnn.torch</a> -b R7 <!-- raw HTML omitted -->
-cd cudnn.torch <!-- raw HTML omitted -->
-luarocks make cudnn-scm-1.rockspec <!-- raw HTML omitted --></p>
+<p>Install Cudnn <br/>
+git clone <a href="https://github.com/soumith/cudnn.torch">https://github.com/soumith/cudnn.torch</a> -b R7 <br/>
+cd cudnn.torch <br/>
+luarocks make cudnn-scm-1.rockspec <br/></p>
 </li>
 </ol>
-<p><a href="https://github.com/torch/cutorch/issues/834">Source</a> <!-- raw HTML omitted --></p>
+<p><a href="https://github.com/torch/cutorch/issues/834">Source</a> <br/></p>
 </article>
     </section>
 
@@ -276,6 +278,10 @@ luarocks make cudnn-scm-1.rockspec <!-- raw HTML omitted --></p>
       
       
       <a class="ui label" href="/blog/tags/cuda/" title="Cuda">Cuda</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
     
       
       

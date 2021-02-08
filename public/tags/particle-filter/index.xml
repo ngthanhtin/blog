@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>particle-filter on Hugo Theme Dream</title>
-    <link>https://example.com/tags/particle-filter/</link>
+    <link>https://ngthanhtin.github.io/blog/tags/particle-filter/</link>
     <description>Recent content in particle-filter on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/tags/particle-filter/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/tags/particle-filter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Single Object Tracking with Particle Filter</title>
-      <link>https://example.com/2021-02-04-single-object-tracking-with-pf/</link>
+      <link>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2021-02-04-single-object-tracking-with-pf/</guid>
+      <guid>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Trackingsử dụng Particle FilterLink paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMUNội dung chính sẽ bao gồm các phần sau:1. Giới thiệu bài toàn Single Object Tracking và Particle Filter2. Nguyên lý3. Phương pháp4. Giải thuật5. Ứng dụng6. Tham khảo3.</description>
     </item>
     

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>korea on Hugo Theme Dream</title>
-    <link>https://example.com/tags/korea/</link>
+    <link>https://ngthanhtin.github.io/blog/tags/korea/</link>
     <description>Recent content in korea on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/tags/korea/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/tags/korea/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mùa đông đầu tiên tại Hàn Quốc 2020</title>
-      <link>https://example.com/2021-02-02-bi-tri-attention/</link>
+      <link>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/2021-02-02-bi-tri-attention/</guid>
+      <guid>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</guid>
       <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA)đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked AttentionLink paper: Bilinear AttentionLink code: Code</description>
     </item>
     

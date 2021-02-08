@@ -1,9 +1,8 @@
-baseurl = "https://ngthanhtin.github.io/blog/"
+baseurl = "https://ngthanhtin.github.io/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Hugo Theme Dream"
 theme = "hugo-theme-dream"
-publishDir = "docs"
 
 # copyright = ""
 
@@ -26,11 +25,11 @@ publishDir = "docs"
   # darkNav = true
   # dark404 = true
 
-  author = "Nguyen Thanh Tin"
+  author = "Yue Yang"
   # description = ""
   avatar = "/img/avatar.jpg"
   # headerTitle = ""
-  motto = "luffy"
+  motto = "Motto"
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
 
@@ -44,7 +43,7 @@ publishDir = "docs"
   # LEANCLOUD_APP_ID = ""
   # LEANCLOUD_APP_KEY = ""
 
-  email = "ngthanhtinqn@gmail.com"
+  email = "g1enyy0ung@gmail.com"
   # twitter = ""
   # facebook = ""
   # instagram = ""

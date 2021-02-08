@@ -1,8 +1,9 @@
-baseurl = "https://example.com"
+baseurl = "https://ngthanhtin.github.io/tinai/"
 languageCode = "en"
 defaultContentLanguage = "en"
 title = "Hugo Theme Dream"
 theme = "hugo-theme-dream"
+publishDir = "docs"
 
 # copyright = ""
 

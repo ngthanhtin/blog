@@ -2,11 +2,12 @@
 layout: post
 title: Install Torch with Cuda 10.0
 subtitle: Nvidia
+cover: "/blog/img/torch_cuda/torch_logo.png"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [cuda, nvidia, ubuntu]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
+
 ---
 Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để  Torch làm việc với Cuda 10.0
 # In the terminal, run the commands WITHOUT sudo

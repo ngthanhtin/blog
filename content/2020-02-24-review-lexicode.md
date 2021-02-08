@@ -1,12 +1,11 @@
 ---
-layout: post
 title: Review sách Lexicode
+cover: "/blog/img/english/lexicode.jpg"
 subtitle: Sách Lexicode của thầy Dương Chí Vinh
 gh-repo: ngthanhtin/beautiful-jekyll
-gh-badge: [ielts]
-tags: [book, ielts, review]
+tags: [book, ielts, english, review]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
+
 ---
 
 <p align="center">

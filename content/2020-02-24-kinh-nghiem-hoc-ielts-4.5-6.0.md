@@ -1,12 +1,10 @@
 ---
-layout: post
 title: Kinh nghiệm ôn thi IELTS từ 4.5 lên 6.0
-subtitle: IELTS
+cover : "/blog/img/english/diem_ielts.jpg"
 gh-repo: ngthanhtin/beautiful-jekyll
 gh-badge: [ielts]
-tags: [ielts]
+tags: [ielts, english]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
 ---
 
 Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Instruction Navigation
-subtitle: Attention
+subtitle: Navigation using Textual Instruction
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [rl, navigation, attention, nlp]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
+cover: "/blog/img/instruction_navigation/example.png"
 ---
 
 ### Resource

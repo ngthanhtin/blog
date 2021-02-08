@@ -2,11 +2,11 @@
 layout: post
 title: Install Cuda on Ubuntu 18.04
 subtitle: Nvidia
+cover: "/blog/img/cuda_ubuntu/cuda_ubuntu.jpeg"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [cuda, nvidia, ubuntu]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
 
 ---
 Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04

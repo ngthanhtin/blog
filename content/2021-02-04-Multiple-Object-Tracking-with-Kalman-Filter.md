@@ -6,7 +6,7 @@ gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [multiple-object-tracking, kalman-filter, hungary-algorithm]
 comments: true
-cover: "https://source.unsplash.com/900x600/?amsterdam"
+cover: "/blog/img/mot/mot.png"
 ---
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Single Object Tracking</b> sử dụng <b>Particle Filter</b><br/>
 Link paper: [A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU](https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Framework_of_Moving_Object_Tracking.pdf)<br/>

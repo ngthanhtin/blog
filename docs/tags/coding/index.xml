@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coding on Hugo Theme Dream</title>
-    <link>https://ngthanhtin.github.io/tags/coding/</link>
+    <link>https://ngthanhtin.github.io/blog/tags/coding/</link>
     <description>Recent content in coding on Hugo Theme Dream</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://ngthanhtin.github.io/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SLAM</title>
-      <link>https://ngthanhtin.github.io/2020-02-24-slam/</link>
+      <link>https://ngthanhtin.github.io/blog/2020-02-24-slam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/2020-02-24-slam/</guid>
+      <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
       <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
 Một số loại SLAM Full SLAM: Tính posterior của toàn bộ lộ trình. Hướng tiếp cận: Graph SLAM, Fast SLAM. Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướng tiếp cận: EKF SLAM, SEIF SLAM.
 a. EKF SLAM b. Fast SLAM Link tham khảo https://github.</description>
@@ -19,10 +19,10 @@ a. EKF SLAM b. Fast SLAM Link tham khảo https://github.</description>
     
     <item>
       <title>Stereo Parallel and Tracking</title>
-      <link>https://ngthanhtin.github.io/2020-02-24-ptam/</link>
+      <link>https://ngthanhtin.github.io/blog/2020-02-24-ptam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/2020-02-24-ptam/</guid>
+      <guid>https://ngthanhtin.github.io/blog/2020-02-24-ptam/</guid>
       <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán visual odometry.
 Installation g2o: https://github.com/uoip/g2opy
 Pangolin: https://github.com/uoip/pangolin opencv, numpy Python 3.6+ Ubuntu 16.04

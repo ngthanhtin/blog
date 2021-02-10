@@ -5,6 +5,7 @@ subtitle: Scholarship
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [scholarship]
 tags: [scholarship, korea]
+cover: "/blog/img/scholarship/scholarship.jpg"
 comments: true
 
 ---

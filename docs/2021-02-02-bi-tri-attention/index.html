@@ -21,7 +21,8 @@
 
 
 <meta property="og:title" content="Bilinear (Trilinear) Attention" />
-<meta property="og:description" content="Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code" />
+<meta property="og:description" content="Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
+1. Introduction 6. Tham khảo Fukui, Akira, et al. &ldquo;Multimodal compact bilinear pooling for visual question answering and visual grounding." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/" />
 
@@ -30,7 +31,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Bilinear (Trilinear) Attention"/>
-<meta name="twitter:description" content="Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code"/>
+<meta name="twitter:description" content="Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
+1. Introduction 6. Tham khảo Fukui, Akira, et al. &ldquo;Multimodal compact bilinear pooling for visual question answering and visual grounding."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -116,6 +118,15 @@
   <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
     
     
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a></li>
+    <li><a href="#6-tham-khảo">6. Tham khảo</a></li>
+  </ul>
+</nav>
+    </div>
+    
     <div class="ui segment actions">
       <button
         class="ui circular icon button save-as-image"
@@ -157,10 +168,14 @@
         </h1>
       </header>
 
-      <article class="main"><p>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán <b>Visual Question Answering (VQA)</b> đó là <b>Bi-Attention (Tri-Attention)</b>, ở bài trước mình có đề cập tới một kĩ thuật khác gọi là <b><a href="https://ngthanhtin.github.io/2021-02-02-Stacked-Attention/">Stacked Attention</a></b><br/>
+      <article class="main"><p>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán <b>Visual Question Answering (VQA)</b> đó là <b>Bi-Attention (Tri-Attention)</b>, ở bài trước mình có đề cập tới một kĩ thuật khác gọi là <b><a href="https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/">Stacked Attention</a></b><br/>
 Link paper: <a href="https://arxiv.org/abs/1805.07932">Bilinear Attention</a><br/>
 Link code: <a href="https://github.com/jnhwkim/ban-vqa">Code</a><br/></p>
-</article>
+<h2 id="1-introduction">1. Introduction</h2>
+<h2 id="6-tham-khảo">6. Tham khảo</h2>
+<p>Fukui, Akira, et al. &ldquo;Multimodal compact bilinear pooling for visual question answering and visual grounding.&rdquo; arXiv preprint arXiv:1606.01847 (2016).<br/>
+Kim, Jin-Hwa, et al. &ldquo;Hadamard product for low-rank bilinear pooling.&rdquo; arXiv preprint arXiv:1610.04325 (2016).<br/></p>
+<div style="text-align: right"> (Tín Nguyễn) </div></article>
     </section>
 
     

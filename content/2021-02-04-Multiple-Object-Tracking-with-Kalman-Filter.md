@@ -20,8 +20,9 @@ Nội dung chính sẽ bao gồm các phần sau:<br/>
 * <a href="#3.1 Object Detection">3.1 Object Detection</a> <br/>
 * <a href="#3.2 Kalman Filter">3.2 Kalman Filter</a> <br/>
 * <a href="#3.3 Hungary Algorithm">3.3 Hungary Algorithm</a> <br/>
-<a href="#4. Ứng dụng">5. Ứng dụng</a> <br/>
-<a href="#5. Tham khảo">6. Tham khảo</a> <br/>
+
+<a href="#4. Ứng dụng">4. Ứng dụng</a> <br/>
+<a href="#5. Tham khảo">5. Tham khảo</a> <br/>
 
 <section id="1. Giới thiệu bài toán Multiple Object Tracking">
 <b>1. Giới thiệu bài toán Multiple Object Tracking</b>

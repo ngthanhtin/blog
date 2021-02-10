@@ -70,7 +70,7 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/</guid>
-      <description>Resource </description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để tác nhân (agent) có thể di chuyển tới một vị trí hoặc một đối tượng nào đó (target).</description>
     </item>
     
     <item>

@@ -38,7 +38,8 @@ Nội dung chính sẽ bao gồm các phần sau:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để tác nhân (agent) có thể di chuyển tới một vị trí hoặc một đối tượng nào đó (target).</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp</description>
     </item>
     
   </channel>

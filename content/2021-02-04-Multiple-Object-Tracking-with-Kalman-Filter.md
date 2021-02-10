@@ -15,6 +15,9 @@ Link code: [Code](https://github.com/ngthanhtin/Muiltiple-Object-Tracking)
 
 Nội dung chính sẽ bao gồm các phần sau:<br/>
 <a href="#1. Giới thiệu bài toán Multiple Object Tracking">1. Giới thiệu bài toàn Multiple Object Tracking</a> <br/>
+<p align="center">
+  <img src="/blog/img/mot/mot.png">
+</p>
 <a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
 <a href="#3. Phương pháp">3. Phương pháp</a> <br/>
 * <a href="#3.1 Object Detection">3.1 Object Detection</a> <br/>

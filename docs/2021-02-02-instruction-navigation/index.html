@@ -21,7 +21,8 @@
 
 
 <meta property="og:title" content="Instruction Navigation" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để tác nhân (agent) có thể di chuyển tới một vị trí hoặc một đối tượng nào đó (target)." />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/" />
 
@@ -30,7 +31,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Instruction Navigation"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để tác nhân (agent) có thể di chuyển tới một vị trí hoặc một đối tượng nào đó (target)."/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp"/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -158,8 +160,6 @@
       </header>
 
       <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Instruction Navigation</b> sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải).<br/>
-Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để  <b>tác nhân (agent)</b> có thể di chuyển tới một vị trí hoặc một đối tượng nào đó <b>(target)</b>. Thông thường, khi giải quyết bài toán này bằng RL, agent sẽ chỉ nhận được observation là image từ những gì nó thấy được trong environment, image này có thể là RGB image, depth image, segmentation image, etc hoặc observation cũng có thể là image của target.<br/>
-Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input là một câu <b>instruction</b> và agent sẽ tìm cách để đi tới target được đề cập trong câu instruction đó.<br/>
 Link paper: <a href="https://arxiv.org/abs/1706.07230">Paper</a><br/>
 Link code: <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a></p>
 <p>Nội dung chính sẽ bao gồm các phần sau:<br/>
@@ -177,6 +177,11 @@ Link code: <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a
 <section id="1. Giới thiệu bài toán Instruction Navigation">
 <b>1. Giới thiệu bài toán Multiple Object Tracking</b>
 </section>
+Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để  <b>tác nhân (agent)</b> có thể di chuyển tới một vị trí hoặc một đối tượng nào đó <b>(target)</b>. Thông thường, khi giải quyết bài toán này bằng RL, agent sẽ chỉ nhận được observation là image từ những gì nó thấy được trong environment, image này có thể là RGB image, depth image, segmentation image, etc hoặc observation cũng có thể là image của target.<br/>
+Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input là một câu <b>instruction</b> và agent sẽ tìm cách để đi tới target được đề cập trong câu instruction đó.<br/>
+<p align="center">
+  <img src="/blog/img/instruction_navigation/instruction_robot_navigation.gif">
+</p>
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
 </section>

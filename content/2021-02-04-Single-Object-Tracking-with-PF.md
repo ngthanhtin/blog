@@ -13,30 +13,28 @@ Link paper: [A New Framework of Moving Object Tracking based on Object Detection
 <!-- Link code: [Code](Nope) -->
 
 Nội dung chính sẽ bao gồm các phần sau:<br/>
-<a href="#1. Giới thiệu bài toán Single Object Tracking và Particle Filter">1. Giới thiệu bài toàn Single Object Tracking và Particle Filter</a> <br/>
+<a href="#1. Giới thiệu bài toán Single Object Tracking">1. Giới thiệu bài toàn Single Object Tracking</a> <br/>
 <a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
 <a href="#3. Phương pháp">3. Phương pháp</a> <br/>
 <a href="#4. Giải thuật">4. Giải thuật</a> <br/>
 <a href="#5. Ứng dụng">5. Ứng dụng</a> <br/>
 <a href="#6. Tham khảo">6. Tham khảo</a> <br/>
 
-<section id="1. Giới thiệu bài toán Single Object Tracking và Particle Filter">
-<b>1. Giới thiệu bài toán Single Object Tracking và Particle Filter</b>
+<section id="1. Giới thiệu bài toán Single Object Tracking">
+<b>1. Giới thiệu bài toán Single Object Tracking</b>
 </section>
-
+<p align="center">
+  <img src="/blog/img/sot/sot.png">
+</p>
 
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
 </section>
-
+Particle Filter
 
 <section id="3. Phương pháp">
 <b>3. Phương pháp</b>
 </section>
-
-<b>3.1 Image Model</b><br/>
-
-<b>3.2 Question Model</b><br/>
 
 
 <section id="4. Giải thuật">

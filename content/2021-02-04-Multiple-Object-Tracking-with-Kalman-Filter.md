@@ -17,9 +17,9 @@ Nội dung chính sẽ bao gồm các phần sau:<br/>
 <a href="#1. Giới thiệu bài toán Multiple Object Tracking">1. Giới thiệu bài toàn Multiple Object Tracking</a> <br/>
 <a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
 <a href="#3. Phương pháp">3. Phương pháp</a> <br/>
-<a href="#3.2 Object Detection">3.1 Object Detection</a> <br/>
-<a href="#3.2 Kalman Filter">3.2 Kalman Filter</a> <br/>
-<a href="#3.3 Hungary Algorithm">3.3 Hungary Algorithm</a> <br/>
+* <a href="#3.1 Object Detection">3.1 Object Detection</a> <br/>
+* <a href="#3.2 Kalman Filter">3.2 Kalman Filter</a> <br/>
+* <a href="#3.3 Hungary Algorithm">3.3 Hungary Algorithm</a> <br/>
 <a href="#4. Ứng dụng">5. Ứng dụng</a> <br/>
 <a href="#5. Tham khảo">6. Tham khảo</a> <br/>
 
@@ -37,11 +37,11 @@ Nội dung chính sẽ bao gồm các phần sau:<br/>
 <b>3. Phương pháp</b>
 </section>
 
-<b>3.1 Object Detection</b><br/>
+* <b>3.1 Object Detection</b><br/>
 
-<b>3.2 Kalman Filter</b><br/>
+* <b>3.2 Kalman Filter</b><br/>
 
-<b>3.3 Hungary Algorithm</b><br/>
+* <b>3.3 Hungary Algorithm</b><br/>
 
 
 <section id="4. Ứng dụng">

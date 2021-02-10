@@ -21,8 +21,7 @@
 
 
 <meta property="og:title" content="Multiple Object Tracking with Kalman Filter and Hungary Algorithm" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking và Particle Filter  2. Nguyên lý  3." />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/" />
 
@@ -31,8 +30,7 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn S
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Multiple Object Tracking with Kalman Filter and Hungary Algorithm"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking và Particle Filter  2. Nguyên lý  3."/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -159,18 +157,21 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn S
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Single Object Tracking</b> sử dụng <b>Particle Filter</b><br/>
-Link paper: <a href="https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Framework_of_Moving_Object_Tracking.pdf">A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU</a><br/></p>
-<!-- Link code: [Code](Nope) -->
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Multiple Object Tracking</b> sử dụng <b>Kalman Filter</b> để theo vết đối tượng
+và <b>thuật toán Hungary</b> để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất.<br/>
+Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp <b>trừ nền (Background Subtraction)</b> để detect đối tượng động. Các bạn có thể thay thế bằng các thuật toán object detection khác như YOLO, Faster RCNN, Centernet, etc.<br/>
+Link code: <a href="https://github.com/ngthanhtin/Muiltiple-Object-Tracking">Code</a></p>
 <p>Nội dung chính sẽ bao gồm các phần sau:<br/>
-<a href="#1. Giới thiệu bài toán Single Object Tracking và Particle Filter">1. Giới thiệu bài toàn Single Object Tracking và Particle Filter</a> <br/>
+<a href="#1. Giới thiệu bài toán Multiple Object Tracking">1. Giới thiệu bài toàn Multiple Object Tracking</a> <br/>
 <a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
 <a href="#3. Phương pháp">3. Phương pháp</a> <br/>
-<a href="#4. Giải thuật">4. Giải thuật</a> <br/>
-<a href="#5. Ứng dụng">5. Ứng dụng</a> <br/>
-<a href="#6. Tham khảo">6. Tham khảo</a> <br/></p>
-<section id="1. Giới thiệu bài toán Single Object Tracking và Particle Filter">
-<b>1. Giới thiệu bài toán Single Object Tracking và Particle Filter</b>
+<a href="#3.2 Object Detection">3.1 Object Detection</a> <br/>
+<a href="#3.2 Kalman Filter">3.2 Kalman Filter</a> <br/>
+<a href="#3.3 Hungary Algorithm">3.3 Hungary Algorithm</a> <br/>
+<a href="#4. Ứng dụng">5. Ứng dụng</a> <br/>
+<a href="#5. Tham khảo">6. Tham khảo</a> <br/></p>
+<section id="1. Giới thiệu bài toán Multiple Object Tracking">
+<b>1. Giới thiệu bài toán Multiple Object Tracking</b>
 </section>
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
@@ -178,19 +179,17 @@ Link paper: <a href="https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Fram
 <section id="3. Phương pháp">
 <b>3. Phương pháp</b>
 </section>
-<p><b>3.1 Image Model</b><br/></p>
-<p><b>3.2 Question Model</b><br/></p>
-<section id="4. Giải thuật">
-<b>4. Giải thuật</b>
-</section>
-Update...
-<section id="5. Ứng dụng">
+<p><b>3.1 Object Detection</b><br/></p>
+<p><b>3.2 Kalman Filter</b><br/></p>
+<p><b>3.3 Hungary Algorithm</b><br/></p>
+<section id="4. Ứng dụng">
 <b>5. Ứng dụng</b>
 </section>
-<section id="6. Tham khảo">
+<section id="5. Tham khảo">
 <b>6. Tham khảo</b>
 </section>
-Ly Quoc Ngoc, Nguyen Thanh Tin, Le Bao Tuan, International Journal of Advanced Computer Science and Applications (SAI), 14, April, 2020</article>
+[Code](https://github.com/ngthanhtin/Muiltiple-Object-Tracking)<br/>
+<div style="text-align: right"> (Tín Nguyễn) </div></article>
     </section>
 
     

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>loss function on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/tags/loss-function/</link>
+    <description>Recent content in loss function on Tin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/loss-function/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it</title>
+      <link>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Task
+2. Cross-Entropy Loss
+3. Categorical Cross-Entropy Loss
+4. Binary Cross-Entropy Loss
+5. Focal Loss
+6. Tham khảo
+1. Task  2. Cross-Entropy Loss  3. Categorical Cross-Entropy Loss  4. Binary Cross-Entropy Loss  Update.</description>
+    </item>
+    
+  </channel>
+</rss>

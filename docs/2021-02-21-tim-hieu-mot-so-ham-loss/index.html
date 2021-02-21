@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Buy Me A Coffee | Tin&#39;s Blog</title>
+    <title>Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it | Tin&#39;s Blog</title>
 
     
 
@@ -17,21 +17,37 @@
 
 <meta name="generator" content="Hugo 0.80.0" />
 
-<link rel="canonical" href="https://ngthanhtin.github.io/blog/buy-me-a-coffe/" />
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/" />
 
 
-<meta property="og:title" content="Buy Me A Coffee" />
-<meta property="og:description" content="If you like my open source projects or they can help you. You can buy me a coffee ☕.~" />
+<meta property="og:title" content="Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it" />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Task
+2. Cross-Entropy Loss
+3. Categorical Cross-Entropy Loss
+4. Binary Cross-Entropy Loss
+5. Focal Loss
+6. Tham khảo
+1. Task  2. Cross-Entropy Loss  3. Categorical Cross-Entropy Loss  4. Binary Cross-Entropy Loss  Update." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/buy-me-a-coffe/" />
-<meta property="article:published_time" content="2021-02-06T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-02-06T00:00:00+00:00" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/" />
+<meta property="article:published_time" content="2021-02-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-02-21T00:00:00+00:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Buy Me A Coffee"/>
-<meta name="twitter:description" content="If you like my open source projects or they can help you. You can buy me a coffee ☕.~"/>
+<meta name="twitter:title" content="Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it"/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Task
+2. Cross-Entropy Loss
+3. Categorical Cross-Entropy Loss
+4. Binary Cross-Entropy Loss
+5. Focal Loss
+6. Tham khảo
+1. Task  2. Cross-Entropy Loss  3. Categorical Cross-Entropy Loss  4. Binary Cross-Entropy Loss  Update."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -117,20 +133,6 @@
   <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
     
     
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#ways-to-give">(Ways to Give）</a>
-      <ul>
-        <li><a href="#paypal">PayPal</a></li>
-        <li><a href="#patreon">Patreon</a></li>
-      </ul>
-    </li>
-    <li><a href="#donation-list">Donation List</a></li>
-  </ul>
-</nav>
-    </div>
-    
     <div class="ui segment actions">
       <button
         class="ui circular icon button save-as-image"
@@ -139,10 +141,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=Buy%20Me%20A%20Coffee&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2fbuy-me-a-coffe%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=T%c3%acm%20hi%e1%bb%83u%20Categorical%20Cross-Entropy%20Loss%2c%20Binary%20Cross-Entropy%20Loss%2c%20Softmax%20Loss%2c%20Logistic%20Loss%2c%20Focal%20Loss%2c%20you%20name%20it&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2f2021-02-21-tim-hieu-mot-so-ham-loss%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2fbuy-me-a-coffe%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2f2021-02-21-tim-hieu-mot-so-ham-loss%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -152,42 +154,56 @@
     
     <section class="ui top attached segment">
       <header>
-        <h1 class="ui large header">Buy Me A Coffee<div class="sub header">
+        <h1 class="ui large header">Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it<div class="sub header">
             @
             
-              
-                nguyen thanh tin
-              
+              Nguyen Thanh Tin
             
 
             | 
-                Saturday, Feb 6, 2021
+                Sunday, Feb 21, 2021
               
 
             | 1 minutes read
 
             | Update at
               
-                Saturday, Feb 6, 2021
+                Sunday, Feb 21, 2021
               
           </div>
         </h1>
       </header>
 
-      <article class="main"><p>If you like my open source projects or they can help you. You can buy me a coffee ☕.~</p>
-<h2 id="ways-to-give">(Ways to Give）</h2>
-<h3 id="paypal">PayPal</h3>
-<!-- [https://paypal.me/ngthanhtin](https://paypal.me/g1eny0ung) -->
-<p>I haven&rsquo;t had an account yet.</p>
-<h3 id="patreon">Patreon</h3>
-<!-- <a href="https://www.patreon.com/bePatron?u=42327574" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script> -->
-<blockquote>
-<p>It is better to attach some information or leave a message so that I can record the donation 📝, thank you very much 🙏.</p>
-</blockquote>
-<h2 id="donation-list">Donation List</h2>
-<ul>
-<li>PayPal</li>
-</ul></article>
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số  hàm loss cho các bạn như <b>Cross entropy loss</b>, <b>binary cross-entropy loss</b>, etc<br/></p>
+<p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
+<p><a href="#1. Task">1. Task</a></p>
+<p><a href="#2. Cross-Entropy Loss">2. Cross-Entropy Loss</a></p>
+<p><a href="#3. Categorical Cross-Entropy Loss">3. Categorical Cross-Entropy Loss</a></p>
+<p><a href="#4. Binary Cross-Entropy Loss">4. Binary Cross-Entropy Loss</a></p>
+<p><a href="#5. Focal Loss">5. Focal Loss</a></p>
+<p><a href="#6. Tham khảo">6. Tham khảo</a></p>
+<section id="1. Task">
+<b>1. Task</b>
+</section>
+<section id="2. Cross-Entropy Loss">
+<b>2. Cross-Entropy Loss</b>
+</section>
+<section id="3. Categorical Cross-Entropy Loss">
+<b>3. Categorical Cross-Entropy Loss</b>
+</section>
+<section id="4. Binary Cross-Entropy Loss">
+<b>4. Binary Cross-Entropy Loss</b>
+</section>
+Update...
+<section id="5. Focal Loss">
+<b>5. Focal Loss</b>
+</section>
+<br/>
+<section id="6. Tham khảo">
+<b>6. Tham khảo</b>
+</section>
+<div style="text-align: right"> (Tín Nguyễn) </div>
+</article>
     </section>
 
     

@@ -1,5 +1,5 @@
 ---
-title : "Label Smoothing"
+title : "My Career (1)"
 cover : "/blog/img/con_duong_su_nghiep/career.jpeg"
 date : "2021-02-21"
 tags : 

@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>label smoothing</title>
+      <link>https://ngthanhtin.github.io/blog/tags/label-smoothing/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/label-smoothing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>loss function</title>
       <link>https://ngthanhtin.github.io/blog/tags/loss-function/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>

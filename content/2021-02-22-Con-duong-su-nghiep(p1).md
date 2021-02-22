@@ -1,6 +1,6 @@
 ---
 title : "Label Smoothing"
-cover : "/blog/img/label_smoothing/label_smoothing.png"
+cover : "/blog/img/con_duong_su_nghiep/career.jpeg"
 date : "2021-02-21"
 tags : 
   - "loss function"

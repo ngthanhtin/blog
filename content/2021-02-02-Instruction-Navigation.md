@@ -25,7 +25,7 @@ Nội dung chính sẽ bao gồm các phần sau:<br/>
 <a href="#5. Tham khảo">5. Tham khảo</a> <br/>
 
 <section id="1. Giới thiệu bài toán Instruction Navigation">
-<b>1. Giới thiệu bài toán Multiple Object Tracking</b>
+<b>1. Giới thiệu bài toán Instruction Navigation</b>
 </section>
 Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để  <b>tác nhân (agent)</b> có thể di chuyển tới một vị trí hoặc một đối tượng nào đó <b>(target)</b>. Thông thường, khi giải quyết bài toán này bằng RL, agent sẽ chỉ nhận được observation là image từ những gì nó thấy được trong environment, image này có thể là RGB image, depth image, segmentation image, etc hoặc observation cũng có thể là image của target.<br/>
 Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input là một câu <b>instruction</b> và agent sẽ tìm cách để đi tới target được đề cập trong câu instruction đó.<br/>

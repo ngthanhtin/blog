@@ -12,12 +12,12 @@ Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn m�
 
 Nội dung chính sẽ bao gồm các phần sau: <br/>
 
-# 1. Giới thiệu
+### 1. Giới thiệu
 
-# 2. Label smoothing
+### 2. Label smoothing
 
-# 3. Code
+### 3. Code
 
-# 4. Tham khảo
+### 4. Tham khảo
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

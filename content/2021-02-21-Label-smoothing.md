@@ -83,7 +83,7 @@ A: Phần lớn thực nghiệm sử dụng uniform distribution nhưng bạn c�
 ### 4. Tham khảo
 https://www.linkedin.com/pulse/label-smoothing-solving-overfitting-overconfidence-code-sobh-phd/?fbclid=IwAR2RWv0x5ZWBfckB9336VVvuHzxrix8p6UXSu1JiKZkAkJGMsBtCsPdDux8 <br/>
 https://www.kaggle.com/khyeh0719/pytorch-efficientnet-baseline-train-amp-aug/comments <br/>
-https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06
-
+https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06<br/>
+https://www.kaggle.com/c/siim-isic-melanoma-classification/discussion/173733<br/>
 <div style="text-align: right"> (Tín Nguyễn) </div>
 

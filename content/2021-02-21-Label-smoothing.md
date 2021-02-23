@@ -44,7 +44,7 @@ trong đó y là label distribution. Cụ thể: <br/>
 One-hot encoded labels encourages largest possible logit gaps to be fed into the softmax function. Intuitively, large logit gaps combined with the bounded gradient will make the model less adaptive and too confident about its predictions.
 In contrast, smoothed labels encourages small logit gaps, as demonstrated by the example below. It is shown in [3] that this results in better model calibration and prevents overconfident predictions.
 
-## A Concrete Example
+#### A Concrete Example
 Suppose we have K = 3 classes, and our label belongs to the 1st class. Let [a, b, c] be our logit vector.
 If we do not use label smoothing, the label vector is the one-hot encoded vector [1, 0, 0]. Our model will make a ≫ b and a ≫ c. For example, applying softmax to the logit vector [10, 0, 0] gives [0.9999, 0, 0] rounded to 4 decimal places.
 If we use label smoothing with α = 0.1, the smoothed label vector ≈ [0.9333, 0.0333, 0.0333]. The logit vector [3.3322, 0, 0] approximates the smoothed label vector to 4 decimal places after softmax, and it has a smaller gap. This is why we call label smoothing a regularization technique as it restrains the largest logit from becoming much bigger than the rest.

@@ -186,28 +186,25 @@ Nội dung chính sẽ bao gồm các phần sau:
 <h4 id="12-overconfidence-là-gì">1.2 Overconfidence là gì?</h4>
 <p>Overconfidence, là khi model đưa ra kết quả quá tự tin trong khi accuracy không thực sự như vậy. Có rất ít phương pháp để giải quyết vấn đề này.</p>
 <h4 id="13-calibration-là-gì">1.3 Calibration là gì?</h4>
-<p>A classification model được gọi là calibration khi predicted probabilities của outcomes phản ánh đúng accuracy của model. Ví dụ, ta có 100 mẫu của dataset, mỗi mẫu có predicted probability là 0.9. Nếu model được calibrated, 90 mẫu sẽ được phân loại đúng.
-Model calibration quan trọng trong việc:
-<b>model interpretability and reliability</b><br/>
-<b>deciding decision thresholds for downstream applications</b><br/>
-<b>integrating our model into an ensemble or a machine learning pipeline</b><br/>
-An overconfident model is not calibrated and its predicted probabilities are consistently higher than the accuracy. For example, it may predict 0.9 for inputs where the accuracy is only 0.6. Notice that models with small test errors can still be overconfident, and therefore can benefit from label smoothing.</p>
+<p>A classification model được gọi là calibration khi predicted probabilities của outcomes phản ánh đúng accuracy của model. Ví dụ, ta có 100 mẫu của dataset, mỗi mẫu có predicted probability là 0.9. Nếu model được calibrated, 90 mẫu sẽ được phân loại đúng.</p>
+<p>Một overconfident model là khi predicted probabilities của nó cao hơn accuracy. Ví dụ, model có thể dự đoán xác xuất là 0.9 cho inputs tuy nhiên accuracy chỉ có 0.6.</p>
 <h4 id="14-công-thức-của-label-smoothing">1.4 Công thức của Label Smoothing</h4>
-<p>Label smoothing replaces one-hot encoded label vector y_hot with a mixture of y_hot and the uniform distribution:
-y_ls = (1 - α) * y_hot + α / K
-where K is the number of label classes, and α is a hyperparameter that determines the amount of smoothing. If α = 0, we obtain the original one-hot encoded y_hot. If α = 1, we get the uniform distribution.</p>
+<p>Label smoothing thay thế one-hot encoding label theo phân phối chuẩn như sau:<br/>
+y_ls = (1 - α) * y_hot + α / K <br/>
+Trong đó, K là số lượng classes và α là một hyperparameter định nghĩa smoothing. Nếu α = 0, công thức quay trở lại thành one-hot encoding. Nếu α = 1, Chúng ta có được phân phối chuẩn uniform.</p>
 <h4 id="15-ý-nghĩa-đằng-sau-label-smoothing">1.5 Ý nghĩa đằng sau Label Smoothing</h4>
 <p>Label smoothing được sử dụng khi loss function là cross-entropy. Đạo hàm của cross entropy loss function đối với logits:<br/>
 ∇CE = p - y = softmax(z) - y <br/>
 trong đó y là label distribution. Cụ thể: <br/>
 <b> Gradient descent sẽ làm cho p gần với y.</b><br/>
 <b>The gradient giới hạn trong đoạn [-1, 1].</b><br/></p>
-<p>One-hot encoded labels encourages largest possible logit gaps to be fed into the softmax function. Intuitively, large logit gaps combined with the bounded gradient will make the model less adaptive and too confident about its predictions.
-In contrast, smoothed labels encourages small logit gaps, as demonstrated by the example below. It is shown in [3] that this results in better model calibration and prevents overconfident predictions.</p>
+<p>One-hot encoded labels cho phép khoảng cách giữa logit sau khi đi qua softmax lớn hơn nhiều so với các logit của các classes còn lại. Và điều này sẽ làm cho model có ít khả năng adaptive và bị over-confident về predictions của nó. <br/>
+Ngược lại, smoothed labels sẽ cho ra khoảng cách nhỏ hơn giữa các logit của các classes, giúp giảm thiểu over-confidence.</p>
 <h4 id="16-ví-dụ">1.6 Ví dụ</h4>
-<p>Suppose we have K = 3 classes, and our label belongs to the 1st class. Let [a, b, c] be our logit vector.
-If we do not use label smoothing, the label vector is the one-hot encoded vector [1, 0, 0]. Our model will make a ≫ b and a ≫ c. For example, applying softmax to the logit vector [10, 0, 0] gives [0.9999, 0, 0] rounded to 4 decimal places.
-If we use label smoothing with α = 0.1, the smoothed label vector ≈ [0.9333, 0.0333, 0.0333]. The logit vector [3.3322, 0, 0] approximates the smoothed label vector to 4 decimal places after softmax, and it has a smaller gap. This is why we call label smoothing a regularization technique as it restrains the largest logit from becoming much bigger than the rest.</p>
+<p>Giả sử có K = 3 classes, và label của mẫu ta đang xét thuộc về 1st class. <br/>
+Nếu không dùng label smoothing, label vector sẽ là  one-hot encoded vector [1, 0, 0]. Model của chúng ta sẽ làm cho a ≫ b và a ≫ c. <br/>
+Ví dụ, đưa vector này qua softmax sẽ cho ra [0.9999, 0, 0]. Nếu dùng label smoothing với α = 0.1, ta sẽ có smoothed label vector ≈ [0.9333, 0.0333, 0.0333]. Sau khi đưa qua softmax sẽ thành [0.3332, 0, 0], ta có thể thấy khoảng cách giữa logit lớn nhất và các phần tử còn lại nhỏ hơn ban đầu. <br/>
+Đó là lí do tại sao gọi label smoothing là một kĩ thuật regularization vì nó giới hạn lại phần tử logit lớn nhất không bị trở nên quá lớn hơn các phần tử còn lại. <br/></p>
 <h3 id="2-code">2. Code</h3>
 <p>Tensorflow: Label smoothing đã được định nghĩa trong Tensorflow. Các bạn có thể xem source của BinaryCrossentropy CategoricalCrossentropy để biết thêm chi tiết.<br/>
 PyTorch: Mình vẫn chưa thấy Pytorch có định nghĩa sẵn hàm này, các bạn có thể tham khảo đoạn code sau.<br/></p>

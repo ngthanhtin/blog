@@ -129,17 +129,6 @@ Nội dung chính sẽ bao gồm các phần sau:
         <li><a href="#1-label-smoothing-là-gì">1. Label Smoothing là gì?</a></li>
       </ul>
     </li>
-    <li><a href="#overfitting-là-gì">Overfitting là gì?</a></li>
-    <li><a href="#overconfidence-là-gì">Overconfidence là gì?</a></li>
-    <li><a href="#calibration-là-gì">Calibration là gì?</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#formula-of-label-smoothing">Formula of Label Smoothing</a></li>
-    <li><a href="#motivation-of-label-smoothing">Motivation of Label Smoothing</a></li>
-  </ul>
-
-  <ul>
     <li><a href="#a-concrete-example">A Concrete Example</a>
       <ul>
         <li><a href="#2-label-smoothing">2. Label smoothing</a></li>
@@ -182,7 +171,7 @@ Nội dung chính sẽ bao gồm các phần sau:
                 Sunday, Feb 21, 2021
               
 
-            | 5 minutes read
+            | 4 minutes read
 
             | Update at
               
@@ -196,27 +185,27 @@ Nội dung chính sẽ bao gồm các phần sau:
 <p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
 <h3 id="1-label-smoothing-là-gì">1. Label Smoothing là gì?</h3>
 <p>Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</p>
-<h2 id="overfitting-là-gì">Overfitting là gì?</h2>
+<h4 id="overfitting-là-gì">Overfitting là gì?</h4>
 <p>Overfitting là khi model chỉ tốt trên train data nhưng lại thấp trên validation data. Overfitting có thể được giải quyết bằng nhiều cách khác nhau như là early stopping, dropout, weight regularization, batch normalization.</p>
-<h2 id="overconfidence-là-gì">Overconfidence là gì?</h2>
+<h4 id="overconfidence-là-gì">Overconfidence là gì?</h4>
 <p>Overconfidence, là khi model đưa ra kết quả quá tự tin trong khi accuracy không thực sự như vậy. Có rất ít phương pháp để giải quyết vấn đề này.</p>
-<h2 id="calibration-là-gì">Calibration là gì?</h2>
+<h4 id="calibration-là-gì">Calibration là gì?</h4>
 <p>A classification model được gọi là calibration khi predicted probabilities của outcomes phản ánh đúng accuracy của model. Ví dụ, ta có 100 mẫu của dataset, mỗi mẫu có predicted probability là 0.9. Nếu model được calibrated, 90 mẫu sẽ được phân loại đúng.
-Model calibration quan trọng trong việc:</p>
-<h1 id="model-interpretability-and-reliability">model interpretability and reliability</h1>
-<h1 id="deciding-decision-thresholds-for-downstream-applications">deciding decision thresholds for downstream applications</h1>
-<h1 id="integrating-our-model-into-an-ensemble-or-a-machine-learning-pipeline">integrating our model into an ensemble or a machine learning pipeline</h1>
-<p>An overconfident model is not calibrated and its predicted probabilities are consistently higher than the accuracy. For example, it may predict 0.9 for inputs where the accuracy is only 0.6. Notice that models with small test errors can still be overconfident, and therefore can benefit from label smoothing.</p>
-<h2 id="formula-of-label-smoothing">Formula of Label Smoothing</h2>
+Model calibration quan trọng trong việc:
+<b>model interpretability and reliability</b><br/>
+<b>deciding decision thresholds for downstream applications</b><br/>
+<b>integrating our model into an ensemble or a machine learning pipeline</b><br/>
+An overconfident model is not calibrated and its predicted probabilities are consistently higher than the accuracy. For example, it may predict 0.9 for inputs where the accuracy is only 0.6. Notice that models with small test errors can still be overconfident, and therefore can benefit from label smoothing.</p>
+<h4 id="công-thức-của-label-smoothing">Công thức của Label Smoothing</h4>
 <p>Label smoothing replaces one-hot encoded label vector y_hot with a mixture of y_hot and the uniform distribution:
 y_ls = (1 - α) * y_hot + α / K
 where K is the number of label classes, and α is a hyperparameter that determines the amount of smoothing. If α = 0, we obtain the original one-hot encoded y_hot. If α = 1, we get the uniform distribution.</p>
-<h2 id="motivation-of-label-smoothing">Motivation of Label Smoothing</h2>
-<p>Label smoothing is used when the loss function is cross entropy, and the model applies the softmax function to the penultimate layer’s logit vectors z to compute its output probabilities p. In this setting, the gradient of the cross entropy loss function with respect to the logits is simply
-∇CE = p - y = softmax(z) - y
-where y is the label distribution. In particular, we can see that</p>
-<h1 id="gradient-descent-will-try-to-make-p-as-close-to-y-as-possible">Gradient descent will try to make p as close to y as possible.</h1>
-<h1 id="the-gradient-is-bounded-between--1-and-1">The gradient is bounded between -1 and 1.</h1>
+<h4 id="motivation-of-label-smoothing">Motivation of Label Smoothing</h4>
+<p>Label smoothing được sử dụng khi loss function là cross-entropy. Đạo hàm của cross entropy loss function đối với logits:<br/>
+∇CE = p - y = softmax(z) - y <br/>
+trong đó y là label distribution. Cụ thể: <br/>
+<b> Gradient descent sẽ làm cho p gần với y.</b><br/>
+<b>The gradient giới hạn trong đoạn [-1, 1].</b><br/></p>
 <p>One-hot encoded labels encourages largest possible logit gaps to be fed into the softmax function. Intuitively, large logit gaps combined with the bounded gradient will make the model less adaptive and too confident about its predictions.
 In contrast, smoothed labels encourages small logit gaps, as demonstrated by the example below. It is shown in [3] that this results in better model calibration and prevents overconfident predictions.</p>
 <h2 id="a-concrete-example">A Concrete Example</h2>
@@ -249,8 +238,8 @@ PyTorch: Mình vẫn chưa thấy Pytorch có định nghĩa sẵn hàm này, c�
 
         return loss
 </code></pre><h3 id="4-tham-khảo">4. Tham khảo</h3>
-<p><a href="https://www.linkedin.com/pulse/label-smoothing-solving-overfitting-overconfidence-code-sobh-phd/?fbclid=IwAR2RWv0x5ZWBfckB9336VVvuHzxrix8p6UXSu1JiKZkAkJGMsBtCsPdDux8">https://www.linkedin.com/pulse/label-smoothing-solving-overfitting-overconfidence-code-sobh-phd/?fbclid=IwAR2RWv0x5ZWBfckB9336VVvuHzxrix8p6UXSu1JiKZkAkJGMsBtCsPdDux8</a>
-<a href="https://www.kaggle.com/khyeh0719/pytorch-efficientnet-baseline-train-amp-aug/comments">https://www.kaggle.com/khyeh0719/pytorch-efficientnet-baseline-train-amp-aug/comments</a>
+<p><a href="https://www.linkedin.com/pulse/label-smoothing-solving-overfitting-overconfidence-code-sobh-phd/?fbclid=IwAR2RWv0x5ZWBfckB9336VVvuHzxrix8p6UXSu1JiKZkAkJGMsBtCsPdDux8">https://www.linkedin.com/pulse/label-smoothing-solving-overfitting-overconfidence-code-sobh-phd/?fbclid=IwAR2RWv0x5ZWBfckB9336VVvuHzxrix8p6UXSu1JiKZkAkJGMsBtCsPdDux8</a> <br/>
+<a href="https://www.kaggle.com/khyeh0719/pytorch-efficientnet-baseline-train-amp-aug/comments">https://www.kaggle.com/khyeh0719/pytorch-efficientnet-baseline-train-amp-aug/comments</a> <br/>
 <a href="https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06">https://towardsdatascience.com/what-is-label-smoothing-108debd7ef06</a></p>
 <div style="text-align: right"> (Tín Nguyễn) </div>
 <p>Frequently Asked Questions

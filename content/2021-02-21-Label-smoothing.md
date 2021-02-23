@@ -50,7 +50,6 @@ Ví dụ, đưa vector này qua softmax sẽ cho ra [0.9999, 0, 0]. Nếu dùng 
 ### 2. Code
 Tensorflow: Label smoothing đã được định nghĩa trong Tensorflow. Các bạn có thể xem source của BinaryCrossentropy CategoricalCrossentropy để biết thêm chi tiết.<br/>
 PyTorch: Mình vẫn chưa thấy Pytorch có định nghĩa sẵn hàm này, các bạn có thể tham khảo đoạn code sau.<br/>
-
 ```
 class MyCrossEntropyLoss(_WeightedLoss):
     def __init__(self, weight=None, reduction='mean'):
@@ -73,7 +72,7 @@ class MyCrossEntropyLoss(_WeightedLoss):
 
         return loss
 ```
-
+Hoặc các bạn có thể tham khảo đoạn code [link](https://colab.research.google.com/drive/1HiZIS4G8QaOJNc0xARnMUT2LExocpQI3#scrollTo=z7ptOPY3oJzR)
 ### 3. Bàn luận
 Q: Chọn α như thế nào?<br/>
 A: α là một hyperparameter. α = 0.1 thường được sử dụng.<br/>

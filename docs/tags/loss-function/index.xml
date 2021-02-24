@@ -23,15 +23,8 @@
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc
-Nội dung chính sẽ bao gồm các phần sau: 
-1. Task
-2. Cross-Entropy Loss
-3. Categorical Cross-Entropy Loss
-4. Binary Cross-Entropy Loss
-5. Focal Loss
-6. Tham khảo
-1. Task  2. Cross-Entropy Loss  3. Categorical Cross-Entropy Loss  4. Binary Cross-Entropy Loss  Update.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
+Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
   </channel>

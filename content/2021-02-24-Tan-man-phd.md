@@ -1,6 +1,6 @@
 ---
-title : "My Career (1)"
-cover : "/blog/img/con_duong_su_nghiep/career.jpeg"
+title : "Tản mạn phờ hắc đi (1)"
+cover : "/blog/img/tan_man_phd/phd.jpg"
 date : "2021-02-21"
 tags : 
   - "loss function"

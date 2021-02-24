@@ -18,16 +18,6 @@
     </item>
     
     <item>
-      <title>My Career (1)</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</guid>
-      <description>Hi, hôm nay mình quyết định viết về quá trình phờ hắc đi của mình, do cũng chán chả có gì làm, tự hỏi sao các bạn phd khác bận vãi trong khi mình ngồi coi yutube đồ các kiểu, chán quá
-1. Viết blog Mình đã muốn viết blog từ lâu r, nhưng lúc đó k biết tới githubio, viết bằng wordpress thì tốn tiền hosting nữa nên thoai kaka.</description>
-    </item>
-    
-    <item>
       <title>Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it</title>
       <link>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
@@ -35,6 +25,16 @@
       <guid>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
 Nội dung chính sẽ bao gồm các phần sau:</description>
+    </item>
+    
+    <item>
+      <title>Tản mạn phờ hắc đi (1)</title>
+      <link>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</guid>
+      <description>Hi, hôm nay mình quyết định viết về quá trình phờ hắc đi của mình, do cũng chán chả có gì làm, tự hỏi sao các bạn phd khác bận vãi trong khi mình ngồi coi yutube đồ các kiểu, chán quá
+1. Viết blog Mình đã muốn viết blog từ lâu r, nhưng lúc đó k biết tới githubio, viết bằng wordpress thì tốn tiền hosting nữa nên thoai kaka.</description>
     </item>
     
   </channel>

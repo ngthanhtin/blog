@@ -42,12 +42,12 @@ Ta có thể phân biệt 2 tác vụ này qua hình ảnh sau:
 </section>
 Cross-Entropy Loss được dùng trong task vụ thứ 1, công thức của nó như sau: <br/>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=CE=-softmax(W_{u}u^{K} %2B b_{u})">
+<img src="https://render.githubusercontent.com/render/math?math=CE=-\sum_{i}^{C}t_{i}log(s_{i})">
 </p>
 Where t_i và s_i là ground truth và score của mỗi class i. Trước khi tính toán CE loss, ta thường đưa qua một activation function như sigmoid, softmax. <br/>
 Trong trường hợp chỉ có 2 class, hàm loss có thể được viết như sau và gọi là Binary Cross Entropy: <br/>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=CE=-softmax(W_{u}u^{K} %2B b_{u})">
+<img src="https://render.githubusercontent.com/render/math?math=CE=-\sum_{i}^{C=2}t_{i}log(s_{i}) = -t_{1}log(s_{1})-(1-t_{1})log(1-s_{1})">
 </p>
 Logistic Loss và Multinomial Logistic Loss là những cái tên khác của Cross-Entropy loss.
 
@@ -55,17 +55,21 @@ Logistic Loss và Multinomial Logistic Loss là những cái tên khác của Cr
 <b>3. Categorical Cross-Entropy Loss</b>
 </section>
 Còn được gọi là Softmax cross-entropy, nó chỉ đơn giản là softmax activation theo sau là cross-entropy loss, và hàm loss này cũng được dùng cho tác vụ thứ 1.<br/>
-
+<p align="center">
+  <img src="/blog/img/tim_hieu_loss_function/softmax_loss.png">
+</p>
+Với <img src="https://render.githubusercontent.com/render/math?math=f(s)"> là hàm softmax.
 <section id="4. Binary Cross-Entropy Loss">
+
 <b>4. Binary Cross-Entropy Loss</b>
 </section>
 Còn được gọi là Sigmoid cross-entropy, nó chỉ đơn giản là sigmoid activation theo sau là cross-entropy loss, và hàm loss này cũng được dùng cho tác vụ thứ 2.<br/>
 Không như Softmax loss mỗi output score sẽ không phụ thuộc với nhau, nghĩa là loss tính từ CNN output vector không bị ảnh hưởng bởi các giá trị vector khác. Đó là lí do tại sao hàm loss này được sử dụng cho tác vụ thứ 2.<br/>
 Công thức cho hàm loss này như sau: <br/>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=CE=-softmax(W_{u}u^{K} %2B b_{u})">
+<img src="https://render.githubusercontent.com/render/math?math=CE=-\sum_{i}^{C=2}t_{i}log(s_{i}) = -t_{1}log(f(s_{1}))-(1-t_{1})log(1-f(s_{1}))">
 </p>
-
+Với <img src="https://render.githubusercontent.com/render/math?math=f(s_{i})"> là hàm sigmoid.
 <section id="5. Tham khảo">
 <b>6. Tham khảo</b>
 </section>

@@ -83,6 +83,16 @@ Nội dung chính sẽ bao gồm các phần sau:
     </item>
     
     <item>
+      <title>Giới thiệu SLAM</title>
+      <link>https://ngthanhtin.github.io/blog/2020-02-24-slam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
+      <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
+## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.</description>
+    </item>
+    
+    <item>
       <title>Install Cuda on Ubuntu 18.04</title>
       <link>https://ngthanhtin.github.io/blog/2020-10-14-install-cuda-on-ubuntu-18-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -188,35 +198,12 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn S
     </item>
     
     <item>
-      <title>SLAM</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-slam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
-      <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
-## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.</description>
-    </item>
-    
-    <item>
       <title>SLAM Roadmap</title>
       <link>https://ngthanhtin.github.io/blog/2021-01-31-slam-roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/2021-01-31-slam-roadmap/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Stereo Parallel and Tracking</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-ptam/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-ptam/</guid>
-      <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán visual odometry.
-Installation g2o: https://github.com/uoip/g2opy
-Pangolin: https://github.com/uoip/pangolin opencv, numpy Python 3.6+ Ubuntu 16.04
-*Lưu ý khi cài đặt Pangolin: Sau khi clone repo về, ta đổi tên lại thành pangolin. Nếu máy có cài Nvidia, nhớ link libGL.so tới usr/lib/x86_64-linux-gnu. Cụ thể, ta gõ lệnh: sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so
-(Optional) sudo ln -s /usr/lib/nvidia-415/libGL.</description>
     </item>
     
   </channel>

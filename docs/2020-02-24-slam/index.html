@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SLAM | Tin&#39;s Blog</title>
+    <title>Giới thiệu SLAM | Tin&#39;s Blog</title>
 
     
 
@@ -20,7 +20,7 @@
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/2020-02-24-slam/" />
 
 
-<meta property="og:title" content="SLAM" />
+<meta property="og:title" content="Giới thiệu SLAM" />
 <meta property="og:description" content="Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
 ## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ." />
 <meta property="og:type" content="article" />
@@ -30,7 +30,7 @@
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="SLAM"/>
+<meta name="twitter:title" content="Giới thiệu SLAM"/>
 <meta name="twitter:description" content="Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
 ## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ."/>
 
@@ -128,6 +128,13 @@
       </ul>
     </li>
     <li><a href="#link-tham-khảo">Link tham khảo</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#phát-biểu-bài-toán">Phát biểu bài toán</a></li>
+    <li><a href="#visibility-graph">Visibility Graph</a></li>
+    <li><a href="#motion-model">Motion Model</a></li>
+    <li><a href="#tracking">Tracking</a></li>
+    <li><a href="#loop-closing">Loop Closing</a></li>
   </ul>
 </nav>
     </div>
@@ -140,7 +147,7 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=SLAM&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2f2020-02-24-slam%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=Gi%e1%bb%9bi%20thi%e1%bb%87u%20SLAM&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2f2020-02-24-slam%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
 <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2f2020-02-24-slam%2f" class="ui circular facebook icon button">
@@ -153,7 +160,7 @@
     
     <section class="ui top attached segment">
       <header>
-        <h1 class="ui large header">SLAM<div class="sub header">
+        <h1 class="ui large header">Giới thiệu SLAM<div class="sub header">
             @
             
               Nguyen Thanh Tin
@@ -163,7 +170,7 @@
                 Monday, Jan 1, 0001
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
@@ -192,7 +199,28 @@ Online SLAM: Tính posterior của trạng thái tại thời điểm t. Hướn
 <p><a href="https://github.com/vatsan/slam">https://github.com/vatsan/slam</a>
 <a href="https://github.com/uoip/stereo_ptam">https://github.com/uoip/stereo_ptam</a></p>
 <div style="text-align: right"> (Tín Nguyễn) </div>
-</article>
+<p>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán visual odometry.</p>
+<h2 id="installation">Installation</h2>
+<p>g2o: <a href="https://github.com/uoip/g2opy">https://github.com/uoip/g2opy</a><br>
+Pangolin:  <a href="https://github.com/uoip/pangolin">https://github.com/uoip/pangolin</a>
+opencv, numpy
+Python 3.6+
+Ubuntu 16.04</p>
+<p>*Lưu ý khi cài đặt Pangolin: Sau khi clone repo về, ta đổi tên lại thành pangolin.
+Nếu máy có cài Nvidia, nhớ link libGL.so tới usr/lib/x86_64-linux-gnu. Cụ thể, ta gõ lệnh:
+sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so
+sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/x86_64-linux-gnu/libGL.so</p>
+<p>(Optional) sudo ln -s /usr/lib/nvidia-415/libGL.so /usr/lib/libGL.so. Câu lệnh này dùng để chạy các ứng dụng có dùng OpenGL</p>
+<p>Cài Cmake-GUI và bỏ chọn BUILD_PANGOLIN_PYTHON, sau đó make -j8</p>
+<p>Tiếp theo, cd .. &amp;&amp; python setup.py install. Khi chạy file setup.py thì có thể bị lỗi ở biến install_dir, ta chỉ cần sửa install_dir thành install_dirs.</p>
+<h2 id="data">Data</h2>
+<p>Data sử dụng là KITTI Odometry hoặc EuRoC. Trong tutorial này sử dụng bộ EuRoC.</p>
+<h2 id="phát-biểu-bài-toán">Phát biểu bài toán</h2>
+<h2 id="visibility-graph">Visibility Graph</h2>
+<h2 id="motion-model">Motion Model</h2>
+<h2 id="tracking">Tracking</h2>
+<h2 id="loop-closing">Loop Closing</h2>
+<div style="text-align: right"> (Tín Nguyễn) </div></article>
     </section>
 
     

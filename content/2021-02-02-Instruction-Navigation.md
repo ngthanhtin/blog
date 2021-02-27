@@ -73,6 +73,7 @@ Thuật toán này có thể ứng dụng vào robotics, tuy nhiên, thuật to�
 <section id="5. Tham khảo">
 <b>6. Tham khảo</b>
 </section>
+
 [Paper](https://arxiv.org/abs/1706.07230)<br/>
 [Code](https://github.com/devendrachaplot/DeepRL-Grounding)
 

@@ -36,7 +36,8 @@ Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input 
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
 </section>
-Nguyên lí của những bài toán dạng Vision-Language là làm sao để 2 feature vision và language tương tác với nhau.
+Nguyên lí của những bài toán dạng Vision-Language là làm sao để 2 feature vision và language tương tác với nhau.<br/>
+Đối với bài toán này, nó sẽ chia thành 3 phần đó là (1) lấy image feature (Embedding), (2) lấy textual feature (embedding) (3) kết hợp 2 feature lại (trong bài này có 2 cách đó là concat 2 features lại hoặc lấy tích Hadarmard (element-wise) của 2 features). Cuối cùng đó là policy learning part, ở bài này họ sử dụng thuật toán Asynchronous Actor Critic (A3C).
 
 <section id="3. Phương pháp">
 <b>3. Phương pháp</b>
@@ -44,16 +45,25 @@ Nguyên lí của những bài toán dạng Vision-Language là làm sao để 2
 <p align="center">
   <img src="/blog/img/instruction_navigation/pp.png">
 </p>
-Phương pháp đơn giản là input sẽ là 1 image và 1 câu instruction.<br/>
-Image sẽ được đưa qua một mạng CNN đơn giản để lấy được image embedding. Instruction thì mỗi từ của câu sẽ được biến thành word embedding, sau đó biến các word embedding đó thành một sentence emmbeding. <br/>
+Phương pháp đơn giản là input sẽ là 1 image và 1 câu instruction. Chú ý, với mỗi episode thì chỉ có duy nhất 1 câu instruction, qua episode khác thì có câu instruction khác, còn image sẽ thay đổi ở mỗi step.
 
 * <b>3.1 Image Representation Module</b><br/>
+Image sẽ được đưa qua một mạng CNN đơn giản để lấy được image embedding
 
 * <b>3.2 Text Representation Module</b><br/>
+Instruction thì mỗi từ của câu sẽ được biến thành word embedding. Sau đó biến các word embedding đó thành một sentence emmbeding.
 
 * <b>3.3 Attented Representation Module</b><br/>
+<p align="center">
+  <img src="/blog/img/instruction_navigation/attention.png">
+</p>
+Sau khi có được 2 features, họ sẽ dùng tích Hadarmard (element-wise) để nhân 2 feature với nhau và được gọi là Gated-Attention. Đối với phương pháp này, ta sẽ đảm bảo được cả 2 feature sẽ tương tác với nhau nhưng tốc độ lại chậm đi.
 
 * <b>3.4 Policy Learning</b><br/>
+<p align="center">
+  <img src="/blog/img/instruction_navigation/policy.png">
+</p>
+Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
 
 <section id="4. Ứng dụng">
 <b>5. Ứng dụng</b>

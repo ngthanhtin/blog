@@ -36,11 +36,16 @@ Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input 
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
 </section>
-
+Nguyên lí của những bài toán dạng Vision-Language là làm sao để 2 feature vision và language tương tác với nhau.
 
 <section id="3. Phương pháp">
 <b>3. Phương pháp</b>
 </section>
+<p align="center">
+  <img src="/blog/img/instruction_navigation/pp.png">
+</p>
+Phương pháp đơn giản là input sẽ là 1 image và 1 câu instruction.<br/>
+Image sẽ được đưa qua một mạng CNN đơn giản để lấy được image embedding. Instruction thì mỗi từ của câu sẽ được biến thành word embedding, sau đó biến các word embedding đó thành một sentence emmbeding. <br/>
 
 * <b>3.1 Image Representation Module</b><br/>
 
@@ -53,11 +58,12 @@ Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input 
 <section id="4. Ứng dụng">
 <b>5. Ứng dụng</b>
 </section>
-
+Thuật toán này có thể ứng dụng vào robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
 
 <section id="5. Tham khảo">
 <b>6. Tham khảo</b>
 </section>
-[Code](https://github.com/devendrachaplot/DeepRL-Grounding)<br/>
+[Paper](https://arxiv.org/abs/1706.07230)<br/>
+[Code](https://github.com/devendrachaplot/DeepRL-Grounding)
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

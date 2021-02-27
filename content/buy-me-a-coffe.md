@@ -13,6 +13,12 @@ If you like my open source projects or they can help you. You can buy me a coffe
 
 ## (Ways to Give）
 
+### Woori bank
+This is my bank account: <br/>
+Account: 1002-361-704694<br/>
+Name: Nguyen Thanh Tin<br/>
+Bank: Woori Bank
+
 ### PayPal
 
 <!-- [https://paypal.me/ngthanhtin](https://paypal.me/g1eny0ung) -->

@@ -13,22 +13,22 @@ Hi các bạn, mình đang học về SLAM nên hôm nay quyết định tổng 
 
 ### Beginner
 <p align="center">
-  <img src="/blog/img/mot/beginner.png">
+  <img src="/blog/img/slam_roadmap/beginner.png">
 </p>
 
 ### Làm quen với SLAM
 <p align="center">
-  <img src="/blog/img/mot/getting-familiar.png">
+  <img src="/blog/img/slam_roadmap/getting-familiar.png">
 </p>
 
 ### Monocular SLAM
 <p align="center">
-  <img src="/blog/img/mot/monocular.png">
+  <img src="/blog/img/slam_roadmap/monocular.png">
 </p>
 
 ### RGB-D SLAM
 <p align="center">
-  <img src="/blog/img/mot/rgbd.png">
+  <img src="/blog/img/slam_roadmap/rgbd.png">
 </p>
 
 ### Tham khảo

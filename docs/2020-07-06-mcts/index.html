@@ -22,9 +22,8 @@
 
 <meta property="og:title" content="Monte Carlo Tree Search" />
 <meta property="og:description" content="Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.
-Monte Carlo Tree Search (MCTS) dùng để dự đoán được lượt di chuyển tốt nhất dựa trên simulation test results.
-Ý tưởng chỉnh của MCTS là tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning.
-Node being not-fully expanded means at least one of its children is unvisited, not explored." />
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu Monte Carlo Tree Search (MCTS) là một thuật toán tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning. Nó dùng để dự đoán được lượt di chuyển tiếp theo tốt nhất." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/2020-07-06-mcts/" />
 
@@ -34,9 +33,8 @@ Node being not-fully expanded means at least one of its children is unvisited, n
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Monte Carlo Tree Search"/>
 <meta name="twitter:description" content="Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.
-Monte Carlo Tree Search (MCTS) dùng để dự đoán được lượt di chuyển tốt nhất dựa trên simulation test results.
-Ý tưởng chỉnh của MCTS là tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning.
-Node being not-fully expanded means at least one of its children is unvisited, not explored."/>
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu Monte Carlo Tree Search (MCTS) là một thuật toán tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning. Nó dùng để dự đoán được lượt di chuyển tiếp theo tốt nhất."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -122,6 +120,21 @@ Node being not-fully expanded means at least one of its children is unvisited, n
   <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
     
     
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-giới-thiệu">1. Giới thiệu</a></li>
+        <li><a href="#2-các-thành-phần-cơ-bản-của-mcts">2. Các thành phần cơ bản của MCTS</a></li>
+        <li><a href="#3-code">3. Code</a></li>
+        <li><a href="#4-tham-khảo">4. Tham khảo</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
     <div class="ui segment actions">
       <button
         class="ui circular icon button save-as-image"
@@ -153,7 +166,7 @@ Node being not-fully expanded means at least one of its children is unvisited, n
                 Monday, Jan 1, 0001
               
 
-            | 2 minutes read
+            | 1 minutes read
 
             | Update at
               
@@ -164,40 +177,59 @@ Node being not-fully expanded means at least one of its children is unvisited, n
       </header>
 
       <article class="main"><p>Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.</p>
-<p>Monte Carlo Tree Search (MCTS) dùng để dự đoán được lượt di chuyển tốt nhất dựa trên simulation test results.</p>
-<p>Ý tưởng chỉnh của MCTS là tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning.</p>
-<p>Node being not-fully expanded means at least one of its children is unvisited, not explored. Once not fully expanded node is encountered, one of its unvisited children is chosen to become a root node for a single playout/simulation. The result of the simulation is then propagated back up to the current tree root updating game tree nodes statistics. Once the search (constrained by time or computational power) terminates, the move is chosen based on the gathered statistics.</p>
-<p>Simulation/Playout</p>
-<p>Game tree node expansion – fully expanded and visited nodes</p>
-<p>Backpropagation – propagating back the simulation result</p>
-<p>Nodes’ statistics</p>
-<p>Game tree traversal</p>
-<p>Upper Confidence Bound applied to trees</p>
-<p>Terminating Monte Carlo Tree Search</p>
-<p>Summary</p>
-<p>pseudo-code:
-def monte_carlo_tree_search(root):
-while resources_left(time, computational power):
-leaf = traverse(root) # leaf = unvisited node
-simulation_result = rollout(leaf)
-backpropagate(leaf, simulation_result)
-return best_child(root)</p>
-<p>def traverse(node):
-while fully_expanded(node):
-node = best_uct(node)
-return pick_univisted(node.children) or node # in case no children are present / node is terminal</p>
-<p>def rollout(node):
-while non_terminal(node):
-node = rollout_policy(node)
-return result(node)</p>
-<p>def rollout_policy(node):
-return pick_random(node.children)</p>
-<p>def backpropagate(node, result):
-if is_root(node) return
-node.stats = update_stats(node, result)
-backpropagate(node.parent)</p>
-<p>def best_child(node):
-pick child with highest number of visits</p>
+<p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
+<h3 id="1-giới-thiệu">1. Giới thiệu</h3>
+<p>Monte Carlo Tree Search (MCTS) là một thuật toán tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning. Nó dùng để dự đoán được lượt di chuyển tiếp theo tốt nhất.</p>
+<h3 id="2-các-thành-phần-cơ-bản-của-mcts">2. Các thành phần cơ bản của MCTS</h3>
+<p>Lười quá chưa ghi được huhu</p>
+<!-- Node being not-fully expanded means at least one of its children is unvisited, not explored. Once not fully expanded node is encountered, one of its unvisited children is chosen to become a root node for a single playout/simulation. The result of the simulation is then propagated back up to the current tree root updating game tree nodes statistics. Once the search (constrained by time or computational power) terminates, the move is chosen based on the gathered statistics.
+
+Simulation/Playout
+
+Game tree node expansion – fully expanded and visited nodes
+
+Backpropagation – propagating back the simulation result
+
+Nodes’ statistics
+
+Game tree traversal
+
+Upper Confidence Bound applied to trees
+
+Terminating Monte Carlo Tree Search -->
+<h3 id="3-code">3. Code</h3>
+<p>Dưới đây là pseudo code của MCTS và một số repo có implement thuật toán này.</p>
+<pre><code>def monte_carlo_tree_search(root):
+    while resources_left(time, computational power):
+        leaf = traverse(root) # leaf = unvisited node 
+        simulation_result = rollout(leaf)
+        backpropagate(leaf, simulation_result)
+    return best_child(root)
+
+def traverse(node):
+    while fully_expanded(node):
+        node = best_uct(node)
+    return pick_univisted(node.children) or node # in case no children are present / node is terminal 
+ 
+def rollout(node):
+    while non_terminal(node):
+        node = rollout_policy(node)
+    return result(node) 
+ 
+def rollout_policy(node):
+    return pick_random(node.children)
+ 
+def backpropagate(node, result):
+   if is_root(node) return 
+   node.stats = update_stats(node, result) 
+   backpropagate(node.parent)
+ 
+def best_child(node):
+    pick child with highest number of visits
+</code></pre><p>Repo:<br/>
+<a href="https://github.com/int8/monte-carlo-tree-search">https://github.com/int8/monte-carlo-tree-search</a></p>
+<h3 id="4-tham-khảo">4. Tham khảo</h3>
+<p><a href="https://int8.io/monte-carlo-tree-search-beginners-guide/?fbclid=IwAR2MYUfO_W1IC85uIRSnHcG79UVKKZB66Tew2KzkLSTXBhhaph6GK0SxiQ0">https://int8.io/monte-carlo-tree-search-beginners-guide/?fbclid=IwAR2MYUfO_W1IC85uIRSnHcG79UVKKZB66Tew2KzkLSTXBhhaph6GK0SxiQ0</a></p>
 </article>
     </section>
 

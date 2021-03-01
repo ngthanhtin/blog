@@ -40,10 +40,37 @@ Nguyên lý của bài toán tracking đó là tìm kiếm và so sánh. Ở fra
 </section>
 Đối với thuật toán Particle Filter, nó bao gồm 5 bước: <br/>
 1) Khởi tạo<br/>
+<p align="center">
+  <img src="/blog/img/sot/init.png">
+</p>
+
 2) Dự đoán<br/>
+<p align="center">
+  <img src="/blog/img/sot/predict.png">
+</p>
+
+<p align="center">
+  <img src="/blog/img/sot/predict2.png">
+</p>
+
 3)So khớp<br/>
+<p align="center">
+  <img src="/blog/img/sot/matching.png">
+</p>
+
+<p align="center">
+  <img src="/blog/img/sot/matching2.png">
+</p>
+
 4) Tái lấy mẫu<br/>
+<p align="center">
+  <img src="/blog/img/sot/resampling.png">
+</p>
+
 5) Ước lượng vị trí<br/>
+<p align="center">
+  <img src="/blog/img/sot/estimate.png">
+</p>
 
 
 <section id="4. Giải thuật">

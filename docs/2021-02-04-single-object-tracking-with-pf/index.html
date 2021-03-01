@@ -149,7 +149,7 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn S
                 Monday, Jan 1, 0001
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
@@ -175,20 +175,31 @@ Link paper: <a href="https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Fram
 <p align="center">
   <img src="/blog/img/sot/sot.png">
 </p>
+Đối với bài toán Visual Object Tracking, nó được chia thành 2 dạng chính là Multiple Object Tracking, nghĩa là theo vết nhiều đối tượng cùng một lúc, dạng còn lại là Single Object Tracking, đó là dạng theo vết duy nhất một đối tượng. Mặc dù cả hai bài toán đều là Tracking nhưng sẽ có nhiều thuật toán và cách xử lý khác nhau để giải quyết.
 <section id="2. Nguyên lý">
 <b>2. Nguyên lý</b>
 </section>
-Particle Filter
+Nguyên lý của bài toán tracking đó là tìm kiếm và so sánh. Ở frame thứ t, ta sẽ tìm kiếm một patch (vùng) và so sánh nó với patch chứa đối tượng ở frame (t-1).
+<p>Ở bài này, ta sẽ sử dụng Particle Filter để làm được điều này.</p>
 <section id="3. Phương pháp">
 <b>3. Phương pháp</b>
 </section>
+Đối với thuật toán Particle Filter, nó bao gồm 5 bước: <br/>
+1) Khởi tạo<br/>
+2) Dự đoán<br/>
+3)So khớp<br/>
+4) Tái lấy mẫu<br/>
+5) Ước lượng vị trí<br/>
 <section id="4. Giải thuật">
 <b>4. Giải thuật</b>
 </section>
-Update...
+<p align="center">
+  <img src="/blog/img/sot/algorithm.png">
+</p>
 <section id="5. Ứng dụng">
 <b>5. Ứng dụng</b>
 </section>
+Đối với bài toán Single Object Tracking, nó được ứng dụng vào các hệ thống theo vết ví dụ, camera hành trình được gắn trên drone để theo vết một ai đó. Hoặc trong các hệ thống surveliance camera, dùng để theo vết đối tượng bằng nhiều camera khác nhau.
 <section id="6. Tham khảo">
 <b>6. Tham khảo</b>
 </section>

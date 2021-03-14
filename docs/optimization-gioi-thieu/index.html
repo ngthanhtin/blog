@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Giới thiệu về Optmization | Tin&#39;s Blog</title>
+
+    
+
+
+
+<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.80.0" />
+
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/optimization-gioi-thieu/" />
+
+
+<meta property="og:title" content="Giới thiệu về Optmization" />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về toán Optmization. Nói về Deep Learning thì không thể thiếu được Optimization, chắc hẳn ai làm DL đều đã xài qua những cái như SGD, Adam, Adagrad, KAFC, etc. Tác dụng của optimization đó là giúp tìm ra local minima của model, khi đó ta có thể nói model đã converge.
+Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, chúng ta phải hiểu nó là gì, và nó áp dụng như thế nào?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/optimization-gioi-thieu/" />
+<meta property="article:published_time" content="2021-03-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-14T00:00:00+00:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Giới thiệu về Optmization"/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về toán Optmization. Nói về Deep Learning thì không thể thiếu được Optimization, chắc hẳn ai làm DL đều đã xài qua những cái như SGD, Adam, Adagrad, KAFC, etc. Tác dụng của optimization đó là giúp tìm ra local minima của model, khi đó ta có thể nói model đã converge.
+Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, chúng ta phải hiểu nó là gì, và nó áp dụng như thế nào?"/>
+
+<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/blog/css/semantic.min.css" />
+<link rel="stylesheet" href="/blog/css/icomoon.css" />
+<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/blog/css/github-markdown.css" />
+<link rel="stylesheet" href="/blog/css/site.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+
+  
+  body.default {
+    
+    background-color: #f7f7f7;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Blog" onclick="window.location.href = 'https:\/\/ngthanhtin.github.io\/blog\/'"></i>
+  </div>
+  <div class="item">
+    <a href="https://ngthanhtin.github.io/"><i class="fa fa-flask" title="ngthanhtin.github.io"></i></a>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-giới-thiệu-bài-toàn-optimization-">1. Giới thiệu bài toàn Optimization ?</a></li>
+        <li><a href="#2-constraints-">2. Constraints ?</a></li>
+        <li><a href="#3-critical-points-">3. Critical Points ?</a></li>
+        <li><a href="#4-điều-kiện-để-là-một-local-minima-">4. Điều kiện để là một local minima ?</a></li>
+        <li><a href="#5-bàn-luận">5. Bàn luận.</a></li>
+        <li><a href="#6-tham-khảo">6. Tham khảo.</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Gi%e1%bb%9bi%20thi%e1%bb%87u%20v%e1%bb%81%20Optmization&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2foptimization-gioi-thieu%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2foptimization-gioi-thieu%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Giới thiệu về Optmization<div class="sub header">
+            @
+            
+              Nguyen Thanh Tin
+            
+
+            | 
+                Sunday, Mar 14, 2021
+              
+
+            | 4 minutes read
+
+            | Update at
+              
+                Sunday, Mar 14, 2021
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về toán <b>Optmization</b>. Nói về Deep Learning thì không thể thiếu được Optimization, chắc hẳn ai làm DL đều đã xài qua những cái như SGD, Adam, Adagrad, KAFC, etc. Tác dụng của optimization đó là giúp tìm ra local minima của model, khi đó ta có thể nói model đã converge.</p>
+<p>Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, chúng ta phải hiểu nó là gì, và nó áp dụng như thế nào? Và ở bài này, mình sẽ giới thiệu về bài toán optimization và ôn lại một số kiến thức cơ bản về toán matrix, toán calculus. Let&rsquo;s go.</p>
+<p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
+<ol>
+<li>Giới thiệu bài toàn Optimization ?</li>
+<li>Constraints ?</li>
+<li>Critical Points ?</li>
+<li>Điều kiện để là một Local Minima ?</li>
+<li>Bàn luận.</li>
+<li>Tham khảo.</li>
+</ol>
+<h3 id="1-giới-thiệu-bài-toàn-optimization-">1. Giới thiệu bài toàn Optimization ?</h3>
+<p>Bài toán Visual Question Answering (VQA) là một trong những bài toán có sự kết hợp giữa Vision và Language. Đây là bài toán trả lời một câu hỏi dựa vào hình ảnh, mô hình vì thế phải học được sự liên hệ giữa hình ảnh và ngôn ngữ, từ đó đưa ra được câu trả lời phù hợp.</p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/math_optmization/process.png?raw=true">
+</p>
+<h3 id="2-constraints-">2. Constraints ?</h3>
+<h3 id="3-critical-points-">3. Critical Points ?</h3>
+<p>Bài báo đề xuất phương pháp Stacked Attention, đây là một phương pháp cho phép diễn dịch hình ảnh theo nhiều bước. Ví dụ cho câu hỏi và hình ảnh sau:<br/>
+Câu hỏi: <b> What are sitting in the basket on a bicycle </b><br/>
+Hình ảnh:</p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/vqa/attention.png?raw=true">
+</p>
+Và ta sử dụng 2 lớp attention, thì lớp attention đầu tiên sẽ định vị những đối tượng như <b>basket, bicycle</b> sau đó ở những lớp attention tiếp theo sẽ dần dần loại bỏ những đối tượng không liên quan và cho ra đối tượng cần thiết.<br/>
+<b>3.1 Image Model</b><br/>
+Ở bài báo này, họ đã dùng mô hình VGG Net để lấy feature representation của image.<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/vqa/vgg.png?raw=true">
+</p>
+Đầu tiên, image <img src="https://render.githubusercontent.com/render/math?math=I"> sẽ được rescale thành 448x448, sau đó đưa qua VGG Net, tuy nhiên họ chỉ lấy feature <img src="https://render.githubusercontent.com/render/math?math=f_{I}"> của lớp pooling cuối cùng cái mà họ cho rằng giữ lại được nhiều thông tin của image hơn là lớp cuối cùng của mạng VGG.<br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=f_{I} = CNN_{vgg}(I)">
+</p>
+Sau đó, họ biến đổi <img src="https://render.githubusercontent.com/render/math?math=f_{I}"> thành <img src="https://render.githubusercontent.com/render/math?math=v_{I}"> sao cho có cùng dimension như question vector <b>(3.2)</b><br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=v_{I} = tanh(W_{I}f_{I}%2Bb_{I})">
+</p>
+<b>3.2 Question Model</b><br/>
+Đối với text presentation, ở bài báo họ sử dụng 2 cách: <b>(1) dùng lstm và sử dụng hidden để làm vector representation cho text</b> và <b>(2) sử dụng unigram để lấy vector presentation cho từng word, sau đó concatenate các vector này lại tạo thành vector representation cho text</b><br/>
+Ở post này mình chỉ nói qua phương pháp (1).<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/vqa/lstm.png?raw=true">
+</p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=x_{t} = W_{e}q_{t}, t \in {1,2,...,T}">
+</p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=h_{t} = LSTM(x_{t}), t \in {1,2,...,T}">
+</p>
+Cuối cùng, vector representation của question sẽ là hidden vector ở layer cuối cùng của LSTM, <img src="https://render.githubusercontent.com/render/math?math=v_{Q} = h_{T}"><br/>
+<b>3.3 Stacked Attention Network</b><br/>
+Sau khi đã có 2 vector representation cho image <img src="https://render.githubusercontent.com/render/math?math=v_{I}"> và text <img src="https://render.githubusercontent.com/render/math?math=v_{Q}">, ta sẽ đưa 2 thứ này qua mạng <b>Stacked Attention (SAN)</b> để dự đoán câu trả lời.<br/> 
+Mô hình SAN được mô tả như sau: <br/>
+<p align="center">
+<img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/vqa/san.png?raw=true">
+</p>
+Bước đầu tiên, mô hình sẽ đưa <img src="https://render.githubusercontent.com/render/math?math=v_{I}"> và <img src="https://render.githubusercontent.com/render/math?math=v_{Q}"> qua một lớp perceptron, sau đó tạo ra <b>attention distribution</b> bằng một lớp softmax: <br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=h_{A} = tanh(W_{I,A}v_{I} \bigoplus(W_{Q,A}v_{Q} %2B b_{A}))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=p_{I} = softmax(W_{p}h_{A} %2B b_{p})">
+</p>
+Sau khi có <b>attention distribution</b>, ta lấy weighted sum của distribution và image representation theo công thức: <br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\tilde{v}_{I} = \sum_{i}p_{i}v_{i}">
+</p>
+Cuối cùng, tính ra query vector dùng để encode thông tin của image và question, sau đó dùng nó để tìm ra câu trả lời: <br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=u = \tilde{v}_{I} %2B v_{Q}">
+</p>
+<p>Tuy nhiên, mô hình SAN sẽ lặp lại các bước trên để đưa ra một query đúng hơn. Mỗi lần lặp lại là một lớp attention, vì vậy, đối với lớp attention thứ k, chúng ta sẽ tính như sau: <br/></p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=h^{k}_{A} = tanh(W^{k}_{I,A}v_{I} \bigoplus(W^{k}_{Q,A}u^{k-1} %2B b^{k}_{A}))"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=p^{k}_{I} = softmax(W^{k}_{p}h^{k}_{A} %2B b^{k}_{p})">
+</p>
+Tương tự với weighted sum và query vector:<br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\tilde{v}^{k}_{I} = \sum_{i}p^{k}_{i}v_{i}"><br/>
+<img src="https://render.githubusercontent.com/render/math?math=u^{k} = \tilde{v}^{k}_{I} %2B u^{k-1}">
+</p>
+Cuối cùng, xác suất của đáp án sẽ được tính như sau: <br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=p_{ans}=softmax(W_{u}u^{K} %2B b_{u})">
+</p>
+<h3 id="4-điều-kiện-để-là-một-local-minima-">4. Điều kiện để là một local minima ?</h3>
+<h3 id="5-bàn-luận">5. Bàn luận.</h3>
+<p>Optimization là một phần không thể thiếu trong các mô hình Machine Learning, Deep Learning hiện nay. Việc hiểu rõ được các mô hình optmization sẽ giúp bạn có cái nhìn rõ hơn về việc tại sao model của bạn được tối ưu và bạn có thể đọc paper dễ hơn ví dụ như hiện nay có rất nhiều paper về các Optimization mới như Radam, Adam-Belief, KFAC, etc.</p>
+<h3 id="6-tham-khảo">6. Tham khảo.</h3>
+<p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
+<a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>
+<div style="text-align: right"> (Tín Nguyễn) </div>
+</article>
+    </section>
+
+    
+
+    
+    <article class="ui segment utterances-comments" data-html2canvas-ignore>
+      <script src="https://utteranc.es/client.js"
+        repo="ngthanhtin/blog"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </article>
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2021 Tin&#39;s Blog</p>
+              
+
+              <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/blog/img/avatar.png" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/blog/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/blog/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      
+      
+      <a class="ui label" href="/blog/tags/2020/" title="2020th">2020th</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/attention/" title="Attention">Attention</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/bilinear/" title="Bilinear">Bilinear</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/book/" title="Book">Book</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/coding/" title="Coding">Coding</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/cuda/" title="Cuda">Cuda</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/english/" title="English">English</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/hungary-algorithm/" title="Hungary Algorithm">Hungary Algorithm</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/ielts/" title="Ielts">Ielts</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/kalman-filter/" title="Kalman Filter">Kalman Filter</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/label-smoothing/" title="Label Smoothing">Label Smoothing</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/loss-function/" title="Loss Function">Loss Function</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/math/" title="Math">Math</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/navigation/" title="Navigation">Navigation</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/nlp/" title="Nlp">Nlp</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/nvidia/" title="Nvidia">Nvidia</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/optmization/" title="Optmization">Optmization</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/particle-filter/" title="Particle Filter">Particle Filter</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/review/" title="Review">Review</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/rl/" title="Rl">Rl</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/roadmap/" title="Roadmap">Roadmap</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/robotics/" title="Robotics">Robotics</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/search/" title="Search">Search</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/ubuntu/" title="Ubuntu">Ubuntu</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/vqa/" title="Vqa">Vqa</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+
+  
+  <div class="item">
+    <a href="mailto:ngthanhtinqn@gmail.com">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  null 
+  window.hasTwitterEmbed =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/semantic.min.js"></script>
+<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/blog/js/header.js"></script>
+<script src="/blog/js/main.js"></script>
+<script src="/blog/js/theme.js"></script>
+
+    
+<script src="/blog/js/html2canvas.min.js"></script>
+<script src="/blog/js/post.js"></script>
+
+
+
+
+
+    
+
+    
+
+    
+  </body>
+</html>

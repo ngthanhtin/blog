@@ -24,10 +24,14 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu bài toàn Optimization ?
-
-Bài toán Visual Question Answering (VQA) là một trong những bài toán có sự kết hợp giữa Vision và Language. Đây là bài toán trả lời một câu hỏi dựa vào hình ảnh, mô hình vì thế phải học được sự liên hệ giữa hình ảnh và ngôn ngữ, từ đó đưa ra được câu trả lời phù hợp.
+Optmization được hiểu là quá trình bao gồm việc đánh giá thiết kế tốt hay xấu, và điều chỉnh lại thiết kế nếu như chúng chưa đạt yêu cầu.
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/introduction.png?raw=true">
+</p>
+Còn khi mô hình hóa thành toán học, nó sẽ được viết như sau:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=\minimize_{x} f(x)"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=\subject to x\in X"><br/>
 </p>
 
 ### 2. Constraints ?

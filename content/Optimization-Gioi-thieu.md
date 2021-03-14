@@ -27,7 +27,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 Bài toán Visual Question Answering (VQA) là một trong những bài toán có sự kết hợp giữa Vision và Language. Đây là bài toán trả lời một câu hỏi dựa vào hình ảnh, mô hình vì thế phải học được sự liên hệ giữa hình ảnh và ngôn ngữ, từ đó đưa ra được câu trả lời phù hợp.
 <p align="center">
-  <img src="https://github.com/ngthanhtin/ngthanhtin.github.io/blob/master/_data/math_optimization/introduction.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/introduction.png?raw=true">
 </p>
 
 ### 2. Constraints ?

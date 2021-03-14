@@ -43,7 +43,7 @@ publishdir = "docs/"
 
   # rss = true
 
-  # utterancesRepo = ""
+  utterancesRepo = "https://github.com/ngthanhtin/blog"
 
   # valine = true
   # LEANCLOUD_APP_ID = ""

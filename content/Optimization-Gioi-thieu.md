@@ -40,6 +40,13 @@ Nếu trong không gian n-chiều, x sẽ được biểu diễn bằng một ve
 Minimizer hay solution chính là local minimum mà ta cần tìm, nhưng tại sao không phải là global minimum?. Câu trả lời đơn giản là có rất nhiều hàm phức tạp, vì thế việc tìm global minimum là rất khó, vì vậy ta chỉ cần tìm được local minimum. Ở các phần sau mình sẽ giới thiệu kĩ hơn về local minimum và điều kiện để đạt được nó.
 
 ### 2. Constraints ?
+Constraint là tập feasible set đã nói ở trên. Nó có nghĩa là một tập X chứa các giá trị có thể có của x. Lấy ví dụ bài toán sau:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=\minimize_{x_{1}, x_{2}} f(x_{1}, x_{2}})"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=\subject to x_{1} \ge 0"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=\           x_{2} \ge 0"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=\           x_{1} + x_{2} \le 1"><br/>
+</p>
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/constraints.png?raw=true">
 </p>

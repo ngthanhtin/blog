@@ -81,7 +81,18 @@ Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là sta
 #### 4.2 Hàm nhiều biến Multivariate.
 Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/>
 1. <img src="https://render.githubusercontent.com/render/math?math=\triangledown f(x) = 0">, hay còn gọi là ma trận Jaccobian.
-2. <img src="https://render.githubusercontent.com/render/math?math=\triangledown^{2} f(x) = 0"> là ma trận positive definite, hay còn gọi là ma trận Hessain.
+2. <img src="https://render.githubusercontent.com/render/math?math=\triangledown^{2} f(x) = 0"> được gọi là ma trận Hessain và ma trận này phải <b>positive definite</b>.
+
+
+* Nói sơ qua về  thế nào là ma trận Possitive definite.<br/>
+Định nghĩa: Ma trận được gọi là positive definite khi ma trận là <b>symetric</b> và <b>tất cả eigen value của nó đều positive</b>.<br/>
+Ngoài ra, với ma trận <b>A</b> là ma trận positive definite và có f(x) thỏa:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = x^{T}Ax"><br/>
+</p>
+thì f(x) sẽ có một global minimum.
+
+
 
 Dưới đây là hình mô tả các loại điểm: 
 <p align="center">
@@ -105,5 +116,6 @@ Optimization là một phần không thể thiếu trong các mô hình Machine 
 ### 6. Tham khảo.
 [Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler]()<br/>
 [Code](https://github.com/ngthanhtin/optimization_algorithm): Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/>
+https://towardsdatascience.com/what-is-a-positive-definite-matrix-181e24085abd
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

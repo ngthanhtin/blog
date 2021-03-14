@@ -244,8 +244,17 @@ Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là sta
 <p>Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/></p>
 <ol>
 <li><img src="https://render.githubusercontent.com/render/math?math=\triangledown f(x) = 0">, hay còn gọi là ma trận Jaccobian.</li>
-<li><img src="https://render.githubusercontent.com/render/math?math=\triangledown^{2} f(x) = 0"> là ma trận positive definite, hay còn gọi là ma trận Hessain.</li>
+<li><img src="https://render.githubusercontent.com/render/math?math=\triangledown^{2} f(x) = 0"> được gọi là ma trận Hessain và ma trận này phải <b>positive definite</b>.</li>
 </ol>
+<ul>
+<li>Nói sơ qua về  thế nào là ma trận Possitive definite.<br/>
+Định nghĩa: Ma trận được gọi là positive definite khi ma trận là <b>symetric</b> và <b>tất cả eigen value của nó đều positive</b>.<br/>
+Ngoài ra, với ma trận <b>A</b> là ma trận positive definite và có f(x) thỏa:</li>
+</ul>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = x^{T}Ax"><br/>
+</p>
+thì f(x) sẽ có một global minimum.
 <p>Dưới đây là hình mô tả các loại điểm:</p>
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/local_maximum.png?raw=true">
@@ -263,7 +272,8 @@ Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là sta
 <p>Optimization là một phần không thể thiếu trong các mô hình Machine Learning, Deep Learning hiện nay. Việc hiểu rõ được các mô hình optmization sẽ giúp bạn có cái nhìn rõ hơn về việc tại sao model của bạn được tối ưu và bạn có thể đọc paper dễ hơn ví dụ như hiện nay có rất nhiều paper về các Optimization mới như Radam, Adam-Belief, KFAC, etc.</p>
 <h3 id="6-tham-khảo">6. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
-<a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>
+<a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/>
+<a href="https://towardsdatascience.com/what-is-a-positive-definite-matrix-181e24085abd">https://towardsdatascience.com/what-is-a-positive-definite-matrix-181e24085abd</a></p>
 <div style="text-align: right"> (Tín Nguyễn) </div>
 </article>
     </section>

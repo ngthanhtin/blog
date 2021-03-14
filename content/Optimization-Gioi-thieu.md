@@ -45,7 +45,7 @@ Constraint là tập feasible set đã nói ở trên. Nó có nghĩa là một 
   <img src="https://render.githubusercontent.com/render/math?math=\minimize_{x_{1}, x_{2}} f(x_{1}, x_{2})"><br/>
   <img src="https://render.githubusercontent.com/render/math?math=\subject to x_{1} \ge 0"><br/>
   <img src="https://render.githubusercontent.com/render/math?math=\           x_{2} \ge 0"><br/>
-  <img src="https://render.githubusercontent.com/render/math?math=\           x_{1} + x_{2} \le 1"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=\           x_{1} %2B x_{2} \le 1"><br/>
 </p>
 Ta có thể thấy, phần màu xanh ở hình dưới này chính là feasible set của bài toán trên.
 <p align="center">
@@ -58,7 +58,7 @@ Ta có thể thấy, phần màu xanh ở hình dưới này chính là feasible
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/critical_points.png?raw=true">
 </p>
 <b>Global minimum: </b>Điểm này là điểm tối ưu toàn cục. <br/>
-<b>Strong local minimum: </b>Còn được gọi là <b>strict local minimizer</b>, nếu tồn tại \delta > 0, f(x*) < f(x), khi và chỉ khi x* != x và ||x* - x|| < \delta.<br/>
+<b>Strong local minimum: </b>Còn được gọi là <b>strict local minimizer</b>, nếu tồn tại <img src="https://render.githubusercontent.com/render/math?math=\delta"> > 0, f(x*) < f(x), khi và chỉ khi x* != x và ||x* - x|| < <img src="https://render.githubusercontent.com/render/math?math=\delta">.<br/>
 <b>Weak local minimum: </b>Là local minimum không phải là strong local minimum.<br/>
 Tại những điểm global, local minimum, f(x) sẽ có đạo hàm bậc nhất bằng 0. Tuy nhiên, điểm có đạo hàm bằng 0 chưa chắc là local minima, những điểm này còn được gọi là <b>stationary points</b>.<br/>
 <b>Inflection points: </b>Là điểm (1) nếu có đạo hàm bằng 0 thì cũng không phải local minima, (2) là điểm mà đạo hàm bậc 2 f'' đổi dấu, (3) không nhất thiết phải có đạo hàm bằng 0.<br/>
@@ -80,8 +80,8 @@ Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là sta
 
 #### 4.2 Hàm nhiều biến Multivariate.
 Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/>
-1. \delta f(x) = 0, hay còn gọi là ma trận Jaccobian.
-2. \delta2 f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.
+1. <img src="https://render.githubusercontent.com/render/math?math=\Delta f(x) = 0">, hay còn gọi là ma trận Jaccobian.
+2. <img src="https://render.githubusercontent.com/render/math?math=\Delta^{2} f(x) = 0"> f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.
 
 Dưới đây là hình mô tả các loại điểm: 
 <p align="center">

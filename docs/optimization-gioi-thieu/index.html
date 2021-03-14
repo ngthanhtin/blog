@@ -167,7 +167,7 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
                 Sunday, Mar 14, 2021
               
 
-            | 4 minutes read
+            | 5 minutes read
 
             | Update at
               
@@ -234,7 +234,31 @@ Cũng có thể thấy điểm (4,0) có f' bằng 0, tuy nhiên ko phải là l
 Điểm (2,2) và (6,2) là inflection point vì làm f'' đổi dấu tuy nhiên f' khác 0 (thỏa điều kiện 3). <br/>
 <h3 id="4-điều-kiện-để-là-một-local-minima-">4. Điều kiện để là một local minima ?</h3>
 <h4 id="41-hàm-một-biến-univariate">4.1 Hàm một biến Univariate.</h4>
+<p>Đối với hàm một biến, một điểm design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/></p>
+<ol>
+<li>f'(x) = 0 <br/></li>
+<li>f''(x) &gt; 0 (nếu ngược lại sẽ là local maximum) <br/>
+Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là stationary point (có nhắc ở trên).</li>
+</ol>
 <h4 id="42-hàm-nhiều-biến-multivariate">4.2 Hàm nhiều biến Multivariate.</h4>
+<p>Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/></p>
+<ol>
+<li>\delta f(x) = 0, hay còn gọi là ma trận Jaccobian.</li>
+<li>\delta2 f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.</li>
+</ol>
+<p>Dưới đây là hình mô tả các loại điểm:</p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/local_maximum.png?raw=true">
+</p>
+Đây là global maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite.
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/saddle.png?raw=true">
+</p>
+Đây là điểm <b>saddle (yên ngựa)</b>, điểm này có gradient ở giữa bằng 0 nhưng ko phải là local minima.
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/bowl.png?raw=true">
+</p>
+Đây là điểm <b>bowl</b>, điểm này là local minima, có gradient ở giữa bằng 0 và ma trận Hessain là possitive definite.
 <h3 id="5-bàn-luận">5. Bàn luận.</h3>
 <p>Optimization là một phần không thể thiếu trong các mô hình Machine Learning, Deep Learning hiện nay. Việc hiểu rõ được các mô hình optmization sẽ giúp bạn có cái nhìn rõ hơn về việc tại sao model của bạn được tối ưu và bạn có thể đọc paper dễ hơn ví dụ như hiện nay có rất nhiều paper về các Optimization mới như Radam, Adam-Belief, KFAC, etc.</p>
 <h3 id="6-tham-khảo">6. Tham khảo.</h3>

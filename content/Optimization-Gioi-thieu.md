@@ -73,8 +73,31 @@ Cũng có thể thấy điểm (4,0) có f' bằng 0, tuy nhiên ko phải là l
 
 ### 4. Điều kiện để là một local minima ?
 #### 4.1 Hàm một biến Univariate.
+Đối với hàm một biến, một điểm design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/>
+1. f'(x) = 0 <br/>
+2. f''(x) > 0 (nếu ngược lại sẽ là local maximum) <br/>
+Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là stationary point (có nhắc ở trên).
 
 #### 4.2 Hàm nhiều biến Multivariate.
+Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/>
+1. \delta f(x) = 0, hay còn gọi là ma trận Jaccobian.
+2. \delta2 f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.
+
+Dưới đây là hình mô tả các loại điểm: 
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/local_maximum.png?raw=true">
+</p>
+Đây là global maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite.
+
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/saddle.png?raw=true">
+</p>
+Đây là điểm <b>saddle (yên ngựa)</b>, điểm này có gradient ở giữa bằng 0 nhưng ko phải là local minima.
+
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/bowl.png?raw=true">
+</p>
+Đây là điểm <b>bowl</b>, điểm này là local minima, có gradient ở giữa bằng 0 và ma trận Hessain là possitive definite.
 
 ### 5. Bàn luận.
 Optimization là một phần không thể thiếu trong các mô hình Machine Learning, Deep Learning hiện nay. Việc hiểu rõ được các mô hình optmization sẽ giúp bạn có cái nhìn rõ hơn về việc tại sao model của bạn được tối ưu và bạn có thể đọc paper dễ hơn ví dụ như hiện nay có rất nhiều paper về các Optimization mới như Radam, Adam-Belief, KFAC, etc.

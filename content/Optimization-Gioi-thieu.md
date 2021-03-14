@@ -80,8 +80,8 @@ Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là sta
 
 #### 4.2 Hàm nhiều biến Multivariate.
 Đối với hàm nhiều biến, một tập các design point x được xem là local minima khi nó thỏa 2 điều kiện : <br/>
-1. <img src="https://render.githubusercontent.com/render/math?math=\Delta f(x) = 0">, hay còn gọi là ma trận Jaccobian.
-2. <img src="https://render.githubusercontent.com/render/math?math=\Delta^{2} f(x) = 0"> f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.
+1. <img src="https://render.githubusercontent.com/render/math?math=\triangledown f(x) = 0">, hay còn gọi là ma trận Jaccobian.
+2. <img src="https://render.githubusercontent.com/render/math?math=\triangledown^{2} f(x) = 0"> f(x) là ma trận positive definite, hay còn gọi là ma trận Hessain.
 
 Dưới đây là hình mô tả các loại điểm: 
 <p align="center">

@@ -87,7 +87,7 @@ Dưới đây là hình mô tả các loại điểm:
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/local_maximum.png?raw=true">
 </p>
-Đây là global maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite.
+Đây là local maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite.
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/saddle.png?raw=true">

@@ -70,7 +70,7 @@ Ngoài ra, ta còn có phiên bản acceleration của thuật toán này, đó 
 ### 4. Bàn luận.
 Mặc dù ý tưởng của Coordinate rất hay, giúp tránh được việc tính toán gradient, nhưng cũng có trường hợp thuật toán ko thể optimize được ví dụ như hình sau:<br/>
 <p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/direct/cyclic_coordinate_descent/stuck.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/stuck.png?raw=true">
 </p>
 <div style="text-align: center">Trường hợp cyclic coordinate descent bị stuck.</div>
 Ta có thể thấy, di chuyển theo hướng nào thì f(x) cũng sẽ tăng và không thể nào tiến vào local minimum được. Và cũng có thể thấy khi di chuyển diagonally (trực giao) thì x có thể tiến vào local nhưng ở thuật toán này ko cho phép điều đó, ở các phần sau mình sẽ giới thiệu những phương pháp khác khắc phục vấn đề này nhé.<br/>

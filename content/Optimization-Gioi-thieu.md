@@ -118,6 +118,7 @@ A được gọi là ma trận symetric khi:
 <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=A^{T} = A"><br/>
 </p>
+
 * Eigen value là gì?
 Eigen value được định nghĩa như sau:
 <p align="center">

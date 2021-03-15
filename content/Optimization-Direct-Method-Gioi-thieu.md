@@ -38,7 +38,8 @@ Sau đó, tới step thứ 2, ta lấy <img src="https://render.githubuserconten
   <img src="https://render.githubusercontent.com/render/math?math=x^{(2)} = (x_{1}^{2}, x_{2}^{2}, x_{3}^{2},..., x_{n}^{2})"><br/>
 </p>
 
-Đối với thuật toán Cylic Coordinate Search, tại mỗi thời điểm, ta chỉ search trên một hướng, nghĩa là ở step 1 ở trên ta sẽ search theo một vector đơn vị là [1, 0, 0,..., 0], step 2 sẽ là [0, 1, 0,..., 0].
+Đối với thuật toán Cylic Coordinate Search, tại mỗi thời điểm, ta chỉ search trên một hướng, nghĩa là ở step 1 ở trên ta sẽ search theo một vector đơn vị là [1, 0, 0,..., 0], step 2 sẽ là [0, 1, 0,..., 0].<br/>
+Và để ý rằng, các vector này là orthogonal với nhau, nghĩa là <b>aT.a = 0</b>.
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/coordinate_search.png?raw=true">
@@ -73,7 +74,7 @@ Mặc dù ý tưởng của Coordinate rất hay, giúp tránh được việc t
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/stuck.png?raw=true">
 </p>
 <div style="text-align: center">Trường hợp cyclic coordinate descent bị stuck.</div>
-Ta có thể thấy, di chuyển theo hướng nào thì f(x) cũng sẽ tăng và không thể nào tiến vào local minimum được. Và cũng có thể thấy khi di chuyển diagonally (trực giao) thì x có thể tiến vào local nhưng ở thuật toán này ko cho phép điều đó, ở các phần sau mình sẽ giới thiệu những phương pháp khác khắc phục vấn đề này nhé.<br/>
+Ta có thể thấy, di chuyển theo hướng nào thì f(x) cũng sẽ tăng và không thể nào tiến vào local minimum được. Và cũng có thể thấy khi di chuyển diagonally (chéo) thì x có thể tiến vào local nhưng ở thuật toán này ko cho phép điều đó, ở các phần sau mình sẽ giới thiệu những phương pháp khác khắc phục vấn đề này nhé.<br/>
 
 ### 5. Tham khảo.
 [Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler]()<br/>

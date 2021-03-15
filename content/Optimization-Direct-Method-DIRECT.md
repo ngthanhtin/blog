@@ -1,11 +1,12 @@
 ---
 title : "Optmization - Direct Method: Divided Rectangle (DIRECT)"
-cover : "/blog/img/math_optimization/direct/powell/powell.png"
+cover : "/blog/img/math_optimization/direct/direct/cover.png"
 date : "2021-03-15"
 tags : 
   - "math"
   - "direct-method"
   - "optmization"
+  - "divided-rectangle"
 
 ---
 

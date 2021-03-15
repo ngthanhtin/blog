@@ -1,6 +1,6 @@
 ---
 title : "Optmization - Direct Method - Powell Method"
-cover : "/blog/img/math_optimization/direct/powell/powell.png"
+cover : "/blog/img/math_optimization/direct/powell/cover.png"
 date : "2021-03-15"
 tags : 
   - "math"
@@ -11,7 +11,9 @@ tags :
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Powell Method</b>.
-
+Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau:<br/>
+Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/</br>
+Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</br>
 Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 1. Giới thiệu phương pháp Powell.
@@ -23,7 +25,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu phương pháp Powell.
-
+Powell method cho phép dùng line search trên những direction mà ko orthogonal với nhau như phương pháp Cyclic Coordinate Method.
 ### 2. Thuật toán.
 
 

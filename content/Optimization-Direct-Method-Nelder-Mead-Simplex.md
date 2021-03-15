@@ -1,6 +1,6 @@
 ---
 title : "Optmization - Direct Method: Nelder Mead Simplex"
-cover : "/blog/img/math_optimization/direct/powell/powell.png"
+cover : "/blog/img/math_optimization/direct/nelder_mead/cover.jpg"
 date : "2021-03-15"
 tags : 
   - "math"

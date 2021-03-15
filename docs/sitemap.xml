@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/aa/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/direct-method/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url>
@@ -64,6 +69,11 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tags/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/aa/test/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url>
   

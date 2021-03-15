@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Optmization - Direct Method - Powell Method | Tin&#39;s Blog</title>
+    <title>test | Tin&#39;s Blog</title>
 
     
 
@@ -17,21 +17,21 @@
 
 <meta name="generator" content="Hugo 0.80.0" />
 
-<link rel="canonical" href="https://ngthanhtin.github.io/blog/optimization-direct-method-powell/" />
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/aa/test/" />
 
 
-<meta property="og:title" content="Optmization - Direct Method - Powell Method" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:" />
+<meta property="og:title" content="test" />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/optimization-direct-method-powell/" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/aa/test/" />
 <meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-03-15T00:00:00+00:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Optmization - Direct Method - Powell Method"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:"/>
+<meta name="twitter:title" content="test"/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -122,7 +122,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-giới-thiệu-phương-pháp-powell">1. Giới thiệu phương pháp Powell.</a></li>
+        <li><a href="#1-giới-thiệu-phương-pháp-divided-rectangle-direct">1. Giới thiệu phương pháp Divided Rectangle (DIRECT).</a></li>
         <li><a href="#2-thuật-toán">2. Thuật toán.</a></li>
         <li><a href="#3-code">3. Code.</a></li>
         <li><a href="#4-bàn-luận">4. Bàn luận.</a></li>
@@ -141,10 +141,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=Optmization%20-%20Direct%20Method%20-%20Powell%20Method&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2foptimization-direct-method-powell%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=test&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2faa%2ftest%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2foptimization-direct-method-powell%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2faa%2ftest%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -154,7 +154,7 @@
     
     <section class="ui top attached segment">
       <header>
-        <h1 class="ui large header">Optmization - Direct Method - Powell Method<div class="sub header">
+        <h1 class="ui large header">test<div class="sub header">
             @
             
               Nguyen Thanh Tin
@@ -164,7 +164,7 @@
                 Monday, Mar 15, 2021
               
 
-            | 2 minutes read
+            | 1 minutes read
 
             | Update at
               
@@ -174,36 +174,19 @@
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Powell Method</b>.
-Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau:<br/>
-Optimization: <a href="https://ngthanhtin.github.io/blog/optimization-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-gioi-thieu/</a></br>
-Direct Method: <a href="https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</a></br>
-Nội dung chính sẽ bao gồm các phần sau: <br/></p>
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> khác nữa đó là <b>Direct Method</b>. Phương pháp này thường được gọi là <i>zero-order, black box, pattern search, hoặc derivative-free</i> methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</p>
+<p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
 <ol>
-<li>Giới thiệu phương pháp Powell.</li>
+<li>Giới thiệu phương pháp Divided Rectangle (DIRECT).</li>
 <li>Thuật toán.</li>
 <li>Code.</li>
 <li>Bàn luận.</li>
 <li>Tham khảo.</li>
 </ol>
-<h3 id="1-giới-thiệu-phương-pháp-powell">1. Giới thiệu phương pháp Powell.</h3>
-<p>Powell method cho phép dùng line search trên những direction mà ko orthogonal với nhau như phương pháp Cyclic Coordinate Method.<br/></p>
-<p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/cover.png?raw=true">
-</p>
-Ta có thể thấy, hướng di chuyển của x không nhất thiết phải orthogonal với hướng cũ.
+<h3 id="1-giới-thiệu-phương-pháp-divided-rectangle-direct">1. Giới thiệu phương pháp Divided Rectangle (DIRECT).</h3>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
-<p>Đối với thuật toán này, ta vẫn sẽ thực hiện line search trên tất cả các direction như thuật toán Cyclic Coordinate và sẽ có được một tập <img src="https://render.githubusercontent.com/render/math?math=x_{new} ">. <br/>
-Sau đó sẽ thực hiện line search trên (x_old - x_new)
-Bước thứ 2 là tính step size, nghĩa là lấy norm của tập x ban đầu và x new vừa tìm được.<br/>
-Điều kiện dừng là khi step size nhỏ hơn một giá trị threshold nào đó.</p>
 <h3 id="3-code">3. Code.</h3>
-<p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/code.png?raw=true">
-</p>
-<div style="text-align: center">Code của thuật toán Powell.</div>
 <h3 id="4-bàn-luận">4. Bàn luận.</h3>
-<p>Mặc dù thuật toán này giải quyết được vấn đề của Cyclic Coordinate Search nhưng nó đòi hỏi nhiều vòng lặp hơn thuật toán ban đầu.</p>
 <h3 id="5-tham-khảo">5. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
 <a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>

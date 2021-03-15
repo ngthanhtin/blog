@@ -25,15 +25,27 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu phương pháp Powell.
-Powell method cho phép dùng line search trên những direction mà ko orthogonal với nhau như phương pháp Cyclic Coordinate Method.
+Powell method cho phép dùng line search trên những direction mà ko orthogonal với nhau như phương pháp Cyclic Coordinate Method.<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/cover.png?raw=true">
+</p>
+Ta có thể thấy, hướng di chuyển của x không nhất thiết phải orthogonal với hướng cũ.
+
 ### 2. Thuật toán.
+Đối với thuật toán này, ta vẫn sẽ thực hiện line search trên tất cả các direction như thuật toán Cyclic Coordinate và sẽ có được một tập <img src="https://render.githubusercontent.com/render/math?math=x_{new} ">. <br/>
+Sau đó sẽ thực hiện line search trên (x_old - x_new)
+Bước thứ 2 là tính step size, nghĩa là lấy norm của tập x ban đầu và x new vừa tìm được.<br/>
+Điều kiện dừng là khi step size nhỏ hơn một giá trị threshold nào đó.
 
 
 ### 3. Code.
-
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/code.png?raw=true">
+</p>
+<div style="text-align: center">Code của thuật toán Powell.</div>
 
 ### 4. Bàn luận.
-
+Mặc dù thuật toán này giải quyết được vấn đề của Cyclic Coordinate Search nhưng nó đòi hỏi nhiều vòng lặp hơn thuật toán ban đầu.
 
 ### 5. Tham khảo.
 [Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler]()<br/>

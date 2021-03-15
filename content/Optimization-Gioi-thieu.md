@@ -131,17 +131,20 @@ Dưới đây là hình mô tả các loại điểm:
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/local_maximum.png?raw=true">
 </p>
-Đây là local maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite.
+<div style="text-align: center"> Đây là local maxima, có gradient ở giữa bằng 0 và ma trận Hessain là ma trận negative definite. </div>
+
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/saddle.png?raw=true">
 </p>
-Đây là điểm <b>saddle (yên ngựa)</b>, điểm này có gradient ở giữa bằng 0 nhưng ko phải là local minima.
+<div style="text-align: center">Đây là điểm <b>saddle (yên ngựa)</b>, điểm này có gradient ở giữa bằng 0 nhưng ko phải là local minima.</div>
+
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/bowl.png?raw=true">
 </p>
-Đây là điểm <b>bowl</b>, điểm này là local minima, có gradient ở giữa bằng 0 và ma trận Hessain là possitive definite.
+<div style="text-align: center">Đây là điểm <b>bowl</b>, điểm này là local minima, có gradient ở giữa bằng 0 và ma trận Hessain là possitive definite.</div>
+
 
 ### 5. Bàn luận.
 Optimization là một phần không thể thiếu trong các mô hình Machine Learning, Deep Learning hiện nay. Việc hiểu rõ được các mô hình optmization sẽ giúp bạn có cái nhìn rõ hơn về việc tại sao model của bạn được tối ưu và bạn có thể đọc paper dễ hơn ví dụ như hiện nay có rất nhiều paper về các Optimization mới như Radam, Adam-Belief, KFAC, etc.

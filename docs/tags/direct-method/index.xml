@@ -44,7 +44,7 @@ Nội dung chính sẽ bao gồm các phần sau:
       <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-hooke-jeeves-pattern-search/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Direct Method đầu tiên - Cyclic Coordinate Search.</description>
+ Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. 2. Giới thiệu Generalized Pattern Search.</description>
     </item>
     
     <item>
@@ -53,7 +53,9 @@ Nội dung chính sẽ bao gồm các phần sau:
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-nelder-mead-simplex/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Nelder-Mead-Simplex.</description>
     </item>
     
   </channel>

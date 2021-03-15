@@ -23,7 +23,7 @@
 <meta property="og:title" content="Optmization - Direct Method: Hooke Jeeves and Pattern Search" />
 <meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Direct Method đầu tiên - Cyclic Coordinate Search." />
+ Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. 2. Giới thiệu Generalized Pattern Search." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/optimization-direct-method-hooke-jeeves-pattern-search/" />
 <meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
@@ -35,7 +35,7 @@ Nội dung chính sẽ bao gồm các phần sau:
 <meta name="twitter:title" content="Optmization - Direct Method: Hooke Jeeves and Pattern Search"/>
 <meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Direct Method đầu tiên - Cyclic Coordinate Search."/>
+ Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. 2. Giới thiệu Generalized Pattern Search."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -126,11 +126,11 @@ Nội dung chính sẽ bao gồm các phần sau:
   <ul>
     <li>
       <ul>
-        <li><a href="#1-giới-thiệu-phương-pháp-direct-method-đầu-tiên---cyclic-coordinate-search">1. Giới thiệu phương pháp Direct Method đầu tiên - Cyclic Coordinate Search.</a></li>
-        <li><a href="#2-thuật-toán">2. Thuật toán.</a></li>
-        <li><a href="#3-code">3. Code.</a></li>
-        <li><a href="#4-bàn-luận">4. Bàn luận.</a></li>
-        <li><a href="#5-tham-khảo">5. Tham khảo.</a></li>
+        <li><a href="#1-giới-thiệu-phương-pháp-hooke-jeeves">1. Giới thiệu phương pháp Hooke-Jeeves.</a></li>
+        <li><a href="#2-giới-thiệu-generalized-pattern-search">2. Giới thiệu Generalized Pattern Search.</a></li>
+        <li><a href="#3-thuật-toán">3. Thuật toán.</a></li>
+        <li><a href="#4-code">4. Code.</a></li>
+        <li><a href="#5-bàn-luận">5. Bàn luận.</a></li>
         <li><a href="#6-tham-khảo">6. Tham khảo.</a></li>
       </ul>
     </li>
@@ -189,11 +189,11 @@ Nội dung chính sẽ bao gồm các phần sau:
 <li>Bàn luận.</li>
 <li>Tham khảo.</li>
 </ol>
-<h3 id="1-giới-thiệu-phương-pháp-direct-method-đầu-tiên---cyclic-coordinate-search">1. Giới thiệu phương pháp Direct Method đầu tiên - Cyclic Coordinate Search.</h3>
-<h3 id="2-thuật-toán">2. Thuật toán.</h3>
-<h3 id="3-code">3. Code.</h3>
-<h3 id="4-bàn-luận">4. Bàn luận.</h3>
-<h3 id="5-tham-khảo">5. Tham khảo.</h3>
+<h3 id="1-giới-thiệu-phương-pháp-hooke-jeeves">1. Giới thiệu phương pháp Hooke-Jeeves.</h3>
+<h3 id="2-giới-thiệu-generalized-pattern-search">2. Giới thiệu Generalized Pattern Search.</h3>
+<h3 id="3-thuật-toán">3. Thuật toán.</h3>
+<h3 id="4-code">4. Code.</h3>
+<h3 id="5-bàn-luận">5. Bàn luận.</h3>
 <h3 id="6-tham-khảo">6. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
 <a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>
@@ -332,6 +332,10 @@ Nội dung chính sẽ bao gồm các phần sau:
     
       
       
+      <a class="ui label" href="/blog/tags/nelder-mead/" title="Nelder Mead">Nelder Mead</a>
+    
+      
+      
       <a class="ui label" href="/blog/tags/nlp/" title="Nlp">Nlp</a>
     
       
@@ -373,6 +377,10 @@ Nội dung chính sẽ bao gồm các phần sau:
       
       
       <a class="ui label" href="/blog/tags/search/" title="Search">Search</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/simplex/" title="Simplex">Simplex</a>
     
       
       

@@ -79,18 +79,24 @@ Cũng có thể thấy điểm (4,0) có f' bằng 0, tuy nhiên ko phải là l
 Một điểm mà chỉ thỏa điều kiện 1 thì sẽ được gọi là stationary point (có nhắc ở trên).
 
 Ví dụ: 
-Tìm local minimum của hàm <img src="https://render.githubusercontent.com/render/math?math=f(x) = 3x^{2} + 2x + 3">. <br>
+Tìm local minimum của hàm <img src="https://render.githubusercontent.com/render/math?math=f(x) = 3x^{2} %2B 2x %2B 3">. <br>
 Ta có thể giải bài này bằng phương pháp đã học ở cấp 2, cấp 3 như sau:
-<img src="https://render.githubusercontent.com/render/math?math=3x^{2} + 2x + 3 = (sqrt{3}x)^{2} + 2\frac{sqrt{3}}{sqrt{3}}x + \frac{1}{3}">.
-<img src="https://render.githubusercontent.com/render/math?math=f(x)            = (sqrt{3}x + \frac{1}{sqrt{3}})^{2} + \frac{8}{3} \gre \frac{8}{3}">.
-Vì vậy giá trị nhỏ nhất (local minimum) của f(x) = 8/3 khi x = -1/3.
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = (\sqrt{3}x)^{2} %2B 2\frac{\sqrt{3}}{\sqrt{3}}x %2B \frac{1}{3}">
+  <img src="https://render.githubusercontent.com/render/math?math=     = (\sqrt{3}x + \frac{1}{\sqrt{3}})^{2} %2B \frac{8}{3} \gre \frac{8}{3}">
+</p>
+Vì vậy giá trị nhỏ nhất (local minimum) của f(x) = 8/3 khi x = -1/3.<br/>
 Đối với cách giải ta vừa được học ở trên:
-<img src="https://render.githubusercontent.com/render/math?math=f^{'}(x) = 0">.
-<img src="https://render.githubusercontent.com/render/math?math=6x + 2   = 0">.
-<img src="https://render.githubusercontent.com/render/math?math=x        = \frac{-1}{3}">.
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f^{'}(x) = 0">
+  <img src="https://render.githubusercontent.com/render/math?math=6x %2B 2 = 0">
+  <img src="https://render.githubusercontent.com/render/math?math=x        = \frac{-1}{3}">
+</p>
 Sau đó:
-<img src="https://render.githubusercontent.com/render/math?math=f^{''}(x) > 0">.
-<img src="https://render.githubusercontent.com/render/math?math=6         > 0"> (thỏa)
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f^{''}(x) > 0">.
+  <img src="https://render.githubusercontent.com/render/math?math=6         > 0"> (thỏa)
+</p>
 Vậy f(x) đạt local minimum tại x = -1/3
 
 #### 4.2 Hàm nhiều biến Multivariate.
@@ -107,6 +113,17 @@ Ngoài ra, với ma trận <b>A</b> là ma trận positive definite và có f(x)
 </p>
 thì f(x) sẽ có một global minimum.
 
+* Thế nào là ma trận symetric?
+A được gọi là ma trận symetric khi:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=A^{T} = A"><br/>
+</p>
+* Eigen value là gì?
+Eigen value được định nghĩa như sau:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=Mz = =\lambda z"><br/>
+</p>
+M là một matrix, và z là một vector.
 
 
 Dưới đây là hình mô tả các loại điểm: 

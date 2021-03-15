@@ -1,6 +1,6 @@
 ---
 title : "Optmization - Direct Method - Powell Method"
-cover : "/blog/img/math_optimization/powell.png"
+cover : "/blog/img/math_optimization/direct/powell/powell.png"
 date : "2021-03-15"
 tags : 
   - "math"

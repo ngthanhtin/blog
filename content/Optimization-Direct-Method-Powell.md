@@ -33,7 +33,7 @@ Ta có thể thấy, hướng di chuyển của x không nhất thiết phải o
 
 ### 2. Thuật toán.
 Đối với thuật toán này, ta vẫn sẽ thực hiện line search trên tất cả các direction như thuật toán Cyclic Coordinate và sẽ có được một tập <img src="https://render.githubusercontent.com/render/math?math=x_{new} ">. <br/>
-Sau đó sẽ thực hiện line search trên (x_old - x_new)
+Sau đó sẽ thực hiện line search trên (x_old - x_new).
 Bước thứ 2 là tính step size, nghĩa là lấy norm của tập x ban đầu và x new vừa tìm được.<br/>
 Điều kiện dừng là khi step size nhỏ hơn một giá trị threshold nào đó.
 

@@ -56,14 +56,5 @@ Nội dung chính sẽ bao gồm các phần sau:
  Giới thiệu phương pháp Nelder-Mead-Simplex.</description>
     </item>
     
-    <item>
-      <title>test</title>
-      <link>https://ngthanhtin.github.io/blog/aa/test/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/aa/test/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
-    </item>
-    
   </channel>
 </rss>

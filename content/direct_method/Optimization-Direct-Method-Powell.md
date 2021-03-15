@@ -32,11 +32,17 @@ Powell method cho phép dùng line search trên những direction mà ko orthogo
 Ta có thể thấy, hướng di chuyển của x không nhất thiết phải orthogonal với hướng cũ.
 
 ### 2. Thuật toán.
-Đối với thuật toán này, ta vẫn sẽ thực hiện line search trên tất cả các direction như thuật toán Cyclic Coordinate và sẽ có được một tập <img src="https://render.githubusercontent.com/render/math?math=x_{new} ">. <br/>
-Sau đó sẽ thực hiện line search trên (x_old - x_new).
-Bước thứ 2 là tính step size, nghĩa là lấy norm của tập x ban đầu và x new vừa tìm được.<br/>
-Điều kiện dừng là khi step size nhỏ hơn một giá trị threshold nào đó.
+1. Ban đầu, ta sẽ khởi tạo một tập chứa các direction <img src="https://render.githubusercontent.com/render/math?math=U = [e_{1}, e_{2}, e_{3},..., e_{n}] ">, những hướng này ban đầu là những vector đơn vị (tương tự Cyclic Coordinate Search).<br/>
+2. Sau đó, thực hiện line search trên tập các direction này và có được một tập <img src="https://render.githubusercontent.com/render/math?math=x^{'}"><br/>
+3. Sau đó, loại bỏ direction đầu tiên trong tập direction và dịch index của các phần tử xuống một đơn vị và thay thế direction thứ n bằng hướng mới x' - x:<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=U[i] = U[i+1] "><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=U[n] = x^{'} - x ">
+</p>
 
+5. Thực hiện line search trên hướng mới x' - x.<br/>
+6. Tính step size bằng norm giữa x' và x.<br/>
+7. Dừng khi step size nhỏ hơn một threshold nào đó.
 
 ### 3. Code.
 <p align="center">

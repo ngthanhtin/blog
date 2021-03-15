@@ -6,11 +6,20 @@
     <description>Recent content in Tags on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>direct-method</title>
+      <link>https://ngthanhtin.github.io/blog/tags/direct-method/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/direct-method/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>math</title>
       <link>https://ngthanhtin.github.io/blog/tags/math/</link>
-      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/tags/math/</guid>
       <description></description>
@@ -19,9 +28,18 @@
     <item>
       <title>optmization</title>
       <link>https://ngthanhtin.github.io/blog/tags/optmization/</link>
-      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/tags/optmization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powell</title>
+      <link>https://ngthanhtin.github.io/blog/tags/powell/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/powell/</guid>
       <description></description>
     </item>
     

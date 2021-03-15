@@ -6,7 +6,72 @@
     <description>Recent content on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optmization - Direct Method - Powell Method</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-powell/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-powell/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Powell. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Powell. 2. Thuật toán. 3. Code. 4. Bàn luận. 5. Tham khảo. 6. Tham khảo.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-direct/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-direct/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-generalized-pattern-search/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-generalized-pattern-search/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-generalzied-pattern-search/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-generalzied-pattern-search/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-hooke-jeeves/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-hooke-jeeves/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
+    <item>
+      <title>Optmization - Direct Method Introduction</title>
+      <link>https://ngthanhtin.github.io/blog/optimization-direct-method-nelder-mead-simplex/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/optimization-direct-method-nelder-mead-simplex/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+    </item>
+    
     <item>
       <title>Giới thiệu về Optmization</title>
       <link>https://ngthanhtin.github.io/blog/optimization-gioi-thieu/</link>

@@ -94,7 +94,7 @@ Vì vậy giá trị nhỏ nhất (local minimum) của f(x) = 8/3 khi x = -1/3.
 </p>
 Sau đó:
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=f^{''}(x) > 0">.
+  <img src="https://render.githubusercontent.com/render/math?math=f^{''}(x) > 0"><br/>
   <img src="https://render.githubusercontent.com/render/math?math=6         > 0"> (thỏa)
 </p>
 Vậy f(x) đạt local minimum tại x = -1/3

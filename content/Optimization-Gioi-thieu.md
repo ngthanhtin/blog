@@ -82,14 +82,14 @@ Ví dụ:
 Tìm local minimum của hàm <img src="https://render.githubusercontent.com/render/math?math=f(x) = 3x^{2} %2B 2x %2B 3">. <br>
 Ta có thể giải bài này bằng phương pháp đã học ở cấp 2, cấp 3 như sau:
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=f(x) = (\sqrt{3}x)^{2} %2B 2\frac{\sqrt{3}}{\sqrt{3}}x %2B \frac{1}{3}">
-  <img src="https://render.githubusercontent.com/render/math?math=     = (\sqrt{3}x + \frac{1}{\sqrt{3}})^{2} %2B \frac{8}{3} \gre \frac{8}{3}">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = (\sqrt{3}x)^{2} %2B 2\frac{\sqrt{3}}{\sqrt{3}}x %2B \frac{1}{3}"> <br/>
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = (\sqrt{3}x + \frac{1}{\sqrt{3}})^{2} %2B \frac{8}{3} \geq \frac{8}{3}">
 </p>
 Vì vậy giá trị nhỏ nhất (local minimum) của f(x) = 8/3 khi x = -1/3.<br/>
 Đối với cách giải ta vừa được học ở trên:
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=f^{'}(x) = 0">
-  <img src="https://render.githubusercontent.com/render/math?math=6x %2B 2 = 0">
+  <img src="https://render.githubusercontent.com/render/math?math=f^{'}(x) = 0"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=6x %2B 2 = 0"><br/>
   <img src="https://render.githubusercontent.com/render/math?math=x        = \frac{-1}{3}">
 </p>
 Sau đó:

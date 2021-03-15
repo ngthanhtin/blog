@@ -41,7 +41,7 @@ Sau đó, tới step thứ 2, ta lấy <img src="https://render.githubuserconten
 Đối với thuật toán Cylic Coordinate Search, tại mỗi thời điểm, ta chỉ search trên một hướng, nghĩa là ở step 1 ở trên ta sẽ search theo một vector đơn vị là [1, 0, 0,..., 0], step 2 sẽ là [0, 1, 0,..., 0].
 
 <p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/direct/cyclic_coordinate_descent/coordinate_search.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/coordinate_search.png?raw=true">
 </p>
 <div style="text-align: center">Mô tả quá trình optimize của thuật toán trên không gian 2 chiều.</div>
 
@@ -52,18 +52,18 @@ Bước thứ 2 là tính step size, nghĩa là lấy norm của tập x ban đ�
 
 Ngoài ra, ta còn có phiên bản acceleration của thuật toán này, đó là sau khi thực hiện line search trên tất cả các chiều để tìm ra tập <img src="https://render.githubusercontent.com/render/math?math=x_{new} "> thì thuật toán sẽ thực hiện thêm một lần line search nữa trước khi tính norm, nhưng lần này thực hiện trên một chiều đó là x-x_new. <br/>
 <p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/direct/cyclic_coordinate_descent/accelerated.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/accelerated.png?raw=true">
 </p>
 <div style="text-align: center">Mô tả quá trình optimize của thuật toán Accelerated.</div>
 
 ### 3. Code.
 <p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/direct/cyclic_coordinate_descent/code1.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/code1.png?raw=true">
 </p>
 <div style="text-align: center">Code của thuật toán Cyclic Coordinate Search.</div>
 
 <p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/direct/cyclic_coordinate_descent/code2.png?raw=true">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/cyclic_coordinate_descent/code2.png?raw=true">
 </p>
 <div style="text-align: center">Code của thuật toán Accelerated Cyclic Coordinate Search.</div>
 

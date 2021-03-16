@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 15 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/nelder-mead/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optmization - Direct Method: Nelder Mead Simplex</title>
-      <link>https://ngthanhtin.github.io/blog/direct_method/optimization-direct-method-nelder-mead-simplex/</link>
+      <link>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</link>
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/direct_method/optimization-direct-method-nelder-mead-simplex/</guid>
+      <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
 Nội dung chính sẽ bao gồm các phần sau: 
  Giới thiệu phương pháp Nelder-Mead-Simplex.</description>

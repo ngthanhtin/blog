@@ -8,10 +8,10 @@
     <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/tags/kalman-filter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
+      <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.</description>
     </item>
     

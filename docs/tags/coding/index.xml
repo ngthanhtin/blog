@@ -8,10 +8,10 @@
     <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Giới thiệu SLAM</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-slam/</link>
+      <link>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
+      <guid>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</guid>
       <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
 ## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.</description>
     </item>

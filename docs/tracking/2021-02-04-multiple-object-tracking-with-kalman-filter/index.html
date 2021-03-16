@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm | Tin&#39;s Blog</title>
+
+    
+
+
+
+<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.80.0" />
+
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/" />
+
+
+<meta property="og:title" content="Multiple Object Tracking with Kalman Filter and Hungary Algorithm" />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Multiple Object Tracking with Kalman Filter and Hungary Algorithm"/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động."/>
+
+<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/blog/css/semantic.min.css" />
+<link rel="stylesheet" href="/blog/css/icomoon.css" />
+<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/blog/css/github-markdown.css" />
+<link rel="stylesheet" href="/blog/css/site.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+
+  
+  body.default {
+    
+    background-color: #f7f7f7;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Blog" onclick="window.location.href = 'https:\/\/ngthanhtin.github.io\/blog\/'"></i>
+  </div>
+  <div class="item">
+    <a href="https://ngthanhtin.github.io/"><i class="fa fa-flask" title="ngthanhtin.github.io"></i></a>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Multiple%20Object%20Tracking%20with%20Kalman%20Filter%20and%20Hungary%20Algorithm&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2ftracking%2f2021-02-04-multiple-object-tracking-with-kalman-filter%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2ftracking%2f2021-02-04-multiple-object-tracking-with-kalman-filter%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Multiple Object Tracking with Kalman Filter and Hungary Algorithm<div class="sub header">
+            @
+            
+              Nguyen Thanh Tin
+            
+
+            | 
+                Monday, Jan 1, 0001
+              
+
+            | 5 minutes read
+
+            | Update at
+              
+                Monday, Jan 1, 0001
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Multiple Object Tracking</b> sử dụng <b>Kalman Filter</b> để theo vết đối tượng
+và <b>thuật toán Hungary</b> để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất.<br/>
+Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp <b>trừ nền (Background Subtraction)</b> để detect đối tượng động. Các bạn có thể thay thế bằng các thuật toán object detection khác như YOLO, Faster RCNN, Centernet, etc.<br/>
+Link code: Đây là code của thuật toán, đã được mình implement bằng C++, đây cũng là đồ án môn Computer Vision của mình hồi năm 3 tại trường đại học khoa học tự nhiên, Hồ Chí Minh. <a href="https://github.com/ngthanhtin/Muiltiple-Object-Tracking">Code</a></p>
+<p>Nội dung chính sẽ bao gồm các phần sau:<br/>
+<a href="#1. Giới thiệu bài toán Multiple Object Tracking">1. Giới thiệu bài toàn Multiple Object Tracking</a> <br/>
+<a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
+<a href="#3. Phương pháp">3. Phương pháp</a> <br/></p>
+<ul>
+<li><a href="#3.1 Background Generation">3.1 Background Generation</a><br/></li>
+<li><a href="#3.2 Object Detection">3.2 Object Detection</a> <br/></li>
+<li><a href="#3.3 Kalman Filter">3.3 Kalman Filter</a> <br/></li>
+<li><a href="#3.4 Hungary Algorithm">3.4 Hungary Algorithm</a> <br/></li>
+</ul>
+<p><a href="#4. Ứng dụng">4. Ứng dụng</a> <br/>
+<a href="#5. Tham khảo">5. Tham khảo</a> <br/></p>
+<section id="1. Giới thiệu bài toán Multiple Object Tracking">
+<b>1. Giới thiệu bài toán Multiple Object Tracking</b>
+</section>
+<p align="center">
+  <img src="/blog/img/mot/mot.png">
+</p>
+Đây đơn giản là bài toán theo vết nhiều đối tượng cùng một lúc.
+<section id="2. Nguyên lý">
+<b>2. Nguyên lý</b>
+</section>
+Nguyên lí của bài toán này vẫn là tìm kiếm nhiều đối tượng (object detection) và so khớp (matching) đối tượng với những đối tượng ở frame trước để xác định đâu là những đối tượng cần theo vết.
+<section id="3. Phương pháp">
+<b>3. Phương pháp</b>
+</section>
+Ở frame đầu tiên, ta sẽ dùng phương pháp trừ nền để phát hiện đối tượng và cũng sẽ được dùng ở những frame sau với mục đích detect đối tượng động.
+<p>Sau đó, ta sẽ dùng Kalman Filter (KF) để  dự đoán vị trí tiếp theo của từng đối tượng.</p>
+<p>Để có thể dự đoán được vị trí bằng KF chính xác, ta phải thực hiện so khớp (matching). Ở bước này, ta phải xác định được đối tượng nào là đối tượng nào ở frame trước đó, và ta sẽ giải quyết bằng thuật toán Hungary Algorithm.</p>
+<p>Cuối cùng là lặp lại quá trình trên đến khi video kết thúc.</p>
+<ul>
+<li>
+<p><b>3.1 Background Generation</b><br/>
+Để  sử dụng phương pháp trừ nền, yêu cầu là background của chúng ta phải khá tĩnh, nếu background động thì phương pháp không còn tác dụng vì phương pháp này mục đích là để trích xuất được những đối tượng động. <br/>
+Để trừ nền, ta đơn giản chỉ cần dùng background ở frame (t) - background ở frame (t-1). Tuy nhiên, mình đã thử và thấy có một phương pháp khác hay hơn, đó là Pixel Histrogram.<br/>
+Pixel Histogram là phương pháp tái tạo nền, input sẽ là một histogram, output là nền được tái tạo dưới dạng grayscale.<br/>
+Giả sử mỗi kích thước của một frame là w (width) và h (height). Ứng với mỗi pixel trên frame, ta sẽ có một histogram 256 chiều. Sau khi có được tất cả là (w x h) histogram, ta sẽ lấy ra giá trị màu lớn nhất ở mỗi histogram và đặt làm giá trị màu tại pixel tương ứng. Cuối cùng sẽ tái tạo được background.<br/>
+Để tạo ra được từng histogram đó, ta cần phải lướt qua K frame của video, ứng với mỗi frame ta sẽ lướt từng pixel, lấy ra giá trị màu ở pixel đó và cuối cùng là tăng thêm 1 cho bin màu tương ứng của histogram.
+Sau khi lướt hết K frame, ta sẽ có được (w x h) histogram.</p>
+</li>
+<li>
+<p><b>3.2 Object Detection</b><br/>
+Sau khi có được nền, ta sẽ bước đến giai đoạn detection &amp; tracking.<br/>
+Để detect những đối tượng động, mỗi lần process frame, ta sẽ lấy frame đó trừ cho nền đã được tái tạo bằng phương pháp ở trên. Phương pháp này rất đơn giản, nếu 2 đối tượng đi gần nhau quá sẽ bị dính và cho là 1 đối tượng nhưng được cái là nó cực kì nhanh =))<br/>
+Đây là phương pháp đơn giản, vì hồi đó mới sinh viên, có biết deep learning đâu nên làm cách này haha. Bây giờ các bạn có thể  dùng YOLO hoặc Faster RCNN, CenterNet để detect cho chính xác hơn.</p>
+</li>
+</ul>
+<p align="center">
+  <img src="/blog/img/mot/detect.png">
+  <img src="/blog/img/mot/detect_sub.png">
+</p>
+<ul>
+<li>
+<p><b>3.3 Kalman Filter</b><br/>
+Kalman Filter là một mô hình lọc nhiễu, nó bao gồm 2 phần đó là dự đoán (predict) và cập nhật (update).
+Ở bước predict, nó sẽ dự đoán vị trí của từng đối tượng, sau đó ở bước Update nó sẽ cập nhật, sửa lại cho đúng hơn.</p>
+</li>
+<li>
+<p><b>3.4 Hungary Algorithm</b><br/>
+Đây là thuật toán dùng để giải quyết <b>assignment problem</b>.
+Assignment Problem là bài toán có N đối tượng, và M công việc, mỗi đối tượng khi làm một công việc nào đó sẽ có một chi phí nhất định. Và nhiệm vụ đó là làm sao gán mỗi đối tượng cho một công việc nào đó sao cho tổng chi phí là nhỏ nhất. <br/></p>
+</li>
+</ul>
+<p align="center">
+  <img src="/blog/img/mot/hungary.png">
+</p>
+Đối với bài toán tracking, ta có thể áp dụng như sau:<br/>
+Ta có N tracker và M đối tượng detect được, và ta phải gán từng tracker với từng đối tượng sao cho chi phí là nhỏ nhất. Vậy chi phí ở đây là gì ?<br/>
+Mỗi tracker đó chính là một Kalman Filter (KF), ở mỗi frame, KF sẽ dự đoán vị trí của đối tượng trước, gọi là p_predict, và ở mỗi frame ta lại detect đối tượng và ra được vị trí của chúng gọi là p_object. Vậy, khỏang cách giữa p_predict và p_object chính là chi phí. Ta sẽ đưa thông tin này qua thuật toán Hungary để giải quyết bài toán assignment, và KF sẽ cập nhật lại vị trí tracking của mình.
+<section id="4. Ứng dụng">
+<b>5. Ứng dụng và Bàn luận</b>
+</section>
+Bài toán này được ứng dụng trong theo vết đối tượng giao thông, đối tượng trong các siêu thị, cửa hàng, ...
+<p>Ở bài viết này, mình chỉ viết trình bày đơn giản các bước, chưa trình bày kĩ thuật toán cũng như có code minh họa vì mình không có thời gian nhiều để làm kĩ, mong các bạn thông cảm. Để hiểu hơn về bài viết, các bạn có thể tham khảo <a href="https://github.com/ngthanhtin/Muiltiple-Object-Tracking">link repo</a> của mình nhé.<br/>
+Nếu thấy hay, cho mình một star hoặc fork trên repo nhé. Thank you for reading.</p>
+<section id="5. Tham khảo">
+<b>6. Tham khảo</b>
+</section>
+<p><a href="https://github.com/ngthanhtin/Muiltiple-Object-Tracking">Code</a><br/></p>
+<div style="text-align: right"> (Tín Nguyễn) </div></article>
+    </section>
+
+    
+
+    
+    <article class="ui segment utterances-comments" data-html2canvas-ignore>
+      <script src="https://utteranc.es/client.js"
+        repo="ngthanhtin/blog"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </article>
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2021 Tin&#39;s Blog</p>
+              
+
+              <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/blog/img/avatar.png" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/blog/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/blog/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      
+      
+      <a class="ui label" href="/blog/tags/2020/" title="2020th">2020th</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/attention/" title="Attention">Attention</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/bilinear/" title="Bilinear">Bilinear</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/book/" title="Book">Book</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/coding/" title="Coding">Coding</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/cuda/" title="Cuda">Cuda</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/direct-method/" title="Direct Method">Direct Method</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/divided-rectangle/" title="Divided Rectangle">Divided Rectangle</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/english/" title="English">English</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/hooke-jeeves/" title="Hooke Jeeves">Hooke Jeeves</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/hungary-algorithm/" title="Hungary Algorithm">Hungary Algorithm</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/ielts/" title="Ielts">Ielts</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/kalman-filter/" title="Kalman Filter">Kalman Filter</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/label-smoothing/" title="Label Smoothing">Label Smoothing</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/loss-function/" title="Loss Function">Loss Function</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/math/" title="Math">Math</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/navigation/" title="Navigation">Navigation</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/nelder-mead/" title="Nelder Mead">Nelder Mead</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/nlp/" title="Nlp">Nlp</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/nvidia/" title="Nvidia">Nvidia</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/optmization/" title="Optmization">Optmization</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/particle-filter/" title="Particle Filter">Particle Filter</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/pattern-search/" title="Pattern Search">Pattern Search</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/powell/" title="Powell">Powell</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/review/" title="Review">Review</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/rl/" title="Rl">Rl</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/roadmap/" title="Roadmap">Roadmap</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/robotics/" title="Robotics">Robotics</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/search/" title="Search">Search</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/simplex/" title="Simplex">Simplex</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/ubuntu/" title="Ubuntu">Ubuntu</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/vqa/" title="Vqa">Vqa</a>
+    
+      
+      
+      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+
+  
+  <div class="item">
+    <a href="mailto:ngthanhtinqn@gmail.com">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  null 
+  window.hasTwitterEmbed =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/semantic.min.js"></script>
+<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/blog/js/header.js"></script>
+<script src="/blog/js/main.js"></script>
+<script src="/blog/js/theme.js"></script>
+
+    
+<script src="/blog/js/html2canvas.min.js"></script>
+<script src="/blog/js/post.js"></script>
+
+
+
+
+
+    
+
+    
+
+    
+  </body>
+</html>

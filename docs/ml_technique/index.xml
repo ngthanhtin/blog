@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ml_techniques on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/ml_technique/</link>
+    <description>Recent content in Ml_techniques on Tin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/ml_technique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Label Smoothing</title>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
+    </item>
+    
+    <item>
+      <title>Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it</title>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
+Nội dung chính sẽ bao gồm các phần sau:</description>
+    </item>
+    
+    <item>
+      <title>Stacked Attention Network</title>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
+2. Nguyên lý
+3. Phương pháp
+4. Giải thuật
+5. Ứng dụng</description>
+    </item>
+    
+    <item>
+      <title>Bilinear (Trilinear) Attention</title>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</guid>
+      <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
+1. Introduction 6. Tham khảo Fukui, Akira, et al. &amp;ldquo;Multimodal compact bilinear pooling for visual question answering and visual grounding.</description>
+    </item>
+    
+  </channel>
+</rss>

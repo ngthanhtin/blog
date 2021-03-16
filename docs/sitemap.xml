@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/hooke-jeeves/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/math/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url>
@@ -58,6 +63,11 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/pattern-search/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/powell/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url>
@@ -83,7 +93,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-21-label-smoothing/</loc>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -98,22 +108,32 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-22-con-duong-su-nghiepp1/</loc>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/2021-02-22-con-duong-su-nghiepp1/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/buy-me-a-coffe/</loc>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</loc>
+    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/personal/2021-02-24-tan-man-phd/</loc>
+    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/personal/buy-me-a-coffe/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,7 +148,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</loc>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -143,7 +163,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</loc>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</loc>
     <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -172,7 +192,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-02-24-slam/</loc>
+    <loc>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</loc>
   </url>
   
   <url>
@@ -184,15 +204,15 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-10-14-install-cuda-on-ubuntu-18-04/</loc>
+    <loc>https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/</loc>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-10-14-install-torch-with-cuda-10-0/</loc>
+    <loc>https://ngthanhtin.github.io/blog/software/2020-10-14-install-torch-with-cuda-10-0/</loc>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/</loc>
+    <loc>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</loc>
   </url>
   
   <url>
@@ -200,7 +220,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</loc>
   </url>
   
   <url>
@@ -208,11 +228,11 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-07-06-mcts/</loc>
+    <loc>https://ngthanhtin.github.io/blog/rl/2020-07-06-mcts/</loc>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
   </url>
   
   <url>
@@ -220,7 +240,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-02-winter-korean-2020/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</loc>
   </url>
   
   <url>
@@ -240,7 +260,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-12-07-hoc-bong-giao-su-han-quoc/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</loc>
   </url>
   
   <url>
@@ -248,11 +268,15 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2020-02-24-review-lexicode/</loc>
+    <loc>https://ngthanhtin.github.io/blog/personal/2020-02-24-review-lexicode/</loc>
   </url>
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tags/rl/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/rl/</loc>
   </url>
   
   <url>
@@ -272,7 +296,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</loc>
   </url>
   
   <url>
@@ -284,7 +308,19 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/2021-01-31-slam-roadmap/</loc>
+    <loc>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/slam/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/software/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tracking/</loc>
   </url>
   
   <url>

@@ -31,7 +31,10 @@
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/direct_method/optimization-direct-method-direct/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization khác nữa đó là Direct Method. Phương pháp này thường được gọi là zero-order, black box, pattern search, hoặc derivative-free methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là Divided Rectangle.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). a
+2. Thuật toán. 3. Code. 4. Bàn luận. 5. Tham khảo.</description>
     </item>
     
     <item>
@@ -42,7 +45,8 @@
       <guid>https://ngthanhtin.github.io/blog/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. 2. Giới thiệu Generalized Pattern Search.</description>
+ Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. a
+2. Giới thiệu Generalized Pattern Search.</description>
     </item>
     
     <item>
@@ -68,10 +72,10 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
     
     <item>
       <title>Label Smoothing</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-21-label-smoothing/</link>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-21-label-smoothing/</guid>
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
 Nội dung chính sẽ bao gồm các phần sau: 
 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
@@ -79,49 +83,49 @@ Nội dung chính sẽ bao gồm các phần sau:
     
     <item>
       <title>My Career (1)</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-22-con-duong-su-nghiepp1/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2021-02-22-con-duong-su-nghiepp1/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-22-con-duong-su-nghiepp1/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-22-con-duong-su-nghiepp1/</guid>
       <description>Hi, xin chào các bạn, lâu rồi chưa review lại những công việc mình đã từng làm từ hồi còn là sinh viên cho tới bây giờ cho nên hôm nay tui ngồi tổng hợp lại để xem mình đã học được những gì và mất những gì trên con đường sự nghiệp của mình
 1. Gameloft Vào hè năm 2 (6-2016) Mình có được công việc đầu tiên là ở Gameloft, và ở vị trí Intern, sau khi intern 3 tháng hè thì mình quyết định trở thành nhân viên chính thức.</description>
     </item>
     
     <item>
       <title>Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, Softmax Loss, Logistic Loss, Focal Loss, you name it</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</link>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
 Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>
       <title>Tản mạn phờ hắc đi (1)</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2021-02-24-tan-man-phd/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-24-tan-man-phd/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-24-tan-man-phd/</guid>
       <description>Hi, hôm nay mình quyết định viết về quá trình phờ hắc đi của mình, do cũng chán chả có gì làm, tự hỏi sao các bạn phd khác bận vãi trong khi mình ngồi coi yutube đồ các kiểu, chán quá
 1. Viết blog Mình đã muốn viết blog từ lâu r, nhưng lúc đó k biết tới githubio, viết bằng wordpress thì tốn tiền hosting nữa nên thoai kaka.</description>
     </item>
     
     <item>
       <title>Buy Me A Coffee</title>
-      <link>https://ngthanhtin.github.io/blog/buy-me-a-coffe/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/buy-me-a-coffe/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/buy-me-a-coffe/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/buy-me-a-coffe/</guid>
       <description>&lt;p&gt;If you like my open source projects or they can help you. You can buy me a coffee ☕.~&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Stacked Attention Network</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</link>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/</guid>
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
 Nội dung chính sẽ bao gồm các phần sau: 
 1. Giới thiệu bài toàn Visual Question Answering
@@ -133,30 +137,30 @@ Nội dung chính sẽ bao gồm các phần sau:
     
     <item>
       <title>Bilinear (Trilinear) Attention</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</link>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-02-bi-tri-attention/</guid>
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</guid>
       <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
 1. Introduction 6. Tham khảo Fukui, Akira, et al. &amp;ldquo;Multimodal compact bilinear pooling for visual question answering and visual grounding.</description>
     </item>
     
     <item>
       <title>Giới thiệu SLAM</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-slam/</link>
+      <link>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-slam/</guid>
+      <guid>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</guid>
       <description>Hello các bạn, ở bài post này mình sẽ giới thiệu qua bài toán Song định tuyến đồ hay còn gọi là SLAM (Simultaneous localization and mapping).
 ## Giới thiệu Bài toán này là bài toán định vị vị trí robot và xây dựng lại bản đồ cùng lúc. Ta sử dụng SLAM khi robot không biết trước bản đồ môi trường làm việc cũng như pose của nó. Đặc điểm của SLAM là: Ước lượng liên tục: ước lượng robot pose và vị trí của các vật thể trong bản đồ.</description>
     </item>
     
     <item>
       <title>Install Cuda on Ubuntu 18.04</title>
-      <link>https://ngthanhtin.github.io/blog/2020-10-14-install-cuda-on-ubuntu-18-04/</link>
+      <link>https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
+      <guid>https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
 sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &amp;ndash;autoremove nvidia-* 
 2. Setup the correct CUDA PPA on your system 
@@ -165,10 +169,10 @@ sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &
     
     <item>
       <title>Install Torch with Cuda 10.0</title>
-      <link>https://ngthanhtin.github.io/blog/2020-10-14-install-torch-with-cuda-10-0/</link>
+      <link>https://ngthanhtin.github.io/blog/software/2020-10-14-install-torch-with-cuda-10-0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-10-14-install-torch-with-cuda-10-0/</guid>
+      <guid>https://ngthanhtin.github.io/blog/software/2020-10-14-install-torch-with-cuda-10-0/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
 In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive  cd ~/torch  bash install-deps 
 Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0</description>
@@ -176,20 +180,20 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
     
     <item>
       <title>Instruction Navigation</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/</link>
+      <link>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-02-instruction-navigation/</guid>
+      <guid>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
 Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp</description>
     </item>
     
     <item>
       <title>Kinh nghiệm ôn thi IELTS từ 4.5 lên 6.0</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</guid>
       <description>Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.
 Đây là số điểm của mình:
 Listening Về phần này, mình chỉ luyện tập bằng bộ Cambridge test 7-14 thần thánh.
@@ -198,10 +202,10 @@ Listening Về phần này, mình chỉ luyện tập bằng bộ Cambridge test
     
     <item>
       <title>Monte Carlo Tree Search</title>
-      <link>https://ngthanhtin.github.io/blog/2020-07-06-mcts/</link>
+      <link>https://ngthanhtin.github.io/blog/rl/2020-07-06-mcts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-07-06-mcts/</guid>
+      <guid>https://ngthanhtin.github.io/blog/rl/2020-07-06-mcts/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ giới thiệu và giải thích về Monte Carlo Tree Search, một kĩ thuật được sử dụng trong Alpha Go, Alpha Zero.
 Nội dung chính sẽ bao gồm các phần sau: 
 1. Giới thiệu Monte Carlo Tree Search (MCTS) là một thuật toán tìm kiếm (search) giống như các thuật toán khác như Minimax, Alpha-beta Prunning. Nó dùng để dự đoán được lượt di chuyển tiếp theo tốt nhất.</description>
@@ -209,58 +213,58 @@ Nội dung chính sẽ bao gồm các phần sau:
     
     <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
+      <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.</description>
     </item>
     
     <item>
       <title>Mùa đông đầu tiên tại Hàn Quốc 2020</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-02-winter-korean-2020/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-02-winter-korean-2020/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Professor Scholarship in Korea</title>
-      <link>https://ngthanhtin.github.io/blog/2020-12-07-hoc-bong-giao-su-han-quoc/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-12-07-hoc-bong-giao-su-han-quoc/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</guid>
       <description>Hi everyone, bài này mình sẽ chia sẽ về quá trình xin học bổng ở Hàn Quốc, làm giấy tờ và một số lưu ý khác.
 Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering, trường này cũng khá nổi tiếng về ngành Computer Science. Tuy nhiên, mình chọn ngôi trường là vì mình tìm được giáo sư có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone, etc.</description>
     </item>
     
     <item>
       <title>Review sách Lexicode</title>
-      <link>https://ngthanhtin.github.io/blog/2020-02-24-review-lexicode/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/2020-02-24-review-lexicode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2020-02-24-review-lexicode/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/2020-02-24-review-lexicode/</guid>
       <description>Trong một post gần đây của Tổng thống Trump, ông có viết “to contain the Coronavirus”. Cứ theo nghĩa thông thường thì Google dịch là “chứa đựng”. Còn theo sách “Lexicode” thì lại là “kiềm chế, kiểm soát”.
 Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nhưng rất hay được sử dụng bởi người bản xứ. Sách giải thích rất chi tiết, cặn kẽ, nhiều ví dụ minh hoạ.</description>
     </item>
     
     <item>
       <title>Single Object Tracking with Particle Filter</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</link>
+      <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-04-single-object-tracking-with-pf/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU
 Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Single Object Tracking  2. Nguyên lý  3. Phương pháp  4.</description>
     </item>
     
     <item>
       <title>SLAM Roadmap</title>
-      <link>https://ngthanhtin.github.io/blog/2021-01-31-slam-roadmap/</link>
+      <link>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-01-31-slam-roadmap/</guid>
+      <guid>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</guid>
       <description>Hi các bạn, mình đang học về SLAM nên hôm nay quyết định tổng hợp lại kiến thức về SLAM thành một dạng như Roadmap. Các bạn hãy tham khảo và cho ý kiến nhé.
 Beginner Làm quen với SLAM Monocular SLAM RGB-D SLAM Tham khảo https://github.com/changh95/visual-slam-roadmap</description>
     </item>

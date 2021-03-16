@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/label-smoothing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Label Smoothing</title>
-      <link>https://ngthanhtin.github.io/blog/2021-02-21-label-smoothing/</link>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/2021-02-21-label-smoothing/</guid>
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
 Nội dung chính sẽ bao gồm các phần sau: 
 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>

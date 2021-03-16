@@ -10,7 +10,7 @@ tags :
 
 ---
 
-Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> khác nữa đó là <b>Direct Method</b>. Phương pháp này thường được gọi là <i>zero-order, black box, pattern search, hoặc derivative-free</i> methods vì nó không sử dụng đạo hàm để tìm được local minimum, mà phương pháp này sẽ dùng những cách khác để chọn ra hướng tìm kiếm ở mỗi step để tìm ra local minimum và làm sao để biết khi nào là convergence.
+Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Divided Rectangle</b>.
 
 Nội dung chính sẽ bao gồm các phần sau: <br/>
 
@@ -23,7 +23,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu phương pháp Divided Rectangle (DIRECT).
-
+a
 ### 2. Thuật toán.
 
 

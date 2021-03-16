@@ -6,6 +6,8 @@ tags :
   - "math"
   - "direct-method"
   - "optmization"
+  - "pattern-search"
+  - "hooke-jeeves"
 
 ---
 
@@ -23,7 +25,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu phương pháp Hooke-Jeeves.
-
+a
 
 ### 2. Giới thiệu Generalized Pattern Search.
 

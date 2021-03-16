@@ -24,7 +24,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Giới thiệu phương pháp Nelder-Mead-Simplex.
-
+a
 ### 2. Thuật toán.
 
 

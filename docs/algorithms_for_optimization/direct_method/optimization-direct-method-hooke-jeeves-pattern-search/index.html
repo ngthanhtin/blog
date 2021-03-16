@@ -21,10 +21,8 @@
 
 
 <meta property="og:title" content="Optmization - Direct Method: Hooke Jeeves and Pattern Search" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
-Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. a
-2. Giới thiệu Generalized Pattern Search." />
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
+Nội dung chính sẽ bao gồm các phần sau:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/" />
 <meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
@@ -34,10 +32,8 @@ Nội dung chính sẽ bao gồm các phần sau:
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Optmization - Direct Method: Hooke Jeeves and Pattern Search"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search.
-Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Hooke-Jeeves. Giới thiệu Generalized Pattern Search. Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Hooke-Jeeves. a
-2. Giới thiệu Generalized Pattern Search."/>
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
+Nội dung chính sẽ bao gồm các phần sau:"/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -128,12 +124,11 @@ Nội dung chính sẽ bao gồm các phần sau:
   <ul>
     <li>
       <ul>
-        <li><a href="#1-giới-thiệu-phương-pháp-hooke-jeeves">1. Giới thiệu phương pháp Hooke-Jeeves.</a></li>
-        <li><a href="#2-giới-thiệu-generalized-pattern-search">2. Giới thiệu Generalized Pattern Search.</a></li>
-        <li><a href="#3-thuật-toán">3. Thuật toán.</a></li>
-        <li><a href="#4-code">4. Code.</a></li>
-        <li><a href="#5-bàn-luận">5. Bàn luận.</a></li>
-        <li><a href="#6-tham-khảo">6. Tham khảo.</a></li>
+        <li><a href="#1-thuật-toán-hooke-jeeves">1. Thuật toán Hooke-Jeeves.</a></li>
+        <li><a href="#2-thuật-toán-generalized-pattern-search">2. Thuật toán Generalized Pattern Search.</a></li>
+        <li><a href="#3-code">3. Code.</a></li>
+        <li><a href="#4-bàn-luận">4. Bàn luận.</a></li>
+        <li><a href="#5-tham-khảo">5. Tham khảo.</a></li>
       </ul>
     </li>
   </ul>
@@ -171,7 +166,7 @@ Nội dung chính sẽ bao gồm các phần sau:
                 Monday, Mar 15, 2021
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
@@ -181,23 +176,38 @@ Nội dung chính sẽ bao gồm các phần sau:
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Hooke-Jeeves method</b> và <b>Pattern Search</b>.</p>
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Hooke-Jeeves method</b> và <b>Pattern Search</b>.<br/>
+Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau:<br/>
+Optimization: <a href="https://ngthanhtin.github.io/blog/optimization-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-gioi-thieu/</a></br>
+Direct Method: <a href="https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</a></br></p>
 <p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
 <ol>
-<li>Giới thiệu phương pháp Hooke-Jeeves.</li>
-<li>Giới thiệu Generalized Pattern Search.</li>
-<li>Thuật toán.</li>
+<li>Thuật toán Hooke-Jeeves.</li>
+<li>Thuật toán Generalized Pattern Search.</li>
 <li>Code.</li>
 <li>Bàn luận.</li>
 <li>Tham khảo.</li>
 </ol>
-<h3 id="1-giới-thiệu-phương-pháp-hooke-jeeves">1. Giới thiệu phương pháp Hooke-Jeeves.</h3>
-<p>a</p>
-<h3 id="2-giới-thiệu-generalized-pattern-search">2. Giới thiệu Generalized Pattern Search.</h3>
-<h3 id="3-thuật-toán">3. Thuật toán.</h3>
-<h3 id="4-code">4. Code.</h3>
-<h3 id="5-bàn-luận">5. Bàn luận.</h3>
-<h3 id="6-tham-khảo">6. Tham khảo.</h3>
+<h3 id="1-thuật-toán-hooke-jeeves">1. Thuật toán Hooke-Jeeves.</h3>
+<p>Ở thuật toán Hooke-Jeeves, tại mỗi step, thuật toán sẽ evaluate <img src="https://render.githubusercontent.com/render/math?math=f(x)"> và <img src="https://render.githubusercontent.com/render/math?math=f(x + \alpha e^{i})">.<br/>
+Với <img src="https://render.githubusercontent.com/render/math?math=\alpha"> là step size, <img src="https://render.githubusercontent.com/render/math?math=e^{i}"> là coordinate direction giống như <a href="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-gioi-thieu/">Cyclic Coordinate Search</a>.<br/></p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/pattern_search/hooke_jeeves.png?raw=true">
+</p>
+<div style="text-align: center">Ta có thể thấy, x tại mỗi thời điểm sẽ tìm kiếm trên các hướng cho đến khi không còn một sự improve nào nữa (từ trái qua phải).</div>
+<h3 id="2-thuật-toán-generalized-pattern-search">2. Thuật toán Generalized Pattern Search.</h3>
+<h3 id="3-code">3. Code.</h3>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/pattern_search/code_hooke_jeeves.png?raw=true">
+</p>
+<div style="text-align: center">Ta có thể thấy, direction ở đây là (-1, 1) và mỗi step thuật toán phải evaluate (so sánh y' với y_best) 2 lần.</div>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/pattern_search/code_pattern_search.png?raw=true">
+</p>
+<div style="text-align: center">Code của pattern search.</div>
+<h3 id="4-bàn-luận">4. Bàn luận.</h3>
+<p>Ở thuật toán Hooke-Jevees, ở mỗi step nó phải evaluate 2*n lần (n là số direction) dẫn đến chậm hơn nếu n lớn.<br/></p>
+<h3 id="5-tham-khảo">5. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
 <a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>
 <div style="text-align: right"> (Tín Nguyễn) </div>

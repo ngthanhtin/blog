@@ -34,9 +34,14 @@ Với <img src="https://render.githubusercontent.com/render/math?math=\alpha"> l
 </p>
 <div style="text-align: center">Ta có thể thấy, x tại mỗi thời điểm sẽ tìm kiếm trên các hướng cho đến khi không còn một sự improve nào nữa (từ trái qua phải).</div>
 
-
 ### 2. Thuật toán Generalized Pattern Search.
-
+Trái ngược với Hooke-Jeeves, thuật toán này cho phép tìm kiếm trên các direction bất kì. Ta gọi tập direction là D. Điều kiện của tập D là một tập phải <b>positive spanning set, nghĩa là bất cứ vector nào thuộc Rn (với n là số chiều của (f(x)), đều có thể được tạo thành từ <b>nonnegative linear combination</b> của những vector trong tập D</b>.
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/pattern_search/positive_spanning_set.png?raw=true">
+</p>
+<div style="text-align: center">Ví dụ những positive spanning set</div>
+Ở thuật toán này, ta thực hiện tìm kiếm trên tập D và evaluate y' với y_old. Nếu có improvement, ta sẽ xóa direction ở vị trí đó và đẩy lên đầu của tập D.<br/>
+Điều kiện dừng là khi step size nhỏ hơn một giá trị threshold nào đó.<br/>
 ### 3. Code.
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/pattern_search/code_hooke_jeeves.png?raw=true">

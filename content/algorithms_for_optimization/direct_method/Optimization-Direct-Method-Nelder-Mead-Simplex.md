@@ -49,16 +49,16 @@ Dưới đây là một mô tả của thuật toán Nelder-Mead.
 Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n+1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:
 
 #### 2.0 Preprocess
-Ta sẽ sắp xếp các đỉnh từ nhỏ đến tới lớn dựa trên function value (tức là f(x_i)), và gọi đỉnh có giá trị nhỏ nhất, nhỏ nhất thứ hai và cao nhất lần lượt là xh, xs, xl. Tính centroid của các đỉnh là xc.
+Ta sẽ sắp xếp các đỉnh từ nhỏ đến tới lớn dựa trên function value (tức là f(x_i)), và gọi đỉnh có giá trị nhỏ nhất, nhỏ nhất thứ hai và cao nhất lần lượt là xh, xs, xl. Tính centroid của các đỉnh là <img src="https://render.githubusercontent.com/render/math?math=\bar{x}">.
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xc = \frac{1}{n %2B 1}\sum_{i \neq h} x_{i}">
+  <img src="https://render.githubusercontent.com/render/math?math=\bar{x} = \frac{1}{n %2B 1}\sum_{i \neq h} x_{i}">
 </p>
 
 #### 2.1 Reflection
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xr = xc + \alpha * (xc - xh)">
+  <img src="https://render.githubusercontent.com/render/math?math=xr = \bar{x} + \alpha * (\bar{x} - xh)">
 </p>
-xr là một điểm trên đường thẳng nối xc và xh, nó có mục đích là dịch chuyển simplex từ vùng sub-optimal của xh sang một vùng tốt hơn.<br/>
+xr là một điểm trên đường thẳng nối <img src="https://render.githubusercontent.com/render/math?math=\bar{x} và xh">, nó có mục đích là dịch chuyển simplex từ vùng sub-optimal của xh sang một vùng tốt hơn.<br/>
 <img src="https://render.githubusercontent.com/render/math?math=\alpha > 0"> là hệ số reflection và thuờng được đặt bằng 1.
 
 <p align="center">
@@ -66,15 +66,15 @@ xr là một điểm trên đường thẳng nối xc và xh, nó có mục đí
 </p>
 <div style="text-align: center">Quá trình Reflection.</div>
 
-Ta có thể thấy, nếu <img src="https://render.githubusercontent.com/render/math?math=f(xs) < f(xr) \leq f(xl)"> : nghĩa là that xr tốt hơn xh, chúng ta sẽ thay xh with xr trong simplex.
+Ta có thể thấy, nếu <img src="https://render.githubusercontent.com/render/math?math=f(xs) < f(xr) \leq f(xl)"> : nghĩa là xr tốt hơn xh, chúng ta sẽ thay xh bằng xr trong simplex.
 
 #### 2.2 Expansion
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xe = xc + \beta * (xr - xc)">
+  <img src="https://render.githubusercontent.com/render/math?math=xe = \bar{x} + \beta * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\beta > 0"> là hệ số expansion, <img src="https://render.githubusercontent.com/render/math?math=\beta > max(1, alpha)"> và thường được đặt bằng 2.
 
-Nếu xr tốt hơn xl (f(xr) > f(xl)),thuật toán sẽ cố gắng đưa xr đi xa hơn. Nghĩa là, đưa xr dịch chuyển theo hướng của xr từ c để tìm kiếm một điểm tốt hơn.
+Nếu xr tốt hơn xl (f(xr) > f(xl)),thuật toán sẽ cố gắng đưa xr đi xa hơn. Nghĩa là, đưa xr dịch chuyển theo hướng của xr từ <img src="https://render.githubusercontent.com/render/math?math=\bar{x}"> để tìm kiếm một điểm tốt hơn.
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/nelder_mead/expansion.png?raw=true">
@@ -85,33 +85,33 @@ Sau đó, chúng ta sẽ thay thế xh bằng 1 trong 2 điểm xe và xr trong 
 
 #### 2.3 Contraction
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xc = xc + \gamma * (xr - xc)">
+  <img src="https://render.githubusercontent.com/render/math?math=xc = \bar{x} + \gamma * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\gamma"> được gọi là hệ số contraction và thường được đặt bằng 0.5, <img src="https://render.githubusercontent.com/render/math?math=\gamma"> thuộc (0, 1).
 
-Giả sử xr tệ hơn xs. Nghĩa là khi mở rộng theo hướng xr sẽ làm tệ đi, vì vậy simplex sẽ co lại, centroid sẽ thu lại thành xc.
+Giả sử xr tệ hơn xs. Nghĩa là khi mở rộng theo hướng xr sẽ làm tệ đi, vì vậy simplex sẽ co lại, centroid sẽ thu lại thành <img src="https://render.githubusercontent.com/render/math?math=\bar{x}">.
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/nelder_mead/contraction.png?raw=true">
 </p>
 <div style="text-align: center">Quá trình Contraction.</div>
 
-Nếu f(xc) > f(xh), nghĩa là điểm contracted point tốt hơn điểm tệ nhất, chúng ta sẽ thay xh bằng xc trong simplex. Tuy nhiên, nếu điều này không xảy ra, ta sẽ dùng phương án cuối cùng là Shrinkage.
+Nếu f(<img src="https://render.githubusercontent.com/render/math?math=\bar{x}">) > f(xh), nghĩa là điểm contracted point tốt hơn điểm tệ nhất, chúng ta sẽ thay xh bằng <img src="https://render.githubusercontent.com/render/math?math=\bar{x}"> trong simplex. Tuy nhiên, nếu điều này không xảy ra, ta sẽ dùng phương án cuối cùng là Shrinkage.
 
 #### 2.4 Shrinkage
-In this case, we redefine the entire simplex. We only keep the best point (x_l), and define all others with respect to it and the previous points. The jth new point, will now be defined as:
+Đây là quá trình tất cả các điểm <img src="https://render.githubusercontent.com/render/math?math=xj"> được dịch chuyển tới gần điểm xl (best point), thường khoảng cách giữa các điểm tới xl sẽ bị giảm một nửa.
 
 <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=xj = xl + \delta * (xj - xl)">
 </p>
 
-\delta được gọi là shrinkage parameter, thường được đặt bằng 0.5.<br/>
-Đây là quá trình tất cả các điểm được dịch chuyển tới gần điểm xl (best point), thường khoảng cách giữa các điểm tới xl sẽ bị giảm một nửa.
+<img src="https://render.githubusercontent.com/render/math?math=\delta"> được gọi là shrinkage parameter, thường được đặt bằng 0.5.<br/>
+
 
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/nelder_mead/shrinkage.png?raw=true">
 </p>
-<div style="text-align: center">Shrinkage.</div>
+<div style="text-align: center">Quá trình Shrinkage.</div>
 
 Đây là bước tốn kém nhất vì ta phải thay thế nhiều điểm trong simplex. Tuy nhiên, theo nhiều kinh nghiệm cho thấy, điều này hiếm khi xảy ra cho nên nhiều implementation thường bỏ qua bước này.
 

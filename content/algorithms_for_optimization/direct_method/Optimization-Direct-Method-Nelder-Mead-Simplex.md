@@ -25,7 +25,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 ### 1. Giới thiệu phương pháp Nelder-Mead-Simplex.
 #### 1.1 Simplex là gì ?
-Simplex đơn giản là <b>phiên bản n-chiều của một tam giác.</br>
+Simplex đơn giản là <b>phiên bản n-chiều của một tam giác.</b></br>
 Ví dụ:<br/>
 1-dimension: là một điểm.<br/>
 2-dimension: là một đường thẳng.<br/>

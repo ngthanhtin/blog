@@ -26,8 +26,8 @@ Nội dung chính sẽ bao gồm các phần sau:
  Giới thiệu phương pháp Nelder-Mead-Simplex." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/" />
-<meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-15T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-03-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-18T00:00:00+00:00" />
 
 
 
@@ -165,14 +165,14 @@ Nội dung chính sẽ bao gồm các phần sau:
             
 
             | 
-                Monday, Mar 15, 2021
+                Thursday, Mar 18, 2021
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
-                Monday, Mar 15, 2021
+                Thursday, Mar 18, 2021
               
           </div>
         </h1>
@@ -188,10 +188,33 @@ Nội dung chính sẽ bao gồm các phần sau:
 <li>Tham khảo.</li>
 </ol>
 <h3 id="1-giới-thiệu-phương-pháp-nelder-mead-simplex">1. Giới thiệu phương pháp Nelder-Mead-Simplex.</h3>
-<p>a</p>
+<h4 id="11-simplex-là-gì-">1.1 Simplex là gì ?</h4>
+<p>Simplex đơn giản là <b>phiên bản n-chiều của một tam giác</br>.
+Ví dụ:<br/>
+1-dimension: là một điểm.<br/>
+2-dimension: là một đường thẳng.<br/>
+3-dimension: là một tam giác.<br/>
+4-dimension: là một tứ diện.<br/></p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/nelder_mead/simplexes.jpg?raw=true">
+</p>
+<div style="text-align: center">Simplexes.</div>
+<h4 id="12-thuật-toán-nelder-mead">1.2 Thuật toán Nelder-Mead</h4>
+<p>Nelder-Mead bắt đầu với một simplex ngẫu nhiên. Tại mỗi step, nó sẽ mở rộng (expand) hoặc thu hẹp (contract) simplex đó cho tới khi nó tới vùng optimal.<br/>
+Dưới đây là một mô tả của thuật toán Nelder-Mead.</p>
+<video width="320" height="240" autoplay>
+  <source src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123" type="video/mp4">
+</video>
+<div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
+<h5 id="21-reflection">2.1 Reflection</h5>
+<h5 id="22-expansion">2.2 Expansion</h5>
+<h5 id="23-contraction">2.3 Contraction</h5>
+<h5 id="24-shrinkage">2.4 Shrinkage</h5>
 <h3 id="3-code">3. Code.</h3>
 <h3 id="4-bàn-luận">4. Bàn luận.</h3>
+<p>Nelder-Mead thường được dùng cho parameter selection trong Machine Learning, Data Science vì thuật toán optimize khá nhanh và hiệu quả.<br/>
+Mặc dù Nelder-Mead có thể optimize khá nhanh, nhưng khi simplex tiến vào một vùng của local optimum, nó sẽ liên tục contracting/shrinking, thay vì đi tìm kiếm thêm ở những space khác, vì vậy, nó trở nên khó có thể cải thiện nhiều hơn trong trường hợp này và đòi hỏi phải restart lại thuật toán.</p>
 <h3 id="5-tham-khảo">5. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
 <a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>

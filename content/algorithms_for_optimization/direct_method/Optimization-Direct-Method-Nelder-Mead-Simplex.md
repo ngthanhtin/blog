@@ -25,7 +25,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 ### 1. Giới thiệu phương pháp Nelder-Mead-Simplex.
 #### 1.1 Simplex là gì ?
-Simplex đơn giản là <b>phiên bản n-chiều của một tam giác</br>.
+Simplex đơn giản là <b>phiên bản n-chiều của một tam giác.</br>
 Ví dụ:<br/>
 1-dimension: là một điểm.<br/>
 2-dimension: là một đường thẳng.<br/>
@@ -40,9 +40,9 @@ Ví dụ:<br/>
 Nelder-Mead bắt đầu với một simplex ngẫu nhiên. Tại mỗi step, nó sẽ mở rộng (expand) hoặc thu hẹp (contract) simplex đó cho tới khi nó tới vùng optimal.<br/>
 Dưới đây là một mô tả của thuật toán Nelder-Mead.
 
-<video width="320" height="240" autoplay>
-  <source src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123" type="video/mp4">
-</video>
+<iframe width="420" height="315" 
+  src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123">
+</iframe>
 <div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 
 ### 2. Thuật toán.
@@ -134,6 +134,7 @@ h(x1, i) = 0.05 nếu coefficient của ui trong x_1 là non-zero.<br/>
 h(x1, i) = 0.00025 nếu coefficient của ui trong x1 là zero.<br/>
 
 ### 3. Code.
+Update...
 
 ### 4. Bàn luận.
 Nelder-Mead thường được dùng cho parameter selection trong Machine Learning, Data Science vì thuật toán optimize khá nhanh và hiệu quả.<br/>

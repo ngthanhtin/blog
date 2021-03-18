@@ -189,7 +189,7 @@ Nội dung chính sẽ bao gồm các phần sau:
 </ol>
 <h3 id="1-giới-thiệu-phương-pháp-nelder-mead-simplex">1. Giới thiệu phương pháp Nelder-Mead-Simplex.</h3>
 <h4 id="11-simplex-là-gì-">1.1 Simplex là gì ?</h4>
-<p>Simplex đơn giản là <b>phiên bản n-chiều của một tam giác</br>.
+<p>Simplex đơn giản là <b>phiên bản n-chiều của một tam giác.</br>
 Ví dụ:<br/>
 1-dimension: là một điểm.<br/>
 2-dimension: là một đường thẳng.<br/>
@@ -202,9 +202,9 @@ Ví dụ:<br/>
 <h4 id="12-thuật-toán-nelder-mead">1.2 Thuật toán Nelder-Mead</h4>
 <p>Nelder-Mead bắt đầu với một simplex ngẫu nhiên. Tại mỗi step, nó sẽ mở rộng (expand) hoặc thu hẹp (contract) simplex đó cho tới khi nó tới vùng optimal.<br/>
 Dưới đây là một mô tả của thuật toán Nelder-Mead.</p>
-<video width="320" height="240" autoplay>
-  <source src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123" type="video/mp4">
-</video>
+<iframe width="420" height="315" 
+  src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123">
+</iframe>
 <div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
 <p>Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n+1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:</p>
@@ -283,6 +283,7 @@ h(x1, i) = 0.05 nếu coefficient của ui trong x_1 là non-zero.<br/>
 h(x1, i) = 0.00025 nếu coefficient của ui trong x1 là zero.<br/></li>
 </ul>
 <h3 id="3-code">3. Code.</h3>
+<p>Update&hellip;</p>
 <h3 id="4-bàn-luận">4. Bàn luận.</h3>
 <p>Nelder-Mead thường được dùng cho parameter selection trong Machine Learning, Data Science vì thuật toán optimize khá nhanh và hiệu quả.<br/>
 Mặc dù Nelder-Mead có thể optimize khá nhanh, nhưng khi simplex tiến vào một vùng của local optimum, nó sẽ liên tục contracting/shrinking, thay vì đi tìm kiếm thêm ở những space khác, vì vậy, nó trở nên khó có thể cải thiện nhiều hơn trong trường hợp này và đòi hỏi phải restart lại thuật toán.</p>

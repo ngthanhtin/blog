@@ -40,8 +40,7 @@ Ví dụ:<br/>
 Nelder-Mead bắt đầu với một simplex ngẫu nhiên. Tại mỗi step, nó sẽ mở rộng (expand) hoặc thu hẹp (contract) simplex đó cho tới khi nó tới vùng optimal.<br/>
 Dưới đây là một mô tả của thuật toán Nelder-Mead.
 
-<iframe width="420" height="315" 
-  src="https://www.youtube.com/watch?v=HUqLxHfxWqU&ab_channel=brainbrian123">
+<iframe width="795" height="672" src="https://www.youtube.com/embed/HUqLxHfxWqU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 
@@ -102,7 +101,7 @@ Nếu f(<img src="https://render.githubusercontent.com/render/math?math=\bar{x}"
 Đây là quá trình tất cả các điểm <img src="https://render.githubusercontent.com/render/math?math=xj"> được dịch chuyển tới gần điểm xl (best point), thường khoảng cách giữa các điểm tới xl sẽ bị giảm một nửa.
 
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xj = xl + \delta * (xj - xl)">
+  <img src="https://render.githubusercontent.com/render/math?math=xj = xl %2B \delta * (xj - xl)">
 </p>
 
 <img src="https://render.githubusercontent.com/render/math?math=\delta"> được gọi là shrinkage parameter, thường được đặt bằng 0.5.<br/>

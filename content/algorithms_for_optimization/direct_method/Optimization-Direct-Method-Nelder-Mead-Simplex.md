@@ -46,7 +46,7 @@ Dưới đây là một mô tả của thuật toán Nelder-Mead.
 <div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 
 ### 2. Thuật toán.
-Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n+1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:
+Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n %2B 1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:
 
 #### 2.0 Preprocess
 Ta sẽ sắp xếp các đỉnh từ nhỏ đến tới lớn dựa trên function value (tức là f(x_i)), và gọi đỉnh có giá trị nhỏ nhất, nhỏ nhất thứ hai và cao nhất lần lượt là xh, xs, xl. Tính centroid của các đỉnh là <img src="https://render.githubusercontent.com/render/math?math=\bar{x}">.
@@ -56,7 +56,7 @@ Ta sẽ sắp xếp các đỉnh từ nhỏ đến tới lớn dựa trên funct
 
 #### 2.1 Reflection
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xr = \bar{x} + \alpha * (\bar{x} - xh)">
+  <img src="https://render.githubusercontent.com/render/math?math=xr = \bar{x} %2B \alpha * (\bar{x} - xh)">
 </p>
 xr là một điểm trên đường thẳng nối <img src="https://render.githubusercontent.com/render/math?math=\bar{x} và xh">, nó có mục đích là dịch chuyển simplex từ vùng sub-optimal của xh sang một vùng tốt hơn.<br/>
 <img src="https://render.githubusercontent.com/render/math?math=\alpha > 0"> là hệ số reflection và thuờng được đặt bằng 1.
@@ -70,7 +70,7 @@ Ta có thể thấy, nếu <img src="https://render.githubusercontent.com/render
 
 #### 2.2 Expansion
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xe = \bar{x} + \beta * (xr - \bar{x})">
+  <img src="https://render.githubusercontent.com/render/math?math=xe = \bar{x} %2B \beta * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\beta > 0"> là hệ số expansion, <img src="https://render.githubusercontent.com/render/math?math=\beta > max(1, alpha)"> và thường được đặt bằng 2.
 
@@ -85,7 +85,7 @@ Sau đó, chúng ta sẽ thay thế xh bằng 1 trong 2 điểm xe và xr trong 
 
 #### 2.3 Contraction
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xc = \bar{x} + \gamma * (xr - \bar{x})">
+  <img src="https://render.githubusercontent.com/render/math?math=xc = \bar{x} %2B \gamma * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\gamma"> được gọi là hệ số contraction và thường được đặt bằng 0.5, <img src="https://render.githubusercontent.com/render/math?math=\gamma"> thuộc (0, 1).
 

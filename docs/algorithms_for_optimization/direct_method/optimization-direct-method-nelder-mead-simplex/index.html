@@ -207,7 +207,7 @@ Dưới đây là một mô tả của thuật toán Nelder-Mead.</p>
 </iframe>
 <div style="text-align: center">Mô tả quá trình Nelder Mead Algorithm 2D.</div>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
-<p>Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n+1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:</p>
+<p>Giả sử chúng ta đang optimize trong không gian n-chiều. Một Simplex bao gồm n+1 vertex: <img src="https://render.githubusercontent.com/render/math?math=[x_{1}, x_{2}, x_{3},..., x_{n %2B 1}] ">. Hàm mà chúng ta đang optimize là f(x). Thuật toán Nelder-Mead (NMM) cũng được gọi là thuật toán Downhill Simplex và bao gồm các bước sau:</p>
 <h4 id="20-preprocess">2.0 Preprocess</h4>
 <p>Ta sẽ sắp xếp các đỉnh từ nhỏ đến tới lớn dựa trên function value (tức là f(x_i)), và gọi đỉnh có giá trị nhỏ nhất, nhỏ nhất thứ hai và cao nhất lần lượt là xh, xs, xl. Tính centroid của các đỉnh là <img src="https://render.githubusercontent.com/render/math?math=\bar{x}">.</p>
 <p align="center">
@@ -215,7 +215,7 @@ Dưới đây là một mô tả của thuật toán Nelder-Mead.</p>
 </p>
 <h4 id="21-reflection">2.1 Reflection</h4>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xr = \bar{x} + \alpha * (\bar{x} - xh)">
+  <img src="https://render.githubusercontent.com/render/math?math=xr = \bar{x} %2B \alpha * (\bar{x} - xh)">
 </p>
 xr là một điểm trên đường thẳng nối <img src="https://render.githubusercontent.com/render/math?math=\bar{x} và xh">, nó có mục đích là dịch chuyển simplex từ vùng sub-optimal của xh sang một vùng tốt hơn.<br/>
 <img src="https://render.githubusercontent.com/render/math?math=\alpha > 0"> là hệ số reflection và thuờng được đặt bằng 1.
@@ -226,7 +226,7 @@ xr là một điểm trên đường thẳng nối <img src="https://render.gith
 <p>Ta có thể thấy, nếu <img src="https://render.githubusercontent.com/render/math?math=f(xs) < f(xr) \leq f(xl)"> : nghĩa là xr tốt hơn xh, chúng ta sẽ thay xh bằng xr trong simplex.</p>
 <h4 id="22-expansion">2.2 Expansion</h4>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xe = \bar{x} + \beta * (xr - \bar{x})">
+  <img src="https://render.githubusercontent.com/render/math?math=xe = \bar{x} %2B \beta * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\beta > 0"> là hệ số expansion, <img src="https://render.githubusercontent.com/render/math?math=\beta > max(1, alpha)"> và thường được đặt bằng 2.
 <p>Nếu xr tốt hơn xl (f(xr) &gt; f(xl)),thuật toán sẽ cố gắng đưa xr đi xa hơn. Nghĩa là, đưa xr dịch chuyển theo hướng của xr từ <img src="https://render.githubusercontent.com/render/math?math=\bar{x}"> để tìm kiếm một điểm tốt hơn.</p>
@@ -237,7 +237,7 @@ xr là một điểm trên đường thẳng nối <img src="https://render.gith
 <p>Sau đó, chúng ta sẽ thay thế xh bằng 1 trong 2 điểm xe và xr trong simplex. Cách thứ nhất, chỉ cần thay điểm xh bằng điểm tốt hơn trong 2 điểm xe và xr. Cách thứ 2, là thay thế xe với xl nếu (f(xe) &gt; f(xl)) cho dù xe có tốt hơn xr hay không, ý tưởng của cách thứ 2 đến từ việc Expansion luôn làm cho simplex rộng ra, nghĩa là không gian tìm kiếm cũng nhiều hơn.</p>
 <h4 id="23-contraction">2.3 Contraction</h4>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=xc = \bar{x} + \gamma * (xr - \bar{x})">
+  <img src="https://render.githubusercontent.com/render/math?math=xc = \bar{x} %2B \gamma * (xr - \bar{x})">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\gamma"> được gọi là hệ số contraction và thường được đặt bằng 0.5, <img src="https://render.githubusercontent.com/render/math?math=\gamma"> thuộc (0, 1).
 <p>Giả sử xr tệ hơn xs. Nghĩa là khi mở rộng theo hướng xr sẽ làm tệ đi, vì vậy simplex sẽ co lại, centroid sẽ thu lại thành <img src="https://render.githubusercontent.com/render/math?math=\bar{x}">.</p>

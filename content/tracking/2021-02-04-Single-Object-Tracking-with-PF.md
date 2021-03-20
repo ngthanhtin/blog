@@ -10,7 +10,7 @@ cover: "/blog/img/sot/sot.png"
 ---
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Single Object Tracking</b> sử dụng <b>Particle Filter</b><br/>
 Link paper: [A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU](https://thesai.org/Downloads/Volume11No4/Paper_6-A_New_Framework_of_Moving_Object_Tracking.pdf)<br/>
-<!-- Link code: [Code](Nope) -->
+Link code: [Code](https://github.com/ngthanhtin/Face_Tracking_ParticleFilter). Đây chỉ là code implementation của module face tracking bằng c++, tuy nhiên nó sẽ giúp bạn biết được khái quát particle filter được implement như thế nào.
 
 Nội dung chính sẽ bao gồm các phần sau:<br/>
 <a href="#1. Giới thiệu bài toán Single Object Tracking">1. Giới thiệu bài toàn Single Object Tracking</a> <br/>
@@ -90,3 +90,6 @@ Nguyên lý của bài toán tracking đó là tìm kiếm và so sánh. Ở fra
 <b>6. Tham khảo</b>
 </section>
 Ly Quoc Ngoc, Nguyen Thanh Tin, Le Bao Tuan, International Journal of Advanced Computer Science and Applications (SAI), 14, April, 2020
+https://github.com/ngthanhtin/Face_Tracking_ParticleFilter
+
+<div style="text-align: right"> (Tín Nguyễn) </div>

@@ -1,7 +1,7 @@
 ---
 title : "Learning Rate Scheduling in Pytorch"
 cover : "/blog/img/learningrate_scheduling/cyclicalLR_triangular.png"
-date : "2021-03-14"
+date : "2021-03-25"
 tags : 
   - "machine-leanring"
   - "learning-rate"
@@ -26,6 +26,7 @@ Nội dung chính sẽ bao gồm các phần sau: <br/>
 
 
 ### 1. Lambda LR.
+
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{initial} * lambda_{epoch}">
 </p>
@@ -77,6 +78,7 @@ plt.plot(range(10),lrs)
 </p>
 
 ### 3. Step LR.
+Giảm learning rate theo gamma ở mỗi step size của mỗi epoch.<br/>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} =  \begin{cases}
                   \gamma * lr_{epoch-1} \\
@@ -104,6 +106,8 @@ plt.plot(range(10),lrs)
 </p>
 
 ### 4. MultiStep LR.
+Giảm learning rate theo gamma mỗi khi số lượng epoch đạt tới một giá trị trong milestones (<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} \in milestones">)
+
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} =  \begin{cases}
                   \gamma * lr_{epoch-1} \\
@@ -156,6 +160,8 @@ plt.plot(lrs)
 </p>
 
 ### 6. CosineAnnealing LR.
+Được đề xuất trong bài SGDR: Stochastic Gradient Descent with Warm Restarts. Link: https://arxiv.org/abs/1608.03983
+
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{max}}\pi))">
 </p>
@@ -181,7 +187,6 @@ plt.plot(lrs)
 </p>
 
 ### 7. Cyclic LR.
-
 #### 7.1 Triangular.
 
 ```
@@ -249,8 +254,10 @@ plt.plot(lrs)
 </p>
 
 ### 8. OneCycle LR.
+Learning rate được thay đổi theo phương pháp 1cycle learning rate policy. 1cycle policy tăng learning rate từ giá trị ban đầu tới một giá trị maximum nào đó sau đó giảm xuống một giá trị minimum còn nhỏ hơn giá trị learning rate ban đầu.<br/> 
+Phương pháp này được đề xuất đầu tiên ở paper Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates.<br/>
+The 1cycle learning rate policy thay đổi the learning rate sau mỗi batch.<br/>
 #### 8.1 Cos.
-
 ```
 model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
@@ -294,6 +301,10 @@ plt.plot(lrs)
 </p>
 
 ### 9. Cosine Annealing Warm Restarts.
+Đặt learning rate sử dụng một cosine annealing schedule, và restarts lại sau Ti epochs.<br/>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{i}}}\pi))">
+</p>
 
 ```
 import torch

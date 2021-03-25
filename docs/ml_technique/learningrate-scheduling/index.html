@@ -26,8 +26,8 @@ Nội dung chính sẽ bao gồm các phần sau:
  Lambda LR." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/" />
-<meta property="article:published_time" content="2021-03-14T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-14T00:00:00+00:00" />
+<meta property="article:published_time" content="2021-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-25T00:00:00+00:00" />
 
 
 
@@ -169,14 +169,14 @@ Nội dung chính sẽ bao gồm các phần sau:
             
 
             | 
-                Sunday, Mar 14, 2021
+                Thursday, Mar 25, 2021
               
 
-            | 3 minutes read
+            | 4 minutes read
 
             | Update at
               
-                Sunday, Mar 14, 2021
+                Thursday, Mar 25, 2021
               
           </div>
         </h1>
@@ -237,6 +237,7 @@ plt.plot(range(10),lrs)
   <img src="/blog/img/learningrate_scheduling/multiplicativeLR.png">
 </p>
 <h3 id="3-step-lr">3. Step LR.</h3>
+<p>Giảm learning rate theo gamma ở mỗi step size của mỗi epoch.<br/></p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} =  \begin{cases}
                   \gamma * lr_{epoch-1} \\
@@ -259,6 +260,7 @@ plt.plot(range(10),lrs)
   <img src="/blog/img/learningrate_scheduling/stepLR.png">
 </p>
 <h3 id="4-multistep-lr">4. MultiStep LR.</h3>
+<p>Giảm learning rate theo gamma mỗi khi số lượng epoch đạt tới một giá trị trong milestones (<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} \in milestones">)</p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} =  \begin{cases}
                   \gamma * lr_{epoch-1} \\
@@ -301,6 +303,7 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/exponentialLR.png">
 </p>
 <h3 id="6-cosineannealing-lr">6. CosineAnnealing LR.</h3>
+<p>Được đề xuất trong bài SGDR: Stochastic Gradient Descent with Warm Restarts. Link: <a href="https://arxiv.org/abs/1608.03983">https://arxiv.org/abs/1608.03983</a></p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{max}}\pi))">
 </p>
@@ -373,6 +376,9 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/cyclicalLR_exp.png">
 </p>
 <h3 id="8-onecycle-lr">8. OneCycle LR.</h3>
+<p>Learning rate được thay đổi theo phương pháp 1cycle learning rate policy. 1cycle policy tăng learning rate từ giá trị ban đầu tới một giá trị maximum nào đó sau đó giảm xuống một giá trị minimum còn nhỏ hơn giá trị learning rate ban đầu.<br/>
+Phương pháp này được đề xuất đầu tiên ở paper Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates.<br/>
+The 1cycle learning rate policy thay đổi the learning rate sau mỗi batch.<br/></p>
 <h4 id="81-cos">8.1 Cos.</h4>
 <pre><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
@@ -408,6 +414,10 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/onecycleLR_linear.png">
 </p>
 <h3 id="9-cosine-annealing-warm-restarts">9. Cosine Annealing Warm Restarts.</h3>
+<p>Đặt learning rate sử dụng một cosine annealing schedule, và restarts lại sau Ti epochs.<br/></p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{i}}}\pi))">
+</p>
 <pre><code>import torch
 import matplotlib.pyplot as plt
 

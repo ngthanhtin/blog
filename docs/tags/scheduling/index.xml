@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scheduling on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/tags/scheduling/</link>
+    <description>Recent content in scheduling on Tin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/scheduling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Learning Rate Scheduling in Pytorch</title>
+      <link>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</link>
+      <pubDate>Sun, 14 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</guid>
+      <description>Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Lambda LR.</description>
+    </item>
+    
+  </channel>
+</rss>

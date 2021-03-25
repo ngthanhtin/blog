@@ -163,7 +163,7 @@ plt.plot(lrs)
 Được đề xuất trong bài SGDR: Stochastic Gradient Descent with Warm Restarts. Link: https://arxiv.org/abs/1608.03983
 
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{max}}\pi))">
+<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} %2B \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{max}}\pi))">
 </p>
 
 ```
@@ -303,7 +303,7 @@ plt.plot(lrs)
 ### 9. Cosine Annealing Warm Restarts.
 Đặt learning rate sử dụng một cosine annealing schedule, và restarts lại sau Ti epochs.<br/>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} + \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{i}}}\pi))">
+<img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} %2B \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{i}}\pi))">
 </p>
 
 ```

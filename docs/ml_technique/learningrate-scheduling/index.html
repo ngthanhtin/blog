@@ -218,7 +218,7 @@ plt.plot(range(10),lrs)
 </p>
 <h3 id="2-multiplicative-lr">2. Multiplicative LR.</h3>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1}} * lambda_{epoch}">
+<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * lambda_{epoch}">
 </p>
 <pre><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
@@ -284,7 +284,7 @@ plt.plot(range(10),lrs)
 </p>
 <h3 id="5-exponential-lr">5. Exponential LR.</h3>
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1}} * \gamma">
+<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * \gamma">
 </p>
 <pre><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)

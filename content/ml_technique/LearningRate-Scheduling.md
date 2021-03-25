@@ -54,7 +54,7 @@ plt.plot(range(10),lrs)
 
 ### 2. Multiplicative LR.
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1}} * lambda_{epoch}">
+<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * lambda_{epoch}">
 </p>
 
 ```
@@ -136,7 +136,7 @@ plt.plot(range(10),lrs)
 
 ### 5. Exponential LR.
 <p align="center">
-<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1}} * \gamma">
+<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * \gamma">
 </p>
 
 ```

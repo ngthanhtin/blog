@@ -168,7 +168,7 @@ Nội dung chính sẽ bao gồm các phần sau:
                 Monday, Mar 15, 2021
               
 
-            | 1 minutes read
+            | 2 minutes read
 
             | Update at
               
@@ -188,8 +188,30 @@ Nội dung chính sẽ bao gồm các phần sau:
 <li>Tham khảo.</li>
 </ol>
 <h3 id="1-giới-thiệu-phương-pháp-divided-rectangle-direct">1. Giới thiệu phương pháp Divided Rectangle (DIRECT).</h3>
-<p>Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo. Thuật toán này được dùng khi tối ưu những bài toán có ràng buộc</p>
+<p>Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo. Thuật toán này được dùng khi tối ưu những bài toán có ràng buộc (bound constraints) và một real-value objective function.</p>
+<h4 id="11-lipschitz-optimization">1.1 Lipschitz Optimization</h4>
+<p>Lipschitz Continuity được định nghĩa như sau:<br/>
+Nếu f là Lipschitz continuous trong một không gian X với Lipschitz constant alpha &gt; 0 thì: <br/></p>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=|f(x)-f(x')| \leq \alpha|x-x'|">
+</p>
+<p>There are several problems with this type of algorithm. Since the idea of endpoints
+does not translate well into higher dimensions, the algorithm does not have an intuitive
+generalization for N &gt; 1. Second, the Lipschitz constant frequently can not be determined
+or reasonable estimated. Many simulations with industrial applications may not even be
+Lipschitz continous throughout their domains. Even if the Lipschitz constant can be estimated, a poor choice can lead to poor results. If the estimate is too low, the result may not
+be a minimum of f, and if the choice is too large, the convergence of the Shubert algorithm
+will be slow.</p>
+<p>Thuật toán DIRECT ko yêu cầu phải biết trước Lipschitz constant, vì vậy ta có thể lựa chọn constant để test như hình sau:</p>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/lipschitz_constant.png?raw=true">
+</p>
+<div style="text-align: center">Sự thay đổi của Lipschitz constant dẫn đến minimum cũng thay đổi, khi constant càng bé, design points càng gần f(x) và ngược lại.</div>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/flow_code.png?raw=true">
+</p>
+<div style="text-align: center">Step của thuật toán DIRECT.</div>
 <h3 id="3-code">3. Code.</h3>
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/main_code.png?raw=true">

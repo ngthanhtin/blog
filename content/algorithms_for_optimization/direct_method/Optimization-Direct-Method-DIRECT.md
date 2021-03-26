@@ -36,7 +36,7 @@ Ví dụ: <br/>
 Giả sử ta có <img src="https://render.githubusercontent.com/render/math?math=M = [a,b] \subset R^{1}">, ta có thể xây dựng 2 bất đẳng thức dựa vào Lipschitz continuos:<br/>
  <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(a) - \alpha(x-a)"><br/>
-  <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(b) - \alpha(x-b)">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(b) %2B \alpha(x-b)">
 </p>
 Dựa vào 2 bất đẳng thức trên ta có thể vẽ được 2 đường thẳng trên đồ thị như sau: <br/>
 <p align="center">
@@ -58,6 +58,23 @@ Ví dụ về việc thay đổi Lipschitz constant như hình sau:
 <div style="text-align: center">Sự thay đổi của Lipschitz constant dẫn đến minimum cũng thay đổi, khi constant càng bé, design points càng gần f(x) và ngược lại.</div>
 
 #### 1.2 Univariate DIRECT
+Đối với không gian 1 chiều, DIRECT sẽ chia một đoạn (interval) làm 3, sau đó tính objective function ở điểm giữa của đoạn này. Chú ý rằng cách làm này khác với thuật toán Shubert đã nói ở trên, đối với thuật toán Shubert, điểm được sample là giao điểm của 2 đoạn thẳng được tạo thành từ 2 bất đẳng thức. <br/>
+Cho một đoạn [a,b], điểm giữa là c = (a+b)/2, chặn dưới thấp nhất (lowest bound) sẽ là f(c):<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(c) - \alpha|x-c|">
+</p>
+Ở đây, chúng ta ko cần biết giá trị của alpha. Ta có thể thấy, nếu x = b thì ta sẽ tìm được lowest bound trên đoạn interval này, và giá trị đó sẽ là f(c) - alpha*(b-a)/2, và điểm đó nằm trên edges của interval đó. Hình minh họa như sau: <br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/univariate_lowest_bound.jpg?raw=true">
+</p>
+Mặc dù chúng ta ko biết giá trị alpha, nhưng chúng ta có thể suy luận ra rằng lower bound của interval này có thấp hơn lower bound của interval khác hay không. Ví dụ, chúng ta có 2 interval cùng chiều dài, giả sử interval thứ 1 có lower evaluation tại center (f(c)) thấp hơn của interval thứ 2, vì vậy, lower bound của interval thứ 1 sẽ thấp hơn lower bound của interval thứ 2. Mặc dù ko dám chắc rằng interval thứ 1 có chứa minimizer hay không, nhưng nó định hướng cho chúng ta cần phải tập trung tìm kiếm minimizer ở vùng nào.
+
+Ví dụ, chúng ta có một hàm như sau <b>f(x) = sin(x) + sin(2x) + sin(4x) + sin(8x)</b>, xét trên interval [−2, 2] có một global minimizer gần với giá trị −0.272, ta minh họa quá trình thuật toán DIRECT tối ưu như sau:<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/univariate_example.png?raw=true">
+</p>
+<div style="text-align: center">Những intervals được chọn để chia làm 3 là những đoạn màu xanh. Hình bên trái thể hiện cho ta thấy những interval và hàm objective. Hình bên phải thể hiện các intervals bằng các points, trong đó chiều ngang là interval hafl-width (b-a)/2, chiều dọc là interval evaluation f(c)</div>
+<div style="text-align: center">Hàm số này có rất nhiều minimum như trên, vì vậy rất khó để optimize.</div>
 
 #### 1.3 Multivariate DIRECT
 

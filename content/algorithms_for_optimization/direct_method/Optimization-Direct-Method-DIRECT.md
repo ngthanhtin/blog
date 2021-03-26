@@ -96,7 +96,7 @@ Ví dụ, DIRECT sau 16 vòng lặp trên hàm Branin:<br/>
 </p>
 với hàm Branin như sau:<br/>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=f(x) = \alpha(x_{2} - bx^{2} + cx_{1} - r)^{2} %2B s(1-t)cos(x_{1}) %2B + s">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = \alpha(x_{2} - bx^{2} %2B cx_{1} - r)^{2} %2B s(1-t)cos(x_{1}) %2B + s">
 </p>
 
 ### 2. Thuật toán.

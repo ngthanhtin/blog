@@ -29,23 +29,37 @@ Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng t
 Lipschitz Continuity được định nghĩa như sau:<br/>
 Nếu f là Lipschitz continuous trong một không gian X với Lipschitz constant alpha > 0 thì: <br/>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=|f(x)-f(x')| \leq \alpha|x-x'|">
+  <img src="https://render.githubusercontent.com/render/math?math=|f(x)-f(x^{'})| \leq \alpha|x-x^{'}| \forall x, x^{'} \in X">
+</p>
+Nếu hàm f có đặc tính này thì ta có thể tìm được minimum của f. Thuật toán Shubert-Piyavskii là một trong những thuật toán như vậy.<br/>
+Ví dụ: <br/>
+Giả sử ta có <img src="https://render.githubusercontent.com/render/math?math=M = [a,b] \subset R^{1}">, ta có thể xây dựng 2 bất đẳng thức dựa vào Lipschitz continuos:<br/>
+ <p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(a) - \alpha(x-a)"><br/>
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) \geq f(b) - \alpha(x-b)">
+</p>
+Dựa vào 2 bất đẳng thức trên ta có thể vẽ được 2 đường thẳng trên đồ thị như sau: <br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/shubert.png?raw=true">
+</p>
+Điểm giao nhau giữa 2 đường thẳng là điểm minimum được ước lượng ở step đầu tiên.<br/>
+Sau đó, thuật toán Shubert tiếp tục ước lượng minimum trên đoạn [a, x1] và [x1, b].
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/shubert_iteration.png?raw=true">
 </p>
 
-There are several problems with this type of algorithm. Since the idea of endpoints
-does not translate well into higher dimensions, the algorithm does not have an intuitive
-generalization for N > 1. Second, the Lipschitz constant frequently can not be determined
-or reasonable estimated. Many simulations with industrial applications may not even be
-Lipschitz continous throughout their domains. Even if the Lipschitz constant can be estimated, a poor choice can lead to poor results. If the estimate is too low, the result may not
-be a minimum of f, and if the choice is too large, the convergence of the Shubert algorithm
-will be slow.
+Có nhiều vấn đề đối với thuật toán Shubert này. Thứ nhất, thuật toán này ko tổng quát hóa lên khi số chiều lớn hơn 1. Thứ hai, Lipschitz constant thường ko được xác định hoặc ước lượng hợp lý. Nhiều ứng dụng công nghiệp hiện nay có thể ko có đặc tính của Lipschitz trong domain của nó. Cho dù có ước lượng được Lipschitz constant cũng sẽ dẫn đến kết quả xấu nếu việc ước lượng ko tốt.<br/>
+Thuật toán DIRECT giải quyết được 2 vấn đề đó, thứ nhất nó có thể tổng quát hóa trên không gian nhiều chiều, thứ hai nó không cần phải ước lượng Lipschitz constant hoặc objective function ko cần phải có đặc tính Lipschitz continuality.
 
-Thuật toán DIRECT ko yêu cầu phải biết trước Lipschitz constant, vì vậy ta có thể lựa chọn constant để test như hình sau:
+Ví dụ về việc thay đổi Lipschitz constant như hình sau:
 <p align="center">
   <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/lipschitz_constant.png?raw=true">
 </p>
 <div style="text-align: center">Sự thay đổi của Lipschitz constant dẫn đến minimum cũng thay đổi, khi constant càng bé, design points càng gần f(x) và ngược lại.</div>
 
+#### 1.2 Univariate DIRECT
+
+#### 1.3 Multivariate DIRECT
 
 ### 2. Thuật toán.
 <p align="center">

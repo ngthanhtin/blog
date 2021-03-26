@@ -77,6 +77,27 @@ Ví dụ, chúng ta có một hàm như sau <b>f(x) = sin(x) + sin(2x) + sin(4x)
 <div style="text-align: center">Hàm số này có rất nhiều minimum như trên, vì vậy rất khó để optimize.</div>
 
 #### 1.3 Multivariate DIRECT
+Trong không gian nhiều chiều, cụ thể là 2 chiều, thuật toán chia các hình chữ nhật (rectangles) thay vì chia các intervals làm ba. Còn đối với số chiều > 2, ta chia các hyber-rectangles ra làm ba. Nhưng trước khi tiến hành chia cắt, DIRECT phải chuẩn hóa search space về  dạng unit hypercube.<br/>
+Thứ tự chia cắt theo hướng nào rất quan trọng trong không gian nhiều chiều như trong mô tả sau:<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/multivariate_order.png?raw=true">
+</p>
+Khi chia cắt một vùng ko có các chiều có chiều dài như nhau, chỉ có chiều dài nhất được chia cắt.<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/multivariate_hyper_rectangle.png?raw=true">
+</p>
+<div style="text-align: center">DIRECT chỉ chia cắt theo chiều dài nhất của hyper rectangles.</div>
+Tập các interval tối ưu cũng được tính như là ở trường hợp one dimension. Lower bound cho mỗi hyper-rectangle được tính dựa trên longest
+side length và center value.
+
+Ví dụ, DIRECT sau 16 vòng lặp trên hàm Branin:<br/>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/cover.png?raw=true">
+</p>
+với hàm Branin như sau:<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f(x) = \alpha(x_{2} - bx^{2} + cx_{1} - r)^{2} %2B s(1-t)cos(x_{1}) %2B + s">
+</p>
 
 ### 2. Thuật toán.
 <p align="center">
@@ -112,7 +133,7 @@ Ví dụ, chúng ta có một hàm như sau <b>f(x) = sin(x) + sin(2x) + sin(4x)
 
 
 ### 4. Bàn luận.
-
+Thuật toán DIRECT giải quyết được yếu điểm của thuật toán Shubert đó là cần phải biết Lipschitz constant và tổng quát hóa hơn thuật toán Shubert khi có thể optimize cho không gian nhiều chiều.<br/>
 
 
 ### 5. Tham khảo.

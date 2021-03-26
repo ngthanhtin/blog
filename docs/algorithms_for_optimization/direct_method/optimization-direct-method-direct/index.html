@@ -21,10 +21,9 @@
 
 
 <meta property="og:title" content="Optmization - Direct Method: Divided Rectangle (DIRECT)" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là Divided Rectangle.
+<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). a
-2. Thuật toán. 3. Code. 4. Bàn luận. 5. Tham khảo." />
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-direct/" />
 <meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
@@ -34,10 +33,9 @@ Nội dung chính sẽ bao gồm các phần sau:
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Optmization - Direct Method: Divided Rectangle (DIRECT)"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là Divided Rectangle.
+<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
 Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). a
-2. Thuật toán. 3. Code. 4. Bàn luận. 5. Tham khảo."/>
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -180,7 +178,7 @@ Nội dung chính sẽ bao gồm các phần sau:
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Divided Rectangle</b>.</p>
+      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>DIvided RECTangle (DIRECT)</b>.</p>
 <p>Nội dung chính sẽ bao gồm các phần sau: <br/></p>
 <ol>
 <li>Giới thiệu phương pháp Divided Rectangle (DIRECT).</li>
@@ -190,9 +188,29 @@ Nội dung chính sẽ bao gồm các phần sau:
 <li>Tham khảo.</li>
 </ol>
 <h3 id="1-giới-thiệu-phương-pháp-divided-rectangle-direct">1. Giới thiệu phương pháp Divided Rectangle (DIRECT).</h3>
-<p>a</p>
+<p>Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo. Thuật toán này được dùng khi tối ưu những bài toán có ràng buộc</p>
 <h3 id="2-thuật-toán">2. Thuật toán.</h3>
 <h3 id="3-code">3. Code.</h3>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/main_code.png?raw=true">
+</p>
+<div style="text-align: center">Thuật toán DIRECT.</div>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/hybercube.png?raw=true">
+</p>
+<div style="text-align: center">Hybercube function.</div>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/data_structure.png?raw=true">
+</p>
+<div style="text-align: center">Data Structure.</div>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/opt_interval.png?raw=true">
+</p>
+<div style="text-align: center">Interval.</div>
+<p align="center">
+  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/direct/divide.png?raw=true">
+</p>
+<div style="text-align: center">Divide interval.</div>
 <h3 id="4-bàn-luận">4. Bàn luận.</h3>
 <h3 id="5-tham-khảo">5. Tham khảo.</h3>
 <p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>

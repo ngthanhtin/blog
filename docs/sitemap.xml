@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/attention/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/bilinear/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/ml_technique/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/personal/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
@@ -28,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/vqa/</loc>
+    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
@@ -39,11 +64,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tags/machine-leanring/</loc>
-    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/ml_technique/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,28 +193,8 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/attention/</loc>
-    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-01-stacked-attention-network/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/vqa/</loc>
-    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/bilinear/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-02-bi-tri-attention/</loc>
-    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>

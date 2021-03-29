@@ -37,7 +37,7 @@ Ví dụ, x là (40x60), text là (100,) thì W là (40x100). <br/>
 ### 2. Low-rank bilinear pooling
 Khi nhìn vào Bilinear Pooling chúng ta có thể thấy, ứng với mỗi z_i, ta cần phải học một ma trận W_i tương ứng, việc này dẫn đến computational cost rất cao. Để giải quyết vấn đề này, ta sử dụng một kĩ thuật trong đại số tuyến tính là <b>Low-rank factorization</b>, nghĩa là:<br/>
 <p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=z_{i} = x^{T}W_{i}y \approx x^{T}U_{i}V_{i}{T}y = \sum_{d=1}^{k}x^{T}u_{d}v_{d}{T}y = \mathbb{1}^{T}(U_{i}^{T}x \circ V_{i}^{T}y)">
+  <img src="https://render.githubusercontent.com/render/math?math=z_{i} = x^{T}W_{i}y \approx x^{T}U_{i}V_{i}^{T}y = \sum_{d=1}^{k}x^{T}u_{d}v_{d}{T}y = \mathbb{1}^{T}(U_{i}^{T}x \circ V_{i}^{T}y)">
 </p>
 <img src="https://render.githubusercontent.com/render/math?math=\circ"> là kí hiệu của Hadarmard product <img src="https://render.githubusercontent.com/render/math?math=\mathbb{1}"> là vector bào gồm tất cả value là 1. <br/>
 Ta có thể thấy, k chính là một chiều ẩn của factorized matrix Ui và Vi. Ta có thể dùng thay thế một pooling matrix để mô tả quá trình này:<br/>
@@ -46,10 +46,27 @@ Ta có thể thấy, k chính là một chiều ẩn của factorized matrix Ui 
 </p>
 Việc sử dụng Pooling ở đây khiến cho số lượng parameter giảm đi đáng kể. Vì vậy low-rank bilinear vẫn giữ được tính chất của bilinear pooling nhưng đồng thời làm giảm số lượng parameter rất nhiều nhờ vào kĩ thuật fatorized matrix.
 
+### 3. Question Guided Attention Mechanism
+Attention là một cách để giảm input channel rất hiệu quả, ta có các bước làm như sau:<br/>
+Ta có vector của text là q, và image feature vector từ vùng thứ i (i_th) v_i được đưa qua một non-linear layer (fa) với weight là wa <img src="https://render.githubusercontent.com/render/math?math=a = w_{a}f_{a}(v_{i}q)">. Sau đó, attention weights được chuẩn hóa bằng hàm softmax tạo ra <img src="https://render.githubusercontent.com/render/math?math=\alpha = softmax(a)">. Cuối cùng combined image feature vector được tính dựa trên attention weight: <img src="https://render.githubusercontent.com/render/math?math=\sum^{K}_{i}\alpha_{i}v_{i}"> <br/>
+
+### 4. Kết hợp Low-rank bilinear pooling và Question Guided Attention Mechanism
+Ta nhận thấy 2 phương pháp này có thể kết hợp với nhau, cụ thể ta ko nối 2 vector image và text lại như ở mục 3, mà sẽ thay vào đó sử dụng Low-rank bilinear pooling, nghĩa là:<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=\alpha := softmax(P^{T}(U^{T}x \circ V^{T}y))">
+</p>
+Cuối cùng ta có được một phương pháp vừa giảm được channel, vừa giúp attend được 2 feature vector ko có cùng chiều.<br/>
+Tuy nhiên, phương pháp này chỉ dùng cho multi-channel input là image và single channel input là question. Vì vậy, ta cần mở rộng phương pháp ra thành multi-channel input cho cả text và image.
+
 ### 3. Bilinear Attention
+Đây là phương pháp mà chúng ta đã nhắc tới đầu bài, được sử dụng để kết hợp 2 feature multi-channel input. Để giảm số channel đồng thời, ta có một attention map A như sau:
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f_{k} = (X^{T}U^{'})^{T}_{k}A(Y^{T}V^{'})_{k}">
+</p>
+Để ý, ta có thể thấy <img src="https://render.githubusercontent.com/render/math?math=X^{T}U^{'})^{T}"> và <img src="https://render.githubusercontent.com/render/math?math=Y^{T}V^{'}"> là 2 X và Y trong low-rank bilinear, k chính là index của cột. A được gọi là attention map.
 
 ### 4. Trilinear Attention
-
+Update... (khó quá từ từ xem)
 ## 5. Tham khảo
 Fukui, Akira, et al. "Multimodal compact bilinear pooling for visual question answering and visual grounding." arXiv preprint arXiv:1606.01847 (2016).<br/>
 Kim, Jin-Hwa, et al. "Hadamard product for low-rank bilinear pooling." arXiv preprint arXiv:1610.04325 (2016).<br/>

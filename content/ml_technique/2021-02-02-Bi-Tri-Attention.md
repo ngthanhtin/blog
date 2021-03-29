@@ -12,10 +12,36 @@ Link paper: [Bilinear Attention](https://arxiv.org/abs/1805.07932)<br/>
 Link code: [Code](https://github.com/jnhwkim/ban-vqa)<br/>
 
 ## 1. Introduction
+Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, [link](https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network). <br/>
+Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau. Về cơ bản, chúng ta có thể sử dụng phương pháp concatenate để nối 2 feature vector, hoặc dùng element-wise product (hoặc là Hardarmard product) để 2 feature tương tác với nhau, hoặc là dùng bilinear pooling để 2 vector có thể tương tác với nhau nhiều hơn vì vậy cung cấp một attended vector tốt hơn. <br/>
+<p align="center">
+<img src="/blog/img/bilinear_att/hardarmard.png">
+</p>
+<div style="text-align: center">Element-wise product (Hardarmard).</div>
 
-## 6. Tham khảo
+<p align="center">
+<img src="/blog/img/bilinear_att/outer_product.png">
+</p>
+<div style="text-align: center">Outer product, core component của bilinear pooling.</div>
 
+Khi dùng concatenation, đây là một phương pháp khá nice, dễ sử dụng, đơn giản bạn chỉ cần việc nối 2 vector lại và đưa vector đó qua thành phần tiếp theo (là một classifier để phân loại). Tuy nhiên, cách này ko làm cho 2 vector vision và text tương tác với nhau hiệu quả, vì thế người ta mới sử dụng những phương pháp như element-wise hay outer-product. 
+Điểm mạnh của element-wise là 2 vector tương tác với nhau rất tốt, bạn có thể nhìn vào cách tính là sẽ thấy được, tuy nhiên nó có 2 yếu điểm sau: (1) Nếu 2 vector quá lớn, dẫn tới việc tính toán cũng sẽ vô cùng lớn, làm chậm quá trình trainning, (2) nó yêu cầu 2 vector phải có cùng số chiều. <br/>
+Còn về outer product hay bilinear pooling, nó cho phép tạo ra một vector attention khi 2 vector vision và text không cùng chiều. Và để làm được điều đó đơn giản chỉ cần chèn vào ở giữa 2 vector này một thằng trung gian:<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=z_{i} = x^{T}W_{i}y">
+</p>
+<div style="text-align: center">Với x là vector của vision, y là vector của text.</div>
+Ví dụ, x là (40x60), text là (100,) thì W là (40x100). <br/>
+
+### 2. Low-rank bilinear pooling
+
+### 3. Bilinear Attention
+
+### 4. Trilinear Attention
+
+## 5. Tham khảo
 Fukui, Akira, et al. "Multimodal compact bilinear pooling for visual question answering and visual grounding." arXiv preprint arXiv:1606.01847 (2016).<br/>
 Kim, Jin-Hwa, et al. "Hadamard product for low-rank bilinear pooling." arXiv preprint arXiv:1610.04325 (2016).<br/>
+https://medium.com/@nithinraok_/visual-question-answering-attention-and-fusion-based-approaches-ebef62fa55aa <br/>
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

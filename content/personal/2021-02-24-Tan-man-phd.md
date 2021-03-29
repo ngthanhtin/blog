@@ -3,7 +3,7 @@ title : "Tản mạn phờ hắc đi (1)"
 cover : "/blog/img/tan_man_phd/phd.jpg"
 date : "2021-02-21"
 tags : 
-  - "loss function"
+  - "personal"
 # categories : [ "attention" ]
 
 ---

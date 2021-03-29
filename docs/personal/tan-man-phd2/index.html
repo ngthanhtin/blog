@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Optmization - Direct Method - Powell Method | Tin&#39;s Blog</title>
+    <title>Tản mạn phờ hắc đi (2) | Tin&#39;s Blog</title>
 
     
 
@@ -17,21 +17,21 @@
 
 <meta name="generator" content="Hugo 0.80.0" />
 
-<link rel="canonical" href="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-powell/" />
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/personal/tan-man-phd2/" />
 
 
-<meta property="og:title" content="Optmization - Direct Method - Powell Method" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:" />
+<meta property="og:title" content="Tản mạn phờ hắc đi (2)" />
+<meta property="og:description" content="Dạo gần đây cảm thấy khá chán nản, một phần vì đang mùa covid, một phần vì ở lab hơi chán, một phần nữa là cảm thấy mình kém cỏi thật. Hahaa. Lúc mới bắt đầu đi học PhD, mình nghĩ sẽ học thẳng một lèo luôn 4,5 năm để xong r đi đâu đi, nhưng giờ lại cảm thấy hơi lung lay bởi vì lab mình khá là ko active, mỗi người làm một thứ đổi lại thì giáo thoải mái, nhưng cá nhân mình là một người thích thử thách, nên khi ở trong một môi trường như thế này làm cho mình cảm thấy ko thoải mái và muốn bứt ra." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-powell/" />
-<meta property="article:published_time" content="2021-03-15T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-15T00:00:00+00:00" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/personal/tan-man-phd2/" />
+<meta property="article:published_time" content="2021-03-29T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-29T00:00:00+00:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Optmization - Direct Method - Powell Method"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:"/>
+<meta name="twitter:title" content="Tản mạn phờ hắc đi (2)"/>
+<meta name="twitter:description" content="Dạo gần đây cảm thấy khá chán nản, một phần vì đang mùa covid, một phần vì ở lab hơi chán, một phần nữa là cảm thấy mình kém cỏi thật. Hahaa. Lúc mới bắt đầu đi học PhD, mình nghĩ sẽ học thẳng một lèo luôn 4,5 năm để xong r đi đâu đi, nhưng giờ lại cảm thấy hơi lung lay bởi vì lab mình khá là ko active, mỗi người làm một thứ đổi lại thì giáo thoải mái, nhưng cá nhân mình là một người thích thử thách, nên khi ở trong một môi trường như thế này làm cho mình cảm thấy ko thoải mái và muốn bứt ra."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -117,22 +117,6 @@
   <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
     
     
-    <div class="ui segment toc">
-      <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#1-giới-thiệu-phương-pháp-powell">1. Giới thiệu phương pháp Powell.</a></li>
-        <li><a href="#2-thuật-toán">2. Thuật toán.</a></li>
-        <li><a href="#3-code">3. Code.</a></li>
-        <li><a href="#4-bàn-luận">4. Bàn luận.</a></li>
-        <li><a href="#5-tham-khảo">5. Tham khảo.</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </div>
-    
     <div class="ui segment actions">
       <button
         class="ui circular icon button save-as-image"
@@ -141,10 +125,10 @@
         <i class="save icon"></i>
       </button>
 
-      <a href="https://twitter.com/intent/tweet?text=Optmization%20-%20Direct%20Method%20-%20Powell%20Method&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2falgorithms_for_optimization%2fdirect_method%2foptimization-direct-method-powell%2f" class="ui circular twitter icon button">
+      <a href="https://twitter.com/intent/tweet?text=T%e1%ba%a3n%20m%e1%ba%a1n%20ph%e1%bb%9d%20h%e1%ba%afc%20%c4%91i%20%282%29&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2fpersonal%2ftan-man-phd2%2f" class="ui circular twitter icon button">
   <i class="twitter icon"></i>
 </a>
-<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2falgorithms_for_optimization%2fdirect_method%2foptimization-direct-method-powell%2f" class="ui circular facebook icon button">
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2fpersonal%2ftan-man-phd2%2f" class="ui circular facebook icon button">
   <i class="facebook icon"></i>
 </a>
 
@@ -154,69 +138,32 @@
     
     <section class="ui top attached segment">
       <header>
-        <h1 class="ui large header">Optmization - Direct Method - Powell Method<div class="sub header">
+        <h1 class="ui large header">Tản mạn phờ hắc đi (2)<div class="sub header">
             @
             
               Nguyen Thanh Tin
             
 
             | 
-                Monday, Mar 15, 2021
+                Monday, Mar 29, 2021
               
 
-            | 2 minutes read
+            | 4 minutes read
 
             | Update at
               
-                Monday, Mar 15, 2021
+                Monday, Mar 29, 2021
               
           </div>
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Powell Method</b>.
-Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau:<br/>
-Optimization: <a href="https://ngthanhtin.github.io/blog/optimization-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-gioi-thieu/</a></br>
-Direct Method: <a href="https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/">https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/</a></br>
-Nội dung chính sẽ bao gồm các phần sau: <br/></p>
-<ol>
-<li>Giới thiệu phương pháp Powell.</li>
-<li>Thuật toán.</li>
-<li>Code.</li>
-<li>Bàn luận.</li>
-<li>Tham khảo.</li>
-</ol>
-<h3 id="1-giới-thiệu-phương-pháp-powell">1. Giới thiệu phương pháp Powell.</h3>
-<p>Powell method cho phép dùng line search trên những direction mà ko orthogonal với nhau như phương pháp Cyclic Coordinate Method.<br/></p>
-<p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/cover.png?raw=true">
-</p>
-Ta có thể thấy, hướng di chuyển của x không nhất thiết phải orthogonal với hướng cũ.
-<h3 id="2-thuật-toán">2. Thuật toán.</h3>
-<ol>
-<li>Ban đầu, ta sẽ khởi tạo một tập chứa các direction <img src="https://render.githubusercontent.com/render/math?math=U = [e_{1}, e_{2}, e_{3},..., e_{n}] ">, những hướng này ban đầu là những vector đơn vị (tương tự Cyclic Coordinate Search).<br/></li>
-<li>Sau đó, thực hiện line search trên tập các direction này và có được một tập <img src="https://render.githubusercontent.com/render/math?math=x^{'}"><br/></li>
-<li>Sau đó, loại bỏ direction đầu tiên trong tập direction và dịch index của các phần tử xuống một đơn vị và thay thế direction thứ n bằng hướng mới x' - x:<br/></li>
-</ol>
-<p align="center">
-  <img src="https://render.githubusercontent.com/render/math?math=U[i] = U[i+1] "><br/>
-  <img src="https://render.githubusercontent.com/render/math?math=U[n] = x^{'} - x ">
-</p>
-<ol start="5">
-<li>Thực hiện line search trên hướng mới x' - x.<br/></li>
-<li>Tính step size bằng norm giữa x' và x.<br/></li>
-<li>Dừng khi step size nhỏ hơn một threshold nào đó.</li>
-</ol>
-<h3 id="3-code">3. Code.</h3>
-<p align="center">
-  <img src="https://github.com/ngthanhtin/blog/blob/master/static/img/math_optimization/direct/powell/code.png?raw=true">
-</p>
-<div style="text-align: center">Code của thuật toán Powell.</div>
-<h3 id="4-bàn-luận">4. Bàn luận.</h3>
-<p>Mặc dù thuật toán này giải quyết được vấn đề của Cyclic Coordinate Search nhưng nó đòi hỏi nhiều vòng lặp hơn thuật toán ban đầu.</p>
-<h3 id="5-tham-khảo">5. Tham khảo.</h3>
-<p><a href="">Algorithms for Optimization, Mykel J.Kochenderfer, Tim A.Wheeler</a><br/>
-<a href="https://github.com/ngthanhtin/optimization_algorithm">Code</a>: Repo này là mình tổng hợp lại các thuật toán Optimization trong sách, được viết bằng Julia và Python, nếu bạn có hứng thú về code có thể ghé qua nhé.<br/></p>
+      <article class="main"><p>Dạo gần đây cảm thấy khá chán nản, một phần vì đang mùa covid, một phần vì ở lab hơi chán, một phần nữa là cảm thấy mình kém cỏi thật. Hahaa.<br/>
+Lúc mới bắt đầu đi học PhD, mình nghĩ sẽ học thẳng một lèo luôn 4,5 năm để xong r đi đâu đi, nhưng giờ lại cảm thấy hơi lung lay bởi vì lab mình khá là ko active, mỗi người làm một thứ đổi lại thì giáo thoải mái, nhưng cá nhân mình là một người thích thử thách, nên khi ở trong một môi trường như thế này làm cho mình cảm thấy ko thoải mái và muốn bứt ra. Điều này ko có nghĩa là mình chê lab, nhưng thật sự lab này là một trong những lab mình thấy thoải mái nhất, cơ sở vật chất cũng xịn xò, chỉ có là nhiều thứ làm mình hơi upset tí, hahahaha. <br/>
+Nên là mình có suy nghĩ thôi thì quit Phd ở Hàn, và sau đó xin PhD ở đâu đó như Úc, Anh, Singapore, Mỹ hoặc Châu Âu chẳng hạn. Mỹ thì ai cũng muốn tới, nhưng phải học thêm GRE nữa nên hơi khoai :v, Châu Âu thì bây giờ nhiều nước đào tạo thực sự ko tốt, thầy mình và một số ae trên VietPhD bảo thế, thời này là thời của Châu Á =)))), ví dụ như Pháp, ae đi Pháp về r hoặc có bạn bên Pháp đều bảo né nước này ra do đào tạo ko tốt, học về r cũng ít làm được nhiều (ý kiến của một số ae nên chưa kiểm chứng), Anh thì cũng được nhưng khó xin Postdoc (nghe nói vậy, chắc tại thị trường Anh nó bão hòa r, có quá nhiều người giỏi), nên là mình nhắm đến 2 thị trường Singapore và Úc, mình thì cảm thấy thích Úc hơn, do nghe nói Úc lương cao vãi =)))) nên là giờ cố học IELTS lên 6.5 và có thêm 1,2 paper top (journal Q1 hoặc top conference) là đi được Úc rùi hahahaha. Ko biết từ 6.0 lên 6.5 khó ko nhỉ còn 1,5 năm nữa thôi, còn paper thì vẫn đang xúc tiến vs giáo, mà giáo mình có vẻ cũng biết là sinh viên mà có paper cái là dở chứng, ví dụ như mình đây =)))), nên là các giáo bên Hàn có vẻ cũng tìm cách để làm chậm quá trình lại một chút, đợi sinh viên học tầm 1,2 năm r thì mới đẩy nhanh quá trình =)))) (ý kiến cá nhân thui, mình thấy giáo mình vậy, mong là ô ko đọc được :v). <br/>
+Hiện tại thì mình có gắng đạt được 2 mục tiêu đó và nhắm tới trường Daekin bên Úc, vì mình biết một số siêu nhân ở bển làm về mảng RL, và họ đều có con đường khá giống mình, đó là đều từng học ở Hàn và sau đó bay sang Úc kakakaka.<br/>
+Cá nhân mình thì thích bay nhảy, nhưng ae gia đình thì lại ko muốn như vậy, một phần vì muốn mình học 1 lèo xong về  hoặc sang nước khác làm kiếm tiền cho khỏe, một phần chắc cũng vì cái mác PhD, có sớm để đem về khoe xóm làng :v, nhưng thật ra mình nghĩ PhD là một quá trinh tích lũy kinh nghiệm, ko quan trọng sớm hay muộn, quan trọng là làm được gì trong quá trình đó.</p>
+<p>Viết hơi dài, nói chung cũng hơi buồn + chán trong cái mùa dịch tào lao này, mong là được về sớm chứ giờ VN k có nhiều chuyến bay, có thì cũng ưu tiên ng khác chứ k tới lượt mình. Thôi thì ngồi tiếp tục học Anh văn và viết báo tiếp cho đỡ buồn =)))))</p>
 <div style="text-align: right"> (Tín Nguyễn) </div>
 </article>
     </section>

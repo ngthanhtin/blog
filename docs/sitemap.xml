@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/personal/relationship/</loc>
+    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/personal/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
@@ -19,11 +24,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/personal/relationship/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   

@@ -2,7 +2,6 @@
 title : "Tản mạn cuộc sống"
 cover : "/blog/img/tan_man_phd/trinhcongson.jpg"
 date : "2021-04-26"
-categories: "personal"
 tags : 
   - "personal"
 

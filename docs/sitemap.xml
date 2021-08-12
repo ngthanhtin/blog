@@ -8,7 +8,17 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/categories/</loc>
+    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/personal/</loc>
+    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/categories/personal/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -213,10 +223,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tags/book/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/</loc>
   </url>
   
   <url>

@@ -6,16 +6,7 @@
     <description>Recent content on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 12 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Tản mạn cuộc sống</title>
-      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</link>
-      <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</guid>
-      <description>Hello mn, mình bây giờ đã quyết tâm stop phd để lấy master thôi boi vi o hàn được hơn nửa năm, mình cảm thấy thật sự ko phù hợp với nơi này, cái rào cản lớn nhất đó là ngôn ngữ, ko biết tiếng hàn thì rất khó hòa nhập với ng dân bên này, hơn nữa là đồ ăn, ở VN thì sáng mở mắt ra thì nào là cơm tấm, hủ tiếu, phở, bún, bánh mì, etc nhưng ở hàn sáng ra chả biết ăn gì vì có gì đâu mà ăn, nên là toàn mì tôm, sandwich ăn ngan&#39; vai~ :&#39;(.</description>
-    </item>
-    
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(St) Relationship</title>
       <link>https://ngthanhtin.github.io/blog/personal/relationship/</link>
@@ -271,6 +262,15 @@ Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nh�
       <guid>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</guid>
       <description>Hi các bạn, mình đang học về SLAM nên hôm nay quyết định tổng hợp lại kiến thức về SLAM thành một dạng như Roadmap. Các bạn hãy tham khảo và cho ý kiến nhé.
 Beginner Làm quen với SLAM Monocular SLAM RGB-D SLAM Tham khảo https://github.com/changh95/visual-slam-roadmap</description>
+    </item>
+    
+    <item>
+      <title>Tản mạn cuộc sống</title>
+      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</guid>
+      <description>Hello mn, mình bây giờ đã quyết tâm stop phd để lấy master thôi boi vi o hàn được hơn nửa năm, mình cảm thấy thật sự ko phù hợp với nơi này, cái rào cản lớn nhất đó là ngôn ngữ, ko biết tiếng hàn thì rất khó hòa nhập với ng dân bên này, hơn nữa là đồ ăn, ở VN thì sáng mở mắt ra thì nào là cơm tấm, hủ tiếu, phở, bún, bánh mì, etc nhưng ở hàn sáng ra chả biết ăn gì vì có gì đâu mà ăn, nên là toàn mì tôm, sandwich ăn ngan&#39; vai~ :&#39;(.</description>
     </item>
     
   </channel>

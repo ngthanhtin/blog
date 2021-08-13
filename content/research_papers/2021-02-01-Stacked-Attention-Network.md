@@ -5,7 +5,7 @@ date : "2021-02-05"
 tags : 
   - "vqa"
   - "attention"
-# categories : [ "attention" ]
+categories : "Research Papers"
 
 ---
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vqa on Tin&#39;s Blog</title>
-    <link>https://ngthanhtin.github.io/blog/tags/vqa/</link>
-    <description>Recent content in vqa on Tin&#39;s Blog</description>
+    <title>Research_papers on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/research_papers/</link>
+    <description>Recent content in Research_papers on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/vqa/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/research_papers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bilinear (Trilinear) Attention</title>
       <link>https://ngthanhtin.github.io/blog/research_papers/2021-02-02-bi-tri-attention/</link>

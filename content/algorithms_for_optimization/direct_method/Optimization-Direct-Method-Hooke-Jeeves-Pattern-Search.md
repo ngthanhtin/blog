@@ -8,7 +8,7 @@ tags :
   - "optmization"
   - "pattern-search"
   - "hooke-jeeves"
-
+categories : "Optimization Math"
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Hooke-Jeeves method</b> và <b>Pattern Search</b>.<br/>

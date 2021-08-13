@@ -3,6 +3,7 @@ title: Buy Me A Coffee
 date: 2021-02-06
 author: nguyen thanh tin
 cover: /blog/img/Buy-Me-A-Coffee.jpg
+categories: "personal"
 tags:
   - donate
 ---

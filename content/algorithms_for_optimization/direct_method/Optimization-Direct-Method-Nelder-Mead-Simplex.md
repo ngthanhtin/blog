@@ -8,7 +8,7 @@ tags :
   - "optmization"
   - "simplex"
   - "nelder-mead"
-
+categories : "Optimization Math"
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>Nelder Mead Simplex</b>. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.

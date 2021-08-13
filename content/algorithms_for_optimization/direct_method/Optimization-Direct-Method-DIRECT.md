@@ -7,7 +7,7 @@ tags :
   - "direct-method"
   - "optmization"
   - "divided-rectangle"
-
+categories : "Optimization Math"
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp <b>Optmization</b> bằng <b>Direct Method</b> đó là <b>DIvided RECTangle (DIRECT)</b>.

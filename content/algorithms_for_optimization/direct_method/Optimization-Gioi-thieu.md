@@ -5,7 +5,7 @@ date : "2021-03-14"
 tags : 
   - "math"
   - "optmization"
-
+categories : "Optimization Math"
 ---
 
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về toán <b>Optmization</b>. Nói về Deep Learning thì không thể thiếu được Optimization, chắc hẳn ai làm DL đều đã xài qua những cái như SGD, Adam, Adagrad, KAFC, etc. Tác dụng của optimization đó là giúp tìm ra local minima của model, khi đó ta có thể nói model đã converge.

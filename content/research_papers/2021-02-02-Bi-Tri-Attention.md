@@ -3,7 +3,7 @@ layout: post
 title: Bilinear (Trilinear) Attention
 subtitle: Attention
 date : "2021-03-29"
-tags: [bilinear, vqa, attention]
+tags: "vision-language"
 categories : "Research Papers"
 comments: true
 cover: "/blog/img/bilinear_att/bilinear.jpg"

@@ -17,29 +17,11 @@
     </item>
     
     <item>
-      <title>attention</title>
-      <link>https://ngthanhtin.github.io/blog/tags/attention/</link>
+      <title>vision-language</title>
+      <link>https://ngthanhtin.github.io/blog/tags/vision-language/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/tags/attention/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bilinear</title>
-      <link>https://ngthanhtin.github.io/blog/tags/bilinear/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/bilinear/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vqa</title>
-      <link>https://ngthanhtin.github.io/blog/tags/vqa/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/vqa/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tags/vision-language/</guid>
       <description></description>
     </item>
     
@@ -71,6 +53,24 @@
     </item>
     
     <item>
+      <title>attention</title>
+      <link>https://ngthanhtin.github.io/blog/tags/attention/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/attention/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vqa</title>
+      <link>https://ngthanhtin.github.io/blog/tags/vqa/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tags/vqa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>2020</title>
       <link>https://ngthanhtin.github.io/blog/tags/2020/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -89,29 +89,11 @@
     </item>
     
     <item>
-      <title>hungary-algorithm</title>
-      <link>https://ngthanhtin.github.io/blog/tags/hungary-algorithm/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/hungary-algorithm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ielts</title>
       <link>https://ngthanhtin.github.io/blog/tags/ielts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/tags/ielts/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kalman-filter</title>
-      <link>https://ngthanhtin.github.io/blog/tags/kalman-filter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/kalman-filter/</guid>
       <description></description>
     </item>
     
@@ -130,15 +112,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/tags/multiple-object-tracking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>particle-filter</title>
-      <link>https://ngthanhtin.github.io/blog/tags/particle-filter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/particle-filter/</guid>
       <description></description>
     </item>
     

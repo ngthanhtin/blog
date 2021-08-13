@@ -4,7 +4,7 @@ title: Single Object Tracking with Particle Filter
 subtitle: object-tracking-with-particle-filter
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
-tags: [single-object-tracking, particle-filter]
+tags: [single-object-tracking]
 categories: "Object Tracking"
 comments: true
 cover: "/blog/img/sot/sot.png"

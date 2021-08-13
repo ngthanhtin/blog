@@ -43,16 +43,6 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/attention/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/bilinear/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/2021-02-02-bi-tri-attention/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
@@ -73,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/vqa/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/vision-language/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -173,7 +163,17 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/attention/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</loc>
+    <lastmod>2021-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/vqa/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -190,10 +190,6 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/hungary-algorithm/</loc>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/tags/ielts/</loc>
   </url>
   
@@ -207,10 +203,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/kalman-filter/</loc>
   </url>
   
   <url>
@@ -235,10 +227,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/categories/object-tracking/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/particle-filter/</loc>
   </url>
   
   <url>

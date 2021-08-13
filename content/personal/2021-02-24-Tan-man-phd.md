@@ -2,10 +2,9 @@
 title : "Tản mạn phờ hắc đi (1)"
 cover : "/blog/img/tan_man_phd/phd.jpg"
 date : "2021-02-21"
+categories : "personal"
 tags : 
   - "personal"
-# categories : [ "attention" ]
-
 ---
 
 Hi, hôm nay mình quyết định viết về quá trình phờ hắc đi của mình, do cũng chán chả có gì làm, tự hỏi sao các bạn phd khác bận vãi trong khi mình ngồi coi yutube đồ các kiểu, chán quá<br/>

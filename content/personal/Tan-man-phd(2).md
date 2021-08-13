@@ -2,9 +2,9 @@
 title : "Tản mạn phờ hắc đi (2)"
 cover : "/blog/img/tan_man_phd/phd.jpg"
 date : "2021-03-29"
+categories : "personal"
 tags : 
   - "personal"
-# categories : [ "attention" ]
 
 ---
 

@@ -4,6 +4,7 @@ cover : "/blog/img/english/diem_ielts.jpg"
 gh-repo: ngthanhtin/beautiful-jekyll
 gh-badge: [ielts]
 tags: [ielts, english]
+categories: "personal"
 comments: true
 ---
 

@@ -4,6 +4,7 @@ cover: "/blog/img/english/lexicode.jpg"
 subtitle: Sách Lexicode của thầy Dương Chí Vinh
 gh-repo: ngthanhtin/beautiful-jekyll
 tags: [book, ielts, english, review]
+categories: "personal"
 comments: true
 
 ---

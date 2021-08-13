@@ -2,10 +2,9 @@
 title : "(St) Relationship"
 cover : "/blog/img/relationship/relationship.jpeg"
 date : "2021-04-26"
+categories : "personal"
 tags : 
   - "personal"
-# categories : [ "personal" ]
-
 ---
 
 RELATIONSHIP

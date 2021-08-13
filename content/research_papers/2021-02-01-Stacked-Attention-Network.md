@@ -2,9 +2,7 @@
 title : "Stacked Attention Network"
 cover : "/blog/img/vqa/cover.png"
 date : "2021-02-05"
-tags : 
-  - "vqa"
-  - "attention"
+tags : "vision-language"
 categories : "Research Papers"
 
 ---

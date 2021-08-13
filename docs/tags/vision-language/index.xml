@@ -17,5 +17,20 @@
 1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link.</description>
     </item>
     
+    <item>
+      <title>Stacked Attention Network</title>
+      <link>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
+2. Nguyên lý
+3. Phương pháp
+4. Giải thuật
+5. Ứng dụng</description>
+    </item>
+    
   </channel>
 </rss>

@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 12 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tản mạn cuộc sống</title>
-      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd3/</link>
+      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</link>
       <pubDate>Thu, 12 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd3/</guid>
+      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</guid>
       <description>Như đã nói lần trước, mình bây giờ đã quyết tâm stop phd để lấy master thôi, r về nước làm một thời gian rồi đi tiếp. Nếu mọi việc trơn tru thì tháng 3/2022 mình sẽ xin hb giáo sư, sau đó sẽ nộp giấy tờ cho trường, nhưng tháng 8 thì mới có bằng master nên ko thể nào nhập học kì tháng 9 ở chỗ mới được, nên là phải đợi đến kì học tháng 3/2023 thì mới đi được.</description>
     </item>
     
@@ -33,15 +33,6 @@
       <guid>https://ngthanhtin.github.io/blog/research_papers/2021-02-02-bi-tri-attention/</guid>
       <description>Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán Visual Question Answering (VQA) đó là Bi-Attention (Tri-Attention), ở bài trước mình có đề cập tới một kĩ thuật khác gọi là Stacked Attention Link paper: Bilinear Attention Link code: Code
 1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link.</description>
-    </item>
-    
-    <item>
-      <title>Tản mạn phờ hắc đi (2)</title>
-      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd2/</link>
-      <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd2/</guid>
-      <description>Dạo gần đây cảm thấy khá chán nản, một phần vì đang mùa covid, một phần vì ở lab hơi chán, một phần nữa là cảm thấy mình kém cỏi thật. Hahaa. Lúc mới bắt đầu đi học PhD, mình nghĩ sẽ học thẳng một lèo luôn 4,5 năm để xong r đi đâu đi, nhưng giờ lại cảm thấy hơi lung lay bởi vì lab mình khá là ko active, mỗi người làm một thứ đổi lại thì giáo thoải mái, nhưng cá nhân mình là một người thích thử thách, nên khi ở trong một môi trường như thế này làm cho mình cảm thấy ko thoải mái và muốn bứt ra.</description>
     </item>
     
     <item>
@@ -144,16 +135,6 @@ Nội dung chính sẽ bao gồm các phần sau:
       <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
 Nội dung chính sẽ bao gồm các phần sau:</description>
-    </item>
-    
-    <item>
-      <title>Tản mạn phờ hắc đi (1)</title>
-      <link>https://ngthanhtin.github.io/blog/personal/2021-02-24-tan-man-phd/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-24-tan-man-phd/</guid>
-      <description>Hi, hôm nay mình quyết định viết về quá trình phờ hắc đi của mình, do cũng chán chả có gì làm, tự hỏi sao các bạn phd khác bận vãi trong khi mình ngồi coi yutube đồ các kiểu, chán quá
-1. Viết blog Mình đã muốn viết blog từ lâu r, nhưng lúc đó k biết tới githubio, viết bằng wordpress thì tốn tiền hosting nữa nên thoai kaka.</description>
     </item>
     
     <item>

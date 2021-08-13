@@ -6,6 +6,7 @@ cover: "/blog/img/cuda_ubuntu/cuda_ubuntu.jpeg"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [cuda, nvidia, ubuntu]
+categories: "Software Tips"
 comments: true
 
 ---

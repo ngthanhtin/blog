@@ -1,7 +1,7 @@
 ---
 title : "ML Basic Compilation"
-cover : "/blog/img/label_smoothing/label_smoothing.png"
-date : "2021-02-21"
+cover : "/blog/img/ml_basic/ml_basic.jpeg"
+date : "2021-08-13"
 tags : "ML Basic"
 categories : "ML Basic"
 

@@ -6,7 +6,20 @@
     <description>Recent content on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Basic Compilation</title>
+      <link>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</link>
+      <pubDate>Fri, 13 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</guid>
+      <description>Hi everyone, in this post I will summary basic courses, books, etc about Machine Learning. I hope it will help you a little bit.
+Courses PREREQUISITE https://app.learney.me/?fbclid=IwAR2kWPn_dP4vyyW6aGmFxelkXPwv5ho5y4pRVxvzxp2wQw9xk10-usGY6Rg
+Mathematical Tools for Data Science - Lectures | 2021 (DS-GA 1013/Math-GA 2824): https://www.youtube.com/playlist?list=PLUgbVHjDharhlWtbfi3buYGgIQrlQe_57
+MACHINE LEARNING Introduction to Machine Learning and Data Mining (Hanoi University of Science and Technology): https://users.soict.hust.edu.vn/khoattq/ml-dm-course/?fbclid=IwAR2xqlrwQRwdxsdWYEYCFZZ_lhohz_btON3noBqlpU1rFY6BZFB2pMJXNjg
+COMPUTER VISION CS4277/CS5477 3D Computer Vision taught at the Department of Computer Science, National University of Singapore (NUS): https://www.</description>
+    </item>
+    
     <item>
       <title>(St) Relationship</title>
       <link>https://ngthanhtin.github.io/blog/personal/relationship/</link>
@@ -106,19 +119,6 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
 Nội dung chính sẽ bao gồm các phần sau: 
 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
-    </item>
-    
-    <item>
-      <title>ML Basic Compilation</title>
-      <link>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</guid>
-      <description>Hi everyone, in this post I will summary basic courses, books, etc about Machine Learning. I hope it will help you a little bit.
-Courses PREREQUISITE https://app.learney.me/?fbclid=IwAR2kWPn_dP4vyyW6aGmFxelkXPwv5ho5y4pRVxvzxp2wQw9xk10-usGY6Rg
-Mathematical Tools for Data Science - Lectures | 2021 (DS-GA 1013/Math-GA 2824): https://www.youtube.com/playlist?list=PLUgbVHjDharhlWtbfi3buYGgIQrlQe_57
-MACHINE LEARNING Introduction to Machine Learning and Data Mining (Hanoi University of Science and Technology): https://users.soict.hust.edu.vn/khoattq/ml-dm-course/?fbclid=IwAR2xqlrwQRwdxsdWYEYCFZZ_lhohz_btON3noBqlpU1rFY6BZFB2pMJXNjg
-COMPUTER VISION CS4277/CS5477 3D Computer Vision taught at the Department of Computer Science, National University of Singapore (NUS): https://www.</description>
     </item>
     
     <item>

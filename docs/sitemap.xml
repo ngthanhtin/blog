@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/personal/relationship/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
+    <loc>https://ngthanhtin.github.io/blog/categories/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/ml-basic/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/categories/ml-basic/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/ml_basic/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/</loc>
+    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/personal/relationship/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -24,16 +54,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/personal/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -124,26 +144,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/ml-basic/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/ml-basic/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/ml_basic/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   

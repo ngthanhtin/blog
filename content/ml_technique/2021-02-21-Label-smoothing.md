@@ -4,7 +4,7 @@ cover : "/blog/img/label_smoothing/label_smoothing.png"
 date : "2021-02-21"
 tags : 
   - "label smoothing"
-# categories : [ "attention" ]
+categories : "ML Technique"
 
 ---
 

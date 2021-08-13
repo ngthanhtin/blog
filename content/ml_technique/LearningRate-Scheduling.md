@@ -6,7 +6,7 @@ tags :
   - "machine-leanring"
   - "learning-rate"
   - "scheduling"
-
+categories : "ML Technique"
 ---
 
 Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là <b>learning rate scheduler</b>. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.

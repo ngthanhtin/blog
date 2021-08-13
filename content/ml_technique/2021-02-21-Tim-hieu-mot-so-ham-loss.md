@@ -4,7 +4,7 @@ cover : "/blog/img/tim_hieu_loss_function/loss.png"
 date : "2021-02-21"
 tags : 
   - "loss function"
-# categories : [ "attention" ]
+categories : "ML Technique"
 
 ---
 

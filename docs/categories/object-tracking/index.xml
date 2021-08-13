@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object Tracking on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/categories/object-tracking/</link>
+    <description>Recent content in Object Tracking on Tin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/categories/object-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
+      <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.</description>
+    </item>
+    
+    <item>
+      <title>Single Object Tracking with Particle Filter</title>
+      <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</guid>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU Link code: Code. Đây chỉ là code implementation của module face tracking bằng c++, tuy nhiên nó sẽ giúp bạn biết được khái quát particle filter được implement như thế nào.</description>
+    </item>
+    
+  </channel>
+</rss>

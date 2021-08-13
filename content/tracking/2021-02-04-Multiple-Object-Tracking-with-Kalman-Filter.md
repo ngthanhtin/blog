@@ -5,6 +5,7 @@ subtitle: object-tracking-with-kalman-filter-hungary-algorithm
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [multiple-object-tracking, kalman-filter, hungary-algorithm]
+categories: "Object Tracking"
 comments: true
 cover: "/blog/img/mot/mot.png"
 ---

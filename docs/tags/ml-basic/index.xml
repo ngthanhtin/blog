@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML Basic on Tin&#39;s Blog</title>
+    <link>https://ngthanhtin.github.io/blog/tags/ml-basic/</link>
+    <description>Recent content in ML Basic on Tin&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/ml-basic/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Basic Compilation</title>
+      <link>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</guid>
+      <description>Hi everyone, in this post I will summary basic courses, books, etc about Machine Learning. I hope it will help you a little bit.
+Courses PREREQUISITE https://app.learney.me/?fbclid=IwAR2kWPn_dP4vyyW6aGmFxelkXPwv5ho5y4pRVxvzxp2wQw9xk10-usGY6Rg
+Mathematical Tools for Data Science - Lectures | 2021 (DS-GA 1013/Math-GA 2824): https://www.youtube.com/playlist?list=PLUgbVHjDharhlWtbfi3buYGgIQrlQe_57
+MACHINE LEARNING Introduction to Machine Learning and Data Mining (Hanoi University of Science and Technology): https://users.soict.hust.edu.vn/khoattq/ml-dm-course/?fbclid=IwAR2xqlrwQRwdxsdWYEYCFZZ_lhohz_btON3noBqlpU1rFY6BZFB2pMJXNjg
+COMPUTER VISION CS4277/CS5477 3D Computer Vision taught at the Department of Computer Science, National University of Singapore (NUS): https://www.</description>
+    </item>
+    
+  </channel>
+</rss>

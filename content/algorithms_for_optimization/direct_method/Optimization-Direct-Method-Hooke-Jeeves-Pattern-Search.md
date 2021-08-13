@@ -3,11 +3,7 @@ title : "Optmization - Direct Method: Hooke Jeeves and Pattern Search"
 cover : "/blog/img/math_optimization/direct/pattern_search/cover.png"
 date : "2021-03-15"
 tags : 
-  - "math"
-  - "direct-method"
-  - "optmization"
-  - "pattern-search"
-  - "hooke-jeeves"
+  - "Optimization Math"
 categories : "Optimization Math"
 ---
 

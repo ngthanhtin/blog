@@ -3,8 +3,7 @@ title : "Giới thiệu về Optmization"
 cover : "/blog/img/math_optimization/introduction.png"
 date : "2021-03-14"
 tags : 
-  - "math"
-  - "optmization"
+  - "Optimization Math"
 categories : "Optimization Math"
 ---
 

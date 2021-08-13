@@ -3,7 +3,7 @@ title : "Tìm hiểu Categorical Cross-Entropy Loss, Binary Cross-Entropy Loss, 
 cover : "/blog/img/tim_hieu_loss_function/loss.png"
 date : "2021-02-21"
 tags : 
-  - "loss function"
+  - "ML Technique"
 categories : "ML Technique"
 
 ---

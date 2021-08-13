@@ -3,7 +3,7 @@ title : "My Career (1)"
 cover : "/blog/img/con_duong_su_nghiep/career.jpeg"
 date : "2021-02-21"
 tags : 
-  - "loss function"
+  - "personal"
 categories : "personal"
 
 ---

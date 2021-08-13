@@ -5,7 +5,7 @@ subtitle: Nvidia
 cover: "/blog/img/torch_cuda/torch_logo.png"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
-tags: [cuda, nvidia, ubuntu]
+tags: "Software Tips"
 categories: "Software Tips"
 comments: true
 

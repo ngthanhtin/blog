@@ -3,9 +3,7 @@ title : "Optmization - Direct Method Introduction"
 cover : "/blog/img/math_optimization/direct/cyclic_coordinate_descent/cover.jpg"
 date : "2021-03-15"
 tags : 
-  - "math"
-  - "direct-method"
-  - "optmization"
+  - "Optimization Math"
 categories : "Optimization Math"
 ---
 

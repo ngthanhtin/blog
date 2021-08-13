@@ -4,7 +4,7 @@ title: Instruction Navigation
 subtitle: Navigation using Textual Instruction
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
-tags: [rl, navigation, attention, nlp]
+tags: "Reinforcement Learning"
 categories: "Reinforcement Learning"
 comments: true
 cover: "/blog/img/instruction_navigation/example.png"

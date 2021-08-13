@@ -4,7 +4,7 @@ title: SLAM Roadmap
 subtitle: slam
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
-tags: [slam, roadmap]
+tags: "SLAM"
 categories: "Simultaneous Localization and Mapping"
 comments: true
 cover: "/blog/img/slam_roadmap/beginner.png"

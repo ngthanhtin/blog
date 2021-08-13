@@ -3,10 +3,7 @@ title : "Optmization - Direct Method - Powell Method"
 cover : "/blog/img/math_optimization/direct/powell/cover.png"
 date : "2021-03-15"
 tags : 
-  - "math"
-  - "direct-method"
-  - "optmization"
-  - "powell"
+  - "Optimization Math"
 categories : "Optimization Math"
 ---
 

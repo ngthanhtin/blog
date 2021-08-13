@@ -3,7 +3,7 @@ title: Review sách Lexicode
 cover: "/blog/img/english/lexicode.jpg"
 subtitle: Sách Lexicode của thầy Dương Chí Vinh
 gh-repo: ngthanhtin/beautiful-jekyll
-tags: [book, ielts, english, review]
+tags: ["English"]
 categories: "personal"
 comments: true
 

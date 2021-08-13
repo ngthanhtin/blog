@@ -83,12 +83,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/learning-rate/</loc>
-    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/machine-leanring/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/ml-technique/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,27 +98,12 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/scheduling/</loc>
-    <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/direct-method/</loc>
-    <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/math/</loc>
-    <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/nelder-mead/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/optimization-math/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -133,28 +113,8 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/optmization/</loc>
-    <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/simplex/</loc>
-    <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/divided-rectangle/</loc>
-    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/hooke-jeeves/</loc>
-    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -178,32 +138,12 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/pattern-search/</loc>
-    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/powell/</loc>
-    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-gioi-thieu/</loc>
     <lastmod>2021-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/label-smoothing/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/loss-function/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -239,18 +179,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tags/2020/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/book/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/coding/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/cuda/</loc>
   </url>
   
   <url>
@@ -306,18 +234,6 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/navigation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/nlp/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/nvidia/</loc>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/categories/object-tracking/</loc>
   </url>
   
@@ -330,11 +246,11 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/reinforcement-learning/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/reinforcement-learning/</loc>
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/review/</loc>
+    <loc>https://ngthanhtin.github.io/blog/categories/reinforcement-learning/</loc>
   </url>
   
   <url>
@@ -342,19 +258,7 @@
   </url>
   
   <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/rl/</loc>
-  </url>
-  
-  <url>
     <loc>https://ngthanhtin.github.io/blog/rl/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/roadmap/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/robotics/</loc>
   </url>
   
   <url>
@@ -386,6 +290,10 @@
   </url>
   
   <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/software-tips/</loc>
+  </url>
+  
+  <url>
     <loc>https://ngthanhtin.github.io/blog/categories/software-tips/</loc>
   </url>
   
@@ -395,10 +303,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/tracking/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/ubuntu/</loc>
   </url>
   
   <url>

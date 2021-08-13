@@ -44,128 +44,20 @@
     </item>
     
     <item>
-      <title>learning-rate</title>
-      <link>https://ngthanhtin.github.io/blog/tags/learning-rate/</link>
+      <title>ML Technique</title>
+      <link>https://ngthanhtin.github.io/blog/tags/ml-technique/</link>
       <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/tags/learning-rate/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tags/ml-technique/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>machine-leanring</title>
-      <link>https://ngthanhtin.github.io/blog/tags/machine-leanring/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/machine-leanring/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>scheduling</title>
-      <link>https://ngthanhtin.github.io/blog/tags/scheduling/</link>
-      <pubDate>Thu, 25 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/scheduling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>direct-method</title>
-      <link>https://ngthanhtin.github.io/blog/tags/direct-method/</link>
+      <title>Optimization Math</title>
+      <link>https://ngthanhtin.github.io/blog/tags/optimization-math/</link>
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/tags/direct-method/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>math</title>
-      <link>https://ngthanhtin.github.io/blog/tags/math/</link>
-      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nelder-mead</title>
-      <link>https://ngthanhtin.github.io/blog/tags/nelder-mead/</link>
-      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/nelder-mead/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optmization</title>
-      <link>https://ngthanhtin.github.io/blog/tags/optmization/</link>
-      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/optmization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>simplex</title>
-      <link>https://ngthanhtin.github.io/blog/tags/simplex/</link>
-      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/simplex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>divided-rectangle</title>
-      <link>https://ngthanhtin.github.io/blog/tags/divided-rectangle/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/divided-rectangle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hooke-jeeves</title>
-      <link>https://ngthanhtin.github.io/blog/tags/hooke-jeeves/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/hooke-jeeves/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pattern-search</title>
-      <link>https://ngthanhtin.github.io/blog/tags/pattern-search/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/pattern-search/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>powell</title>
-      <link>https://ngthanhtin.github.io/blog/tags/powell/</link>
-      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/powell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>label smoothing</title>
-      <link>https://ngthanhtin.github.io/blog/tags/label-smoothing/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/label-smoothing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>loss function</title>
-      <link>https://ngthanhtin.github.io/blog/tags/loss-function/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/loss-function/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tags/optimization-math/</guid>
       <description></description>
     </item>
     
@@ -188,34 +80,7 @@
     </item>
     
     <item>
-      <title>book</title>
-      <link>https://ngthanhtin.github.io/blog/tags/book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>coding</title>
-      <link>https://ngthanhtin.github.io/blog/tags/coding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/coding/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cuda</title>
-      <link>https://ngthanhtin.github.io/blog/tags/cuda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/cuda/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>english</title>
+      <title>English</title>
       <link>https://ngthanhtin.github.io/blog/tags/english/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -233,7 +98,7 @@
     </item>
     
     <item>
-      <title>ielts</title>
+      <title>Ielts</title>
       <link>https://ngthanhtin.github.io/blog/tags/ielts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -269,33 +134,6 @@
     </item>
     
     <item>
-      <title>navigation</title>
-      <link>https://ngthanhtin.github.io/blog/tags/navigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/navigation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nlp</title>
-      <link>https://ngthanhtin.github.io/blog/tags/nlp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/nlp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>nvidia</title>
-      <link>https://ngthanhtin.github.io/blog/tags/nvidia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/nvidia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>particle-filter</title>
       <link>https://ngthanhtin.github.io/blog/tags/particle-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -305,38 +143,11 @@
     </item>
     
     <item>
-      <title>review</title>
-      <link>https://ngthanhtin.github.io/blog/tags/review/</link>
+      <title>Reinforcement Learning</title>
+      <link>https://ngthanhtin.github.io/blog/tags/reinforcement-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rl</title>
-      <link>https://ngthanhtin.github.io/blog/tags/rl/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/rl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>roadmap</title>
-      <link>https://ngthanhtin.github.io/blog/tags/roadmap/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/roadmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>robotics</title>
-      <link>https://ngthanhtin.github.io/blog/tags/robotics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/tags/robotics/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tags/reinforcement-learning/</guid>
       <description></description>
     </item>
     
@@ -359,7 +170,7 @@
     </item>
     
     <item>
-      <title>slam</title>
+      <title>SLAM</title>
       <link>https://ngthanhtin.github.io/blog/tags/slam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -368,11 +179,11 @@
     </item>
     
     <item>
-      <title>ubuntu</title>
-      <link>https://ngthanhtin.github.io/blog/tags/ubuntu/</link>
+      <title>Software Tips</title>
+      <link>https://ngthanhtin.github.io/blog/tags/software-tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://ngthanhtin.github.io/blog/tags/ubuntu/</guid>
+      <guid>https://ngthanhtin.github.io/blog/tags/software-tips/</guid>
       <description></description>
     </item>
     

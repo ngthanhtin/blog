@@ -3,9 +3,7 @@ title : "Learning Rate Scheduling in Pytorch"
 cover : "/blog/img/learningrate_scheduling/cyclicalLR_triangular.png"
 date : "2021-03-25"
 tags : 
-  - "machine-leanring"
-  - "learning-rate"
-  - "scheduling"
+  - "ML Technique"
 categories : "ML Technique"
 ---
 

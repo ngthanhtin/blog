@@ -21,8 +21,10 @@
 
 
 <meta property="og:title" content="Instruction Navigation" />
-<meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp" />
+<meta property="og:description" content="In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp 
+ 3.1 Image Representation Module  3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/" />
 
@@ -31,8 +33,10 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn I
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Instruction Navigation"/>
-<meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Instruction Navigation sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải). Link paper: Paper Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp"/>
+<meta name="twitter:description" content="In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp 
+ 3.1 Image Representation Module  3."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -159,8 +163,8 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn I
         </h1>
       </header>
 
-      <article class="main"><p>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Instruction Navigation</b> sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải).<br/>
-Link paper: <a href="https://arxiv.org/abs/1706.07230">Paper</a><br/>
+      <article class="main"><p>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.</p>
+<p>Link paper: <a href="https://arxiv.org/abs/1706.07230">Paper</a><br/>
 Link code: <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a></p>
 <p>Nội dung chính sẽ bao gồm các phần sau:<br/>
 <a href="#1. Giới thiệu bài toán Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
@@ -222,8 +226,8 @@ Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
 <b>5. Ứng dụng</b>
 </section>
 Thuật toán này có thể ứng dụng vào robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
-<section id="5. Tham khảo">
-<b>6. Tham khảo</b>
+<section id="5. Reference">
+<b>6. Reference</b>
 </section>
 <p><a href="https://arxiv.org/abs/1706.07230">Paper</a><br/>
 <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a></p>

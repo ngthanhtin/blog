@@ -9,7 +9,8 @@ categories: "Reinforcement Learning"
 comments: true
 cover: "/blog/img/instruction_navigation/example.png"
 ---
-Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Instruction Navigation</b> sử dụng Reinforcement Learning (có nhiều cách để giải bài toán này, chúng ta cũng có thể sử dụng Supervised Learning để giải).<br/>
+In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+
 Link paper: [Paper](https://arxiv.org/abs/1706.07230)<br/>
 Link code: [Code](https://github.com/devendrachaplot/DeepRL-Grounding)
 
@@ -71,8 +72,8 @@ Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
 </section>
 Thuật toán này có thể ứng dụng vào robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
 
-<section id="5. Tham khảo">
-<b>6. Tham khảo</b>
+<section id="5. Reference">
+<b>6. Reference</b>
 </section>
 
 [Paper](https://arxiv.org/abs/1706.07230)<br/>

@@ -29,31 +29,30 @@ The content is as following:<br/>
 <section id="1. Introduction to Instruction Navigation">
 <b>1. Introduction to Instruction Navigation</b>
 </section>
-Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để  <b>tác nhân (agent)</b> có thể di chuyển tới một vị trí hoặc một đối tượng nào đó <b>(target)</b>. Thông thường, khi giải quyết bài toán này bằng RL, agent sẽ chỉ nhận được observation là image từ những gì nó thấy được trong environment, image này có thể là RGB image, depth image, segmentation image, etc hoặc observation cũng có thể là image của target.<br/>
-Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input là một câu <b>instruction</b> và agent sẽ tìm cách để đi tới target được đề cập trong câu instruction đó.<br/>
+Navigation problem is a familiar topic and it has been carried out many experiments in so many years. The problem is to make an agent move in an environment and achieve a predefined target. In general, this problem can be solved by Reinforcement Learning, the agent will receive an observation which contains several information such as image, depth, segmentation or sensor information, etc. Howerver, human want to make command for the agent through instruction, so the agent now has an additional information which is a text, or voice. The low-level instruction will be simple commands such as go straight, go left, go right, etc, but in practice, the instruction is more complex, it needs to consider other elements such as size, color, etc of the objects nearby. And that is the motivation of the Instruction Navigation problem.
 <p align="center">
   <img src="/blog/img/instruction_navigation/instruction_robot_navigation.gif">
 </p>
 
-<section id="2. Nguyên lý">
-<b>2. Nguyên lý</b>
+<section id="2. Principle">
+<b>2. Principle</b>
 </section>
-Nguyên lí của những bài toán dạng Vision-Language là làm sao để 2 feature vision và language tương tác với nhau.<br/>
-Đối với bài toán này, nó sẽ chia thành 3 phần đó là (1) lấy image feature (Embedding), (2) lấy textual feature (embedding) (3) kết hợp 2 feature lại (trong bài này có 2 cách đó là concat 2 features lại hoặc lấy tích Hadarmard (element-wise) của 2 features). Cuối cùng đó là policy learning part, ở bài này họ sử dụng thuật toán Asynchronous Actor Critic (A3C).
+The principle of Vision-Language problems is how to fuse multiple features together. <br/>
+And with this problem, it composes of 3 components, (1) is to get image features, (2) is to get textual features, (3) is how to fuse these features together which is the most important part. In this paper, the fusion strategy they've used is concatenation and Hadarmard (element-wise) product. The final stage is the decision-making part, which employs a policy learning algorithm to make decision. A well-known but simple algorithm used in this situation is Asynchronous Actor Critic (A3C).
 
-<section id="3. Phương pháp">
-<b>3. Phương pháp</b>
+<section id="3. Methodology">
+<b>3. Methodology</b>
 </section>
 <p align="center">
   <img src="/blog/img/instruction_navigation/pp.png">
 </p>
-Phương pháp đơn giản là input sẽ là 1 image và 1 câu instruction. Chú ý, với mỗi episode thì chỉ có duy nhất 1 câu instruction, qua episode khác thì có câu instruction khác, còn image sẽ thay đổi ở mỗi step.
+The methodology simply takes an image and an instruction as inputs. Noted that, with each episode, there is only one instruction, but the image changes continually.
 
 * <b>3.1 Image Representation Module</b><br/>
-Image sẽ được đưa qua một mạng CNN đơn giản để lấy được image embedding
+In order to extract visual features, they employed a simple 3-layer CNN.
 
 * <b>3.2 Text Representation Module</b><br/>
-Instruction thì mỗi từ của câu sẽ được biến thành word embedding. Sau đó biến các word embedding đó thành một sentence emmbeding.
+In terms of extracting textual features, first, they employed Word Embedding on the text input, then converted it to sentence embedding by using LSTM or GRU.
 
 * <b>3.3 Attented Representation Module</b><br/>
 <p align="center">

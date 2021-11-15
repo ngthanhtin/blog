@@ -14,17 +14,17 @@ In this post, I want to introduce a hot topic in Reinforcement Learning which is
 Link paper: [Paper](https://arxiv.org/abs/1706.07230)<br/>
 Link code: [Code](https://github.com/devendrachaplot/DeepRL-Grounding)
 
-Nội dung chính sẽ bao gồm các phần sau:<br/>
-<a href="#1. Giới thiệu bài toán Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
-<a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
-<a href="#3. Phương pháp">3. Phương pháp</a> <br/>
+The content is as following:<br/>
+<a href="#1. Introduction to Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
+<a href="#2. Principle">2. Principle</a> <br/>
+<a href="#3. Methodology">3. Methodology</a> <br/>
 * <a href="#3.1 Image Representation Module">3.1 Image Representation Module</a> <br/>
 * <a href="#3.2 Text Representation Module">3.2 Text Representation Module</a> <br/>
 * <a href="#3.3 Attented Representation Module">3.3 Attented Representation Module</a> <br/>
 * <a href="#3.4 Policy Learning">3.4 Policy Learning</a> <br/>
 
-<a href="#4. Ứng dụng">4. Ứng dụng</a> <br/>
-<a href="#5. Tham khảo">5. Tham khảo</a> <br/>
+<a href="#4. Application">4. Application</a> <br/>
+<a href="#5. Reference">5. Reference</a> <br/>
 
 <section id="1. Giới thiệu bài toán Instruction Navigation">
 <b>1. Giới thiệu bài toán Instruction Navigation</b>
@@ -65,12 +65,13 @@ Sau khi có được 2 features, họ sẽ dùng tích Hadarmard (element-wise) 
 <p align="center">
   <img src="/blog/img/instruction_navigation/policy.png">
 </p>
-Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
+The policy learning will help the agent make decision which direction is going on. In this paper, the author use A3C, which is a well-known but simple reinforcement learning algorithm.
 
 <section id="4. Application">
 <b>5. Application</b>
 </section>
-This algorithm can be applied to robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
+This algorithm can be applied to robotics, however, this stll have some limits such as only handling short, and simple instructions.
+
 
 <section id="5. Reference">
 <b>6. Reference</b>

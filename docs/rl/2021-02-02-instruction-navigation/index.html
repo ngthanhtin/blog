@@ -23,8 +23,8 @@
 <meta property="og:title" content="Instruction Navigation" />
 <meta property="og:description" content="In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
 Link paper: Paper Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp 
- 3.1 Image Representation Module  3." />
+The content is as following: 1. Giới thiệu bài toàn Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/" />
 
@@ -35,8 +35,8 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn I
 <meta name="twitter:title" content="Instruction Navigation"/>
 <meta name="twitter:description" content="In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
 Link paper: Paper Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Instruction Navigation  2. Nguyên lý  3. Phương pháp 
- 3.1 Image Representation Module  3."/>
+The content is as following: 1. Giới thiệu bài toàn Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3."/>
 
 <link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
 <link rel="stylesheet" href="/blog/css/semantic.min.css" />
@@ -166,18 +166,18 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn I
       <article class="main"><p>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.</p>
 <p>Link paper: <a href="https://arxiv.org/abs/1706.07230">Paper</a><br/>
 Link code: <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a></p>
-<p>Nội dung chính sẽ bao gồm các phần sau:<br/>
-<a href="#1. Giới thiệu bài toán Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
-<a href="#2. Nguyên lý">2. Nguyên lý</a> <br/>
-<a href="#3. Phương pháp">3. Phương pháp</a> <br/></p>
+<p>The content is as following:<br/>
+<a href="#1. Introduction to Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
+<a href="#2. Principle">2. Principle</a> <br/>
+<a href="#3. Methodology">3. Methodology</a> <br/></p>
 <ul>
 <li><a href="#3.1 Image Representation Module">3.1 Image Representation Module</a> <br/></li>
 <li><a href="#3.2 Text Representation Module">3.2 Text Representation Module</a> <br/></li>
 <li><a href="#3.3 Attented Representation Module">3.3 Attented Representation Module</a> <br/></li>
 <li><a href="#3.4 Policy Learning">3.4 Policy Learning</a> <br/></li>
 </ul>
-<p><a href="#4. Ứng dụng">4. Ứng dụng</a> <br/>
-<a href="#5. Tham khảo">5. Tham khảo</a> <br/></p>
+<p><a href="#4. Application">4. Application</a> <br/>
+<a href="#5. Reference">5. Reference</a> <br/></p>
 <section id="1. Giới thiệu bài toán Instruction Navigation">
 <b>1. Giới thiệu bài toán Instruction Navigation</b>
 </section>
@@ -221,11 +221,11 @@ Sau khi có được 2 features, họ sẽ dùng tích Hadarmard (element-wise) 
 <p align="center">
   <img src="/blog/img/instruction_navigation/policy.png">
 </p>
-Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
+The policy learning will help the agent make decision which direction is going on. In this paper, the author use A3C, which is a well-known but simple reinforcement learning algorithm.
 <section id="4. Application">
 <b>5. Application</b>
 </section>
-This algorithm can be applied to robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
+This algorithm can be applied to robotics, however, this stll have some limits such as only handling short, and simple instructions.
 <section id="5. Reference">
 <b>6. Reference</b>
 </section>

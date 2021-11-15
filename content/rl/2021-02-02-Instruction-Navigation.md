@@ -68,7 +68,7 @@ Sau khi có được 2 features, họ sẽ dùng tích Hadarmard (element-wise) 
 Và cuối cùng đó là policy learning part, đó là thuật toán A3C.
 
 <section id="4. Application">
-<b>5. Ứng dụng</b>
+<b>5. Application</b>
 </section>
 Thuật toán này có thể ứng dụng vào robotics, tuy nhiên, thuật toán vẫn còn hạn chế ở chỗ chỉ đang handle những câu instruction ngắn, dễ hiểu, thuật toán vẫn chưa được tối ưu.
 

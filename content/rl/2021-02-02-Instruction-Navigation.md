@@ -15,7 +15,7 @@ Link paper: [Paper](https://arxiv.org/abs/1706.07230)<br/>
 Link code: [Code](https://github.com/devendrachaplot/DeepRL-Grounding)
 
 The content is as following:<br/>
-<a href="#1. Introduction to Instruction Navigation">1. Giới thiệu bài toàn Instruction Navigation</a> <br/>
+<a href="#1. Introduction to Instruction Navigation">1. Introduction to Instruction Navigation</a> <br/>
 <a href="#2. Principle">2. Principle</a> <br/>
 <a href="#3. Methodology">3. Methodology</a> <br/>
 * <a href="#3.1 Image Representation Module">3.1 Image Representation Module</a> <br/>
@@ -26,8 +26,8 @@ The content is as following:<br/>
 <a href="#4. Application">4. Application</a> <br/>
 <a href="#5. Reference">5. Reference</a> <br/>
 
-<section id="1. Giới thiệu bài toán Instruction Navigation">
-<b>1. Giới thiệu bài toán Instruction Navigation</b>
+<section id="1. Introduction to Instruction Navigation">
+<b>1. Introduction to Instruction Navigation</b>
 </section>
 Bài toán Navigation là một bài toán khá quen thuộc, đây là bài toán làm sao để  <b>tác nhân (agent)</b> có thể di chuyển tới một vị trí hoặc một đối tượng nào đó <b>(target)</b>. Thông thường, khi giải quyết bài toán này bằng RL, agent sẽ chỉ nhận được observation là image từ những gì nó thấy được trong environment, image này có thể là RGB image, depth image, segmentation image, etc hoặc observation cũng có thể là image của target.<br/>
 Tuy nhiên, ở bài toán này, ngoài image, agent sẽ nhận được input là một câu <b>instruction</b> và agent sẽ tìm cách để đi tới target được đề cập trong câu instruction đó.<br/>
@@ -59,7 +59,7 @@ Instruction thì mỗi từ của câu sẽ được biến thành word embeddin
 <p align="center">
   <img src="/blog/img/instruction_navigation/attention.png">
 </p>
-Sau khi có được 2 features, họ sẽ dùng tích Hadarmard (element-wise) để nhân 2 feature với nhau và được gọi là Gated-Attention. Đối với phương pháp này, ta sẽ đảm bảo được cả 2 feature sẽ tương tác với nhau nhưng tốc độ lại chậm đi.
+After getting a hold of 2 feature vectors, they use Hadardmard (element-wise) product to fuse the features together, and this is called Gated Attention.
 
 * <b>3.4 Policy Learning</b><br/>
 <p align="center">

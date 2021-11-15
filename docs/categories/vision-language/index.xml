@@ -5,11 +5,12 @@
     <link>https://ngthanhtin.github.io/blog/categories/vision-language/</link>
     <description>Recent content in Vision-Language on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://ngthanhtin.github.io/blog/categories/vision-language/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/categories/vision-language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
       <link>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</guid>
       <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.

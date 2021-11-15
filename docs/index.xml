@@ -6,7 +6,19 @@
     <description>Recent content on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 13 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
+      <link>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</guid>
+      <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.</description>
+    </item>
+    
     <item>
       <title>ML Basic Compilation</title>
       <link>https://ngthanhtin.github.io/blog/ml_basic/ml_basic_compilation/</link>
@@ -286,18 +298,6 @@ Beginner Làm quen với SLAM Monocular SLAM RGB-D SLAM Tham khảo https://gith
       
       <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</guid>
       <description>Hello mn, mình bây giờ đã quyết tâm stop phd để lấy master thôi boi vi o hàn được hơn nửa năm, mình cảm thấy thật sự ko phù hợp với nơi này, cái rào cản lớn nhất đó là ngôn ngữ, ko biết tiếng hàn thì rất khó hòa nhập với ng dân bên này, hơn nữa là đồ ăn, ở VN thì sáng mở mắt ra thì nào là cơm tấm, hủ tiếu, phở, bún, bánh mì, etc nhưng ở hàn sáng ra chả biết ăn gì vì có gì đâu mà ăn, nên là toàn mì tôm, sandwich ăn ngan&#39; vai~ :&#39;(.</description>
-    </item>
-    
-    <item>
-      <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
-      <link>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</guid>
-      <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
-Link paper: Paper Link code: Code
-The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
- 3.1 Image Representation Module  3.2 Text Representation Module  3.</description>
     </item>
     
   </channel>

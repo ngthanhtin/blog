@@ -4,7 +4,37 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/categories/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/challenge/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/tags/vision-language/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngthanhtin.github.io/blog/categories/vision-language/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -24,16 +54,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/ml_basic/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/</loc>
     <lastmod>2021-08-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -69,11 +89,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/vision-language/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -170,10 +185,6 @@
   <url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/challenge/</loc>
   </url>
   
   <url>
@@ -290,14 +301,6 @@
   
   <url>
     <loc>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/vision-language/</loc>
   </url>
   
   <url>

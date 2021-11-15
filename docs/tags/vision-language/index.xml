@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vision-language on Tin&#39;s Blog</title>
+    <title>Vision-Language on Tin&#39;s Blog</title>
     <link>https://ngthanhtin.github.io/blog/tags/vision-language/</link>
-    <description>Recent content in vision-language on Tin&#39;s Blog</description>
+    <description>Recent content in Vision-Language on Tin&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 29 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ngthanhtin.github.io/blog/tags/vision-language/index.xml" rel="self" type="application/rss+xml" />
@@ -30,6 +30,18 @@ Nội dung chính sẽ bao gồm các phần sau:
 3. Phương pháp
 4. Giải thuật
 5. Ứng dụng</description>
+    </item>
+    
+    <item>
+      <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
+      <link>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</guid>
+      <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.</description>
     </item>
     
   </channel>

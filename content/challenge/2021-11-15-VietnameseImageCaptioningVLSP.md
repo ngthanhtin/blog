@@ -9,74 +9,48 @@ comments: true
 
 cover: "/blog/img/challenge/example.png"
 ---
-In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+---
+In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
 
-Link paper: [Paper](https://arxiv.org/abs/1706.07230)<br/>
-Link code: [Code](https://github.com/devendrachaplot/DeepRL-Grounding)
+### 1. Abstract
+This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}. In recent years, image captioning often employs a convolutional neural network-based architecture as an encoder and a long short-term memory (LSTM) as a decoder to generate sentences. These models perform  remarkably well in different datasets. Our proposed model also has an encoder and a decoder, but we instead use a Swin Transformer in the encoder, and a LSTM combined with an attention module in the decoder. The study presents our training experiments and techniques used during the competition. Our model achieves a BLEU4 score of 0.293 in the vietCap4H dataset, and the score is ranked 3$^{rd}$ on the private leaderboard.
 
-The content is as following:<br/>
-<a href="#1. Introduction to Instruction Navigation">1. Introduction to Instruction Navigation</a> <br/>
-<a href="#2. Principle">2. Principle</a> <br/>
-<a href="#3. Methodology">3. Methodology</a> <br/>
-* <a href="#3.1 Image Representation Module">3.1 Image Representation Module</a> <br/>
-* <a href="#3.2 Text Representation Module">3.2 Text Representation Module</a> <br/>
-* <a href="#3.3 Attented Representation Module">3.3 Attented Representation Module</a> <br/>
-* <a href="#3.4 Policy Learning">3.4 Policy Learning</a> <br/>
+Here is some example of the dataset including an image and its caption<br/>
 
-<a href="#4. Application">4. Application</a> <br/>
-<a href="#5. Reference">5. Reference</a> <br/>
-
-<section id="1. Introduction to Instruction Navigation">
-<b>1. Introduction to Instruction Navigation</b>
-</section>
-Navigation problem is a familiar topic and it has been carried out many experiments in so many years. The problem is to make an agent move in an environment and achieve a predefined target. In general, this problem can be solved by Reinforcement Learning, the agent will receive an observation which contains several information such as image, depth, segmentation or sensor information, etc. Howerver, human want to make command for the agent through instruction, so the agent now has an additional information which is a text, or voice. The low-level instruction will be simple commands such as go straight, go left, go right, etc, but in practice, the instruction is more complex, it needs to consider other elements such as size, color, etc of the objects nearby. And that is the motivation of the Instruction Navigation problem.
 <p align="center">
-  <img src="/blog/img/instruction_navigation/instruction_robot_navigation.gif">
+  <img src="/blog/img/challenge/example.png">
+  <img src="/blog/img/challenge/text_example.png">
 </p>
 
-<section id="2. Principle">
-<b>2. Principle</b>
-</section>
-The principle of Vision-Language problems is how to fuse multiple features together. <br/>
-And with this problem, it composes of 3 components, (1) is to get image features, (2) is to get textual features, (3) is how to fuse these features together which is the most important part. In this paper, the fusion strategy they've used is concatenation and Hadarmard (element-wise) product. The final stage is the decision-making part, which employs a policy learning algorithm to make decision. A well-known but simple algorithm used in this situation is Asynchronous Actor Critic (A3C).
-
-<section id="3. Methodology">
-<b>3. Methodology</b>
-</section>
+### 2. Model
+Our model as shown here is an end-to-endfusion of a Swin Transformer encoder and bidirec-tional LSTM (biLSTM) decoder. The model takes in an image and outputs the corresponding caption. <br/>
 <p align="center">
-  <img src="/blog/img/instruction_navigation/pp.png">
+  <img src="/blog/img/challenge/model_vlsp.png">
 </p>
-The methodology simply takes an image and an instruction as inputs. Noted that, with each episode, there is only one instruction, but the image changes continually.
 
-* <b>3.1 Image Representation Module</b><br/>
-In order to extract visual features, they employed a simple 3-layer CNN.
+### 3. Techniques
+In this competition, I have used some techniques to improve the BLEU4 score, they are listed below: <br/>
 
-* <b>3.2 Text Representation Module</b><br/>
-In terms of extracting textual features, first, they employed Word Embedding on the text input, then converted it to sentence embedding by using LSTM or GRU.
+#### 3.1 Cross Validation
+Cross Validation is a well-known technique that helps us choose the best model checkpoint among different folds. In this challenge, we train with 4 folds and choose the one that gives the best score on the leaderboard.
 
-* <b>3.3 Attented Representation Module</b><br/>
+#### 3.2 Noise Injection
+In the field of image captioning, the accuracy ofprediction for the next character can be relativelyhigh if we can ensure that the previous sequenceis predicted correctly. However, if a character is mispredicted, then the prediction failure rate will gradually increase. To tackle the above issue, we use noise injection, which is done by randomly replacing ground truth characters with other characters during training, and new sentences will be called fake_labels. Then, using the modified sentences as the input for the decoder will force it to correctly predict the next character on the basis that the previous one was wrong.
+
+#### 3.3 Beam search
+The algorithm is a best first search algorithm which iteratively considers the set of the k best sentences up to time (t) as candidates to generate sentences of size(t+ 1), and keep only the resulting bestkof them because this better approximates the probability of getting the global maximum. We tried beam search sizes from 1 to 10, and the best BLEU4 score achieved with a beam size 2.
+
+### 4. Result
+I got the 3rd position on the leaderboard, and some evolution of my attempt is shown here: <br/>
 <p align="center">
-  <img src="/blog/img/instruction_navigation/attention.png">
+  <img src="/blog/img/challenge/result_vlsp.png">
 </p>
-After getting a hold of 2 feature vectors, they use Hadardmard (element-wise) product to fuse the features together, and this is called Gated Attention.
 
-* <b>3.4 Policy Learning</b><br/>
-<p align="center">
-  <img src="/blog/img/instruction_navigation/policy.png">
-</p>
-The policy learning will help the agent make decision which direction is going on. In this paper, the author use A3C, which is a well-known but simple reinforcement learning algorithm.
+### 5. Application
+Solving the problem leads to several practical applications such as virtual assistants for blind and visually impaired people, conducting visual content indexing and searching.
 
-<section id="4. Application">
-<b>5. Application</b>
-</section>
-This algorithm can be applied to robotics, however, this stll have some limits such as only handling short, and simple instructions.
-
-
-<section id="5. Reference">
-<b>6. Reference</b>
-</section>
-
-[Paper](https://arxiv.org/abs/1706.07230)<br/>
-[Code](https://github.com/devendrachaplot/DeepRL-Grounding)
+### 6. Code and Paper
+Link code: [Code](https://github.com/ngthanhtin/VLSP_ImageCaptioning) <br/>
+Link paper: [Paper]()
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

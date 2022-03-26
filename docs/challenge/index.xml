@@ -27,5 +27,15 @@
 1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}.</description>
     </item>
     
+    <item>
+      <title>Artificial Intelligence for Covid-19 prognosi</title>
+      <link>https://ngthanhtin.github.io/blog/challenge/2022-1-1-covidcxr2022/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/challenge/2022-1-1-covidcxr2022/</guid>
+      <description>In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
+1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity.  The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.</description>
+    </item>
+    
   </channel>
 </rss>

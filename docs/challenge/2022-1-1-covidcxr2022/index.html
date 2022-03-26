@@ -204,9 +204,12 @@ In this post, we will go through each model in detail.</p>
 </p>
 <h3 id="3-techniques">3. Techniques</h3>
 <p>In this competition, the challengers use balance accuracy to evaluate the performance of a model.</p>
-<h4 id="34-loss-function-optimizer-etc">3.4 Loss function, Optimizer, etc</h4>
-<p>For the classification task, I use CrossEntropy typically, but I also tested on Training Signal Anealing CrossEntropy which is a loss function that helps mitigate the imbalance effect of the dataset. <br/>
-In terms of Optimizer, I tried several ones such as Adam, SGD, AdamW, LookAHead, etc.</p>
+<p>Moreover, we deal with black images by gamma equalizer, adaptive equalizer to ehance the brightness of the images.</p>
+<p>For example, the image data provided by the organizers is black, after preprocessing it is better.</p>
+<p align="center">
+  <img src="/blog/img/challenge/cxr_hackathon/cxr_black.png", width="224", height="224">
+  <img src="/blog/img/challenge/cxr_hackathon/cxr.png", width="224", height="224">
+</p>
 <h3 id="4-result">4. Result</h3>
 <p>We got 9 out of 20 in this competition.</p>
 <p align="center">

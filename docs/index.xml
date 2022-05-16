@@ -51,15 +51,6 @@ COMPUTER VISION CS4277/CS5477 3D Computer Vision taught at the Department of Com
     </item>
     
     <item>
-      <title>(St) Relationship</title>
-      <link>https://ngthanhtin.github.io/blog/personal/relationship/</link>
-      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/relationship/</guid>
-      <description>RELATIONSHIP Lâu nay, thấy nhiều bạn trẻ vầy nè, hông đầu tư xây dựng, kiến tạo quan hệ gì hết. Nhưng khi cần thì lao vào hỏi han nhờ vả như đúng rồi. Rồi chỉ biết xong chuyện của mình, lo cho mình, lợi mình mình, còn đương nhiên người khác có trách nhiệm phải giúp mình một cách vô mong cầu, bất vụ lợi. Ở đâu ra giống loài thanh cao như thế chỉ để phục vụ các cậu thế?</description>
-    </item>
-    
-    <item>
       <title>Bilinear (Trilinear) Attention</title>
       <link>https://ngthanhtin.github.io/blog/research_papers/2021-02-02-bi-tri-attention/</link>
       <pubDate>Mon, 29 Mar 2021 00:00:00 +0000</pubDate>
@@ -241,18 +232,6 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     </item>
     
     <item>
-      <title>Kinh nghiệm ôn thi IELTS từ 4.5 lên 6.0</title>
-      <link>https://ngthanhtin.github.io/blog/personal/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/2020-02-24-kinh-nghiem-hoc-ielts-4.5-6.0/</guid>
-      <description>Hello các bạn, mình mới thi ielts 7/12/2019 và đạt 6.0. Mình sẽ chia sẽ cách mà mình đã ôn luyện để đạt được mục tiêu này.
-Đây là số điểm của mình:
-Listening Về phần này, mình chỉ luyện tập bằng bộ Cambridge test 7-14 thần thánh.
-Đối với listening, mình học hết cách làm các dạng bài bằng quyển Official Guide to IELTS. Sau đó, mình bắt đầu luyện đề.</description>
-    </item>
-    
-    <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
       <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -281,16 +260,6 @@ Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư
     </item>
     
     <item>
-      <title>Review sách Lexicode</title>
-      <link>https://ngthanhtin.github.io/blog/personal/2020-02-24-review-lexicode/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/2020-02-24-review-lexicode/</guid>
-      <description>Trong một post gần đây của Tổng thống Trump, ông có viết “to contain the Coronavirus”. Cứ theo nghĩa thông thường thì Google dịch là “chứa đựng”. Còn theo sách “Lexicode” thì lại là “kiềm chế, kiểm soát”.
-Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nhưng rất hay được sử dụng bởi người bản xứ. Sách giải thích rất chi tiết, cặn kẽ, nhiều ví dụ minh hoạ.</description>
-    </item>
-    
-    <item>
       <title>Single Object Tracking with Particle Filter</title>
       <link>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -307,15 +276,6 @@ Lexicode là cuốn sách giải nghĩa những từ khó trong tiếng Anh, nh�
       <guid>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</guid>
       <description>Hi các bạn, mình đang học về SLAM nên hôm nay quyết định tổng hợp lại kiến thức về SLAM thành một dạng như Roadmap. Các bạn hãy tham khảo và cho ý kiến nhé.
 Beginner Làm quen với SLAM Monocular SLAM RGB-D SLAM Tham khảo https://github.com/changh95/visual-slam-roadmap</description>
-    </item>
-    
-    <item>
-      <title>Tản mạn cuộc sống</title>
-      <link>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/tan-man-phd/</guid>
-      <description>Hello mn, mình bây giờ đã quyết tâm stop phd để lấy master thôi boi vi o hàn được hơn nửa năm, mình cảm thấy thật sự ko phù hợp với nơi này, cái rào cản lớn nhất đó là ngôn ngữ, ko biết tiếng hàn thì rất khó hòa nhập với ng dân bên này, hơn nữa là đồ ăn, ở VN thì sáng mở mắt ra thì nào là cơm tấm, hủ tiếu, phở, bún, bánh mì, etc nhưng ở hàn sáng ra chả biết ăn gì vì có gì đâu mà ăn, nên là toàn mì tôm, sandwich ăn ngan&#39; vai~ :&#39;(.</description>
     </item>
     
   </channel>

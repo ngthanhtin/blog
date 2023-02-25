@@ -19,18 +19,14 @@ Read up on their recent work and ask relevant questions or pose possible extensi
 
 1. Tell us about yourself.
 2. Why’d you apply here? Or What drew you to this program?
-
-  2.1 Research fit, what is that they are doing that excites you?
-  
-  2.2 Interdisciplinary, collaborations, etc.
+  * Research fit, what is that they are doing that excites you?
+  * Interdisciplinary, collaborations, etc.
 3. Why do you want to work with ___? 
 4. What’s something you want to study?  Tell us about your interests, and what you wish to work on?
 5. What do you hope to do after?
 6. What are your strengths & weaknesses?
-
-  6.1 Strengths: Good at collaborations, perseverance, hardworking, help others, learning, teaching, decent research experience.
-  
-  6.2 Weaknesses: improve my writing (I am getting better at it). Overcome this with experience and practice. 
+  * Strengths: Good at collaborations, perseverance, hardworking, help others, learning, teaching, decent research experience.
+  * Weaknesses: improve my writing (I am getting better at it). Overcome this with experience and practice. 
 7. Questions for us?
 
 # Describe your research experiences. 

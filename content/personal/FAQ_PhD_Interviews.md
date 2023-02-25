@@ -19,13 +19,17 @@ Read up on their recent work and ask relevant questions or pose possible extensi
 
 1. Tell us about yourself.
 2. Why’d you apply here? Or What drew you to this program?
+
   2.1 Research fit, what is that they are doing that excites you?
+  
   2.2 Interdisciplinary, collaborations, etc.
 3. Why do you want to work with ___? 
 4. What’s something you want to study?  Tell us about your interests, and what you wish to work on?
 5. What do you hope to do after?
 6. What are your strengths & weaknesses?
+
   6.1 Strengths: Good at collaborations, perseverance, hardworking, help others, learning, teaching, decent research experience.
+  
   6.2 Weaknesses: improve my writing (I am getting better at it). Overcome this with experience and practice. 
 7. Questions for us?
 
@@ -64,10 +68,10 @@ Be honest, positive, enthusiastic, have ideas, do not come across as rigid.
 Technical Interview Questions: https://github.com/Sroy20/machine-learning-interview-questions
 
 ## References
-PhD Interview Prep: https://docs.google.com/document/d/13ZUx7AvLUIV4IUkzjU1HoT2czex9DA3NLd8zkeyGUlE/edit
-Grad School Interview Questions and Answers!: https://www.youtube.com/watch?v=Jt1YP1Th4ZE
-PhD Interview Questions: https://www.youtube.com/watch?v=0t51IEfiSMg 
-PhD Admissions Visit: https://www.youtube.com/watch?v=OugQPPVM-wc 
+* PhD Interview Prep: https://docs.google.com/document/d/13ZUx7AvLUIV4IUkzjU1HoT2czex9DA3NLd8zkeyGUlE/edit
+* Grad School Interview Questions and Answers!: https://www.youtube.com/watch?v=Jt1YP1Th4ZE
+* PhD Interview Questions: https://www.youtube.com/watch?v=0t51IEfiSMg 
+* PhD Admissions Visit: https://www.youtube.com/watch?v=OugQPPVM-wc 
 
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

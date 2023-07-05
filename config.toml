@@ -13,6 +13,8 @@ publishdir = "docs/"
 
 # enableRobotsTXT = true
 
+relativeURLs = true
+
 # https://gohugo.io/news/0.60.0-relnotes/
 [ markup ]
   [ markup . goldmark ]

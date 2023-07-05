@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.115.1">
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/" />
 
@@ -30,18 +30,17 @@ Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR."
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Learning Rate Scheduling in Pytorch"/>
 <meta name="twitter:description" content="Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
 Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR."/>
 
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../css/semantic.min.css" />
+<link rel="stylesheet" href="../../css/icomoon.css" />
+<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../css/github-markdown.css" />
+<link rel="stylesheet" href="../../css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -213,7 +212,7 @@ for i in range(10):
 
 plt.plot(range(10),lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/lambdaLR.png">
+  <img src="../../blog/img/learningrate_scheduling/lambdaLR.png">
 </p>
 <h3 id="2-multiplicative-lr">2. Multiplicative LR.</h3>
 <p align="center">
@@ -233,7 +232,7 @@ for i in range(10):
 
 plt.plot(range(10),lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/multiplicativeLR.png">
+  <img src="../../blog/img/learningrate_scheduling/multiplicativeLR.png">
 </p>
 <h3 id="3-step-lr">3. Step LR.</h3>
 <p>Giảm learning rate theo gamma ở mỗi step size của mỗi epoch.<br/></p>
@@ -256,7 +255,7 @@ for i in range(10):
 
 plt.plot(range(10),lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/stepLR.png">
+  <img src="../../blog/img/learningrate_scheduling/stepLR.png">
 </p>
 <h3 id="4-multistep-lr">4. MultiStep LR.</h3>
 <p>Giảm learning rate theo gamma mỗi khi số lượng epoch đạt tới một giá trị trong milestones (<img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} \in milestones">)</p>
@@ -279,7 +278,7 @@ for i in range(10):
 
 plt.plot(range(10),lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/multistepLR.png">
+  <img src="../../blog/img/learningrate_scheduling/multistepLR.png">
 </p>
 <h3 id="5-exponential-lr">5. Exponential LR.</h3>
 <p align="center">
@@ -299,7 +298,7 @@ for i in range(10):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/exponentialLR.png">
+  <img src="../../blog/img/learningrate_scheduling/exponentialLR.png">
 </p>
 <h3 id="6-cosineannealing-lr">6. CosineAnnealing LR.</h3>
 <p>Được đề xuất trong bài SGDR: Stochastic Gradient Descent with Warm Restarts. Link: <a href="https://arxiv.org/abs/1608.03983">https://arxiv.org/abs/1608.03983</a></p>
@@ -320,7 +319,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cosineanealingLR.png">
+  <img src="../../blog/img/learningrate_scheduling/cosineanealingLR.png">
 </p>
 <h3 id="7-cyclic-lr">7. Cyclic LR.</h3>
 <h4 id="71-triangular">7.1 Triangular.</h4>
@@ -338,7 +337,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cyclicalLR_triangular.png">
+  <img src="../../blog/img/learningrate_scheduling/cyclicalLR_triangular.png">
 </p>
 <h4 id="72-triangular2">7.2 Triangular2.</h4>
 <pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
@@ -355,7 +354,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cyclicalLR_triangular2.png">
+  <img src="../../blog/img/learningrate_scheduling/cyclicalLR_triangular2.png">
 </p>
 <h4 id="73-exp_range">7.3 Exp_range.</h4>
 <pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
@@ -372,7 +371,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cyclicalLR_exp.png">
+  <img src="../../blog/img/learningrate_scheduling/cyclicalLR_exp.png">
 </p>
 <h3 id="8-onecycle-lr">8. OneCycle LR.</h3>
 <p>Learning rate được thay đổi theo phương pháp 1cycle learning rate policy. 1cycle policy tăng learning rate từ giá trị ban đầu tới một giá trị maximum nào đó sau đó giảm xuống một giá trị minimum còn nhỏ hơn giá trị learning rate ban đầu.<br/>
@@ -393,7 +392,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/onecycleLR_cos.png">
+  <img src="../../blog/img/learningrate_scheduling/onecycleLR_cos.png">
 </p>
 <h4 id="81-linear">8.1 Linear.</h4>
 <pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
@@ -410,7 +409,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/onecycleLR_linear.png">
+  <img src="../../blog/img/learningrate_scheduling/onecycleLR_linear.png">
 </p>
 <h3 id="9-cosine-annealing-warm-restarts">9. Cosine Annealing Warm Restarts.</h3>
 <p>Đặt learning rate sử dụng một cosine annealing schedule, và restarts lại sau Ti epochs.<br/></p>
@@ -435,7 +434,7 @@ for i in range(100):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cosineanealing_warmrestartLR.png">
+  <img src="../../blog/img/learningrate_scheduling/cosineanealing_warmrestartLR.png">
 </p>
 <pre tabindex="0"><code>import torch
 import matplotlib.pyplot as plt
@@ -455,7 +454,7 @@ for i in range(300):
 
 plt.plot(lrs)
 </code></pre><p align="center">
-  <img src="/blog/img/learningrate_scheduling/cosineanealing_warmrestartLR2.png">
+  <img src="../../blog/img/learningrate_scheduling/cosineanealing_warmrestartLR2.png">
 </p>
 <div style="text-align: right"> (Tín Nguyễn) </div>
 </article>
@@ -497,7 +496,7 @@ plt.plot(lrs)
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/img/avatar.png" />
+    <img src="../../img/avatar.png" />
     
   </div>
 
@@ -507,10 +506,10 @@ plt.plot(lrs)
 
     <article class="ui horizontal list">
       
-      <a class="item" href="/blog/categories">
+      <a class="item" href="../../blog/categories">
         <i class="th list icon" title="All Categories"></i>
       </a>
-      <a class="item" href="/blog/tags">
+      <a class="item" href="../../blog/tags">
         <i class="tags icon" title="All Tags"></i>
       </a>
     </article>
@@ -520,63 +519,63 @@ plt.plot(lrs)
     
       
       
-      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -665,16 +664,16 @@ plt.plot(lrs)
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/semantic.min.js"></script>
+<script src="../../js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/theme.js"></script>
 
     
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
+<script src="../../js/html2canvas.min.js"></script>
+<script src="../../js/post.js"></script>
 
 
 

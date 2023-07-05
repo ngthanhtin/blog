@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.115.1">
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/challenge/2021-11-15-vietnameseimagecaptioningvlsp/" />
 
@@ -30,18 +30,17 @@
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Vietnamese Image Captioning - VLSP for Health 2021"/>
 <meta name="twitter:description" content="In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
 1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}."/>
 
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../css/semantic.min.css" />
+<link rel="stylesheet" href="../../css/icomoon.css" />
+<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../css/github-markdown.css" />
+<link rel="stylesheet" href="../../css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -184,13 +183,13 @@
 <p>This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}. In recent years, image captioning often employs a convolutional neural network-based architecture as an encoder and a long short-term memory (LSTM) as a decoder to generate sentences. These models perform  remarkably well in different datasets. Our proposed model also has an encoder and a decoder, but we instead use a Swin Transformer in the encoder, and a LSTM combined with an attention module in the decoder. The study presents our training experiments and techniques used during the competition. Our model achieves a BLEU4 score of 0.293 in the vietCap4H dataset, and the score is ranked 3$^{rd}$ on the private leaderboard.</p>
 <p>Here is some example of the dataset including an image and its caption<br/></p>
 <p align="center">
-  <img src="/blog/img/challenge/example.png">
-  <img src="/blog/img/challenge/text_example.png">
+  <img src="../../blog/img/challenge/example.png">
+  <img src="../../blog/img/challenge/text_example.png">
 </p>
 <h3 id="2-model">2. Model</h3>
 <p>Our model as shown here is an end-to-endfusion of a Swin Transformer encoder and bidirec-tional LSTM (biLSTM) decoder. The model takes in an image and outputs the corresponding caption. <br/></p>
 <p align="center">
-  <img src="/blog/img/challenge/model_vlsp.png">
+  <img src="../../blog/img/challenge/model_vlsp.png">
 </p>
 <h3 id="3-techniques">3. Techniques</h3>
 <p>In this competition, I have used some techniques to improve the BLEU4 score, they are listed below: <br/></p>
@@ -203,7 +202,7 @@
 <h3 id="4-result">4. Result</h3>
 <p>I got the 3rd position on the leaderboard, and some evolution of my attempt is shown here: <br/></p>
 <p align="center">
-  <img src="/blog/img/challenge/result_vlsp.png">
+  <img src="../../blog/img/challenge/result_vlsp.png">
 </p>
 <h3 id="5-application">5. Application</h3>
 <p>Solving the problem leads to several practical applications such as virtual assistants for blind and visually impaired people, conducting visual content indexing and searching.</p>
@@ -249,7 +248,7 @@ Link paper: <a href="">Paper</a></p>
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/img/avatar.png" />
+    <img src="../../img/avatar.png" />
     
   </div>
 
@@ -259,10 +258,10 @@ Link paper: <a href="">Paper</a></p>
 
     <article class="ui horizontal list">
       
-      <a class="item" href="/blog/categories">
+      <a class="item" href="../../blog/categories">
         <i class="th list icon" title="All Categories"></i>
       </a>
-      <a class="item" href="/blog/tags">
+      <a class="item" href="../../blog/tags">
         <i class="tags icon" title="All Tags"></i>
       </a>
     </article>
@@ -272,63 +271,63 @@ Link paper: <a href="">Paper</a></p>
     
       
       
-      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -417,16 +416,16 @@ Link paper: <a href="">Paper</a></p>
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/semantic.min.js"></script>
+<script src="../../js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/theme.js"></script>
 
     
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
+<script src="../../js/html2canvas.min.js"></script>
+<script src="../../js/post.js"></script>
 
 
 

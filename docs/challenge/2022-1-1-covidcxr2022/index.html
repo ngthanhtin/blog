@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.115.1">
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/challenge/2022-1-1-covidcxr2022/" />
 
@@ -30,18 +30,17 @@
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Artificial Intelligence for Covid-19 prognosis"/>
 <meta name="twitter:description" content="In this post, I want to share our proposed model in diagnosing Covid-19 prognosis. Link to the challenge: https://ai4covid-hackathon.it/
 1. Abstract Automatic or semi-automatic techniques to distinguish patients that can be safely home-treated from those that are likely to require intensive care would allow for better planning and smarter allocation of available resources. To this end, the Covid CXR Hackathon aims at designing effective solutions based on machine learning and data science supporting the medical doctor to formulate a Covid-19 prognosis from early chest X-ray images and clinical data collected during triage."/>
 
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../css/semantic.min.css" />
+<link rel="stylesheet" href="../../css/icomoon.css" />
+<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../css/github-markdown.css" />
+<link rel="stylesheet" href="../../css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -183,38 +182,38 @@
 <p>Automatic or semi-automatic techniques to distinguish patients that can be safely home-treated from those that are likely to require intensive care would allow for better planning and smarter allocation of available resources. To this end, the Covid CXR Hackathon aims at designing effective solutions based on machine learning and data science supporting the medical doctor to formulate a Covid-19 prognosis from early chest X-ray images and clinical data collected during triage.</p>
 <p>Here is some example of Chest X-Ray images, and some of the metadata:<br/></p>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr.png", width="224", height="224">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr2.png", width="224", height="224">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr3.png", width="224", height="224">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr4.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr2.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr3.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr4.png", width="224", height="224">
 </p>
 <p>This is the metadata:</p>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/metadata.png", height="448">
+  <img src="../../blog/img/challenge/cxr_hackathon/metadata.png", height="448">
 </p>
 <h3 id="2-model">2. Model</h3>
 <p>The models consist of 2 primary types which are Unimodal for Only Image, Multimodal for Metadata and Image.<br/>
 In this post, we will go through each model in detail.</p>
 <h4 id="21-unimodal-only-image">2.1 Unimodal (only image)</h4>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/model_image.png">
+  <img src="../../blog/img/challenge/cxr_hackathon/model_image.png">
 </p>
 <h4 id="22-multimodal-image-and-metadata">2.2 Multimodal (image and metadata)</h4>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/model_meta.png">
+  <img src="../../blog/img/challenge/cxr_hackathon/model_meta.png">
 </p>
 <h3 id="3-techniques">3. Techniques</h3>
 <p>In this competition, the challengers use balance accuracy to evaluate the performance of a model.</p>
 <p>Moreover, we deal with black images by gamma equalizer, adaptive equalizer to ehance the brightness of the images.</p>
 <p>For example, the image data provided by the organizers is black, after preprocessing it is better.</p>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr_black.png", width="224", height="224">
-  <img src="/blog/img/challenge/cxr_hackathon/cxr.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr_black.png", width="224", height="224">
+  <img src="../../blog/img/challenge/cxr_hackathon/cxr.png", width="224", height="224">
 </p>
 <h3 id="4-result">4. Result</h3>
 <p>We got 9 out of 20 in this competition.</p>
 <p align="center">
-  <img src="/blog/img/challenge/cxr_hackathon/result.png", height="448">
+  <img src="../../blog/img/challenge/cxr_hackathon/result.png", height="448">
 </p>
 <h3 id="5-application">5. Application</h3>
 <p>This proposed model can help doctors analyse the covid-19 faster, moreover, unlike other models which only use images, ours combine metadata of the patient and images for better classification.</p>
@@ -259,7 +258,7 @@ In this post, we will go through each model in detail.</p>
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/img/avatar.png" />
+    <img src="../../img/avatar.png" />
     
   </div>
 
@@ -269,10 +268,10 @@ In this post, we will go through each model in detail.</p>
 
     <article class="ui horizontal list">
       
-      <a class="item" href="/blog/categories">
+      <a class="item" href="../../blog/categories">
         <i class="th list icon" title="All Categories"></i>
       </a>
-      <a class="item" href="/blog/tags">
+      <a class="item" href="../../blog/tags">
         <i class="tags icon" title="All Tags"></i>
       </a>
     </article>
@@ -282,63 +281,63 @@ In this post, we will go through each model in detail.</p>
     
       
       
-      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -427,16 +426,16 @@ In this post, we will go through each model in detail.</p>
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/semantic.min.js"></script>
+<script src="../../js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/theme.js"></script>
 
     
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
+<script src="../../js/html2canvas.min.js"></script>
+<script src="../../js/post.js"></script>
 
 
 

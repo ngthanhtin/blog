@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.101.0" />
+<meta name="generator" content="Hugo 0.115.1">
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/" />
 
@@ -29,17 +29,16 @@
 
 
 
-
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Single Object Tracking with Particle Filter"/>
 <meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Single Object Tracking sử dụng Particle Filter Link paper: A New Framework of Moving Object Tracking based on Object Detection-Tracking with Removal of Moving Features using Stereo Camera and IMU Link code: Code. Đây chỉ là code implementation của module face tracking bằng c&#43;&#43;, tuy nhiên nó sẽ giúp bạn biết được khái quát particle filter được implement như thế nào."/>
 
-<link rel="stylesheet" href="/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/css/semantic.min.css" />
-<link rel="stylesheet" href="/css/icomoon.css" />
-<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/css/github-markdown.css" />
-<link rel="stylesheet" href="/css/site.css" />
+<link rel="stylesheet" href="../../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../css/semantic.min.css" />
+<link rel="stylesheet" href="../../css/icomoon.css" />
+<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../css/github-markdown.css" />
+<link rel="stylesheet" href="../../css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -173,7 +172,7 @@ Link code: <a href="https://github.com/ngthanhtin/Face_Tracking_ParticleFilter">
 <b>1. Giới thiệu bài toán Single Object Tracking</b>
 </section>
 <p align="center">
-  <img src="/blog/img/sot/sot.png">
+  <img src="../../blog/img/sot/sot.png">
 </p>
 Đối với bài toán Visual Object Tracking, nó được chia thành 2 dạng chính là Multiple Object Tracking, nghĩa là theo vết nhiều đối tượng cùng một lúc, dạng còn lại là Single Object Tracking, đó là dạng theo vết duy nhất một đối tượng. Mặc dù cả hai bài toán đều là Tracking nhưng sẽ có nhiều thuật toán và cách xử lý khác nhau để giải quyết.
 <section id="2. Nguyên lý">
@@ -187,41 +186,41 @@ Nguyên lý của bài toán tracking đó là tìm kiếm và so sánh. Ở fra
 Đối với thuật toán Particle Filter, nó bao gồm 5 bước: <br/>
 1) Khởi tạo<br/>
 <p align="center">
-  <img src="/blog/img/sot/init.png">
+  <img src="../../blog/img/sot/init.png">
 </p>
 <ol start="2">
 <li>Dự đoán<br/></li>
 </ol>
 <p align="center">
-  <img src="/blog/img/sot/predict.png">
+  <img src="../../blog/img/sot/predict.png">
 </p>
 <p align="center">
-  <img src="/blog/img/sot/predict2.png">
+  <img src="../../blog/img/sot/predict2.png">
 </p>
 <p>3)So khớp<br/></p>
 <p align="center">
-  <img src="/blog/img/sot/matching.png">
+  <img src="../../blog/img/sot/matching.png">
 </p>
 <p align="center">
-  <img src="/blog/img/sot/matching2.png">
+  <img src="../../blog/img/sot/matching2.png">
 </p>
 <ol start="4">
 <li>Tái lấy mẫu<br/></li>
 </ol>
 <p align="center">
-  <img src="/blog/img/sot/resampling.png">
+  <img src="../../blog/img/sot/resampling.png">
 </p>
 <ol start="5">
 <li>Ước lượng vị trí<br/></li>
 </ol>
 <p align="center">
-  <img src="/blog/img/sot/estimate.png">
+  <img src="../../blog/img/sot/estimate.png">
 </p>
 <section id="4. Giải thuật">
 <b>4. Giải thuật</b>
 </section>
 <p align="center">
-  <img src="/blog/img/sot/algorithm.png">
+  <img src="../../blog/img/sot/algorithm.png">
 </p>
 <section id="5. Ứng dụng">
 <b>5. Ứng dụng</b>
@@ -271,7 +270,7 @@ https://github.com/ngthanhtin/Face_Tracking_ParticleFilter
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/img/avatar.png" />
+    <img src="../../img/avatar.png" />
     
   </div>
 
@@ -281,10 +280,10 @@ https://github.com/ngthanhtin/Face_Tracking_ParticleFilter
 
     <article class="ui horizontal list">
       
-      <a class="item" href="/blog/categories">
+      <a class="item" href="../../blog/categories">
         <i class="th list icon" title="All Categories"></i>
       </a>
-      <a class="item" href="/blog/tags">
+      <a class="item" href="../../blog/tags">
         <i class="tags icon" title="All Tags"></i>
       </a>
     </article>
@@ -294,63 +293,63 @@ https://github.com/ngthanhtin/Face_Tracking_ParticleFilter
     
       
       
-      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -439,16 +438,16 @@ https://github.com/ngthanhtin/Face_Tracking_ParticleFilter
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/semantic.min.js"></script>
-<script src="/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/js/header.js"></script>
-<script src="/js/main.js"></script>
-<script src="/js/theme.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/semantic.min.js"></script>
+<script src="../../js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/main.js"></script>
+<script src="../../js/theme.js"></script>
 
     
-<script src="/js/html2canvas.min.js"></script>
-<script src="/js/post.js"></script>
+<script src="../../js/html2canvas.min.js"></script>
+<script src="../../js/post.js"></script>
 
 
 

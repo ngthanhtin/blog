@@ -15,19 +15,19 @@
 
 
 
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.95.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/" />
 
 
 <meta property="og:title" content="Stacked Attention Network" />
 <meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Visual Question Answering
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
 2. Nguyên lý
 3. Phương pháp
 4. Giải thuật
-5. Ứng dụng
-6. Tham khảo" />
+5. Ứng dụng" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/" /><meta property="article:section" content="research_papers" />
 <meta property="article:published_time" content="2021-02-05T00:00:00+00:00" />
@@ -35,22 +35,23 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn V
 
 
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Stacked Attention Network"/>
 <meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Visual Question Answering
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
 2. Nguyên lý
 3. Phương pháp
 4. Giải thuật
-5. Ứng dụng
-6. Tham khảo"/>
+5. Ứng dụng"/>
 
-<link rel="stylesheet" href="../../css/font-awesome.min.css" />
-<link rel="stylesheet" href="../../css/semantic.min.css" />
-<link rel="stylesheet" href="../../css/icomoon.css" />
-<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="../../css/github-markdown.css" />
-<link rel="stylesheet" href="../../css/site.css" />
+<link rel="stylesheet" href="../../blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../blog/css/semantic.min.css" />
+<link rel="stylesheet" href="../../blog/css/icomoon.css" />
+<link rel="stylesheet" href="../../blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../blog/css/github-markdown.css" />
+<link rel="stylesheet" href="../../blog/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -312,7 +313,7 @@ Yang, Zichao, et al. "Stacked attention networks for image question answering." 
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="../../img/avatar.png" />
+    <img src="../../blog/img/avatar.png" />
     
   </div>
 
@@ -335,63 +336,63 @@ Yang, Zichao, et al. "Stacked attention networks for image question answering." 
     
       
       
-      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../blog/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../blog/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../blog/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../blog/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../blog/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../blog/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../blog/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../blog/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../blog/tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../blog/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -480,16 +481,16 @@ Yang, Zichao, et al. "Stacked attention networks for image question answering." 
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/semantic.min.js"></script>
-<script src="../../js/jquery.overlayScrollbars.min.js"></script>
-<script src="../../js/header.js"></script>
-<script src="../../js/main.js"></script>
-<script src="../../js/theme.js"></script>
+<script src="../../blog/js/jquery.min.js"></script>
+<script src="../../blog/js/semantic.min.js"></script>
+<script src="../../blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../blog/js/header.js"></script>
+<script src="../../blog/js/main.js"></script>
+<script src="../../blog/js/theme.js"></script>
 
     
-<script src="../../js/html2canvas.min.js"></script>
-<script src="../../js/post.js"></script>
+<script src="../../blog/js/html2canvas.min.js"></script>
+<script src="../../blog/js/post.js"></script>
 
 
 

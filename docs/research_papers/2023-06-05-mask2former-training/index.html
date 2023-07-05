@@ -15,14 +15,14 @@
 
 
 
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.95.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/" />
 
 
 <meta property="og:title" content="Train a MaskFormer Segmentation Model with Hugging Face Transformers" />
 <meta property="og:description" content="Hello everyone, Link paper: MaskFormer
-1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau." />
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link.  Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/" /><meta property="article:section" content="research_papers" />
 <meta property="article:published_time" content="2023-07-05T00:00:00+00:00" />
@@ -30,17 +30,18 @@
 
 
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Train a MaskFormer Segmentation Model with Hugging Face Transformers"/>
 <meta name="twitter:description" content="Hello everyone, Link paper: MaskFormer
-1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau."/>
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link.  Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau."/>
 
-<link rel="stylesheet" href="../../css/font-awesome.min.css" />
-<link rel="stylesheet" href="../../css/semantic.min.css" />
-<link rel="stylesheet" href="../../css/icomoon.css" />
-<link rel="stylesheet" href="../../css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="../../css/github-markdown.css" />
-<link rel="stylesheet" href="../../css/site.css" />
+<link rel="stylesheet" href="../../blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../../blog/css/semantic.min.css" />
+<link rel="stylesheet" href="../../blog/css/icomoon.css" />
+<link rel="stylesheet" href="../../blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../../blog/css/github-markdown.css" />
+<link rel="stylesheet" href="../../blog/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -267,7 +268,7 @@ Ta có vector của text là q, và image feature vector từ vùng thứ i (i_t
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="../../img/avatar.png" />
+    <img src="../../blog/img/avatar.png" />
     
   </div>
 
@@ -290,63 +291,63 @@ Ta có vector của text là q, và image feature vector từ vùng thứ i (i_t
     
       
       
-      <a class="ui label" href="../../tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../../blog/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="../../tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../../blog/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="../../tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../../blog/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="../../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../../blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="../../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../../blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../../blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="../../tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../../blog/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="../../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../../blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="../../tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../../blog/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="../../tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../../blog/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="../../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../../blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../../blog/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="../../tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../../blog/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="../../tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../../blog/tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="../../tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../../blog/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -435,16 +436,16 @@ Ta có vector của text là q, và image feature vector từ vùng thứ i (i_t
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="../../js/jquery.min.js"></script>
-<script src="../../js/semantic.min.js"></script>
-<script src="../../js/jquery.overlayScrollbars.min.js"></script>
-<script src="../../js/header.js"></script>
-<script src="../../js/main.js"></script>
-<script src="../../js/theme.js"></script>
+<script src="../../blog/js/jquery.min.js"></script>
+<script src="../../blog/js/semantic.min.js"></script>
+<script src="../../blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../../blog/js/header.js"></script>
+<script src="../../blog/js/main.js"></script>
+<script src="../../blog/js/theme.js"></script>
 
     
-<script src="../../js/html2canvas.min.js"></script>
-<script src="../../js/post.js"></script>
+<script src="../../blog/js/html2canvas.min.js"></script>
+<script src="../../blog/js/post.js"></script>
 
 
 

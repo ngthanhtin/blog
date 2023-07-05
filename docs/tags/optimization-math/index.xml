@@ -14,7 +14,8 @@
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Nelder-Mead-Simplex. Thuật toán.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Nelder-Mead-Simplex.</description>
     </item>
     
     <item>
@@ -23,7 +24,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-powell/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Powell.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>
@@ -42,7 +43,8 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-direct/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo. 1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.</description>
     </item>
     
     <item>
@@ -52,7 +54,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
-Nội dung chính sẽ bao gồm các phần sau: Thuật toán Hooke-Jeeves.</description>
+Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>

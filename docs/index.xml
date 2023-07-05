@@ -14,7 +14,7 @@
       
       <guid>https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/</guid>
       <description>Hello everyone, Link paper: MaskFormer
-1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau.</description>
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link.  Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau.</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       
       <guid>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</guid>
       <description>In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
-1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity. The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.</description>
+1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity.  The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.</description>
     </item>
     
     <item>
@@ -64,7 +64,8 @@
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</guid>
       <description>Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
-Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+ Lambda LR.</description>
     </item>
     
     <item>
@@ -74,7 +75,8 @@ Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR.<
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Nelder-Mead-Simplex. Thuật toán.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Nelder-Mead-Simplex.</description>
     </item>
     
     <item>
@@ -83,7 +85,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-powell/</guid>
-      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Powell.</description>
+      <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>
@@ -102,7 +104,8 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-direct/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo. 1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.</description>
     </item>
     
     <item>
@@ -112,7 +115,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       
       <guid>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
-Nội dung chính sẽ bao gồm các phần sau: Thuật toán Hooke-Jeeves.</description>
+Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>
@@ -132,7 +135,8 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
-Nội dung chính sẽ bao gồm các phần sau: 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
     </item>
     
     <item>
@@ -152,7 +156,7 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Label Smoothing là gì? Đ
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
-Nội dung chính sẽ bao gồm các phần sau: 1.</description>
+Nội dung chính sẽ bao gồm các phần sau:</description>
     </item>
     
     <item>
@@ -171,12 +175,12 @@ Nội dung chính sẽ bao gồm các phần sau: 1.</description>
       
       <guid>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn mô hình Stacked Attention được dùng trong bài toán Visual Question Answering (VQA) Link paper: Stacked Attention Networks for Image Question Answering (2016) Link code: Code
-Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn Visual Question Answering
+Nội dung chính sẽ bao gồm các phần sau: 
+1. Giới thiệu bài toàn Visual Question Answering
 2. Nguyên lý
 3. Phương pháp
 4. Giải thuật
-5. Ứng dụng
-6. Tham khảo</description>
+5. Ứng dụng</description>
     </item>
     
     <item>
@@ -196,7 +200,9 @@ Nội dung chính sẽ bao gồm các phần sau: 1. Giới thiệu bài toàn V
       
       <guid>https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
-sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit sudo apt remove &amp;ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &amp;ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub sudo bash -c &amp;rsquo;echo &amp;ldquo;deb http://developer.</description>
+sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &amp;ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &amp;ndash;autoremove nvidia-* 
+2. Setup the correct CUDA PPA on your system 
+sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &amp;ndash;fetch-keys http://developer.</description>
     </item>
     
     <item>
@@ -206,7 +212,8 @@ sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &amp;ndash;autoremove nvid
       
       <guid>https://ngthanhtin.github.io/blog/software/2020-10-14-install-torch-with-cuda-10-0/</guid>
       <description>Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive cd ~/torch bash install-deps Ở bước này các bạn có thể gõ : ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0 Vì vậy, nếu muốn làm việc với cuda 10.</description>
+In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch &amp;ndash;recursive  cd ~/torch  bash install-deps 
+Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0</description>
     </item>
     
     <item>
@@ -217,16 +224,8 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
       <guid>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</guid>
       <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
 Link paper: Paper Link code: Code
-The content is as following: 1. Introduction to Instruction Navigation 2. Principle 3. Methodology 3.1 Image Representation Module 3.2 Text Representation Module 3.3 Attented Representation Module 3.4 Policy Learning 4.</description>
-    </item>
-    
-    <item>
-      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
-      <link>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</guid>
-      <description> </description>
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.</description>
     </item>
     
     <item>
@@ -239,6 +238,15 @@ The content is as following: 1. Introduction to Instruction Navigation 2. Princi
     </item>
     
     <item>
+      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
+      <link>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
       <title>PhD Interviews</title>
       <link>https://ngthanhtin.github.io/blog/personal/faq_phd_interviews/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -246,7 +254,7 @@ The content is as following: 1. Introduction to Instruction Navigation 2. Princi
       <guid>https://ngthanhtin.github.io/blog/personal/faq_phd_interviews/</guid>
       <description>General Questions You Will be Asked: Tip: Ask early on: What the interviewing faculty is working on? (this gives an idea of what he/she sees as a possible alignment to your own research work).
 Read up on their recent work and ask relevant questions or pose possible extensions. Ask good questions.
-Tell us about yourself. Why’d you apply here? Or What drew you to this program? Research fit, what is that they are doing that excites you?</description>
+ Tell us about yourself. Why’d you apply here? Or What drew you to this program?   Research fit, what is that they are doing that excites you?</description>
     </item>
     
     <item>

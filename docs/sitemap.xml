@@ -29,10 +29,10 @@
     <loc>https://ngthanhtin.github.io/blog/challenge/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ngthanhtin.github.io/blog/tags/medical/</loc>
+    <loc>https://ngthanhtin.github.io/blog/categories/medical/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://ngthanhtin.github.io/blog/categories/medical/</loc>
+    <loc>https://ngthanhtin.github.io/blog/tags/medical/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</loc>
@@ -126,11 +126,11 @@
   </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/korea/</loc>
   </url><url>
-    <loc>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</loc>
-  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
   </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/multiple-object-tracking/</loc>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</loc>
   </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/object-tracking/</loc>
   </url><url>

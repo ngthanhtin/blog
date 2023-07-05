@@ -14,7 +14,8 @@
       <guid>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</guid>
       <description>In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
 Link paper: Paper Link code: Code
-The content is as following: 1. Introduction to Instruction Navigation 2. Principle 3. Methodology 3.1 Image Representation Module 3.2 Text Representation Module 3.3 Attented Representation Module 3.4 Policy Learning 4.</description>
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.</description>
     </item>
     
   </channel>

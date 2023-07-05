@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.115.1">
+<meta name="generator" content="Hugo 0.95.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/algorithms_for_optimization/" />
 
@@ -27,16 +27,17 @@
 
 
 
+
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Algorithms_for_optimizations"/>
 <meta name="twitter:description" content=""/>
 
-<link rel="stylesheet" href="../css/font-awesome.min.css" />
-<link rel="stylesheet" href="../css/semantic.min.css" />
-<link rel="stylesheet" href="../css/icomoon.css" />
-<link rel="stylesheet" href="../css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="../css/github-markdown.css" />
-<link rel="stylesheet" href="../css/site.css" />
+<link rel="stylesheet" href="../blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="../blog/css/semantic.min.css" />
+<link rel="stylesheet" href="../blog/css/icomoon.css" />
+<link rel="stylesheet" href="../blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="../blog/css/github-markdown.css" />
+<link rel="stylesheet" href="../blog/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -109,7 +110,7 @@
 <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="../img/avatar.png" />
+    <img src="../blog/img/avatar.png" />
     
   </div>
 
@@ -132,63 +133,63 @@
     
       
       
-      <a class="ui label" href="../tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../blog/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="../tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../blog/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="../tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../blog/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="../tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../blog/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="../tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../blog/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="../tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../blog/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="../tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../blog/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="../tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../blog/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="../tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../blog/tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="../tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../blog/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -216,7 +217,8 @@
     </div>
     <div class="description">
       Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Nelder-Mead-Simplex. Thuật toán.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Nelder-Mead-Simplex.
     </div>
   </div>
 
@@ -245,7 +247,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
       <p class="date">Monday, Mar 15, 2021</p>
     </div>
     <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Powell.
+      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:
     </div>
   </div>
 
@@ -304,7 +306,8 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
     </div>
     <div class="description">
       Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
-Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo. 1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.
+Nội dung chính sẽ bao gồm các phần sau: 
+ Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.
     </div>
   </div>
 
@@ -334,7 +337,7 @@ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp 
     </div>
     <div class="description">
       Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
-Nội dung chính sẽ bao gồm các phần sau: Thuật toán Hooke-Jeeves.
+Nội dung chính sẽ bao gồm các phần sau:
     </div>
   </div>
 
@@ -398,7 +401,7 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="../img/avatar.png" />
+    <img src="../blog/img/avatar.png" />
     
   </div>
 
@@ -421,63 +424,63 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
     
       
       
-      <a class="ui label" href="../tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="../blog/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="../tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="../blog/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="../tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="../blog/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="../tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="../blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="../tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="../blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="../tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="../blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="../tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="../blog/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="../tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="../blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="../tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="../blog/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="../tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="../blog/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="../tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="../blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="../tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="../blog/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="../tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="../blog/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="../tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="../blog/tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="../tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="../blog/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -566,17 +569,17 @@ Tuy nhiên, để hiểu rõ cách thức hoạt động của optimization, ch�
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="../js/jquery.min.js"></script>
-<script src="../js/semantic.min.js"></script>
-<script src="../js/jquery.overlayScrollbars.min.js"></script>
-<script src="../js/header.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/theme.js"></script>
+<script src="../blog/js/jquery.min.js"></script>
+<script src="../blog/js/semantic.min.js"></script>
+<script src="../blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="../blog/js/header.js"></script>
+<script src="../blog/js/main.js"></script>
+<script src="../blog/js/theme.js"></script>
 
     
-<script src="../js/imagesloaded.pkgd.min.js"></script>
-<script src="../js/masonry.pkgd.min.js"></script>
-<script src="../js/grid.js"></script>
+<script src="../blog/js/imagesloaded.pkgd.min.js"></script>
+<script src="../blog/js/masonry.pkgd.min.js"></script>
+<script src="../blog/js/grid.js"></script>
 
 
     

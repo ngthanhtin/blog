@@ -10,7 +10,7 @@
 
 
 
-<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="author" content="Tin Nguyen-Thanh" />
 <meta name="description" content="" />
 
 
@@ -99,6 +99,10 @@
   </div>
   
   
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
 </nav>
 
     <div class="flip-container">
@@ -110,12 +114,12 @@
 <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/blog/img/avata.png" />
     
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    <h1 class="ui medium header">PhuHo<div class="sub header">I share what I want</div>
     </h1>
 
     <article class="ui horizontal list">
@@ -224,7 +228,7 @@ sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &
   </div>
 
   <div class="extra content">
-    <div class="author">@&nbsp;Nguyen Thanh Tin</div>
+    <div class="author">@&nbsp;Tin Nguyen-Thanh</div>
     <div class="reading-time">
       <i class="clock icon"></i>1 minute read</div>
   </div>
@@ -255,7 +259,7 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
   </div>
 
   <div class="extra content">
-    <div class="author">@&nbsp;Nguyen Thanh Tin</div>
+    <div class="author">@&nbsp;Tin Nguyen-Thanh</div>
     <div class="reading-time">
       <i class="clock icon"></i>2 minutes read</div>
   </div>
@@ -276,6 +280,8 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 
               
+              <p>ngthanhtinqn@gmail.com</p>
+              
             </footer>
           </div>
         </section>
@@ -284,12 +290,12 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/blog/img/avata.png" />
     
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    <h1 class="ui medium header">PhuHo<div class="sub header">I share what I want</div>
     </h1>
 
     <article class="ui horizontal list">
@@ -391,7 +397,19 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
   
 
   
+  <div class="item">
+    <a href="https://twitter.com/TnNguyn21237605" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://facebook.com/tin.nguyenthanh.35175/" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
   
 
   
@@ -399,7 +417,19 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
   
 
   
+  <div class="item">
+    <a href="https://www.linkedin.com/in/tin-nguyen-836806221/" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://github.com/ngthanhtin" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
   
 
   
@@ -464,6 +494,28 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
 <script src="/blog/js/masonry.pkgd.min.js"></script>
 <script src="/blog/js/grid.js"></script>
 
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/ngthanhtin.github.io\/blog\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/blog/js/search.js"></script>
 
     
 

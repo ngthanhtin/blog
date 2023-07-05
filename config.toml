@@ -33,15 +33,15 @@ publishdir = "docs/"
   # darkNav = true
   # dark404 = true
 
-  author = "Nguyen Thanh Tin"
+  author = "Tin Nguyen-Thanh"
   # description = ""
-  avatar = "/img/avatar.png"
-  # headerTitle = ""
-  motto = "luffy"
+  avatar = "/img/avata.png"
+  headerTitle = "PhuHo"
+  motto = "I share what I want"
   # categoriesLimitInHeader = 6 # deprecated
-  # headerBottomText = "" # deprecated
+  # headerBottomText = "" # deprecated, cannot use
 
-  # footerBottomText = ""
+  footerBottomText = "ngthanhtinqn@gmail.com"
 
   # rss = true
 
@@ -52,14 +52,14 @@ publishdir = "docs/"
   # LEANCLOUD_APP_KEY = ""
 
   email = "ngthanhtinqn@gmail.com"
-  # twitter = ""
-  # facebook = "https://www.facebook.com/tin.nguyenthanh.35175/"
+  twitter = "TnNguyn21237605"
+  facebook = "tin.nguyenthanh.35175/"
   # instagram = ""
-  # mastodon = ""
-  # linkedin = "https://www.linkedin.com/in/nguy%E1%BB%85n-tha%CC%80nh-ti%CC%81n-438a1211a/"
-  # github = "https://github.com/ngthanhtin"
+  linkedin = "tin-nguyen-836806221/"
+  github = "ngthanhtin"
   # stackoverflow = ""
   # codepen = ""
+
 
   siteStartYear = 2021
 
@@ -72,10 +72,10 @@ publishdir = "docs/"
   # highlightjsThemeDark = "gruvbox-dark"
 
   # search
-  # enableSearch = true
+  enableSearch = true
 
   # options
-  # showSummaryCoverInPost = true
+  showSummaryCoverInPost = true
   # hasTwitterEmbed = true
 
   # [params.advanced]

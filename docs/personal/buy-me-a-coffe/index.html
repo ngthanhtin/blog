@@ -10,7 +10,7 @@
 
 
 
-<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="author" content="Tin Nguyen-Thanh" />
 <meta name="description" content="" />
 
 
@@ -107,6 +107,10 @@
   </div>
   
   
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
 </nav>
 
     <div class="flip-container">
@@ -123,12 +127,14 @@
   <ul>
     <li><a href="#ways-to-give">(Ways to Give）</a>
       <ul>
-        <li><a href="#woori-bank">Woori bank</a></li>
         <li><a href="#paypal">PayPal</a></li>
-        <li><a href="#patreon">Patreon</a></li>
       </ul>
     </li>
-    <li><a href="#donation-list">Donation List</a></li>
+    <li><a href="#donation-list">Donation List</a>
+      <ul>
+        <li><a href="#no-longer-use">NO LONGER USE</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -152,7 +158,11 @@
   </aside>
   <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
     
-    <section class="ui top attached segment">
+    <div class="ui top attached segment cover">
+      <div class="cover-img" style="background-image: url(/blog/img/Buy-Me-A-Coffee.jpg);"></div>
+    </div>
+    
+    <section class="ui attached segment">
       <header>
         <h1 class="ui large header">Buy Me A Coffee<div class="sub header">
             @
@@ -178,23 +188,22 @@
 
       <article class="main"><p>If you like my open source projects or they can help you. You can buy me a coffee ☕.~</p>
 <h2 id="ways-to-give">(Ways to Give）</h2>
-<h3 id="woori-bank">Woori bank</h3>
-<p>This is my bank account: <br/>
-Account: 1002-361-704694<br/>
-Name: Nguyen Thanh Tin<br/>
-Bank: Woori Bank</p>
 <h3 id="paypal">PayPal</h3>
+<p><a href="https://paypal.me/TinNguyen197?country.x=US&amp;locale.x=en_US">https://paypal.me/TinNguyen197?country.x=US&amp;locale.x=en_US</a></p>
 <!-- [https://paypal.me/ngthanhtin](https://paypal.me/g1eny0ung) -->
-<p>I haven&rsquo;t had an account yet.</p>
-<h3 id="patreon">Patreon</h3>
-<!-- <a href="https://www.patreon.com/bePatron?u=42327574" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script> -->
 <blockquote>
 <p>It is better to attach some information or leave a message so that I can record the donation 📝, thank you very much 🙏.</p>
 </blockquote>
 <h2 id="donation-list">Donation List</h2>
 <ul>
 <li>PayPal</li>
-</ul></article>
+</ul>
+<h3 id="no-longer-use">NO LONGER USE</h3>
+<p><del>Woori bank</del>
+<del>This is my bank account: <br/></del>
+<del>Account: 1002-361-704694<br/></del>
+<del>Name: Nguyen Thanh Tin<br/></del>
+<del>Bank: Woori Bank</del></p></article>
     </section>
 
     
@@ -225,6 +234,8 @@ Bank: Woori Bank</p>
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 
               
+              <p>ngthanhtinqn@gmail.com</p>
+              
             </footer>
           </div>
         </section>
@@ -233,12 +244,12 @@ Bank: Woori Bank</p>
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/blog/img/avata.png" />
     
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    <h1 class="ui medium header">PhuHo<div class="sub header">I share what I want</div>
     </h1>
 
     <article class="ui horizontal list">
@@ -340,7 +351,19 @@ Bank: Woori Bank</p>
   
 
   
+  <div class="item">
+    <a href="https://twitter.com/TnNguyn21237605" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://facebook.com/tin.nguyenthanh.35175/" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
   
 
   
@@ -348,7 +371,19 @@ Bank: Woori Bank</p>
   
 
   
+  <div class="item">
+    <a href="https://www.linkedin.com/in/tin-nguyen-836806221/" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://github.com/ngthanhtin" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
   
 
   
@@ -415,6 +450,28 @@ Bank: Woori Bank</p>
 
 
 
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/ngthanhtin.github.io\/blog\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/blog/js/search.js"></script>
 
     
 

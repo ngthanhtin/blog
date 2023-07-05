@@ -10,7 +10,7 @@
 
 
 
-<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="author" content="Tin Nguyen-Thanh" />
 <meta name="description" content="" />
 
 
@@ -109,6 +109,10 @@
   </div>
   
   
+  <div class="item">
+    <i class="large link search icon" onclick="toggleSearch()"></i>
+  </div>
+  
 </nav>
 
     <div class="flip-container">
@@ -156,12 +160,16 @@
   </aside>
   <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
     
-    <section class="ui top attached segment">
+    <div class="ui top attached segment cover">
+      <div class="cover-img" style="background-image: url(/blog/img/challenge/meme.jpg);"></div>
+    </div>
+    
+    <section class="ui attached segment">
       <header>
         <h1 class="ui large header">Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images<div class="sub header">
             @
             
-              Nguyen Thanh Tin
+              Tin Nguyen-Thanh
             
 
             | 
@@ -263,6 +271,8 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
 
               
+              <p>ngthanhtinqn@gmail.com</p>
+              
             </footer>
           </div>
         </section>
@@ -271,12 +281,12 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/blog/img/avata.png" />
     
   </div>
 
   <div class="content">
-    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    <h1 class="ui medium header">PhuHo<div class="sub header">I share what I want</div>
     </h1>
 
     <article class="ui horizontal list">
@@ -378,7 +388,19 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
   
 
   
+  <div class="item">
+    <a href="https://twitter.com/TnNguyn21237605" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://facebook.com/tin.nguyenthanh.35175/" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i>
+    </a>
+  </div>
   
 
   
@@ -386,7 +408,19 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
   
 
   
+  <div class="item">
+    <a href="https://www.linkedin.com/in/tin-nguyen-836806221/" target="_blank">
+      <i class="large linkedin icon" title="Linkedin"></i>
+    </a>
+  </div>
+  
 
+  
+  <div class="item">
+    <a href="https://github.com/ngthanhtin" target="_blank">
+      <i class="large github icon" title="GitHub"></i>
+    </a>
+  </div>
   
 
   
@@ -453,6 +487,28 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
 
 
 
+
+    
+    <div class="ui inverted segment" id="dream-search">
+  <div class="ui search">
+    <div class="ui transparent input">
+      <input class="prompt" type="text" placeholder="Search" />
+    </div>
+    <div class="results"></div>
+  </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $.getJSON('https:\/\/ngthanhtin.github.io\/blog\//index.json', function (data) {
+      $('.ui.search').search({
+        source: data,
+        searchFields: ['title'],
+        showNoResults: true,
+      })
+    })
+  })
+</script>
+<script src="/blog/js/search.js"></script>
 
     
 

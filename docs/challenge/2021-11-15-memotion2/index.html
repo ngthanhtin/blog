@@ -36,12 +36,12 @@
 <meta name="twitter:description" content="In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
 1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity.  The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore."/>
 
-<link rel="stylesheet" href="../../blog/css/font-awesome.min.css" />
-<link rel="stylesheet" href="../../blog/css/semantic.min.css" />
-<link rel="stylesheet" href="../../blog/css/icomoon.css" />
-<link rel="stylesheet" href="../../blog/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="../../blog/css/github-markdown.css" />
-<link rel="stylesheet" href="../../blog/css/site.css" />
+<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/blog/css/semantic.min.css" />
+<link rel="stylesheet" href="/blog/css/icomoon.css" />
+<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/blog/css/github-markdown.css" />
+<link rel="stylesheet" href="/blog/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -185,7 +185,7 @@ The growing ubiquity of Internet memes on social media platforms such as Faceboo
 The task of Memotion analysis consists of three task (1) sentiment(positive, negative, neutral) classification, (2) emotion (sarcastic,funny,offensive, motivation) classification and (3) their corresponding intensity. <br/></p>
 <p>Here is some example of Meme Images, they contain two information simultaneously which is text and image: <br/></p>
 <p align="center">
-  <img src="../../blog/img/challenge/meme_example.png">
+  <img src="/blog/img/challenge/meme_example.png">
 </p>
 <h3 id="2-model">2. Model</h3>
 <p>The models consist of 3 primary types which are Unimodal for Only Text, Unimodal for Only Image, Multimodal for Text and Image.<br/>
@@ -208,7 +208,7 @@ In the Multimodal, I also employed several fusion mechanism such as Concatenatio
 <p>Although both textual and visual features are important for meme emotion analysis, there is little correlation between them in the MEMOTION 2.0 dataset. Besides, the caption is also provided as a part of the dataset. Therefore, in this study, the text is removed from the image before extracting and training the proposed model.</p>
 <p>Based on the previous works that summarized both traditional and deep learning approaches for text detection and recognition, we design a preprocessing scheme to remove texts from images as follows. First, we employ the EAST module to detect all text regions in an image. Then these regions are removed from the image, and we use the output image as the input for EfficientNet-v2 in the proposed framework.</p>
 <p align="center">
-  <img src="../../blog/img/challenge/meme_preproc.png">
+  <img src="/blog/img/challenge/meme_preproc.png">
 </p>
 Preprocessing scheme: Given an image as input, we use the EAST detector to detect the region of texts on the image and then remove them
 <h4 id="32-auto-augmentation">3.2 Auto Augmentation</h4>
@@ -216,14 +216,14 @@ Preprocessing scheme: Given an image as input, we use the EAST detector to detec
 <h4 id="33-canonical-correlation-analysis">3.3 Canonical Correlation Analysis</h4>
 <p>The Canonical correlation analysis (CCA) is based on a well-established statistical technique that searches for a linear combination of input vectors by maximizing their correlations. Deep CCA tries to utilize the power of both deep neural networks and CCA to overcome projection constraints of CCA . In this study, correlation scores obtained from Deep CCA is included to our loss function to maximize the correlation between two features, leading to a higher classification rate.</p>
 <p align="center">
-  <img src="../../blog/img/challenge/cca.png">
+  <img src="/blog/img/challenge/cca.png">
 </p>
 <h4 id="34-loss-function-optimizer-etc">3.4 Loss function, Optimizer, etc</h4>
 <p>For the classification task, I use CrossEntropy typically, but I also tested on Training Signal Anealing CrossEntropy which is a loss function that helps mitigate the imbalance effect of the dataset. <br/>
 In terms of Optimizer, I tried several ones such as Adam, SGD, AdamW, LookAHead, etc.</p>
 <h3 id="4-result">4. Result</h3>
 <p align="center">
-  <img src="../../blog/img/challenge/meme_result.png">
+  <img src="/blog/img/challenge/meme_result.png">
 </p>
 Some note about this competition: This is not a fair competition because after the private phase, they recruited more teams to submit and manipulated the results several times. This is quite a pity because I didn't notice that all the chair is Indian....
 <h3 id="5-application">5. Application</h3>
@@ -271,7 +271,7 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="../../blog/img/avatar.png" />
+    <img src="/blog/img/avatar.png" />
     
   </div>
 
@@ -281,10 +281,10 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
 
     <article class="ui horizontal list">
       
-      <a class="item" href="../../blog/categories">
+      <a class="item" href="/blog/categories">
         <i class="th list icon" title="All Categories"></i>
       </a>
-      <a class="item" href="../../blog/tags">
+      <a class="item" href="/blog/tags">
         <i class="tags icon" title="All Tags"></i>
       </a>
     </article>
@@ -294,63 +294,63 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
     
       
       
-      <a class="ui label" href="../../blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/segmentation/" title="Segmentation">Segmentation</a>
+      <a class="ui label" href="/blog/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
     
       
       
-      <a class="ui label" href="../../blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -439,16 +439,16 @@ Link paper: Updating&hellip;<a href="https://github.com/ngthanhtin/Memotion2_AAA
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="../../blog/js/jquery.min.js"></script>
-<script src="../../blog/js/semantic.min.js"></script>
-<script src="../../blog/js/jquery.overlayScrollbars.min.js"></script>
-<script src="../../blog/js/header.js"></script>
-<script src="../../blog/js/main.js"></script>
-<script src="../../blog/js/theme.js"></script>
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/semantic.min.js"></script>
+<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/blog/js/header.js"></script>
+<script src="/blog/js/main.js"></script>
+<script src="/blog/js/theme.js"></script>
 
     
-<script src="../../blog/js/html2canvas.min.js"></script>
-<script src="../../blog/js/post.js"></script>
+<script src="/blog/js/html2canvas.min.js"></script>
+<script src="/blog/js/post.js"></script>
 
 
 

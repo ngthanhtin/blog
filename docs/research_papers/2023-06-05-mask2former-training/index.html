@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Train a MaskFormer Segmentation Model with Hugging Face Transformers | Tin&#39;s Blog</title>
+
+    
+
+
+
+<meta name="author" content="Nguyen Thanh Tin" />
+<meta name="description" content="" />
+
+
+
+<meta name="generator" content="Hugo 0.101.0" />
+
+<link rel="canonical" href="https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/" />
+
+
+<meta property="og:title" content="Train a MaskFormer Segmentation Model with Hugging Face Transformers" />
+<meta property="og:description" content="Hello everyone, Link paper: MaskFormer
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/" /><meta property="article:section" content="research_papers" />
+<meta property="article:published_time" content="2023-07-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-07-05T00:00:00+00:00" />
+
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Train a MaskFormer Segmentation Model with Hugging Face Transformers"/>
+<meta name="twitter:description" content="Hello everyone, Link paper: MaskFormer
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau."/>
+
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
+
+<style>
+  a:not(.ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+
+  
+  body.default {
+    
+    background-color: #f7f7f7;
+    
+
+    
+  }
+  
+
+  
+  body.dark {
+    
+    background-color: black;
+    
+
+    
+  }
+  
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu">
+
+  <div class="item">
+    <i class="large link bullseye icon dream-flip-toggle" title="Flip it!"></i>
+  </div>
+  <div class="item">
+    <i class="large link home icon" title="Blog" onclick="window.location.href = 'https:\/\/ngthanhtin.github.io\/blog\/'"></i>
+  </div>
+  <div class="item">
+    <a href="https://ngthanhtin.github.io/"><i class="fa fa-flask" title="ngthanhtin.github.io"></i></a>
+  </div>
+  
+  
+  <div class="item">
+    <i class="large link icon theme-switch" onclick="themeSwitch()"></i>
+  </div>
+  
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed grid dream-grid">
+  <aside class="sixteen wide mobile sixteen wide tablet four wide computer column dream-single-aside">
+    
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-introduction">1. Introduction</a>
+      <ul>
+        <li><a href="#2-low-rank-bilinear-pooling">2. Low-rank bilinear pooling</a></li>
+        <li><a href="#3-question-guided-attention-mechanism">3. Question Guided Attention Mechanism</a></li>
+        <li><a href="#4-kết-hợp-low-rank-bilinear-pooling-và-question-guided-attention-mechanism">4. Kết hợp Low-rank bilinear pooling và Question Guided Attention Mechanism</a></li>
+        <li><a href="#3-bilinear-attention">3. Bilinear Attention</a></li>
+        <li><a href="#4-abc">4. abc</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-tham-khảo">5. Tham khảo</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="ui segment actions">
+      <button
+        class="ui circular icon button save-as-image"
+        title="Save as image"
+        onclick="savePostAsImg()">
+        <i class="save icon"></i>
+      </button>
+
+      <a href="https://twitter.com/intent/tweet?text=Train%20a%20MaskFormer%20Segmentation%20Model%20with%20Hugging%20Face%20Transformers&url=https%3a%2f%2fngthanhtin.github.io%2fblog%2fresearch_papers%2f2023-06-05-mask2former-training%2f" class="ui circular twitter icon button">
+  <i class="twitter icon"></i>
+</a>
+<a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fngthanhtin.github.io%2fblog%2fresearch_papers%2f2023-06-05-mask2former-training%2f" class="ui circular facebook icon button">
+  <i class="facebook icon"></i>
+</a>
+
+    </div>
+  </aside>
+  <div class="sixteen wide mobile sixteen wide tablet twelve wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    
+    <section class="ui top attached segment">
+      <header>
+        <h1 class="ui large header">Train a MaskFormer Segmentation Model with Hugging Face Transformers<div class="sub header">
+            @
+            
+              Nguyen Thanh Tin
+            
+
+            | 
+                Wednesday, Jul 5, 2023
+              
+
+            | 4 minutes read
+
+            | Update at
+              
+                Wednesday, Jul 5, 2023
+              
+          </div>
+        </h1>
+      </header>
+
+      <article class="main"><p>Hello everyone,
+Link paper: <a href="https://arxiv.org/pdf/2107.06278.pdf">MaskFormer</a><br/></p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, <a href="https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network">link</a>. <br/>
+Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau. Về cơ bản, chúng ta có thể sử dụng phương pháp concatenate để nối 2 feature vector, hoặc dùng element-wise product (hoặc là Hardarmard product) để 2 feature tương tác với nhau, hoặc là dùng bilinear pooling để 2 vector có thể tương tác với nhau nhiều hơn vì vậy cung cấp một attended vector tốt hơn. <br/></p>
+<p align="center">
+<img src="/blog/img/bilinear_att/hardarmard.png">
+</p>
+<div style="text-align: center">Element-wise product (Hardarmard).</div>
+<p align="center">
+<img src="/blog/img/bilinear_att/outer_product.png">
+</p>
+<div style="text-align: center">Outer product, core component của bilinear pooling.</div>
+<p>Khi dùng concatenation, đây là một phương pháp khá nice, dễ sử dụng, đơn giản bạn chỉ cần việc nối 2 vector lại và đưa vector đó qua thành phần tiếp theo (là một classifier để phân loại). Tuy nhiên, cách này ko làm cho 2 vector vision và text tương tác với nhau hiệu quả, vì thế người ta mới sử dụng những phương pháp như element-wise hay outer-product.
+Điểm mạnh của element-wise là 2 vector tương tác với nhau rất tốt, bạn có thể nhìn vào cách tính là sẽ thấy được, tuy nhiên nó có 2 yếu điểm sau: (1) Nếu 2 vector quá lớn, dẫn tới việc tính toán cũng sẽ vô cùng lớn, làm chậm quá trình trainning, (2) nó yêu cầu 2 vector phải có cùng số chiều. <br/>
+Còn về outer product hay bilinear pooling, nó cho phép tạo ra một vector attention khi 2 vector vision và text không cùng chiều. Và để làm được điều đó đơn giản chỉ cần chèn vào ở giữa 2 vector này một thằng trung gian:<br/></p>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=z_{i} = x^{T}W_{i}y">
+</p>
+<div style="text-align: center">Với x là vector của vision, y là vector của text.</div>
+Và bởi vì phương pháp này dựa trên outer product nên nó cũng có thể tạo ra được một vector có sự tương tác tốt hơn giữa 2 vector vision và text, nhìn vào cách tính của outer product bạn có thể thấy được mỗi giá trị của vector này được nhân với tất cả giá trị của vector kia, nên kết quả là vector fusion có được interaction rất tốt.<br/>
+Ví dụ, x là (40x60), text là (100,) thì W là (40x100). <br/>
+<h3 id="2-low-rank-bilinear-pooling">2. Low-rank bilinear pooling</h3>
+<p>Khi nhìn vào Bilinear Pooling chúng ta có thể thấy, ứng với mỗi z_i, ta cần phải học một ma trận W_i tương ứng, việc này dẫn đến computational cost rất cao. Để giải quyết vấn đề này, ta sử dụng một kĩ thuật trong đại số tuyến tính là <b>Low-rank factorization</b>, nghĩa là:<br/></p>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=z_{i} = x^{T}W_{i}y \approx x^{T}U_{i}V_{i}^{T}y = \sum_{d=1}^{k}x^{T}u_{d}v_{d}{T}y = \mathbb{1}^{T}(U_{i}^{T}x \circ V_{i}^{T}y)">
+</p>
+<img src="https://render.githubusercontent.com/render/math?math=\circ"> là kí hiệu của Hadarmard product <img src="https://render.githubusercontent.com/render/math?math=\mathbb{1}"> là vector bào gồm tất cả value là 1. <br/>
+Ta có thể thấy, k chính là một chiều ẩn của factorized matrix Ui và Vi. Ta có thể dùng thay thế một pooling matrix để mô tả quá trình này:<br/>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=z = P^{T}(U^{T}x \circ V^{T}y)">
+</p>
+Việc sử dụng Pooling ở đây khiến cho số lượng parameter giảm đi đáng kể. Vì vậy low-rank bilinear vẫn giữ được tính chất của bilinear pooling nhưng đồng thời làm giảm số lượng parameter rất nhiều nhờ vào kĩ thuật fatorized matrix.
+<h3 id="3-question-guided-attention-mechanism">3. Question Guided Attention Mechanism</h3>
+<p>Attention là một cách để giảm input channel rất hiệu quả, ta có các bước làm như sau:<br/>
+Ta có vector của text là q, và image feature vector từ vùng thứ i (i_th) v_i được đưa qua một non-linear layer (fa) với weight là wa <img src="https://render.githubusercontent.com/render/math?math=a = w_{a}f_{a}(v_{i}q)">. Sau đó, attention weights được chuẩn hóa bằng hàm softmax tạo ra <img src="https://render.githubusercontent.com/render/math?math=\alpha = softmax(a)">. Cuối cùng combined image feature vector được tính dựa trên attention weight: <img src="https://render.githubusercontent.com/render/math?math=\sum^{K}_{i}\alpha_{i}v_{i}"> <br/></p>
+<h3 id="4-kết-hợp-low-rank-bilinear-pooling-và-question-guided-attention-mechanism">4. Kết hợp Low-rank bilinear pooling và Question Guided Attention Mechanism</h3>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=\alpha := softmax(P^{T}(U^{T}x \circ V^{T}y))">
+</p>
+\
+<h3 id="3-bilinear-attention">3. Bilinear Attention</h3>
+<p>Đây là phương pháp mà chúng ta đã nhắc tới đầu bài, được sử dụng để kết hợp 2 feature multi-channel input. Để giảm số channel đồng thời, ta có một attention map A như sau:</p>
+<p align="center">
+  <img src="https://render.githubusercontent.com/render/math?math=f_{k} = (X^{T}U^{'})^{T}_{k}A(Y^{T}V^{'})_{k}">
+</p>
+Để ý, ta có thể thấy <img src="https://render.githubusercontent.com/render/math?math=X^{T}U^{'})^{T}"> và <img src="https://render.githubusercontent.com/render/math?math=Y^{T}V^{'}"> là 2 
+<h3 id="4-abc">4. abc</h3>
+<p>Update&hellip; (khó quá từ từ xem)</p>
+<h2 id="5-tham-khảo">5. Tham khảo</h2>
+<p><a href="https://pyimagesearch.com/2023/03/13/train-a-maskformer-segmentation-model-with-hugging-face-transformers/">https://pyimagesearch.com/2023/03/13/train-a-maskformer-segmentation-model-with-hugging-face-transformers/</a><br/></p>
+<div style="text-align: right"> (Tín Nguyễn) </div></article>
+    </section>
+
+    
+
+    
+    <article class="ui segment utterances-comments" data-html2canvas-ignore>
+      <script src="https://utteranc.es/client.js"
+        repo="ngthanhtin/blog"
+        issue-term="pathname"
+        label="comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </article>
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2021 - 2023 Tin&#39;s Blog</p>
+              
+
+              <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  <div class="ui small circular image">
+    
+    <img src="/img/avatar.png" />
+    
+  </div>
+
+  <div class="content">
+    <h1 class="ui medium header">Nguyen Thanh Tin&#39;s blog<div class="sub header">luffy</div>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/blog/categories">
+        <i class="th list icon" title="All Categories"></i>
+      </a>
+      <a class="item" href="/blog/tags">
+        <i class="tags icon" title="All Tags"></i>
+      </a>
+    </article>
+
+    
+    <article class="dream-tags">
+    
+      
+      
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
+    
+      
+      
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
+    
+      
+      
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
+    
+      
+      
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+    
+      
+      
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+    
+      
+      
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
+    
+      
+      
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+    
+      
+      
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
+    
+      
+      
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
+    
+      
+      
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+    
+      
+      
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
+    
+      
+      
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
+    
+      
+      
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
+    
+    </article>
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment">
+      <h3 class="ui header">Social Links</h3>
+      <nav class="ui secondary menu dream-menu dream-socials">
+  
+
+  
+  <div class="item">
+    <a href="mailto:ngthanhtinqn@gmail.com">
+      <i class="large mail icon" title="Email"></i>
+    </a>
+  </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</nav>
+
+    </article>
+  </div>
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </div>
+
+  
+  
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+  window.defaultDark =  null 
+  window.backgroundDark = "black"
+  window.backgroundImageDark =  null 
+  window.darkNav =  null 
+  window.hasTwitterEmbed =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
+
+
+
+
+
+    
+
+    
+
+    
+  </body>
+</html>

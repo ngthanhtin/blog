@@ -14,8 +14,7 @@
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</guid>
       <description>Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
-Nội dung chính sẽ bao gồm các phần sau: 
- Lambda LR.</description>
+Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR.</description>
     </item>
     
     <item>
@@ -25,8 +24,7 @@ Nội dung chính sẽ bao gồm các phần sau:
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
-Nội dung chính sẽ bao gồm các phần sau: 
-1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
+Nội dung chính sẽ bao gồm các phần sau: 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên.</description>
     </item>
     
     <item>
@@ -36,7 +34,7 @@ Nội dung chính sẽ bao gồm các phần sau:
       
       <guid>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</guid>
       <description>Hi, xin chào các bạn, hôm này mình sẽ giải thích một số hàm loss cho các bạn như Cross entropy loss, binary cross-entropy loss, etc Mình làm bài viết này bởi vì tên của các hàm loss này thường rất dễ bị nhầm lẫn, cộng với việc mỗi framework lại có những cái tên na ná nhau, vì vậy mình sẽ giúp các bạn phân biệt chúng.
-Nội dung chính sẽ bao gồm các phần sau:</description>
+Nội dung chính sẽ bao gồm các phần sau: 1.</description>
     </item>
     
   </channel>

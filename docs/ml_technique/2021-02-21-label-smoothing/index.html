@@ -15,34 +15,33 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/" />
 
 
 <meta property="og:title" content="Label Smoothing" />
 <meta property="og:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
-Nội dung chính sẽ bao gồm các phần sau: 
-1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên." />
+Nội dung chính sẽ bao gồm các phần sau: 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/" /><meta property="article:section" content="ml_technique" />
 <meta property="article:published_time" content="2021-02-21T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-02-21T00:00:00+00:00" />
+
 
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Label Smoothing"/>
 <meta name="twitter:description" content="Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn một cách để tránh overfitting và overconfidence đó là phương pháp Label Smoothing
-Nội dung chính sẽ bao gồm các phần sau: 
-1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên."/>
+Nội dung chính sẽ bao gồm các phần sau: 1. Label Smoothing là gì? Đối với một model classification, model thường gặp phải 2 vấn đề: overfitting, and overconfidence. Label smoothing là một phương pháp regularization có thể giải quyết 2 vấn đề kể trên."/>
 
-<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/blog/css/semantic.min.css" />
-<link rel="stylesheet" href="/blog/css/icomoon.css" />
-<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/blog/css/github-markdown.css" />
-<link rel="stylesheet" href="/blog/css/site.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -208,8 +207,8 @@ Ví dụ, đưa vector này qua softmax sẽ cho ra [0.9999, 0, 0]. Nếu dùng 
 <h3 id="2-code">2. Code</h3>
 <p>Tensorflow: Label smoothing đã được định nghĩa trong Tensorflow. Các bạn có thể xem source của BinaryCrossentropy CategoricalCrossentropy để biết thêm chi tiết.<br/>
 PyTorch: Mình vẫn chưa thấy Pytorch có định nghĩa sẵn hàm này, các bạn có thể tham khảo đoạn code sau.<br/></p>
-<pre><code>class MyCrossEntropyLoss(_WeightedLoss):
-    def __init__(self, weight=None, reduction='mean'):
+<pre tabindex="0"><code>class MyCrossEntropyLoss(_WeightedLoss):
+    def __init__(self, weight=None, reduction=&#39;mean&#39;):
         super().__init__(weight=weight, reduction=reduction)
         self.weight = weight
         self.reduction = reduction
@@ -222,9 +221,9 @@ PyTorch: Mình vẫn chưa thấy Pytorch có định nghĩa sẵn hàm này, c�
 
         loss = -(targets * lsm).sum(-1)
 
-        if  self.reduction == 'sum':
+        if  self.reduction == &#39;sum&#39;:
             loss = loss.sum()
-        elif  self.reduction == 'mean':
+        elif  self.reduction == &#39;mean&#39;:
             loss = loss.mean()
 
         return loss
@@ -265,7 +264,7 @@ A: Phần lớn thực nghiệm sử dụng uniform distribution nhưng bạn c�
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2021 - 2022 Tin&#39;s Blog</p>
+              <p>© 2021 - 2023 Tin&#39;s Blog</p>
               
 
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -279,7 +278,7 @@ A: Phần lớn thực nghiệm sử dụng uniform distribution nhưng bạn c�
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/img/avatar.png" />
     
   </div>
 
@@ -302,59 +301,63 @@ A: Phần lớn thực nghiệm sử dụng uniform distribution nhưng bạn c�
     
       
       
-      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -443,16 +446,16 @@ A: Phần lớn thực nghiệm sử dụng uniform distribution nhưng bạn c�
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/blog/js/jquery.min.js"></script>
-<script src="/blog/js/semantic.min.js"></script>
-<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/blog/js/header.js"></script>
-<script src="/blog/js/main.js"></script>
-<script src="/blog/js/theme.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
 
     
-<script src="/blog/js/html2canvas.min.js"></script>
-<script src="/blog/js/post.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
 
 
 

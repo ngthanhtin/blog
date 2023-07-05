@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Bilinear ABC
-subtitle: Attention
-date : "2021-03-29"
-tags: "vision-language"
+title: Train a MaskFormer Segmentation Model with Hugging Face Transformers
+subtitle: MaskFormer Training with HuggingFace Transformers
+date : "2023-07-05"
+tags: "segmentation"
 categories : "Research Papers"
 comments: true
-cover: "/blog/img/bilinear_att/bilinear.jpg"
+cover: "/blog/img/maskformer/maskformer_model.png"
 ---
-Hi các bạn, ở bài post này mình tiếp tục chia sẽ một kĩ thuật Attention dùng trong bài toán <b>Visual Question Answering (VQA)</b> đó là <b>Bi-Attention (Tri-Attention)</b>, ở bài trước mình có đề cập tới một kĩ thuật khác gọi là <b>[Stacked Attention](https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network/)</b><br/>
-Link paper: [Bilinear Attention](https://arxiv.org/abs/1805.07932)<br/>
-Link code: [Code](https://github.com/jnhwkim/ban-vqa)<br/>
+Hello everyone, 
+Link paper: [MaskFormer](https://arxiv.org/pdf/2107.06278.pdf)<br/>
 
 ## 1. Introduction
 Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, [link](https://ngthanhtin.github.io/blog/2021-02-01-stacked-attention-network). <br/>
@@ -52,25 +51,22 @@ Attention là một cách để giảm input channel rất hiệu quả, ta có 
 Ta có vector của text là q, và image feature vector từ vùng thứ i (i_th) v_i được đưa qua một non-linear layer (fa) với weight là wa <img src="https://render.githubusercontent.com/render/math?math=a = w_{a}f_{a}(v_{i}q)">. Sau đó, attention weights được chuẩn hóa bằng hàm softmax tạo ra <img src="https://render.githubusercontent.com/render/math?math=\alpha = softmax(a)">. Cuối cùng combined image feature vector được tính dựa trên attention weight: <img src="https://render.githubusercontent.com/render/math?math=\sum^{K}_{i}\alpha_{i}v_{i}"> <br/>
 
 ### 4. Kết hợp Low-rank bilinear pooling và Question Guided Attention Mechanism
-Ta nhận thấy 2 phương pháp này có thể kết hợp với nhau, cụ thể ta ko nối 2 vector image và text lại như ở mục 3, mà sẽ thay vào đó sử dụng Low-rank bilinear pooling, nghĩa là:<br/>
+
 <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=\alpha := softmax(P^{T}(U^{T}x \circ V^{T}y))">
 </p>
-Cuối cùng ta có được một phương pháp vừa giảm được channel, vừa giúp attend được 2 feature vector ko có cùng chiều.<br/>
-Tuy nhiên, phương pháp này chỉ dùng cho multi-channel input là image và single channel input là question. Vì vậy, ta cần mở rộng phương pháp ra thành multi-channel input cho cả text và image.
+\
 
 ### 3. Bilinear Attention
 Đây là phương pháp mà chúng ta đã nhắc tới đầu bài, được sử dụng để kết hợp 2 feature multi-channel input. Để giảm số channel đồng thời, ta có một attention map A như sau:
 <p align="center">
   <img src="https://render.githubusercontent.com/render/math?math=f_{k} = (X^{T}U^{'})^{T}_{k}A(Y^{T}V^{'})_{k}">
 </p>
-Để ý, ta có thể thấy <img src="https://render.githubusercontent.com/render/math?math=X^{T}U^{'})^{T}"> và <img src="https://render.githubusercontent.com/render/math?math=Y^{T}V^{'}"> là 2 X và Y trong low-rank bilinear, k chính là index của cột. A được gọi là attention map.
+Để ý, ta có thể thấy <img src="https://render.githubusercontent.com/render/math?math=X^{T}U^{'})^{T}"> và <img src="https://render.githubusercontent.com/render/math?math=Y^{T}V^{'}"> là 2 
 
-### 4. Trilinear Attention
+### 4. abc
 Update... (khó quá từ từ xem)
 ## 5. Tham khảo
-Fukui, Akira, et al. "Multimodal compact bilinear pooling for visual question answering and visual grounding." arXiv preprint arXiv:1606.01847 (2016).<br/>
-Kim, Jin-Hwa, et al. "Hadamard product for low-rank bilinear pooling." arXiv preprint arXiv:1610.04325 (2016).<br/>
-https://medium.com/@nithinraok_/visual-question-answering-attention-and-fusion-based-approaches-ebef62fa55aa <br/>
+https://pyimagesearch.com/2023/03/13/train-a-maskformer-segmentation-model-with-hugging-face-transformers/<br/>
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

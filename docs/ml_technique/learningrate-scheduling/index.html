@@ -15,34 +15,33 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/" />
 
 
 <meta property="og:title" content="Learning Rate Scheduling in Pytorch" />
 <meta property="og:description" content="Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
-Nội dung chính sẽ bao gồm các phần sau: 
- Lambda LR." />
+Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/" /><meta property="article:section" content="ml_technique" />
 <meta property="article:published_time" content="2021-03-25T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-03-25T00:00:00+00:00" />
+
 
 
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Learning Rate Scheduling in Pytorch"/>
 <meta name="twitter:description" content="Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
-Nội dung chính sẽ bao gồm các phần sau: 
- Lambda LR."/>
+Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR."/>
 
-<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/blog/css/semantic.min.css" />
-<link rel="stylesheet" href="/blog/css/icomoon.css" />
-<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/blog/css/github-markdown.css" />
-<link rel="stylesheet" href="/blog/css/site.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -199,7 +198,7 @@ Nội dung chính sẽ bao gồm các phần sau:
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{initial} * lambda_{epoch}">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 lambda1 = lambda epoch: 0.65 ** epoch
 scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda1)
@@ -209,7 +208,7 @@ lrs = []
 
 for i in range(10):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(range(10),lrs)
@@ -220,7 +219,7 @@ plt.plot(range(10),lrs)
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * lambda_{epoch}">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 lmbda = lambda epoch: 0.65 ** epoch
 scheduler = torch.optim.lr_scheduler.MultiplicativeLR(optimizer, lr_lambda=lmbda)
@@ -228,8 +227,8 @@ lrs = []
 
 for i in range(10):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,0.95,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,0.95,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(range(10),lrs)
@@ -244,15 +243,15 @@ plt.plot(range(10),lrs)
                   lr_{epoch-1}
                   \end{cases}">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=2, gamma=0.1)
 lrs = []
 
 for i in range(10):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,0.1 if i!=0 and i%2!=0 else 1,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,0.1 if i!=0 and i%2!=0 else 1,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(range(10),lrs)
@@ -267,15 +266,15 @@ plt.plot(range(10),lrs)
                   lr_{epoch-1}
                   \end{cases}">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[6,8,9], gamma=0.1)
 lrs = []
 
 for i in range(10):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,0.1 if i in [6,8,9] else 1,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,0.1 if i in [6,8,9] else 1,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(range(10),lrs)
@@ -286,7 +285,7 @@ plt.plot(range(10),lrs)
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=lr_{epoch} = lr_{epoch-1} * \gamma">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.1)
 lrs = []
@@ -294,8 +293,8 @@ lrs = []
 
 for i in range(10):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,0.1,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,0.1,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -307,7 +306,7 @@ plt.plot(lrs)
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} %2B \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{max}}\pi))">
 </p>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
 scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=10, eta_min=0)
 lrs = []
@@ -315,8 +314,8 @@ lrs = []
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -325,16 +324,16 @@ plt.plot(lrs)
 </p>
 <h3 id="7-cyclic-lr">7. Cyclic LR.</h3>
 <h4 id="71-triangular">7.1 Triangular.</h4>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
-scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&quot;triangular&quot;)
+scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&#34;triangular&#34;)
 lrs = []
 
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -342,16 +341,16 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/cyclicalLR_triangular.png">
 </p>
 <h4 id="72-triangular2">7.2 Triangular2.</h4>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
-scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&quot;triangular2&quot;)
+scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&#34;triangular2&#34;)
 lrs = []
 
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -359,16 +358,16 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/cyclicalLR_triangular2.png">
 </p>
 <h4 id="73-exp_range">7.3 Exp_range.</h4>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=100)
-scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&quot;exp_range&quot;,gamma=0.85)
+scheduler = torch.optim.lr_scheduler.CyclicLR(optimizer, base_lr=0.001, max_lr=0.1,step_size_up=5,mode=&#34;exp_range&#34;,gamma=0.85)
 lrs = []
 
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -380,7 +379,7 @@ plt.plot(lrs)
 Phương pháp này được đề xuất đầu tiên ở paper Super-Convergence: Very Fast Training of Neural Networks Using Large Learning Rates.<br/>
 The 1cycle learning rate policy thay đổi the learning rate sau mỗi batch.<br/></p>
 <h4 id="81-cos">8.1 Cos.</h4>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
 scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.1, steps_per_epoch=10, epochs=10)
 lrs = []
@@ -388,8 +387,8 @@ lrs = []
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -397,16 +396,16 @@ plt.plot(lrs)
   <img src="/blog/img/learningrate_scheduling/onecycleLR_cos.png">
 </p>
 <h4 id="81-linear">8.1 Linear.</h4>
-<pre><code>model = torch.nn.Linear(2, 1)
+<pre tabindex="0"><code>model = torch.nn.Linear(2, 1)
 optimizer = torch.optim.SGD(model.parameters(), lr=0.1)
-scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.1, steps_per_epoch=10, epochs=10,anneal_strategy='linear')
+scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr=0.1, steps_per_epoch=10, epochs=10,anneal_strategy=&#39;linear&#39;)
 lrs = []
 
 
 for i in range(100):
     optimizer.step()
-    lrs.append(optimizer.param_groups[0][&quot;lr&quot;])
-#     print(&quot;Factor = &quot;,i,&quot; , Learning Rate = &quot;,optimizer.param_groups[0][&quot;lr&quot;])
+    lrs.append(optimizer.param_groups[0][&#34;lr&#34;])
+#     print(&#34;Factor = &#34;,i,&#34; , Learning Rate = &#34;,optimizer.param_groups[0][&#34;lr&#34;])
     scheduler.step()
 
 plt.plot(lrs)
@@ -418,7 +417,7 @@ plt.plot(lrs)
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\eta_{t}_ = \eta_{min} %2B \frac{1}{2}(\eta_{max} - \eta_{min})(1 - cos(\frac{T_{cur}}{T_{i}}\pi))">
 </p>
-<pre><code>import torch
+<pre tabindex="0"><code>import torch
 import matplotlib.pyplot as plt
 
 model = torch.nn.Linear(2, 1)
@@ -431,14 +430,14 @@ lrs = []
 for i in range(100):
     lr_sched.step()
     lrs.append(
-        optimizer.param_groups[0][&quot;lr&quot;]
+        optimizer.param_groups[0][&#34;lr&#34;]
     )
 
 plt.plot(lrs)
 </code></pre><p align="center">
   <img src="/blog/img/learningrate_scheduling/cosineanealing_warmrestartLR.png">
 </p>
-<pre><code>import torch
+<pre tabindex="0"><code>import torch
 import matplotlib.pyplot as plt
 
 model = torch.nn.Linear(2, 1)
@@ -451,7 +450,7 @@ lrs = []
 for i in range(300):
     lr_sched.step()
     lrs.append(
-        optimizer.param_groups[0][&quot;lr&quot;]
+        optimizer.param_groups[0][&#34;lr&#34;]
     )
 
 plt.plot(lrs)
@@ -484,7 +483,7 @@ plt.plot(lrs)
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2021 - 2022 Tin&#39;s Blog</p>
+              <p>© 2021 - 2023 Tin&#39;s Blog</p>
               
 
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -498,7 +497,7 @@ plt.plot(lrs)
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/img/avatar.png" />
     
   </div>
 
@@ -521,59 +520,63 @@ plt.plot(lrs)
     
       
       
-      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -662,16 +665,16 @@ plt.plot(lrs)
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/blog/js/jquery.min.js"></script>
-<script src="/blog/js/semantic.min.js"></script>
-<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/blog/js/header.js"></script>
-<script src="/blog/js/main.js"></script>
-<script src="/blog/js/theme.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
 
     
-<script src="/blog/js/html2canvas.min.js"></script>
-<script src="/blog/js/post.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
 
 
 

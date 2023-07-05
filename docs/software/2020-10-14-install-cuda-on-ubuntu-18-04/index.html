@@ -15,18 +15,18 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/" />
 
 
 <meta property="og:title" content="Install Cuda on Ubuntu 18.04" />
 <meta property="og:description" content="Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
-sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &ndash;autoremove nvidia-* 
-2. Setup the correct CUDA PPA on your system 
-sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &ndash;fetch-keys http://developer." />
+sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &ndash;autoremove nvidia-cuda-toolkit sudo apt remove &ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub sudo bash -c &rsquo;echo &ldquo;deb http://developer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/" />
+<meta property="og:url" content="https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/" /><meta property="article:section" content="software" />
+
+
 
 
 
@@ -34,16 +34,14 @@ sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Install Cuda on Ubuntu 18.04"/>
 <meta name="twitter:description" content="Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
-sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove &ndash;autoremove nvidia-cuda-toolkit  sudo apt remove &ndash;autoremove nvidia-* 
-2. Setup the correct CUDA PPA on your system 
-sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &ndash;fetch-keys http://developer."/>
+sudo rm /etc/apt/sources.list.d/cuda* sudo apt remove &ndash;autoremove nvidia-cuda-toolkit sudo apt remove &ndash;autoremove nvidia-* 2. Setup the correct CUDA PPA on your system sudo apt update sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv &ndash;fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub sudo bash -c &rsquo;echo &ldquo;deb http://developer."/>
 
-<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/blog/css/semantic.min.css" />
-<link rel="stylesheet" href="/blog/css/icomoon.css" />
-<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/blog/css/github-markdown.css" />
-<link rel="stylesheet" href="/blog/css/site.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -172,8 +170,8 @@ sudo apt remove &ndash;autoremove nvidia-* <br/></p>
 <p>sudo apt update <br/>
 sudo add-apt-repository ppa:graphics-drivers<br/>
 sudo apt-key adv &ndash;fetch-keys  <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub</a><br/>
-sudo bash -c &lsquo;echo &ldquo;deb <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64</a> /&rdquo; &gt; /etc/apt/sources.list.d/cuda.list&rsquo;<br/>
-sudo bash -c &lsquo;echo &ldquo;deb <a href="http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64</a> /&rdquo; &gt; /etc/apt/sources.list.d/cuda_learn.list&rsquo;&lt;br/</p>
+sudo bash -c &rsquo;echo &ldquo;deb <a href="http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64</a> /&rdquo; &gt; /etc/apt/sources.list.d/cuda.list&rsquo;<br/>
+sudo bash -c &rsquo;echo &ldquo;deb <a href="http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64">http://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64</a> /&rdquo; &gt; /etc/apt/sources.list.d/cuda_learn.list&rsquo;&lt;br/</p>
 <p><b>3. Install CUDA 10.1 packages </b></p>
 <p>sudo apt update<br/>
 sudo apt install cuda-10-1<br/>
@@ -213,7 +211,7 @@ fi <br/>
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2021 - 2022 Tin&#39;s Blog</p>
+              <p>© 2021 - 2023 Tin&#39;s Blog</p>
               
 
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -227,7 +225,7 @@ fi <br/>
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/img/avatar.png" />
     
   </div>
 
@@ -250,59 +248,63 @@ fi <br/>
     
       
       
-      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -391,16 +393,16 @@ fi <br/>
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/blog/js/jquery.min.js"></script>
-<script src="/blog/js/semantic.min.js"></script>
-<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/blog/js/header.js"></script>
-<script src="/blog/js/main.js"></script>
-<script src="/blog/js/theme.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
 
     
-<script src="/blog/js/html2canvas.min.js"></script>
-<script src="/blog/js/post.js"></script>
+<script src="/js/html2canvas.min.js"></script>
+<script src="/js/post.js"></script>
 
 
 

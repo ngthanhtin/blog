@@ -15,7 +15,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.80.0" />
+<meta name="generator" content="Hugo 0.101.0" />
 
 <link rel="canonical" href="https://ngthanhtin.github.io/blog/" />
 
@@ -24,7 +24,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ngthanhtin.github.io/blog/" />
-<meta property="og:updated_time" content="2022-01-27T00:00:00+00:00" />
+
 
 
 
@@ -32,12 +32,12 @@
 <meta name="twitter:title" content="Tin&#39;s Blog"/>
 <meta name="twitter:description" content=""/>
 
-<link rel="stylesheet" href="/blog/css/font-awesome.min.css" />
-<link rel="stylesheet" href="/blog/css/semantic.min.css" />
-<link rel="stylesheet" href="/blog/css/icomoon.css" />
-<link rel="stylesheet" href="/blog/css/OverlayScrollbars.min.css" />
-<link rel="stylesheet" href="/blog/css/github-markdown.css" />
-<link rel="stylesheet" href="/blog/css/site.css" />
+<link rel="stylesheet" href="/css/font-awesome.min.css" />
+<link rel="stylesheet" href="/css/semantic.min.css" />
+<link rel="stylesheet" href="/css/icomoon.css" />
+<link rel="stylesheet" href="/css/OverlayScrollbars.min.css" />
+<link rel="stylesheet" href="/css/github-markdown.css" />
+<link rel="stylesheet" href="/css/site.css" />
 
 <style>
   a:not(.ui.button):hover {
@@ -110,7 +110,7 @@
 <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/img/avatar.png" />
     
   </div>
 
@@ -133,59 +133,63 @@
     
       
       
-      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -196,6 +200,36 @@
 <div class="ui relaxed grid dream-grid">
   
   
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/">
+    
+    <img src="/blog/img/maskformer/maskformer_model.png" alt="Train a MaskFormer Segmentation Model with Hugging Face Transformers" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/blog/research_papers/2023-06-05-mask2former-training/">Train a MaskFormer Segmentation Model with Hugging Face Transformers</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Wednesday, Jul 5, 2023</p>
+    </div>
+    <div class="description">
+      Hello everyone, Link paper: MaskFormer
+1. Introduction Đầu tiên, chúng ta cần hiểu VQA là gì, nếu bạn chưa biết thì có thể xem bài viết trước của mình để hiểu nó, link. Nguyên lý của bài toán này đó là làm sao có thể kết hợp 2 feature vision và text lại với nhau thành một vector chung, sau đó đưa vector này sang một classifier để tìm ra answer, và có nhiều phương pháp hiện nay sử dụng để kết hợp 2 feature đó lại với nhau.
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author">@&nbsp;Nguyen Thanh Tin</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>4 minutes read</div>
+  </div>
+</article>
+
+  </div>
   
   <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
     <article class="ui attached segment card dream-card">
@@ -244,7 +278,7 @@
     </div>
     <div class="description">
       In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
-1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity.  The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.
+1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity. The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.
     </div>
   </div>
 
@@ -334,8 +368,7 @@
     </div>
     <div class="description">
       Hi, bài viết hôm nay mình sẽ nói qua một số phương pháp điều chỉnh learning rate trong quá trình train một model hay còn gọi là learning rate scheduler. Việc điều chỉnh learning rate trong quá trình train là một việc rất có lợi để model có thể tìm đc local minima một cách hợp lí hơn.
-Nội dung chính sẽ bao gồm các phần sau: 
- Lambda LR.
+Nội dung chính sẽ bao gồm các phần sau: Lambda LR. Multiplicative LR.
     </div>
   </div>
 
@@ -365,8 +398,7 @@ Nội dung chính sẽ bao gồm các phần sau:
     </div>
     <div class="description">
       Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Nelder Mead Simplex. Phương pháp này được 2 nhà khoa học John Nelder và Roger Mead tạo ra trong một paper mang tên A Simplex Method for Function Minimization năm 1965.
-Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Nelder-Mead-Simplex.
+Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Nelder-Mead-Simplex. Thuật toán.
     </div>
   </div>
 
@@ -395,7 +427,7 @@ Nội dung chính sẽ bao gồm các phần sau:
       <p class="date">Monday, Mar 15, 2021</p>
     </div>
     <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau:
+      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Powell Method. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/ Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Powell.
     </div>
   </div>
 
@@ -454,8 +486,7 @@ Nội dung chính sẽ bao gồm các phần sau:
     </div>
     <div class="description">
       Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn về một phương pháp Optmization bằng Direct Method đó là DIvided RECTangle (DIRECT).
-Nội dung chính sẽ bao gồm các phần sau: 
- Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo.  1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.
+Nội dung chính sẽ bao gồm các phần sau: Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán. Code. Bàn luận. Tham khảo. 1. Giới thiệu phương pháp Divided Rectangle (DIRECT). Thuật toán DIRECT là một thuật toán sampling, nghĩa là nó ko dùng thông tin về gradient để tìm điểm design point tiếp theo.
     </div>
   </div>
 
@@ -463,36 +494,6 @@ Nội dung chính sẽ bao gồm các phần sau:
     <div class="author">@&nbsp;Nguyen Thanh Tin</div>
     <div class="reading-time">
       <i class="clock icon"></i>5 minutes read</div>
-  </div>
-</article>
-
-  </div>
-  
-  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
-    <article class="ui attached segment card dream-card">
-  <a class="image" href="https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/">
-    
-    <img src="/blog/img/math_optimization/direct/pattern_search/cover.png" alt="Optmization - Direct Method: Hooke Jeeves and Pattern Search" />
-    
-  </a>
-
-  <div class="content">
-    <h2 class="ui medium header">
-      <a href="/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/">Optmization - Direct Method: Hooke Jeeves and Pattern Search</a>
-    </h2>
-    <div class="meta">
-      <p class="date">Monday, Mar 15, 2021</p>
-    </div>
-    <div class="description">
-      Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn thêm về một phương pháp Optmization bằng Direct Method đó là Hooke-Jeeves method và Pattern Search. Trước khi bước vào nội dung, nếu bạn nào chưa biết Optimization là gì hoặc phương pháp Direct là gì có thể ghé qua 2 bài post sau: Optimization: https://ngthanhtin.github.io/blog/optimization-gioi-thieu/ Direct Method: https://ngthanhtin.github.io/blog/optimization-direct-method-gioi-thieu/
-Nội dung chính sẽ bao gồm các phần sau:
-    </div>
-  </div>
-
-  <div class="extra content">
-    <div class="author">@&nbsp;Nguyen Thanh Tin</div>
-    <div class="reading-time">
-      <i class="clock icon"></i>2 minutes read</div>
   </div>
 </article>
 
@@ -520,7 +521,7 @@ Nội dung chính sẽ bao gồm các phần sau:
 
             <footer class="ui basic center aligned segment" style="background-color: transparent;">
               
-              <p>© 2021 - 2022 Tin&#39;s Blog</p>
+              <p>© 2021 - 2023 Tin&#39;s Blog</p>
               
 
               <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
@@ -534,7 +535,7 @@ Nội dung chính sẽ bao gồm các phần sau:
             <header class="ui basic very padded segment dream-header">
   <div class="ui small circular image">
     
-    <img src="/blog/img/avatar.png" />
+    <img src="/img/avatar.png" />
     
   </div>
 
@@ -557,59 +558,63 @@ Nội dung chính sẽ bao gồm các phần sau:
     
       
       
-      <a class="ui label" href="/blog/tags/donate/" title="Donate">Donate</a>
+      <a class="ui label" href="/tags/donate/" title="Donate">Donate</a>
     
       
       
-      <a class="ui label" href="/blog/tags/korea/" title="Korea">Korea</a>
+      <a class="ui label" href="/tags/korea/" title="Korea">Korea</a>
     
       
       
-      <a class="ui label" href="/blog/tags/medical/" title="Medical">Medical</a>
+      <a class="ui label" href="/tags/medical/" title="Medical">Medical</a>
     
       
       
-      <a class="ui label" href="/blog/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
+      <a class="ui label" href="/tags/ml-technique/" title="Ml Technique">Ml Technique</a>
     
       
       
-      <a class="ui label" href="/blog/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
+      <a class="ui label" href="/tags/multiple-object-tracking/" title="Multiple Object Tracking">Multiple Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
+      <a class="ui label" href="/tags/optimization-math/" title="Optimization Math">Optimization Math</a>
     
       
       
-      <a class="ui label" href="/blog/tags/personal/" title="Personal">Personal</a>
+      <a class="ui label" href="/tags/personal/" title="Personal">Personal</a>
     
       
       
-      <a class="ui label" href="/blog/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
+      <a class="ui label" href="/tags/reinforcement-learning/" title="Reinforcement Learning">Reinforcement Learning</a>
     
       
       
-      <a class="ui label" href="/blog/tags/scholarship/" title="Scholarship">Scholarship</a>
+      <a class="ui label" href="/tags/scholarship/" title="Scholarship">Scholarship</a>
     
       
       
-      <a class="ui label" href="/blog/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
+      <a class="ui label" href="/tags/segmentation/" title="Segmentation">Segmentation</a>
     
       
       
-      <a class="ui label" href="/blog/tags/slam/" title="Slam">Slam</a>
+      <a class="ui label" href="/tags/single-object-tracking/" title="Single Object Tracking">Single Object Tracking</a>
     
       
       
-      <a class="ui label" href="/blog/tags/software-tips/" title="Software Tips">Software Tips</a>
+      <a class="ui label" href="/tags/slam/" title="Slam">Slam</a>
     
       
       
-      <a class="ui label" href="/blog/tags/vision-language/" title="Vision Language">Vision Language</a>
+      <a class="ui label" href="/tags/software-tips/" title="Software Tips">Software Tips</a>
     
       
       
-      <a class="ui label" href="/blog/tags/winter/" title="Winter">Winter</a>
+      <a class="ui label" href="/tags/vision-language/" title="Vision Language">Vision Language</a>
+    
+      
+      
+      <a class="ui label" href="/tags/winter/" title="Winter">Winter</a>
     
     </article>
     
@@ -698,17 +703,17 @@ Nội dung chính sẽ bao gồm các phần sau:
     })(document, 'script', 'twitter-wjs')
   }
 </script>
-<script src="/blog/js/jquery.min.js"></script>
-<script src="/blog/js/semantic.min.js"></script>
-<script src="/blog/js/jquery.overlayScrollbars.min.js"></script>
-<script src="/blog/js/header.js"></script>
-<script src="/blog/js/main.js"></script>
-<script src="/blog/js/theme.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/semantic.min.js"></script>
+<script src="/js/jquery.overlayScrollbars.min.js"></script>
+<script src="/js/header.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/theme.js"></script>
 
     
-<script src="/blog/js/imagesloaded.pkgd.min.js"></script>
-<script src="/blog/js/masonry.pkgd.min.js"></script>
-<script src="/blog/js/grid.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/grid.js"></script>
 
 
     

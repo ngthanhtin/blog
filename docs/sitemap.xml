@@ -1,285 +1,171 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/challenge/2022-1-1-covidcxr2022/</loc>
-    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
   <url>
     <loc>https://ngthanhtin.github.io/blog/categories/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/categories/research-papers/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/research_papers/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/tags/segmentation/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/research_papers/2023-06-05-mask2former-training/</loc>
+    <lastmod>2023-07-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/challenge/2022-1-1-covidcxr2022/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/challenge/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/medical/</loc>
-    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/medical/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/</loc>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/categories/medical/</loc>
     <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/</loc>
-    <lastmod>2022-01-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/challenge/2021-11-15-memotion2/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/vision-language/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/vision-language/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/2021-02-02-bi-tri-attention/</loc>
     <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/categories/research-papers/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/research_papers/</loc>
-    <lastmod>2021-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/learningrate-scheduling/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/ml-technique/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/ml-technique/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/</loc>
     <lastmod>2021-03-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/optimization-math/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/optimization-math/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-nelder-mead-simplex/</loc>
     <lastmod>2021-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-powell/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-gioi-thieu/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-direct/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-direct-method-hooke-jeeves-pattern-search/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/algorithms_for_optimization/direct_method/optimization-gioi-thieu/</loc>
     <lastmod>2021-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-label-smoothing/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/personal/2021-02-22-con-duong-su-nghiepp1/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/ml_technique/2021-02-21-tim-hieu-mot-so-ham-loss/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/personal/buy-me-a-coffe/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/donate/</loc>
     <lastmod>2021-02-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/research_papers/2021-02-01-stacked-attention-network/</loc>
     <lastmod>2021-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/slam/2020-02-24-slam/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/software/2020-10-14-install-cuda-on-ubuntu-18-04/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/software/2020-10-14-install-torch-with-cuda-10-0/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/rl/2021-02-02-instruction-navigation/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/korea/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ngthanhtin.github.io/blog/tags/multiple-object-tracking/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/personal/2021-02-02-winter-korean-2020/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/tags/multiple-object-tracking/</loc>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/object-tracking/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://ngthanhtin.github.io/blog/personal/faq_phd_interviews/</loc>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/reinforcement-learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/reinforcement-learning/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/rl/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/scholarship/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/simultaneous-localization-and-mapping/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tracking/2021-02-04-single-object-tracking-with-pf/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/single-object-tracking/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/slam/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/slam/2021-01-31-slam-roadmap/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/slam/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/software-tips/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/categories/software-tips/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/software/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tracking/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ngthanhtin.github.io/blog/tags/winter/</loc>
   </url>
-  
 </urlset>

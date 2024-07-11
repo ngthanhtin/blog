@@ -4,28 +4,38 @@
   weight = -110
 
 [[main]]
-  name = "Archives"
-  url = "post/rich-content/"
+  name = "Guitar"
+  url = "https://www.youtube.com/@tinnguyen2828"
   weight = -109
+
+[[main]]
+  name = "List 100"
+  url = "https://ngthanhtin.github.io/aboutme/list100.html"
+  weight = -108
+
+[[main]]
+  name = "CV of Failures"
+  url = "https://ngthanhtin.github.io/aboutme/failure.html"
+  weight = -107
+
+[[main]]
+  name = "Books"
+  url = "post/rich-content/"
+  weight = -106
 
 # Submenus are done this way: parent -> identifier
 [[main]]
-  name = "Links"
-  identifier = "Links"
-  weight = -108
+  name = "Resources"
+  identifier = "Resources"
+  weight = -105
 [[main]]
-  parent = "Links"
-  name = "LinkedIn"
-  url = "https://www.linkedin.com/"
+  parent = "Resources"
+  name = "Notion"
+  url = "https://www.notion.so/Reading-List-6ea548b6dd32447bb4dc605cb9a4c446"
 [[main]]
-  parent = "Links"
-  name = "Twitter"
-  url = "https://twitter.com/"
-
-[[main]]
-  name = "About"
-  url = "about/"
-  weight = -107
+  parent = "Resources"
+  name = "Calendar"
+  url = "https://calendar.notion.so/"
 
 # social menu links
 
@@ -33,19 +43,23 @@
   name = "github"
   type = "social"
   weight = 1
-  url = "https://github.com/#"
+  url = "https://github.com/ngthanhtin"
 [[social]]
   name = "twitter"
   weight = 2
-  url = "https://twitter.com/#"
+  url = "https://twitter.com/TnNguyn21237605"
 [[social]]
   name = "linkedin"
   weight = 3
-  url = "https://www.linkedin.com/in/#"
+  url = "https://www.linkedin.com/in/kevin-nguyen-836806221/"
+[[social]]
+  name = "instagram"
+  weight = 4
+  url = "https://www.instagram.com/fuhodev/"
 [[social]]
   name = "rss"
-  weight = 4
-  url = "index.xml"
+  weight = 5
+  url = "https://ngthanhtin.github.io/"
 
 # other supported social links
 # name = "youtube"

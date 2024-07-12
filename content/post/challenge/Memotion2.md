@@ -81,6 +81,6 @@ Moreover, the technique in this post can be applied to other Vision Language pro
 
 ### 6. Code and Paper
 Link code: [Code](https://github.com/ngthanhtin/Memotion2_AAAI_WS_2022) <br/>
-Link paper: Updating...[Paper](https://github.com/ngthanhtin/Memotion2_AAAI_WS_2022)
+Link paper: [Paper](https://ceur-ws.org/Vol-3199/paper12.pdf)
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

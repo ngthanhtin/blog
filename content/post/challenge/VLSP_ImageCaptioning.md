@@ -50,6 +50,6 @@ Solving the problem leads to several practical applications such as virtual assi
 
 ### 6. Code and Paper
 Link code: [Code](https://github.com/ngthanhtin/VLSP_ImageCaptioning) <br/>
-Link paper: [Paper]()
+Link paper: [Paper](https://jcsce.vnu.edu.vn/index.php/jcsce/article/view/369)
 
 <div style="text-align: right"> (Tín Nguyễn) </div>

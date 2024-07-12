@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/vision-language/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
-      <link>https://example.com/post/challenge/2021-11-15-memotion2/</link>
+      <link>https://example.com/post/challenge/memotion2/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/2021-11-15-memotion2/</guid>
+      <guid>https://example.com/post/challenge/memotion2/</guid>
       <description>
         
           
@@ -25,18 +25,16 @@
     </item>
     
     <item>
-      <title>Instruction Navigation</title>
-      <link>https://example.com/post/rl/2021-02-02-instruction-navigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Vietnamese Image Captioning - VLSP for Health 2021</title>
+      <link>https://example.com/post/challenge/vlsp_imagecaptioning/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/rl/2021-02-02-instruction-navigation/</guid>
+      <guid>https://example.com/post/challenge/vlsp_imagecaptioning/</guid>
       <description>
         
           
-            In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
-Link paper: Paper Link code: Code
-The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
- 3.1 Image Representation Module  3.2 Text Representation Module  3.
+            In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
+1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}.
           
           
         
@@ -44,16 +42,18 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     </item>
     
     <item>
-      <title>Vietnamese Image Captioning - VLSP for Health 2021</title>
-      <link>https://example.com/post/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Instruction Navigation</title>
+      <link>https://example.com/post/rl/vision_language_navigation/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</guid>
+      <guid>https://example.com/post/rl/vision_language_navigation/</guid>
       <description>
         
           
-            In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
-1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}.
+            In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.
           
           
         

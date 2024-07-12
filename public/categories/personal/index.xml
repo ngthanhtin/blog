@@ -6,13 +6,31 @@
     <description>Recent content in personal on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 21 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My Career (1)</title>
-      <link>https://example.com/post/personal/</link>
+      <title>PhD Interviews</title>
+      <link>https://example.com/post/personal/faq_phd_interviews/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/faq_phd_interviews/</guid>
+      <description>
+        
+          
+            General Questions You Will be Asked: Tip: Ask early on: What the interviewing faculty is working on? (this gives an idea of what he/she sees as a possible alignment to your own research work).
+Read up on their recent work and ask relevant questions or pose possible extensions. Ask good questions.
+ Tell us about yourself. Why’d you apply here? Or What drew you to this program?   Research fit, what is that they are doing that excites you?
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>My Career</title>
+      <link>https://example.com/post/personal/career/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/</guid>
+      <guid>https://example.com/post/personal/career/</guid>
       <description>
         
           
@@ -25,9 +43,42 @@
     </item>
     
     <item>
+      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
+      <link>https://example.com/post/personal/winter-korean-2020/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/winter-korean-2020/</guid>
+      <description>
+        
+          
+             
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Professor Scholarship in Korea</title>
+      <link>https://example.com/post/personal/korea_prof_scholarship/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/korea_prof_scholarship/</guid>
+      <description>
+        
+          
+            Hi everyone, bài này mình sẽ chia sẽ về quá trình xin học bổng ở Hàn Quốc, làm giấy tờ và một số lưu ý khác.
+Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering, trường này cũng khá nổi tiếng về ngành Computer Science. Tuy nhiên, mình chọn ngôi trường là vì mình tìm được giáo sư có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone, etc.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Buy Me A Coffee</title>
       <link>https://example.com/post/buy-me-a-coffe/</link>
-      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
       
       <guid>https://example.com/post/buy-me-a-coffe/</guid>
       <description>

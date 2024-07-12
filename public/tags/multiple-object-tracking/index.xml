@@ -5,13 +5,14 @@
     <link>https://example.com/tags/multiple-object-tracking/</link>
     <description>Recent content in multiple-object-tracking on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><atom:link href="https://example.com/tags/multiple-object-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/multiple-object-tracking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://example.com/post/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
       <description>
         
           

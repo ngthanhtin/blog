@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://example.com/categories/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -28,11 +28,20 @@
                 href="https://example.com/categories/"
                 />
   </url><url>
+    <loc>https://example.com/categories/personal/</loc>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/personal/faq_phd_interviews/</loc>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://example.com/post/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/scholarship/</loc>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -44,7 +53,10 @@
                 href="https://example.com/tags/"
                 />
   </url><url>
-    <loc>https://example.com/post/challenge/2021-11-15-memotion2/</loc>
+    <loc>https://example.com/post/challenge/memotion2/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/challenge/vlsp_imagecaptioning/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/vision-language/</loc>
@@ -56,16 +68,13 @@
     <loc>https://example.com/post/hugo_guidance/</loc>
     <lastmod>2021-08-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/series/career/</loc>
+    <loc>https://example.com/post/personal/career/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/personal/</loc>
+    <loc>https://example.com/series/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/personal/</loc>
-    <lastmod>2021-02-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/personal/</loc>
     <lastmod>2021-02-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/series/</loc>
@@ -81,11 +90,50 @@
                 href="https://example.com/series/"
                 />
   </url><url>
+    <loc>https://example.com/post/tracking/multiple_object_tracking/</loc>
+    <lastmod>2021-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/multiple-object-tracking/</loc>
+    <lastmod>2021-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/object-tracking/</loc>
+    <lastmod>2021-02-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/rl/vision_language_navigation/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/korea/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/personal/winter-korean-2020/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/reinforcement-learning/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/reinforcement-learning/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/winter/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/personal/korea_prof_scholarship/</loc>
+    <lastmod>2020-12-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/post/software/install-cuda-on-ubuntu-18-04/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/software-tips/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/software-tips/</loc>
+    <lastmod>2020-10-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://example.com/post/buy-me-a-coffe/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/donate/</loc>
-    <lastmod>2021-02-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-02-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
@@ -95,28 +143,6 @@
   </url><url>
     <loc>https://example.com/tags/index/</loc>
   </url><url>
-    <loc>https://example.com/post/software/2020-10-14-install-cuda-on-ubuntu-18-04/</loc>
-  </url><url>
-    <loc>https://example.com/post/software/2020-10-14-install-torch-with-cuda-10-0/</loc>
-  </url><url>
-    <loc>https://example.com/post/rl/2021-02-02-instruction-navigation/</loc>
-  </url><url>
-    <loc>https://example.com/post/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</loc>
-  </url><url>
-    <loc>https://example.com/tags/multiple-object-tracking/</loc>
-  </url><url>
-    <loc>https://example.com/categories/object-tracking/</loc>
-  </url><url>
-    <loc>https://example.com/tags/reinforcement-learning/</loc>
-  </url><url>
-    <loc>https://example.com/categories/reinforcement-learning/</loc>
-  </url><url>
     <loc>https://example.com/search/</loc>
-  </url><url>
-    <loc>https://example.com/tags/software-tips/</loc>
-  </url><url>
-    <loc>https://example.com/categories/software-tips/</loc>
-  </url><url>
-    <loc>https://example.com/post/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</loc>
   </url>
 </urlset>

@@ -6,18 +6,53 @@
     <description>Recent content on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhD Interviews</title>
+      <link>https://example.com/post/personal/faq_phd_interviews/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/faq_phd_interviews/</guid>
+      <description>
+        
+          
+            General Questions You Will be Asked: Tip: Ask early on: What the interviewing faculty is working on? (this gives an idea of what he/she sees as a possible alignment to your own research work).
+Read up on their recent work and ask relevant questions or pose possible extensions. Ask good questions.
+ Tell us about yourself. Why’d you apply here? Or What drew you to this program?   Research fit, what is that they are doing that excites you?
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
-      <link>https://example.com/post/challenge/2021-11-15-memotion2/</link>
+      <link>https://example.com/post/challenge/memotion2/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/2021-11-15-memotion2/</guid>
+      <guid>https://example.com/post/challenge/memotion2/</guid>
       <description>
         
           
             In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
 1. Abstract In this post, I want to talk about Meme Analysis which is about explaining its Sentiment, Emotion and Intensity.  The growing ubiquity of Internet memes on social media platforms such as Facebook, Instagram, and Twitter further suggests that we can not ignore such multimodal content (vision and language) anymore.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Vietnamese Image Captioning - VLSP for Health 2021</title>
+      <link>https://example.com/post/challenge/vlsp_imagecaptioning/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/challenge/vlsp_imagecaptioning/</guid>
+      <description>
+        
+          
+            In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
+1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}.
           
           
         
@@ -147,11 +182,11 @@ note in quotes as the second parameter.  The inner body of the note can be whate
     </item>
     
     <item>
-      <title>My Career (1)</title>
-      <link>https://example.com/post/personal/</link>
+      <title>My Career</title>
+      <link>https://example.com/post/personal/career/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/</guid>
+      <guid>https://example.com/post/personal/career/</guid>
       <description>
         
           
@@ -164,52 +199,15 @@ note in quotes as the second parameter.  The inner body of the note can be whate
     </item>
     
     <item>
-      <title>Buy Me A Coffee</title>
-      <link>https://example.com/post/buy-me-a-coffe/</link>
-      <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
+      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/buy-me-a-coffe/</guid>
+      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
       <description>
         
           
-            &lt;p&gt;If you like my open source projects or they can help you. You can buy me a coffee ☕.~&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Install Cuda on Ubuntu 18.04</title>
-      <link>https://example.com/post/software/2020-10-14-install-cuda-on-ubuntu-18-04/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/software/2020-10-14-install-cuda-on-ubuntu-18-04/</guid>
-      <description>
-        
-          
-            Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
-sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove --autoremove nvidia-cuda-toolkit  sudo apt remove --autoremove nvidia-* 
-2. Setup the correct CUDA PPA on your system 
-sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv --fetch-keys http://developer.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Install Torch with Cuda 10.0</title>
-      <link>https://example.com/post/software/2020-10-14-install-torch-with-cuda-10-0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/software/2020-10-14-install-torch-with-cuda-10-0/</guid>
-      <description>
-        
-          
-            Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Torch và cách làm sao để Torch làm việc với Cuda 10.0
-In the terminal, run the commands WITHOUT sudo git clone https://github.com/torch/distro.git ~/torch --recursive  cd ~/torch  bash install-deps 
-Ở bước này các bạn có thể gõ :  ./install.sh để cài đặt, nhưng nó chỉ làm việc với cuda 5.0
+            Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.
           
           
         
@@ -218,10 +216,10 @@ In the terminal, run the commands WITHOUT sudo git clone https://github.com/torc
     
     <item>
       <title>Instruction Navigation</title>
-      <link>https://example.com/post/rl/2021-02-02-instruction-navigation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <link>https://example.com/post/rl/vision_language_navigation/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/rl/2021-02-02-instruction-navigation/</guid>
+      <guid>https://example.com/post/rl/vision_language_navigation/</guid>
       <description>
         
           
@@ -236,15 +234,15 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     </item>
     
     <item>
-      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://example.com/post/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
+      <link>https://example.com/post/personal/winter-korean-2020/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/tracking/2021-02-04-multiple-object-tracking-with-kalman-filter/</guid>
+      <guid>https://example.com/post/personal/winter-korean-2020/</guid>
       <description>
         
           
-            Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.
+             
           
           
         
@@ -252,16 +250,51 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     </item>
     
     <item>
-      <title>Vietnamese Image Captioning - VLSP for Health 2021</title>
-      <link>https://example.com/post/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Professor Scholarship in Korea</title>
+      <link>https://example.com/post/personal/korea_prof_scholarship/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/2021-11-15-vietnameseimagecaptioningvlsp/</guid>
+      <guid>https://example.com/post/personal/korea_prof_scholarship/</guid>
       <description>
         
           
-            In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
-1. Abstract This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}.
+            Hi everyone, bài này mình sẽ chia sẽ về quá trình xin học bổng ở Hàn Quốc, làm giấy tờ và một số lưu ý khác.
+Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering, trường này cũng khá nổi tiếng về ngành Computer Science. Tuy nhiên, mình chọn ngôi trường là vì mình tìm được giáo sư có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone, etc.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Install Cuda on Ubuntu 18.04</title>
+      <link>https://example.com/post/software/install-cuda-on-ubuntu-18-04/</link>
+      <pubDate>Wed, 14 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/software/install-cuda-on-ubuntu-18-04/</guid>
+      <description>
+        
+          
+            Hi các bạn, ở bài viết này mình sẽ hướng dẫn các bạn cách cài đặt Cuda trên Ubuntu 18.04 1. Start terminal and remove any NVIDIA traces you may have on your machine.
+sudo rm /etc/apt/sources.list.d/cuda*  sudo apt remove --autoremove nvidia-cuda-toolkit  sudo apt remove --autoremove nvidia-* 
+2. Setup the correct CUDA PPA on your system 
+sudo apt update  sudo add-apt-repository ppa:graphics-drivers sudo apt-key adv --fetch-keys http://developer.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Buy Me A Coffee</title>
+      <link>https://example.com/post/buy-me-a-coffe/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/buy-me-a-coffe/</guid>
+      <description>
+        
+          
+            &lt;p&gt;If you like my open source projects or they can help you. You can buy me a coffee ☕.~&lt;/p&gt;
           
           
         

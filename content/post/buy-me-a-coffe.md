@@ -6,6 +6,7 @@ thumbnail : /blog/images/Buy-Me-A-Coffee.jpg
 categories: "personal"
 tags:
   - donate
+comment: true
 ---
 
 If you like my open source projects or they can help you. You can buy me a coffee ☕.~

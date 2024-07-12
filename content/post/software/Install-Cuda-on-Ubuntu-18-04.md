@@ -2,7 +2,7 @@
 layout: post
 title: Install Cuda on Ubuntu 18.04
 subtitle: Nvidia
-thumbnail: "/img/cuda_ubuntu/cuda_ubuntu.jpeg"
+thumbnail: "/blog/images/cuda_ubuntu/cuda_ubuntu.jpeg"
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [settings]
 tags: [Software Tips]

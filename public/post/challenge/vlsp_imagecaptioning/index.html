@@ -26,11 +26,11 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@TnNguyn21237605">
 <meta name="twitter:title" content="Vietnamese Image Captioning - VLSP for Health 2021" />
-<meta name="twitter:image" content="https://example.com/img/challenge/example.png"/>
+<meta name="twitter:image" content="https://example.com/blog/images/challenge/example.png"/>
 <meta property="og:url" content="https://example.com/post/challenge/vlsp_imagecaptioning/" />
 <meta property="og:title" content="Vietnamese Image Captioning - VLSP for Health 2021" />
 <meta property="og:description" content="In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the …" />
-<meta property="og:image" content="https://example.com/img/challenge/example.png" />
+<meta property="og:image" content="https://example.com/blog/images/challenge/example.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
@@ -218,13 +218,13 @@
 <p>This study presents our approach on the automatic Vietnamese image captioning for healthcare domains in text processing tasks of Vietnamese Language and Speech Processing (VLSP) Challenge 2021, as shown in Figure \ref{fig:example}. In recent years, image captioning often employs a convolutional neural network-based architecture as an encoder and a long short-term memory (LSTM) as a decoder to generate sentences. These models perform  remarkably well in different datasets. Our proposed model also has an encoder and a decoder, but we instead use a Swin Transformer in the encoder, and a LSTM combined with an attention module in the decoder. The study presents our training experiments and techniques used during the competition. Our model achieves a BLEU4 score of 0.293 in the vietCap4H dataset, and the score is ranked 3$^{rd}$ on the private leaderboard.</p>
 <p>Here is some example of the dataset including an image and its caption<br/></p>
 <p align="center">
-  <img src="/img/challenge/example.png">
-  <img src="/img/challenge/text_example.png">
+  <img src="/blog/images/challenge/example.png">
+  <img src="/blog/images/challenge/text_example.png">
 </p>
 <h3 id="2-model">2. Model</h3>
 <p>Our model as shown here is an end-to-endfusion of a Swin Transformer encoder and bidirec-tional LSTM (biLSTM) decoder. The model takes in an image and outputs the corresponding caption. <br/></p>
 <p align="center">
-  <img src="/img/challenge/model_vlsp.png">
+  <img src="/blog/images/challenge/model_vlsp.png">
 </p>
 <h3 id="3-techniques">3. Techniques</h3>
 <p>In this competition, I have used some techniques to improve the BLEU4 score, they are listed below: <br/></p>
@@ -237,7 +237,7 @@
 <h3 id="4-result">4. Result</h3>
 <p>I got the 3rd position on the leaderboard, and some evolution of my attempt is shown here: <br/></p>
 <p align="center">
-  <img src="/img/challenge/result_vlsp.png">
+  <img src="/blog/images/challenge/result_vlsp.png">
 </p>
 <h3 id="5-application">5. Application</h3>
 <p>Solving the problem leads to several practical applications such as virtual assistants for blind and visually impaired people, conducting visual content indexing and searching.</p>

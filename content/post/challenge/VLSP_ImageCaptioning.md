@@ -6,7 +6,7 @@ tags: [Vision-Language]
 categories: "Vision-Language"
 comments: true
 date: "2021-11-15"
-thumbnail: "/img/challenge/example.png"
+thumbnail: "/blog/images/challenge/example.png"
 ---
 ---
 In this post, I want to talk about Vietnamese Image Captioning for Healthcare domains. The problem is important in the context of Covid-19 eppidemic so the Vietnamese Groups have established a competition about it. It is took place in VLSP 2021 Workshop, and I got the 3rd position on the private leaderboard of this challenge. Link to the challenge: https://vlsp.org.vn/vlsp2021/eval/vieCap4H
@@ -17,14 +17,14 @@ This study presents our approach on the automatic Vietnamese image captioning fo
 Here is some example of the dataset including an image and its caption<br/>
 
 <p align="center">
-  <img src="/img/challenge/example.png">
-  <img src="/img/challenge/text_example.png">
+  <img src="/blog/images/challenge/example.png">
+  <img src="/blog/images/challenge/text_example.png">
 </p>
 
 ### 2. Model
 Our model as shown here is an end-to-endfusion of a Swin Transformer encoder and bidirec-tional LSTM (biLSTM) decoder. The model takes in an image and outputs the corresponding caption. <br/>
 <p align="center">
-  <img src="/img/challenge/model_vlsp.png">
+  <img src="/blog/images/challenge/model_vlsp.png">
 </p>
 
 ### 3. Techniques
@@ -42,7 +42,7 @@ The algorithm is a best first search algorithm which iteratively considers the s
 ### 4. Result
 I got the 3rd position on the leaderboard, and some evolution of my attempt is shown here: <br/>
 <p align="center">
-  <img src="/img/challenge/result_vlsp.png">
+  <img src="/blog/images/challenge/result_vlsp.png">
 </p>
 
 ### 5. Application

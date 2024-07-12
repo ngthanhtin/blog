@@ -7,7 +7,7 @@ tags: [Vision-Language]
 categories: "Vision-Language"
 comments: true
 
-thumbnail: "/img/challenge/meme.jpg"
+thumbnail: "/blog/images/challenge/meme.jpg"
 ---
 In this post, I want to introduce a new topic which is took place at First Workshop on ​Multimodal Fact-Checking and Hate Speech Detection in AAAI 2022. And I got the 1st position on the leaderboard of this challenge. Link to the challenge: https://aiisc.ai/defactify/memotion_2.html
 
@@ -19,7 +19,7 @@ The task of Memotion analysis consists of three task (1) sentiment(positive, neg
 Here is some example of Meme Images, they contain two information simultaneously which is text and image: <br/>
 
 <p align="center">
-  <img src="/img/challenge/meme_example.png">
+  <img src="/blog/images/challenge/meme_example.png">
 </p>
 
 ### 2. Model
@@ -51,7 +51,7 @@ Although both textual and visual features are important for meme emotion analysi
 Based on the previous works that summarized both traditional and deep learning approaches for text detection and recognition, we design a preprocessing scheme to remove texts from images as follows. First, we employ the EAST module to detect all text regions in an image. Then these regions are removed from the image, and we use the output image as the input for EfficientNet-v2 in the proposed framework.
 
 <p align="center">
-  <img src="/img/challenge/meme_preproc.png">
+  <img src="/blog/images/challenge/meme_preproc.png">
 </p>
 Preprocessing scheme: Given an image as input, we use the EAST detector to detect the region of texts on the image and then remove them
 
@@ -62,7 +62,7 @@ Augmentation is a simple but important technique to increase the size of a given
 The Canonical correlation analysis (CCA) is based on a well-established statistical technique that searches for a linear combination of input vectors by maximizing their correlations. Deep CCA tries to utilize the power of both deep neural networks and CCA to overcome projection constraints of CCA . In this study, correlation scores obtained from Deep CCA is included to our loss function to maximize the correlation between two features, leading to a higher classification rate.
 
 <p align="center">
-  <img src="/img/challenge/cca.png">
+  <img src="/blog/images/challenge/cca.png">
 </p>
 
 #### 3.4 Loss function, Optimizer, etc
@@ -71,7 +71,7 @@ In terms of Optimizer, I tried several ones such as Adam, SGD, AdamW, LookAHead,
 
 ### 4. Result
 <p align="center">
-  <img src="/img/challenge/meme_result.png">
+  <img src="/blog/images/challenge/meme_result.png">
 </p>
 Some note about this competition: This is not a fair competition because after the private phase, they recruited more teams to submit and manipulated the results several times. This is quite a pity because I didn't notice that all the chair is Indian....
 

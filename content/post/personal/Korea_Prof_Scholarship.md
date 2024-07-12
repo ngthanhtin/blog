@@ -6,7 +6,7 @@ gh-repo: daattali/beautiful-jekyll
 gh-badge: [scholarship]
 tags: [scholarship, korea]
 categories : "personal"
-thumbnail: "/img/avatar.png"
+thumbnail: "/blog/images/avatar.png"
 comments: true
 date: "2020-12-07"
 ---
@@ -14,7 +14,7 @@ Hi everyone, bài này mình sẽ chia sẽ về quá trình xin học bổng �
 Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering, trường này cũng khá nổi tiếng về ngành Computer Science. Tuy nhiên, mình chọn ngôi trường là vì mình tìm được giáo sư có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone, etc.
 
 <p align="center">
-  <img src="/img/scholarship/sejong.jpg">
+  <img src="/blog/images/scholarship/sejong.jpg">
 </p>
 
 ## 1. Apply học bổng

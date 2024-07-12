@@ -7,7 +7,7 @@ gh-badge: [settings]
 tags: ["Reinforcement Learning", "Vision Language"]
 categories: ["Reinforcement Learning", Vision Language"]
 comments: true
-thumbnail: "/img/instruction_navigation/example.png"
+thumbnail: "/blog/images/instruction_navigation/example.png"
 date: "2021-02-02"
 ---
 In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
@@ -32,7 +32,7 @@ The content is as following:<br/>
 </section>
 Navigation problem is a familiar topic and it has been carried out many experiments in so many years. The problem is to make an agent move in an environment and achieve a predefined target. In general, this problem can be solved by Reinforcement Learning, the agent will receive an observation which contains several information such as image, depth, segmentation or sensor information, etc. Howerver, human want to make command for the agent through instruction, so the agent now has an additional information which is a text, or voice. The low-level instruction will be simple commands such as go straight, go left, go right, etc, but in practice, the instruction is more complex, it needs to consider other elements such as size, color, etc of the objects nearby. And that is the motivation of the Instruction Navigation problem.
 <p align="center">
-  <img src="/img/instruction_navigation/instruction_robot_navigation.gif">
+  <img src="/blog/images/instruction_navigation/instruction_robot_navigation.gif">
 </p>
 
 <section id="2. Principle">
@@ -45,7 +45,7 @@ And with this problem, it composes of 3 components, (1) is to get image features
 <b>3. Methodology</b>
 </section>
 <p align="center">
-  <img src="/img/instruction_navigation/pp.png">
+  <img src="/blog/images/instruction_navigation/pp.png">
 </p>
 The methodology simply takes an image and an instruction as inputs. Noted that, with each episode, there is only one instruction, but the image changes continually.
 
@@ -57,13 +57,13 @@ In terms of extracting textual features, first, they employed Word Embedding on 
 
 * <b>3.3 Attented Representation Module</b><br/>
 <p align="center">
-  <img src="/img/instruction_navigation/attention.png">
+  <img src="/blog/images/instruction_navigation/attention.png">
 </p>
 After getting a hold of 2 feature vectors, they use Hadardmard (element-wise) product to fuse the features together, and this is called Gated Attention.
 
 * <b>3.4 Policy Learning</b><br/>
 <p align="center">
-  <img src="/img/instruction_navigation/policy.png">
+  <img src="/blog/images/instruction_navigation/policy.png">
 </p>
 The policy learning will help the agent make decision which direction is going on. In this paper, the author use A3C, which is a well-known but simple reinforcement learning algorithm.
 

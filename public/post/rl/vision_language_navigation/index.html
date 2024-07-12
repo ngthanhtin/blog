@@ -26,11 +26,11 @@
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@TnNguyn21237605">
 <meta name="twitter:title" content="Instruction Navigation" />
-<meta name="twitter:image" content="https://example.com/img/instruction_navigation/example.png"/>
+<meta name="twitter:image" content="https://example.com/blog/images/instruction_navigation/example.png"/>
 <meta property="og:url" content="https://example.com/post/rl/vision_language_navigation/" />
 <meta property="og:title" content="Instruction Navigation" />
 <meta property="og:description" content="In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised …" />
-<meta property="og:image" content="https://example.com/img/instruction_navigation/example.png" />
+<meta property="og:image" content="https://example.com/blog/images/instruction_navigation/example.png" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://example.com/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://example.com/icons/favicon-32x32.png">
@@ -233,7 +233,7 @@ Link code: <a href="https://github.com/devendrachaplot/DeepRL-Grounding">Code</a
 </section>
 Navigation problem is a familiar topic and it has been carried out many experiments in so many years. The problem is to make an agent move in an environment and achieve a predefined target. In general, this problem can be solved by Reinforcement Learning, the agent will receive an observation which contains several information such as image, depth, segmentation or sensor information, etc. Howerver, human want to make command for the agent through instruction, so the agent now has an additional information which is a text, or voice. The low-level instruction will be simple commands such as go straight, go left, go right, etc, but in practice, the instruction is more complex, it needs to consider other elements such as size, color, etc of the objects nearby. And that is the motivation of the Instruction Navigation problem.
 <p align="center">
-  <img src="/img/instruction_navigation/instruction_robot_navigation.gif">
+  <img src="/blog/images/instruction_navigation/instruction_robot_navigation.gif">
 </p>
 <section id="2. Principle">
 <b>2. Principle</b>
@@ -244,7 +244,7 @@ And with this problem, it composes of 3 components, (1) is to get image features
 <b>3. Methodology</b>
 </section>
 <p align="center">
-  <img src="/img/instruction_navigation/pp.png">
+  <img src="/blog/images/instruction_navigation/pp.png">
 </p>
 The methodology simply takes an image and an instruction as inputs. Noted that, with each episode, there is only one instruction, but the image changes continually.
 <ul>
@@ -261,14 +261,14 @@ In terms of extracting textual features, first, they employed Word Embedding on 
 </li>
 </ul>
 <p align="center">
-  <img src="/img/instruction_navigation/attention.png">
+  <img src="/blog/images/instruction_navigation/attention.png">
 </p>
 After getting a hold of 2 feature vectors, they use Hadardmard (element-wise) product to fuse the features together, and this is called Gated Attention.
 <ul>
 <li><b>3.4 Policy Learning</b><br/></li>
 </ul>
 <p align="center">
-  <img src="/img/instruction_navigation/policy.png">
+  <img src="/blog/images/instruction_navigation/policy.png">
 </p>
 The policy learning will help the agent make decision which direction is going on. In this paper, the author use A3C, which is a well-known but simple reinforcement learning algorithm.
 <section id="4. Application">

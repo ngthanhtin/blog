@@ -6,7 +6,7 @@ gh-repo: daattali/beautiful-jekyll
 gh-badge: [scholarship]
 tags: [scholarship]
 categories : "personal"
-thumbnail: "/img/scholarship/scholarship.jpg"
+thumbnail: "/blog/images/scholarship/scholarship.jpg"
 comments: true
 date: "2022-05-30"
 ---

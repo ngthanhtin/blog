@@ -2,13 +2,12 @@
 layout: post
 title: Professor Scholarship in Korea
 subtitle: Scholarship
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [scholarship]
 tags: [scholarship, korea]
-categories : "personal"
 thumbnail: "/blog/images/avatar.png"
 comments: true
 date: "2020-12-07"
+series:
+  - Personal
 ---
 Hi everyone, hôm nay mình quyết định chia sẽ về quá trình xin học bổng ở Hàn Quốc của mình trong mùa dịch Covid 2020.
 Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering nhờ vào sự giới thiệu của giáo sư ở trường đại học của mình. Và cũng may mắn khi giáo sư trao mình học bổng có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone.

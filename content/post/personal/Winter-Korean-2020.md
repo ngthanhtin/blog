@@ -3,10 +3,9 @@ layout: post
 title: Mùa đông đầu tiên tại Hàn Quốc 12/2020
 thumbnail: "/blog/images/korea/145939044_527754941718332_2060682632339901613_n.jpg"
 subtitle: Korea's Winter
-gh-repo: daattali/beautiful-jekyll
-# gh-badge: [settings]
 tags: [korea, winter]
-categories : "personal"
+series:
+  - Personal
 comments: true
 date: "2021-02-02"
 ---

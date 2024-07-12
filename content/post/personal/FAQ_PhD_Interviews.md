@@ -2,13 +2,12 @@
 layout: post
 title: PhD Interviews
 subtitle: Scholarship
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [scholarship]
-tags: [scholarship]
-categories : "personal"
+tags: [scholarship, personal, US]
 thumbnail: "/blog/images/scholarship/scholarship.jpg"
 comments: true
 date: "2022-05-30"
+series:
+  - Personal
 ---
 
 # General Questions You Will be Asked:

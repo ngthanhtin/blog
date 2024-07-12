@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>US on Clarity</title>
+    <link>https://example.com/tags/us/</link>
+    <description>Recent content in US on Clarity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/us/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhD Interviews</title>
+      <link>https://example.com/post/personal/faq_phd_interviews/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/faq_phd_interviews/</guid>
+      <description>
+        
+          
+            General Questions You Will be Asked: Tip: Ask early on: What the interviewing faculty is working on? (this gives an idea of what he/she sees as a possible alignment to your own research work).
+Read up on their recent work and ask relevant questions or pose possible extensions. Ask good questions.
+ Tell us about yourself. Why’d you apply here? Or What drew you to this program?   Research fit, what is that they are doing that excites you?
+          
+          
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

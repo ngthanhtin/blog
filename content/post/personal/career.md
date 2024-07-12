@@ -2,9 +2,7 @@
 title : "My Career"
 cover : 
 date : "2021-02-21"
-tags : 
-  - "personal"
-categories : "personal"
+tags : [personal]
 thumbnail : "/blog/images/personal/career/career.jpeg"
 series:
   - Personal

@@ -15,19 +15,6 @@
                 href="https://example.com/"
                 />
   </url><url>
-    <loc>https://example.com/categories/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://example.com/pt/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/categories/"
-                />
-  </url><url>
     <loc>https://example.com/post/personal/list100/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
@@ -35,9 +22,6 @@
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/personal/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/personal/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.com/post/</loc>
@@ -74,6 +58,22 @@
   </url><url>
     <loc>https://example.com/tags/scholarship/</loc>
     <lastmod>2022-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/tags/us/</loc>
+    <lastmod>2022-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.com/categories/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://example.com/pt/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://example.com/categories/"
+                />
   </url><url>
     <loc>https://example.com/post/challenge/memotion2/</loc>
     <lastmod>2021-11-15T00:00:00+00:00</lastmod>

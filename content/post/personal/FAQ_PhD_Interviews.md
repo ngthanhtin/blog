@@ -6,9 +6,9 @@ gh-repo: daattali/beautiful-jekyll
 gh-badge: [scholarship]
 tags: [scholarship]
 categories : "personal"
-cover: "/blog/img/scholarship/scholarship.jpg"
+thumbnail: "/img/scholarship/scholarship.jpg"
 comments: true
-
+date: "2022-05-30"
 ---
 
 # General Questions You Will be Asked:

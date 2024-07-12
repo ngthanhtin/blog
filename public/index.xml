@@ -6,39 +6,7 @@
     <description>Recent content on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 24 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Using Hugo page bundles</title>
-      <link>https://example.com/post/bundle/</link>
-      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/bundle/</guid>
-      <description>
-        
-          
-            Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page&#39;s front matter.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Using OpenStreetMap</title>
-      <link>https://example.com/post/map/</link>
-      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/map/</guid>
-      <description>
-        
-          
-            
-          
-          
-        
-      </description>
-    </item>
-    
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
       <link>https://example.com/post/challenge/2021-11-15-memotion2/</link>
@@ -57,17 +25,121 @@
     </item>
     
     <item>
-      <title>Using Notices</title>
-      <link>https://example.com/post/notices/</link>
+      <title>Hugo Usage</title>
+      <link>https://example.com/post/hugo_guidance/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/notices/</guid>
+      <guid>https://example.com/post/hugo_guidance/</guid>
       <description>
         
           
-            The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
-To create a notice on a page, you can use the notice shortcode.
-You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.
+            &lt;p&gt;Using Notices functionality within this theme&lt;/p&gt;
+&lt;p&gt;The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.&lt;/p&gt;
+&lt;p&gt;To create a notice on a page, you can use the &lt;code&gt;notice&lt;/code&gt; shortcode.&lt;br&gt;
+You use the &lt;code&gt;notice&lt;/code&gt; shortcode, with the first parameter being one of &lt;code&gt;note&lt;/code&gt;, &lt;code&gt;info&lt;/code&gt;, &lt;code&gt;tip&lt;/code&gt;, and &lt;code&gt;warning&lt;/code&gt;.  Then add a title for your
+note in quotes as the second parameter.  The inner body of the note can be whatever markdown you want to create.&lt;/p&gt;
+&lt;p&gt;The following shortcode syntax within a markdown doc:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{{% notice note &amp;#34;Note&amp;#34; %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;This is a standard &amp;#34;note&amp;#34; style.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;{{% /notice %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;will render as:&lt;/p&gt;
+
+&lt;div class=&#34;notices note&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Note&lt;/div&gt;
+    &lt;p&gt;This is a standard &amp;quot;note&amp;quot; style.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;p&gt;The other three variants follow.&lt;/p&gt;
+
+&lt;div class=&#34;notices info&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Info&lt;/div&gt;
+    &lt;p&gt;Here is the &amp;quot;info&amp;quot; style.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+
+&lt;div class=&#34;notices tip&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Tip&lt;/div&gt;
+    &lt;p&gt;Here is a &amp;quot;tip&amp;quot; variant of a notice.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+
+&lt;div class=&#34;notices warning&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Warning&lt;/div&gt;
+    &lt;p&gt;Here is the &amp;quot;warning&amp;quot; flavor of a notice.&lt;/p&gt;
+
+  &lt;/div&gt;
+
+&lt;p&gt;Also note that the content of a notice can contain anything you could put on a normal page - as shown below:&lt;/p&gt;
+
+&lt;div class=&#34;notices tip&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Complex Notices are Possible!&lt;/div&gt;
+    &lt;p&gt;This is a notice that has a lot of various kinds of content in it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Here is a bulleted list&lt;/li&gt;
+&lt;li&gt;With more than one bullet
+&lt;ul&gt;
+&lt;li&gt;And even more than one level&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Code blocks are fine here, too....&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-csharp&#34; data-lang=&#34;csharp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;SayHello&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;Console&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;WriteLine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, world!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+
+&lt;div class=&#34;notices tip&#34;&gt;
+    &lt;div class=&#34;label&#34;&gt;Productivity Booster!&lt;/div&gt;
+    &lt;p&gt;If you&#39;re using VS Code for your editing, copy the &lt;code&gt;.vscode\clarity.code-snippets&lt;/code&gt; file into a &lt;code&gt;.vscode&lt;/code&gt; root folder on your repo.  This will enable you to type
+&lt;code&gt;note&lt;/code&gt; then &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; then choose with up/down arrows which flavor notice you want, then &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; again to provide a title, then &lt;code&gt;&amp;lt;tab&amp;gt;&lt;/code&gt; to add your content!&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;
+  &lt;picture&gt;
+
+    
+      
+        
+        
+        
+        
+        
+        
+    &lt;img
+      loading=&#34;lazy&#34;
+      decoding=&#34;async&#34;
+      alt=&#34;&#34;
+      
+        class=&#34;image_figure image_internal image_unprocessed&#34;
+        src=&#34;../images/Note-Snippet.gif&#34;
+      
+      
+    /&gt;
+
+    &lt;/picture&gt;
+&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;To use the snippet, you need to first &lt;strong&gt;enable quickSuggestions for Markdown&lt;/strong&gt; (one time only):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;Preferences-&amp;gt;Settings&lt;/code&gt; then search for &lt;code&gt;quickSuggestions&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Follow the link to Edit in settings.json&lt;/li&gt;
+&lt;li&gt;Toward the bottom of the file, paste in the following JSON:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;&amp;#34;[markdown]&amp;#34;:  {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;    &amp;#34;editor.quickSuggestions&amp;#34;: true
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;ln&#34;&gt;3&lt;/span&gt;&lt;span class=&#34;cl&#34;&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Close and save the settings.&lt;/li&gt;
+&lt;/ol&gt;
+
+  &lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
           
           
         
@@ -76,10 +148,10 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>My Career (1)</title>
-      <link>https://example.com/post/personal/2021-02-22-con-duong-su-nghiepp1/</link>
+      <link>https://example.com/post/personal/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/2021-02-22-con-duong-su-nghiepp1/</guid>
+      <guid>https://example.com/post/personal/</guid>
       <description>
         
           
@@ -93,94 +165,14 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>Buy Me A Coffee</title>
-      <link>https://example.com/post/personal/buy-me-a-coffe/</link>
+      <link>https://example.com/post/buy-me-a-coffe/</link>
       <pubDate>Sat, 06 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/buy-me-a-coffe/</guid>
+      <guid>https://example.com/post/buy-me-a-coffe/</guid>
       <description>
         
           
             &lt;p&gt;If you like my open source projects or they can help you. You can buy me a coffee ☕.~&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://example.com/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/markdown-syntax/</guid>
-      <description>
-        
-          
-            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://example.com/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/rich-content/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://example.com/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/placeholder-text/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://example.com/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/math-typesetting/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://example.com/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/emoji-support/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
           
           
         
@@ -253,57 +245,6 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
         
           
             Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
-      <link>https://example.com/post/personal/2021-02-02-winter-korean-2020/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/2021-02-02-winter-korean-2020/</guid>
-      <description>
-        
-          
-             
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>PhD Interviews</title>
-      <link>https://example.com/post/personal/faq_phd_interviews/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/faq_phd_interviews/</guid>
-      <description>
-        
-          
-            General Questions You Will be Asked: Tip: Ask early on: What the interviewing faculty is working on? (this gives an idea of what he/she sees as a possible alignment to your own research work).
-Read up on their recent work and ask relevant questions or pose possible extensions. Ask good questions.
- Tell us about yourself. Why’d you apply here? Or What drew you to this program?   Research fit, what is that they are doing that excites you?
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Professor Scholarship in Korea</title>
-      <link>https://example.com/post/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/2020-12-07-hoc-bong-giao-su-han-quoc/</guid>
-      <description>
-        
-          
-            Hi everyone, bài này mình sẽ chia sẽ về quá trình xin học bổng ở Hàn Quốc, làm giấy tờ và một số lưu ý khác.
-Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering, trường này cũng khá nổi tiếng về ngành Computer Science. Tuy nhiên, mình chọn ngôi trường là vì mình tìm được giáo sư có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone, etc.
           
           
         

@@ -175,7 +175,7 @@
 </span>
     <span class="post_date">
       Aug 20, 2021</span>
-    <span class="post_time"> · 2 min read</span>
+    <span class="post_time"> · 8 min read</span>
     <span class="page_only">&nbsp;·
   <div class="post_share">
     Share on:
@@ -315,7 +315,360 @@ note in quotes as the second parameter.  The inner body of the note can be whate
 
   </div>
 
+<hr>
+<p>Emoji can be enabled in a Hugo project in a number of ways.</p>
+<p>The <a href="https://gohugo.io/functions/emojify/"><code>emojify</code></a> function can be called directly in templates or <a href="https://gohugo.io/templates/shortcode-templates/#inline-shortcodes">Inline Shortcodes</a>.</p>
+<p>To enable emoji globally, set <code>enableEmoji</code> to <code>true</code> in your site's <a href="https://gohugo.io/getting-started/configuration/">configuration</a> and then you can type emoji shorthand codes directly in content files; e.g.</p>
+<p><span class="nowrap"><span class="emojify">🙈</span> <code>:see_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙉</span> <code>:hear_no_evil:</code></span>  <span class="nowrap"><span class="emojify">🙊</span> <code>:speak_no_evil:</code></span></p>
+<br>
+<p>The <a href="http://www.emoji-cheat-sheet.com/">Emoji cheat sheet</a> is a useful reference for emoji shorthand codes.</p>
+<hr>
+<p><strong>N.B.</strong> The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln">1</span><span class="cl">.emoji {
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+</span></span><span class="line"><span class="ln">3</span><span class="cl">}</span></span></code></pre></div>
 
+<hr>
+<p>Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.</p>
+<!--more-->
+<p>In this example we will be using <a href="https://katex.org/">KaTeX</a></p>
+<ul>
+<li>Create a partial under <code>/layouts/partials/math.html</code></li>
+<li>Within this partial reference the <a href="https://katex.org/docs/autorender.html">Auto-render Extension</a> or host these scripts locally.</li>
+<li>Include the partial in your templates like so:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln">1</span><span class="cl"><span class="o">{{</span> <span class="k">if</span> or .Params.math .Site.Params.math <span class="o">}}</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="o">{{</span> partial <span class="s2">&#34;math.html&#34;</span> . <span class="o">}}</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="o">{{</span> end <span class="o">}}</span>
+</span></span></code></pre></div><ul>
+<li>To enable KaTex globally set the parameter <code>math</code> to <code>true</code> in a project's configuration</li>
+<li>To enable KaTex on a per page basis include the parameter <code>math: true</code> in content files</li>
+</ul>
+<p><strong>Note:</strong> Use the online reference of <a href="https://katex.org/docs/supported.html">Supported TeX Functions</a></p>
+
+<h3 id="examples">Examples</h3>
+
+<p>Block math:
+$$
+\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } }
+$$</p>
+<hr>
+<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+<!--more-->
+<h2 id="headings">Headings</h2>
+<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="paragraph">Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id="images">Images</h2>
+<h3 id="local-image-alt-text-as-caption">Local image, alt text as caption</h3>
+<p>The following image is located within the Hugo site. Because it has alt text but no title text, the caption is generated by the alt text.</p>
+<p><figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt="Jane Doe"
+      
+        class="image_figure image_internal image_unprocessed"
+        src="../images/jane-doe.png"
+      
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<h3 id="remote-image-specified-caption">Remote image, specified caption</h3>
+<p>The following image is loaded from a remote URL. The alt text is the same (for screen readers and in cases when the image doesn't load) but because a separate title is provided, the title is used for the caption:</p>
+<p><figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt="Jane Doe"
+      
+        class="image_figure image_external image_processed"
+        width="512"
+        height="512"
+        src="/images/jane-doe_13734228062658454611.png"
+      
+      
+        title="This is Jane Doe"
+      
+    />
+
+    <figcaption class="caption_figure caption_external">This is Jane Doe</figcaption></picture>
+</figure>
+</p>
+<h3 id="image-with-alt-text-and-no-caption">Image with alt text and no caption</h3>
+<p>Alt text is always recommended for SEO, accessibility and in cases when images don't load. However, you don't necessarily always want an image to have a caption. In that case, use a title with one space:</p>
+<p><figure>
+  <picture>
+
+    
+      
+        
+        
+        
+        
+        
+        
+    <img
+      loading="lazy"
+      decoding="async"
+      alt="A building"
+      
+        class="image_figure image_internal image_unprocessed"
+        src="../images/building.png"
+      
+      
+        title=" "
+      
+    />
+
+    </picture>
+</figure>
+</p>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
+<blockquote>
+<p>Don't communicate by sharing memory, share memory by communicating.<br>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+</blockquote>
+<h2 id="tables">Tables</h2>
+<p>Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bob</td>
+<td>27</td>
+</tr>
+<tr>
+<td>Alice</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+<h4 id="inline-markdown-within-tables">Inline Markdown within tables</h4>
+<table>
+<thead>
+<tr>
+<th>Italics</th>
+<th>Bold</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>italics</em></td>
+<td><strong>bold</strong></td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-blocks">Code Blocks</h2>
+<h4 id="code-block-with-backticks">Code block with backticks</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="c">&lt;!-- this line is extraneous 2Error from server (Forbidden): deployments.apps is forbidden: User &#34;chiptest&#34; cannot create resource &#34;deployments&#34; in API group &#34;apps&#34; in the namespace &#34;default&#34; --&gt;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo's internal highlight shortcode</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="cp">&lt;!doctype html&gt;</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Example HTML5 Document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Test<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div>
+<h2 id="list-types">List Types</h2>
+<h4 id="ordered-list">Ordered List</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h4 id="unordered-list">Unordered List</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h4 id="nested-list">Nested list</h4>
+<ul>
+<li>Fruit
+<ul>
+<li>Apple</li>
+<li>Orange</li>
+<li>Banana</li>
+</ul>
+</li>
+<li>Dairy
+<ul>
+<li>Milk</li>
+<li>Cheese</li>
+</ul>
+</li>
+</ul>
+<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<hr>
+<p>Lorem est tota propiore conpellat pectoribus de pectora summo. <!--more-->Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.</p>
+<ol>
+<li>Exierant elisi ambit vivere dedere</li>
+<li>Duce pollice</li>
+<li>Eris modo</li>
+<li>Spargitque ferrea quos palude</li>
+</ol>
+<p>Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.</p>
+<ol>
+<li>Comas hunc haec pietate fetum procerum dixit</li>
+<li>Post torum vates letum Tiresia</li>
+<li>Flumen querellas</li>
+<li>Arcanaque montibus omnes</li>
+<li>Quidem et</li>
+</ol>
+<h1 id="vagus-elidunt">Vagus elidunt</h1>
+<p><svg class="canon" xmlns="http://www.w3.org/2000/svg" overflow="visible" viewBox="0 0 496 373" height="373" width="496"><g fill="none"><path stroke="#000" stroke-width=".75" d="M.599 372.348L495.263 1.206M.312.633l494.95 370.853M.312 372.633L247.643.92M248.502.92l246.76 370.566M330.828 123.869V1.134M330.396 1.134L165.104 124.515"></path><path stroke="#ED1C24" stroke-width=".75" d="M275.73 41.616h166.224v249.05H275.73zM54.478 41.616h166.225v249.052H54.478z"></path><path stroke="#000" stroke-width=".75" d="M.479.375h495v372h-495zM247.979.875v372"></path><ellipse cx="498.729" cy="177.625" rx=".75" ry="1.25"></ellipse><ellipse cx="247.229" cy="377.375" rx=".75" ry="1.25"></ellipse></g></svg></p>
+<p><a href="https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon">The Van de Graaf Canon</a></p>
+<h2 id="mane-refeci-capiebant-unda-mulcebat">Mane refeci capiebant unda mulcebat</h2>
+<p>Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. <strong>Faces illo pepulere</strong> tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.</p>
+<p>Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.</p>
+<p>Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel <strong>mitis temploque</strong> vocatus, inque alis, <em>oculos nomen</em> non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides <strong>parte</strong>.</p>
+
+<hr>
+<p>Hugo ships with several <a href="https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes">Built-in Shortcodes</a> for rich content, along with a <a href="https://gohugo.io/about/hugo-and-gdpr/">Privacy Config</a> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+<!--more-->
+<hr>
+<h2 id="instagram-simple-shortcode">Instagram Simple Shortcode</h2>
+<br>
+<hr>
+<h2 id="youtube-privacy-enhanced-shortcode">YouTube Privacy Enhanced Shortcode</h2>
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/izYiDDt6d8s?controls=1&rel=0" loading="lazy"></iframe>
+</div>
+
+<br>
+<hr>
+<h2 id="twitter-simple-shortcode">Twitter Simple Shortcode</h2>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Owl bet you&#39;ll lose this staring contest 🦉 <a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC</a></p>&mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) <a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>See documentation <a href="https://gohugo.io/content-management/shortcodes/#tweet">https://gohugo.io/content-management/shortcodes/#tweet</a> for more details</p>
+<br>
+<hr>
+<h2 id="vimeo-simple-shortcode">Vimeo Simple Shortcode</h2>
+
+
+
+
+
+
+<style>
+.__h_video {
+   position: relative;
+   padding-bottom: 56.23%;
+   height: 0;
+   overflow: hidden;
+   width: 100%;
+   background: #000;
+}
+.__h_video img {
+   width: 100%;
+   height: auto;
+   color: #000;
+}
+.__h_video .play {
+   height: 72px;
+   width: 72px;
+   left: 50%;
+   top: 50%;
+   margin-left: -36px;
+   margin-top: -36px;
+   position: absolute;
+   cursor: pointer;
+}
+</style>
+
+
+<div class="s_video_simple __h_video">
+<a href="https://vimeo.com/4.8912912e&#43;07" rel="noopener" target="_blank">
+
+
+<img src="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640" srcset="https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 1x, https://i.vimeocdn.com/video/337401969-979f0cc9f55fdf305fb8984e90d92639ec9d7ecc4c9dfbc6536e28edb43784ce-d_640 2x" alt="Sing Jan Swing - Kinetic Type">
+<div class="play"><svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><circle cx="30.5" cy="30.5" r="30.5" opacity=".8" fill="#000"></circle><path d="M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z" fill="#fff"></path></svg></div></a></div>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>The above quote is excerpted from Rob Pike's <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
     </div>
 <div class="post_comments">
   
@@ -352,19 +705,10 @@ note in quotes as the second parameter.  The inner body of the note can be whate
 
     
     
-    <h2 class="mt-4">Featured Posts</h2>
-    <ul>
-      <li>
-        <a href="https://example.com/post/markdown-syntax/" class="nav-link" title="Markdown Syntax Guide">Markdown Syntax Guide</a>
-      </li>
-    </ul>
     <h2 class="mt-4">Recent Posts</h2>
     <ul class="flex-column">
       <li>
         <a href="https://example.com/post/bundle/" class="nav-link" title="Using Hugo page bundles">Using Hugo page bundles</a>
-      </li>
-      <li>
-        <a href="https://example.com/post/map/" class="nav-link" title="Using OpenStreetMap">Using OpenStreetMap</a>
       </li>
       <li>
         <a href="https://example.com/post/challenge/2021-11-15-memotion2/" class="nav-link" title="Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images">Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</a>
@@ -379,10 +723,13 @@ note in quotes as the second parameter.  The inner body of the note can be whate
         <a href="https://example.com/post/personal/buy-me-a-coffe/" class="nav-link" title="Buy Me A Coffee">Buy Me A Coffee</a>
       </li>
       <li>
-        <a href="https://example.com/post/rich-content/" class="nav-link" title="Rich Content">Rich Content</a>
+        <a href="https://example.com/post/software/2020-10-14-install-cuda-on-ubuntu-18-04/" class="nav-link" title="Install Cuda on Ubuntu 18.04">Install Cuda on Ubuntu 18.04</a>
       </li>
       <li>
-        <a href="https://example.com/post/placeholder-text/" class="nav-link" title="Placeholder Text">Placeholder Text</a>
+        <a href="https://example.com/post/software/2020-10-14-install-torch-with-cuda-10-0/" class="nav-link" title="Install Torch with Cuda 10.0">Install Torch with Cuda 10.0</a>
+      </li>
+      <li>
+        <a href="https://example.com/post/rl/2021-02-02-instruction-navigation/" class="nav-link" title="Instruction Navigation">Instruction Navigation</a>
       </li>
     </ul>
     <div>
@@ -403,11 +750,6 @@ note in quotes as the second parameter.  The inner body of the note can be whate
           <span class="button_tally">2</span>
         </a>
         
-        <a href='https://example.com/categories/syntax/' class="post_tag button button_translucent" title="syntax">
-          SYNTAX
-          <span class="button_tally">2</span>
-        </a>
-        
         <a href='https://example.com/categories/object-tracking/' class="post_tag button button_translucent" title="object-tracking">
           OBJECT-TRACKING
           <span class="button_tally">1</span>
@@ -418,8 +760,8 @@ note in quotes as the second parameter.  The inner body of the note can be whate
           <span class="button_tally">1</span>
         </a>
         
-        <a href='https://example.com/categories/themes/' class="post_tag button button_translucent" title="themes">
-          THEMES
+        <a href='https://example.com/categories/syntax/' class="post_tag button button_translucent" title="syntax">
+          SYNTAX
           <span class="button_tally">1</span>
         </a>
         
@@ -431,7 +773,7 @@ note in quotes as the second parameter.  The inner body of the note can be whate
       <nav class="tags_nav">
         <a href='https://example.com/series/themes-guide/' class="post_tag button button_translucent" title="themes-guide">
           THEMES-GUIDE
-          <span class="button_tally">2</span>
+          <span class="button_tally">1</span>
         </a>
         
         
@@ -450,11 +792,6 @@ note in quotes as the second parameter.  The inner body of the note can be whate
           <span class="button_tally">2</span>
         </a>
         
-        <a href='https://example.com/tags/markdown/' class="post_tag button button_translucent" title="markdown">
-          MARKDOWN
-          <span class="button_tally">2</span>
-        </a>
-        
         <a href='https://example.com/tags/scholarship/' class="post_tag button button_translucent" title="scholarship">
           SCHOLARSHIP
           <span class="button_tally">2</span>
@@ -465,28 +802,8 @@ note in quotes as the second parameter.  The inner body of the note can be whate
           <span class="button_tally">2</span>
         </a>
         
-        <a href='https://example.com/tags/css/' class="post_tag button button_translucent" title="css">
-          CSS
-          <span class="button_tally">1</span>
-        </a>
-        
         <a href='https://example.com/tags/donate/' class="post_tag button button_translucent" title="donate">
           DONATE
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://example.com/tags/emoji/' class="post_tag button button_translucent" title="emoji">
-          EMOJI
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://example.com/tags/featured/' class="post_tag button button_translucent" title="featured">
-          FEATURED
-          <span class="button_tally">1</span>
-        </a>
-        
-        <a href='https://example.com/tags/html/' class="post_tag button button_translucent" title="html">
-          HTML
           <span class="button_tally">1</span>
         </a>
         
@@ -510,98 +827,17 @@ note in quotes as the second parameter.  The inner body of the note can be whate
           <span class="button_tally">1</span>
         </a>
         
+        <a href='https://example.com/tags/reinforcement-learning/' class="post_tag button button_translucent" title="reinforcement-learning">
+          REINFORCEMENT-LEARNING
+          <span class="button_tally">1</span>
+        </a>
         
-        <br>
-        <div class="post_tags_toggle button">All Tags</div>
-        <div class="post_tags">
-          <div class="tags_list">
-            
-            <a href='https://example.com/tags/css/' class=" post_tag button button_translucent" data-position=1 title="css">CSS<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/donate/' class=" post_tag button button_translucent" data-position=1 title="donate">DONATE<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/emoji/' class=" post_tag button button_translucent" data-position=1 title="emoji">EMOJI<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/featured/' class=" post_tag button button_translucent" data-position=1 title="featured">FEATURED<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/html/' class=" post_tag button button_translucent" data-position=1 title="html">HTML<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/hugo/' class=" post_tag button button_translucent" data-position=1 title="hugo">HUGO<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/index/' class=" post_tag button button_translucent" data-position=1 title="index">INDEX<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/korea/' class=" post_tag button button_translucent" data-position=2 title="korea">KOREA<span class="button_tally">2</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/markdown/' class=" post_tag button button_translucent" data-position=2 title="markdown">MARKDOWN<span class="button_tally">2</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/multiple-object-tracking/' class=" post_tag button button_translucent" data-position=1 title="multiple-object-tracking">MULTIPLE-OBJECT-TRACKING<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/personal/' class=" post_tag button button_translucent" data-position=1 title="personal">PERSONAL<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/privacy/' class=" post_tag button button_translucent" data-position=1 title="privacy">PRIVACY<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/reinforcement-learning/' class=" post_tag button button_translucent" data-position=1 title="reinforcement-learning">REINFORCEMENT-LEARNING<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/scholarship/' class=" post_tag button button_translucent" data-position=2 title="scholarship">SCHOLARSHIP<span class="button_tally">2</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/shortcodes/' class=" post_tag button button_translucent" data-position=1 title="shortcodes">SHORTCODES<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/software-tips/' class=" post_tag button button_translucent" data-position=2 title="software-tips">SOFTWARE-TIPS<span class="button_tally">2</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/text/' class=" post_tag button button_translucent" data-position=1 title="text">TEXT<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/themes/' class=" post_tag button button_translucent" data-position=1 title="themes">THEMES<span class="button_tally">1</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/vision-language/' class=" post_tag button button_translucent" data-position=3 title="vision-language">VISION-LANGUAGE<span class="button_tally">3</span>
-            </a>
-            
-            
-            <a href='https://example.com/tags/winter/' class=" post_tag button button_translucent" data-position=1 title="winter">WINTER<span class="button_tally">1</span>
-            </a>
-            
-            <div class="tags_sort"><span title="sort alphabetically">[A~Z]</span><span title="sort by count">[0~9]</span>
-            </div>
-            <span class="tags_hide"><svg class="icon">
-            <use xlink:href="#closeme"></use>
-          </svg></span>
-          </div>
-        </div>
+        <a href='https://example.com/tags/winter/' class="post_tag button button_translucent" title="winter">
+          WINTER
+          <span class="button_tally">1</span>
+        </a>
+        
+        
       </nav>
     </div>
   </section>

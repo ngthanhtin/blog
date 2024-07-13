@@ -2,8 +2,7 @@
 layout: post
 title: Guitar
 subtitle: Guitar
-tags: ["Guitar", "Vision Language"]
-categories: ["Reinforcement Learning", Vision Language"]
+tags: ["Guitar", "Hobby"]
 comments: true
 thumbnail: "/blog/images/guitar/baton_rogue.png"
 date: "2024-07-13"

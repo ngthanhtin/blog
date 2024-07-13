@@ -2,8 +2,6 @@
 layout: post
 title: Instruction Navigation
 subtitle: Navigation using Textual Instruction
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [settings]
 tags: ["Reinforcement Learning", "Vision Language"]
 categories: ["Reinforcement Learning", Vision Language"]
 comments: true

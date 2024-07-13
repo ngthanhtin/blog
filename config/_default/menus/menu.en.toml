@@ -20,8 +20,16 @@
 
 [[main]]
   name = "Books"
-  url = "post/rich-content/"
+  identifier = "Books"
   weight = -106
+[[main]]
+  parent = "Books"
+  name = "AI"
+  url = "http://ngthanhtin.github.io/blog/post/books/ai/"
+[[main]]
+  parent = "Books"
+  name = "Misc"
+  url = "http://ngthanhtin.github.io/blog/post/books/misc/"
 
 # Submenus are done this way: parent -> identifier
 [[main]]

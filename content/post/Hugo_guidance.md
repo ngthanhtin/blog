@@ -1,7 +1,7 @@
 ---
 author: Hugo Authors
 title: Hugo Usage
-date: 2021-08-20
+date: 2016-08-20
 description: Hugo Usage
 ---
 Using Notices functionality within this theme

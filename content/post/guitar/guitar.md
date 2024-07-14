@@ -4,7 +4,7 @@ title: Guitar
 subtitle: Guitar
 tags: ["Guitar", "Hobby"]
 comments: true
-thumbnail: "/blog/images/guitar/baton_rogue.png"
+thumbnail: "/images/guitar/baton_rogue.png"
 date: "2024-07-13"
 ---
 ![Example](/images/guitar/ex_notes.png)

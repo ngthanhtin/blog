@@ -2,7 +2,7 @@
 title : "List 100"
 date : "2024-07-12"
 tags : [personal]
-thumbnail : "/blog/images/personal/list100.png"
+thumbnail : "/images/personal/list100.png"
 series:
   - Personal
 ---

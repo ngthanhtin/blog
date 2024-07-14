@@ -3,7 +3,7 @@ layout: post
 title: PhD Interviews
 subtitle: Scholarship
 tags: [scholarship, personal, US]
-thumbnail: "/blog/images/scholarship/scholarship.jpg"
+thumbnail: "/images/scholarship/scholarship.jpg"
 comments: true
 date: "2022-05-30"
 series:

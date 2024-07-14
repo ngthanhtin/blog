@@ -7,7 +7,7 @@ gh-badge: [settings]
 tags: [multiple-object-tracking]
 categories: "Object Tracking"
 comments: true
-thumbnail: "/blog/images/mot/mot.png"
+thumbnail: "/images/mot/mot.png"
 date: "2021-02-04"
 ---
 Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán <b>Multiple Object Tracking</b> sử dụng <b>Kalman Filter</b> để theo vết đối tượng
@@ -31,7 +31,7 @@ Nội dung chính sẽ bao gồm các phần sau:<br/>
 <b>1. Giới thiệu bài toán Multiple Object Tracking</b>
 </section>
 <p align="center">
-  <img src="/blog/images/mot/mot.png">
+  <img src="/images/mot/mot.png">
 </p>
 Đây đơn giản là bài toán theo vết nhiều đối tượng cùng một lúc.
 
@@ -64,8 +64,8 @@ Sau khi có được nền, ta sẽ bước đến giai đoạn detection & trac
 Để detect những đối tượng động, mỗi lần process frame, ta sẽ lấy frame đó trừ cho nền đã được tái tạo bằng phương pháp ở trên. Phương pháp này rất đơn giản, nếu 2 đối tượng đi gần nhau quá sẽ bị dính và cho là 1 đối tượng nhưng được cái là nó cực kì nhanh =))<br/>
 Đây là phương pháp đơn giản, vì hồi đó mới sinh viên, có biết deep learning đâu nên làm cách này haha. Bây giờ các bạn có thể  dùng YOLO hoặc Faster RCNN, CenterNet để detect cho chính xác hơn.
 <p align="center">
-  <img src="/blog/images/mot/detect.png">
-  <img src="/blog/images/mot/detect_sub.png">
+  <img src="/images/mot/detect.png">
+  <img src="/images/mot/detect_sub.png">
 </p>
 
 * <b>3.3 Kalman Filter</b><br/>
@@ -76,7 +76,7 @@ Kalman Filter là một mô hình lọc nhiễu, nó bao gồm 2 phần đó là
 Đây là thuật toán dùng để giải quyết <b>assignment problem</b>.
 Assignment Problem là bài toán có N đối tượng, và M công việc, mỗi đối tượng khi làm một công việc nào đó sẽ có một chi phí nhất định. Và nhiệm vụ đó là làm sao gán mỗi đối tượng cho một công việc nào đó sao cho tổng chi phí là nhỏ nhất. <br/>
 <p align="center">
-  <img src="/blog/images/mot/hungary.png">
+  <img src="/images/mot/hungary.png">
 </p>
 Đối với bài toán tracking, ta có thể áp dụng như sau:<br/>
 Ta có N tracker và M đối tượng detect được, và ta phải gán từng tracker với từng đối tượng sao cho chi phí là nhỏ nhất. Vậy chi phí ở đây là gì ?<br/>

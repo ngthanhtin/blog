@@ -3,7 +3,7 @@ layout: post
 title: Professor Scholarship in Korea
 subtitle: Scholarship
 tags: [scholarship, korea]
-thumbnail: "/blog/images/avatar.png"
+thumbnail: "/images/avatar.png"
 comments: true
 date: "2020-12-07"
 series:
@@ -15,7 +15,7 @@ Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư
 P/s: Lúc đầu mình cũng ko muốn đi qua Hàn vì khá nhiều lí do, một là đang trong mùa dịch, mình cũng chả muốn đi đâu vì sợ bị dính covid, hai là cảm thấy bản thân chưa đủ tốt để đi học tiếp lên, ba là mình ko biết tiếng Hàn, nhưng giáo sư ở VN của mình đã động viên và cũng thấy nhiều a/c đã sang Hàn và thành công nên mình quyết định thử sức. Sau 2 năm, mình cảm thấy đây là một quyết định bước ngoặt của mình, vì mình học được rất nhiều thứ, kể cả kiến thức lẫn kĩ năng sống ở một đất nước xa lạ.
 
 
-!(Sejong Computer Science Department)(/blog/images/scholarship/sejong.jpg)
+!(Sejong Computer Science Department)(/images/scholarship/sejong.jpg)
 
 ## 1. Apply học bổng
 Việc apply học bổng giáo sư đơn giản hơn các loại học bổng khác, đương nhiên là nếu hồ sơ của bạn càng tốt thì khả năng bạn được nhận càng cao. Tại thời điểm mình xin học bổng, hồ sơ của mình cũng không thuộc dạng quá khủng, mình chỉ có 1 paper nộp ở một tạp chí quốc tế bình thường, tiếng anh thì có bằng ielts 6.0, 1 CV, bảng điểm thuộc dạng khá và một kế hoạch học tập (study plan). Ngoài ra, nếu bạn có thêm thành tích, chứng chỉ gì thì nộp thêm cũng được, miễn là thấy nó phù hợp.

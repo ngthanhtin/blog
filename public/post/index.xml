@@ -6,7 +6,40 @@
     <description>Recent content in Posts on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guitar</title>
+      <link>https://example.com/post/guitar/guitar/</link>
+      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/guitar/guitar/</guid>
+      <description>
+        
+          
+            Start learning guitar: 12-2023. Kỉ niệm 8 tháng học guitar, cũng dánh sơ sơ được fingerstyle. Hi vọng có nhiều thời gian hơn để luyện ngón, cảm âm và tập thêm bài mới, thêm đệm hát và nhạc lí nữa. 🤘 Youtube Channel: https://www.youtube.com/@tinnguyen2828
+Etude 1:  Kiss the rain: Em có ổn không: https://www.youtube.com/watch?v=afnC5jO4HC4  Sunflower: Xứ thanh hoa:
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>AI Books</title>
+      <link>https://example.com/post/books/ai/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/books/ai/</guid>
+      <description>
+        
+          
+              Deep Learning Foundations and Concepts (Christopher M. Bishop with Hugh Bishop) 2024    Build a Large Language Model (From Scratch) (Sebastian Raschka)   
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>List 100</title>
       <link>https://example.com/post/personal/list100/</link>
@@ -18,6 +51,20 @@
           
             Things I want to do before I die. Please let me know if you have any recommendation. Progress as of Jul 12, 2024: 8/100.
  ❌ Learn Japanese ✅ Study abroad 〽️ Learn guitar and start a youtube channel 〽️ Learn soccer and establish a team ✅ Work in an international company ✅ Publish paper in some pronounced conferences/journals 〽️ Become the first author of a paper at a top-tier conference ~ (had a pub in a top-tier NLP conf, waiting for a top-tier CV conf) ✅ Fall in love  
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Misc Books</title>
+      <link>https://example.com/post/books/misc/</link>
+      <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/books/misc/</guid>
+      <description>
+        
           
           
         
@@ -77,9 +124,93 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     </item>
     
     <item>
+      <title>My Career</title>
+      <link>https://example.com/post/personal/career/</link>
+      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/career/</guid>
+      <description>
+        
+          
+            Hi, xin chào các bạn, lâu rồi chưa review lại những công việc mình đã từng làm từ hồi còn là sinh viên cho tới bây giờ cho nên hôm nay tui ngồi tổng hợp lại để xem mình đã học được những gì và mất những gì trên con đường sự nghiệp của mình
+1. 6-2016 (Năm 2 Đại học) Vào hè năm 2 (6-2016) Mình có được công việc đầu tiên là ở một công ty game nổi tiếng ở HCM, và ở vị trí Intern, sau khi intern 3 tháng hè thì mình quyết định trở thành nhân viên chính thức.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
+      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
+      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
+      <description>
+        
+          
+            Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Instruction Navigation</title>
+      <link>https://example.com/post/rl/vision_language_navigation/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/rl/vision_language_navigation/</guid>
+      <description>
+        
+          
+            In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
+Link paper: Paper Link code: Code
+The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
+ 3.1 Image Representation Module  3.2 Text Representation Module  3.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
+      <link>https://example.com/post/personal/winter-korean-2020/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/winter-korean-2020/</guid>
+      <description>
+        
+          
+            Lần đầu tiên thấy tuyết, wow, năm nay lại là năm mà Seoul lạnh kỉ lục, nhớ không nhầm là nhiệt độ rơi xuống tận -2x độ C. Nói chung cảm giác lần đầu thấy tuyết rơi khá thú vị, nhưng mình lại ko thích lạnh như thế vì mình có vấn đề về mũi, cộng thêm nữa là đi bộ một mình dưới tuyết chán thật sự :smiling_face_with_tear:, nếu có thêm bạn gái đi cùng nữa thì tuyệt :rofl:.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Professor Scholarship in Korea</title>
+      <link>https://example.com/post/personal/korea_prof_scholarship/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/personal/korea_prof_scholarship/</guid>
+      <description>
+        
+          
+            Hi everyone, hôm nay mình quyết định chia sẽ về quá trình xin học bổng ở Hàn Quốc của mình trong mùa dịch Covid 2020. Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering nhờ vào sự giới thiệu của giáo sư ở trường đại học của mình. Và cũng may mắn khi giáo sư trao mình học bổng có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
       <title>Hugo Usage</title>
       <link>https://example.com/post/hugo_guidance/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
       
       <guid>https://example.com/post/hugo_guidance/</guid>
       <description>
@@ -192,90 +323,6 @@ note in quotes as the second parameter.  The inner body of the note can be whate
 
 &lt;hr&gt;
 &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>My Career</title>
-      <link>https://example.com/post/personal/career/</link>
-      <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/career/</guid>
-      <description>
-        
-          
-            Hi, xin chào các bạn, lâu rồi chưa review lại những công việc mình đã từng làm từ hồi còn là sinh viên cho tới bây giờ cho nên hôm nay tui ngồi tổng hợp lại để xem mình đã học được những gì và mất những gì trên con đường sự nghiệp của mình
-1. 6-2016 (Năm 2 Đại học) Vào hè năm 2 (6-2016) Mình có được công việc đầu tiên là ở một công ty game nổi tiếng ở HCM, và ở vị trí Intern, sau khi intern 3 tháng hè thì mình quyết định trở thành nhân viên chính thức.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
-      <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
-      <description>
-        
-          
-            Hi, xin chào các bạn, hôm này mình sẽ giới thiệu cho các bạn bài toán Multiple Object Tracking sử dụng Kalman Filter để theo vết đối tượng và thuật toán Hungary để giải bài toán credit assignment, nói nôm na là làm sao gán từng tracker vào mỗi object sao cho chi phí là ít nhất. Ngoài ra, ở bài này, mình chỉ sử dụng phương pháp trừ nền (Background Subtraction) để detect đối tượng động.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Instruction Navigation</title>
-      <link>https://example.com/post/rl/vision_language_navigation/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/rl/vision_language_navigation/</guid>
-      <description>
-        
-          
-            In this post, I want to introduce a hot topic in Reinforcement Learning which is Instruction Navigation. Although Navigation can be tackled by using Supervised Learning, but using Reinforcement Learning help us learn without any human-labeled data.
-Link paper: Paper Link code: Code
-The content is as following: 1. Introduction to Instruction Navigation  2. Principle  3. Methodology 
- 3.1 Image Representation Module  3.2 Text Representation Module  3.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
-      <link>https://example.com/post/personal/winter-korean-2020/</link>
-      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/winter-korean-2020/</guid>
-      <description>
-        
-          
-            Lần đầu tiên thấy tuyết, wow, năm nay lại là năm mà Seoul lạnh kỉ lục, nhớ không nhầm là nhiệt độ rơi xuống tận -2x độ C. Nói chung cảm giác lần đầu thấy tuyết rơi khá thú vị, nhưng mình lại ko thích lạnh như thế vì mình có vấn đề về mũi, cộng thêm nữa là đi bộ một mình dưới tuyết chán thật sự :smiling_face_with_tear:, nếu có thêm bạn gái đi cùng nữa thì tuyệt :rofl:.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Professor Scholarship in Korea</title>
-      <link>https://example.com/post/personal/korea_prof_scholarship/</link>
-      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/post/personal/korea_prof_scholarship/</guid>
-      <description>
-        
-          
-            Hi everyone, hôm nay mình quyết định chia sẽ về quá trình xin học bổng ở Hàn Quốc của mình trong mùa dịch Covid 2020. Nói sơ qua một chút, mình may mắn nhận được học bổng giáo sư tại HQ vào tháng 9/2020 tại trường đại học Sejong ngành Computer Science and Engineering nhờ vào sự giới thiệu của giáo sư ở trường đại học của mình. Và cũng may mắn khi giáo sư trao mình học bổng có hướng nghiên cứu mà mình ưa thích đó là Computer Vision in Robotics, Drone.
           
           
         

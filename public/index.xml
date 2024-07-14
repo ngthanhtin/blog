@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clarity</title>
-    <link>https://example.com/</link>
+    <link>fingerstin.org/</link>
     <description>Recent content on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="fingerstin.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Guitar</title>
-      <link>https://example.com/post/guitar/guitar/</link>
+      <link>fingerstin.org/post/guitar/guitar/</link>
       <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/guitar/guitar/</guid>
+      <guid>fingerstin.org/post/guitar/guitar/</guid>
       <description>
         
           
@@ -26,10 +26,10 @@ Etude 1:  Kiss the rain: Em có ổn không: https://www.youtube.com/watch?v=afn
     
     <item>
       <title>AI Books</title>
-      <link>https://example.com/post/books/ai/</link>
+      <link>fingerstin.org/post/books/ai/</link>
       <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/books/ai/</guid>
+      <guid>fingerstin.org/post/books/ai/</guid>
       <description>
         
           
@@ -42,10 +42,10 @@ Etude 1:  Kiss the rain: Em có ổn không: https://www.youtube.com/watch?v=afn
     
     <item>
       <title>List 100</title>
-      <link>https://example.com/post/personal/list100/</link>
+      <link>fingerstin.org/post/personal/list100/</link>
       <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/list100/</guid>
+      <guid>fingerstin.org/post/personal/list100/</guid>
       <description>
         
           
@@ -59,10 +59,10 @@ Etude 1:  Kiss the rain: Em có ổn không: https://www.youtube.com/watch?v=afn
     
     <item>
       <title>Misc Books</title>
-      <link>https://example.com/post/books/misc/</link>
+      <link>fingerstin.org/post/books/misc/</link>
       <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/books/misc/</guid>
+      <guid>fingerstin.org/post/books/misc/</guid>
       <description>
         
           
@@ -73,10 +73,10 @@ Etude 1:  Kiss the rain: Em có ổn không: https://www.youtube.com/watch?v=afn
     
     <item>
       <title>PhD Interviews</title>
-      <link>https://example.com/post/personal/faq_phd_interviews/</link>
+      <link>fingerstin.org/post/personal/faq_phd_interviews/</link>
       <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/faq_phd_interviews/</guid>
+      <guid>fingerstin.org/post/personal/faq_phd_interviews/</guid>
       <description>
         
           
@@ -91,10 +91,10 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     
     <item>
       <title>Understanding Sentiment, Emotion and its Intensity by Analysing Meme Images</title>
-      <link>https://example.com/post/challenge/memotion2/</link>
+      <link>fingerstin.org/post/challenge/memotion2/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/memotion2/</guid>
+      <guid>fingerstin.org/post/challenge/memotion2/</guid>
       <description>
         
           
@@ -108,10 +108,10 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     
     <item>
       <title>Vietnamese Image Captioning - VLSP for Health 2021</title>
-      <link>https://example.com/post/challenge/vlsp_imagecaptioning/</link>
+      <link>fingerstin.org/post/challenge/vlsp_imagecaptioning/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/challenge/vlsp_imagecaptioning/</guid>
+      <guid>fingerstin.org/post/challenge/vlsp_imagecaptioning/</guid>
       <description>
         
           
@@ -125,10 +125,10 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     
     <item>
       <title>My Career</title>
-      <link>https://example.com/post/personal/career/</link>
+      <link>fingerstin.org/post/personal/career/</link>
       <pubDate>Sun, 21 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/career/</guid>
+      <guid>fingerstin.org/post/personal/career/</guid>
       <description>
         
           
@@ -142,10 +142,10 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     
     <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
+      <link>fingerstin.org/post/tracking/multiple_object_tracking/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
+      <guid>fingerstin.org/post/tracking/multiple_object_tracking/</guid>
       <description>
         
           
@@ -158,10 +158,10 @@ Read up on their recent work and ask relevant questions or pose possible extensi
     
     <item>
       <title>Instruction Navigation</title>
-      <link>https://example.com/post/rl/vision_language_navigation/</link>
+      <link>fingerstin.org/post/rl/vision_language_navigation/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/rl/vision_language_navigation/</guid>
+      <guid>fingerstin.org/post/rl/vision_language_navigation/</guid>
       <description>
         
           
@@ -177,10 +177,10 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     
     <item>
       <title>Mùa đông đầu tiên tại Hàn Quốc 12/2020</title>
-      <link>https://example.com/post/personal/winter-korean-2020/</link>
+      <link>fingerstin.org/post/personal/winter-korean-2020/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/winter-korean-2020/</guid>
+      <guid>fingerstin.org/post/personal/winter-korean-2020/</guid>
       <description>
         
           
@@ -193,10 +193,10 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     
     <item>
       <title>Professor Scholarship in Korea</title>
-      <link>https://example.com/post/personal/korea_prof_scholarship/</link>
+      <link>fingerstin.org/post/personal/korea_prof_scholarship/</link>
       <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/personal/korea_prof_scholarship/</guid>
+      <guid>fingerstin.org/post/personal/korea_prof_scholarship/</guid>
       <description>
         
           
@@ -209,10 +209,10 @@ The content is as following: 1. Introduction to Instruction Navigation  2. Princ
     
     <item>
       <title>Hugo Usage</title>
-      <link>https://example.com/post/hugo_guidance/</link>
+      <link>fingerstin.org/post/hugo_guidance/</link>
       <pubDate>Sat, 20 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/hugo_guidance/</guid>
+      <guid>fingerstin.org/post/hugo_guidance/</guid>
       <description>
         
           

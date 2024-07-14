@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>multiple-object-tracking on Clarity</title>
-    <link>https://example.com/tags/multiple-object-tracking/</link>
+    <link>fingerstin.org/tags/multiple-object-tracking/</link>
     <description>Recent content in multiple-object-tracking on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/multiple-object-tracking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="fingerstin.org/tags/multiple-object-tracking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multiple Object Tracking with Kalman Filter and Hungary Algorithm</title>
-      <link>https://example.com/post/tracking/multiple_object_tracking/</link>
+      <link>fingerstin.org/post/tracking/multiple_object_tracking/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/tracking/multiple_object_tracking/</guid>
+      <guid>fingerstin.org/post/tracking/multiple_object_tracking/</guid>
       <description>
         
           

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>fingerstin.org/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -15,20 +15,39 @@
                 href="fingerstin.org/"
                 />
   </url><url>
-    <loc>fingerstin.org/tags/guitar/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <loc>fingerstin.org/tags/idea/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>fingerstin.org/post/guitar/guitar/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <loc>fingerstin.org/series/personal/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>fingerstin.org/tags/hobby/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <loc>fingerstin.org/tags/personal/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>fingerstin.org/post/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/tags/presentation/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/post/personal/presentations/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/series/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="fingerstin.org/pt/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="fingerstin.org/series/"
+                />
   </url><url>
     <loc>fingerstin.org/tags/</loc>
-    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
@@ -39,6 +58,18 @@
                 hreflang="en"
                 href="fingerstin.org/tags/"
                 />
+  </url><url>
+    <loc>fingerstin.org/tags/talk/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/tags/guitar/</loc>
+    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/post/guitar/guitar/</loc>
+    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>fingerstin.org/tags/hobby/</loc>
+    <lastmod>2024-07-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>fingerstin.org/tags/ai/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
@@ -54,25 +85,6 @@
   </url><url>
     <loc>fingerstin.org/post/books/misc/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>fingerstin.org/series/personal/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>fingerstin.org/tags/personal/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>fingerstin.org/series/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="fingerstin.org/pt/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="fingerstin.org/series/"
-                />
   </url><url>
     <loc>fingerstin.org/post/personal/faq_phd_interviews/</loc>
     <lastmod>2022-05-30T00:00:00+00:00</lastmod>

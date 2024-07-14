@@ -6,7 +6,25 @@
     <description>Recent content on Clarity</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 13 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="fingerstin.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="fingerstin.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Presentations</title>
+      <link>fingerstin.org/post/personal/presentations/</link>
+      <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>fingerstin.org/post/personal/presentations/</guid>
+      <description>
+        
+          
+            Idea 2024
+ [2024] Idea Proposal   Lab Meeting 2024
+ [Jul 10, 2024] Why are Visually-Grounded Language Models Bad at Image Classification   [May 16, 2024] Hierarchical Open-vocabulary Universal Image Segmentation   [Apr 16, 2024] GLaMM: Pixel Grounding Large Multimodal Model   [Mar 12, 2024] Improved Zero-shot Classification by Adapting VLMs with Text Descriptions   [Jan 30, 2024] Classification based on Boxes and Phrases (Research Project)  2023
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Guitar</title>
       <link>fingerstin.org/post/guitar/guitar/</link>

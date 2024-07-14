@@ -42,6 +42,10 @@
   url = "https://www.notion.so/Reading-List-6ea548b6dd32447bb4dc605cb9a4c446"
 [[main]]
   parent = "Resources"
+  name = "Presentations"
+  url = "http://ngthanhtin.github.io/blog/post/personal/presentations/"
+[[main]]
+  parent = "Resources"
   name = "Calendar"
   url = "https://calendar.notion.so/"
 

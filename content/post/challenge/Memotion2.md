@@ -4,7 +4,6 @@ title: Understanding Sentiment, Emotion and its Intensity by Analysing Meme Imag
 subtitle: Vision and Language
 date : "2021-11-15"
 tags: [Vision-Language]
-categories: "Vision-Language"
 comments: true
 
 thumbnail: "/images/challenge/meme.jpg"

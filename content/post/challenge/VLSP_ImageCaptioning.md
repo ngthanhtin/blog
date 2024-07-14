@@ -3,7 +3,6 @@ layout: post
 title: Vietnamese Image Captioning - VLSP for Health 2021
 subtitle: Vision and Language
 tags: [Vision-Language]
-categories: "Vision-Language"
 comments: true
 date: "2021-11-15"
 thumbnail: "/images/challenge/example.png"

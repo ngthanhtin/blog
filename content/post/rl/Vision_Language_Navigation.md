@@ -3,7 +3,6 @@ layout: post
 title: Instruction Navigation
 subtitle: Navigation using Textual Instruction
 tags: ["Reinforcement Learning", "Vision Language"]
-categories: ["Reinforcement Learning", Vision Language"]
 comments: true
 thumbnail: "/images/instruction_navigation/example.png"
 date: "2021-02-02"

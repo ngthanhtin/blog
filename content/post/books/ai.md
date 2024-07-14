@@ -9,7 +9,7 @@ date: "2024-07-12"
 
 1. Deep Learning Foundations and Concepts (Christopher M. Bishop with Hugh Bishop) 2024
 ![Deep Learning Foundations and Concepts - Christopher M. Bishop with Hugh Bishop](/blog/images/books/deep_learning.png)
+<img src="/blog/images/books/deep_learning.png" alt="Deep Learning Foundations and Concepts - Christopher M. Bishop with Hugh Bishop" style="width: 100px; height: 300px;">
 
 2. Build a Large Language Model (From Scratch) (Sebastian Raschka)
-![Deep Learning Foundations and Concepts - Christopher M. Bishop with Hugh Bishop](/blog/images/books/build_llm.png)
-
+<img src="/blog/images/books/build_llm.png" alt="Deep a Large Language Model from Scratch - Sebastian Raschka" style="width: 100px; height: 300px;">

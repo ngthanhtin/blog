@@ -48,6 +48,10 @@
   parent = "Resources"
   name = "Calendar"
   url = "https://calendar.notion.so/"
+[[main]]
+  parent = "Resources"
+  name = "Plan (GG Sheet)"
+  url = "https://docs.google.com/spreadsheets/d/1x7gMug2AETsfvAyFADFxdSnExQuivPNgKPy19uDdnoY/edit?pli=1&gid=621453456#gid=621453456"
 
 # social menu links
 

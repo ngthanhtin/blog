@@ -16,6 +16,9 @@ series:
 {{% notice note "Lab Meeting" %}}
 2024
 <li>
+<a href="https://docs.google.com/presentation/d/17J3HIyS8E9i5LReGhr612rqYwwlZWYUJzcFEdF9pOjo/edit?usp=sharing">[Jul 22, 2024] The Probabilities Also Matter: A More Faithful Metric for Faithfulness of Free-Text Explanations in LLMs</a>
+</li>
+<li>
 <a href="https://docs.google.com/presentation/d/1N3mWA0g4eUx03w9BFN42J9m13IrGunuqfUG-hRH-AbI/edit?usp=sharing">[Jul 10, 2024] Why are Visually-Grounded Language Models Bad at Image Classification</a>
 </li>
 <li>

@@ -13,10 +13,11 @@ Progress as of Jul 12, 2024: 8/100.
 2. ✅ Study abroad
 3. 〽️ Learn guitar and start a youtube channel
 4. 〽️ Learn soccer and establish a team
-5. ✅ Work in an international company
-6. ✅ Publish paper in some pronounced conferences/journals
-7. 〽️ Become the first author of a paper at a top-tier conference ~ (had a pub in a top-tier NLP conf, waiting for a top-tier CV conf)
-8. ✅ Fall in love
+5. 〽️ Hit the gym
+6. ✅ Work in an international company
+7. ✅ Publish paper in some pronounced conferences/journals
+8. 〽️ Become the first author of a paper at a top-tier conference ~ (had a pub in a top-tier NLP conf, waiting for a top-tier CV conf)
+9. ✅ Fall in love
 
 
 

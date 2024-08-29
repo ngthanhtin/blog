@@ -16,6 +16,12 @@ series:
 {{% notice note "Lab Meeting" %}}
 2024
 <li>
+<a href="https://docs.google.com/presentation/d/1yXs90ZEulgudqJ8iwRwELD6rXPHMTKManH6hmxIqCpE/edit?usp=sharing">[Sep 10, 2024] Faith and Fate: Transformers as fuzzy pattern matchers</a>
+</li>
+<li>
+<a href="https://docs.google.com/presentation/d/17J3HIyS8E9i5LReGhr612rqYwwlZWYUJzcFEdF9pOjo/edit?usp=sharing">[Aug 13, 2024] Faithful CoT</a>
+</li>
+<li>
 <a href="https://docs.google.com/presentation/d/17J3HIyS8E9i5LReGhr612rqYwwlZWYUJzcFEdF9pOjo/edit?usp=sharing">[Jul 22, 2024] The Probabilities Also Matter: A More Faithful Metric for Faithfulness of Free-Text Explanations in LLMs</a>
 </li>
 <li>

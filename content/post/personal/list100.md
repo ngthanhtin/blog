@@ -18,6 +18,10 @@ Progress as of Jul 12, 2024: 8/100.
 7. ✅ Publish paper in some pronounced conferences/journals
 8. 〽️ Become the first author of a paper at a top-tier conference ~ (had a pub in a top-tier NLP conf, waiting for a top-tier CV conf)
 9. ✅ Fall in love
+10. ❌ Raise a cat and a dog
+11. ❌ Learn Swimming
+12. ❌ Learn climbing
+13. ✅ Learn skiing
 
 
 

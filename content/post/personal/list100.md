@@ -22,6 +22,7 @@ Progress as of Jul 12, 2024: 8/100.
 11. ❌ Learn Swimming
 12. ❌ Learn climbing
 13. ✅ Learn skiing
+14. ❌ Go to a romantic city/place with my lover
 
 
 

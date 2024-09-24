@@ -16,6 +16,9 @@ series:
 {{% notice note "Lab Meeting" %}}
 2024
 <li>
+<a href="https://docs.google.com/presentation/d/1WOMNUF8JFHoe-Z352MLRp6lanj29LJcestdNdQG2kgk/edit?usp=sharing">[Sep 24, 2024] HIRE: Leveraging LLMs to Highlight and Reference Information</a>
+</li>
+<li>
 <a href="https://docs.google.com/presentation/d/1yXs90ZEulgudqJ8iwRwELD6rXPHMTKManH6hmxIqCpE/edit?usp=sharing">[Sep 10, 2024] Faith and Fate: Transformers as fuzzy pattern matchers</a>
 </li>
 <li>
